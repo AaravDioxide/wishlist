@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarav's Wishlist</title>
+    <style>
+        /* CSS Variables for Skeuomorphic Theme */
+        :root {
+            --bg-dark: #121212;
+            --bg-texture: url('data:image/svg+xml;utf8,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noiseFilter)" opacity="0.05"/></svg>');
+            
+            --letter-bg: #1e1e1e;
+            --letter-border: #333;
+            --letter-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), inset 0 1px 1px rgba(255, 255, 255, 0.05);
+            
+            --text-main: #f0f0f0;
+            --text-muted: #a0a0a0;
+            
+            --accent-green: #00ff66;
+            --accent-green-glow: 0 0 10px rgba(0, 255, 102, 0.4);
+            --accent-green-dim: #008833;
+            
+            --panel-bg: #181818;
+            --panel-border: #2a2a2a;
+            --panel-shadow: inset 0 2px 5px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            background-image: var(--bg-texture);
+            color: var(--text-main);
+            min-height: 100vh;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--text-main);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid var(--panel-border);
+            background: var(--panel-bg);
+            box-shadow: var(--panel-shadow);
+            border-radius: 4px;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent-green);
+            border-radius: 50%;
+            box-shadow: var(--accent-green-glow);
+        }
+
+        /* --- CONTROL PANEL --- */
+        .control-panel {
+            width: 100%;
+            max-width: 1200px;
+            background: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--letter-shadow);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.5rem;
+            position: relative;
+        }
+
+        .control-panel::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: 10px;
+            right: 10px;
+            height: 5px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 0 rgba(0,0,0,0.8);
+        }
+
+        input[type="text"], select {
+            background: #111;
+            border: 1px solid #000;
+            color: var(--accent-green);
+            padding: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+            border-radius: 4px;
+            box-shadow: inset 2px 2px 5px rgba(0,0,0,0.8), 0 1px 0 rgba(255,255,255,0.1);
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        input[type="text"]:focus, select:focus {
+            box-shadow: inset 2px 2px 5px rgba(0,0,0,0.8), var(--accent-green-glow);
+            border-color: var(--accent-green-dim);
+        }
+
+        /* Toggle Switch */
+        .toggle-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .toggle-switch {
+            position: relative;
+            width: 60px;
+            height: 30px;
+            background: #0a0a0a;
+            border-radius: 15px;
+            border: 2px solid #222;
+            box-shadow: inset 0 2px 5px rgba(0,0,0,0.8), 0 1px 0 rgba(255,255,255,0.1);
+            cursor: pointer;
+        }
+
+        .toggle-switch::after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 22px;
+            height: 22px;
+            background: linear-gradient(145deg, #444, #222);
+            border-radius: 50%;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.5), inset 1px 1px 1px rgba(255,255,255,0.2);
+            transition: 0.3s;
+        }
+
+        .toggle-switch.active::after {
+            left: 32px;
+            background: linear-gradient(145deg, var(--accent-green), var(--accent-green-dim));
+            box-shadow: var(--accent-green-glow), inset 1px 1px 1px rgba(255,255,255,0.5);
+        }
+        
+        .toggle-label {
+            font-weight: bold;
+            color: var(--text-muted);
+        }
+        .toggle-switch.active + .toggle-label {
+            color: var(--accent-green);
+            text-shadow: var(--accent-green-glow);
+        }
+
+        /* --- STATS PANEL --- */
+        .stats-panel {
+            width: 100%;
+            max-width: 1200px;
+            background: #0a0a0a;
+            border: 1px dashed var(--panel-border);
+            padding: 10px 20px;
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            color: var(--accent-green);
+            text-shadow: var(--accent-green-glow);
+        }
+
+        .stats-label {
+            color: var(--text-muted);
+            text-shadow: none;
+            margin-right: 10px;
+        }
+
+        /* --- WISHLIST GRID --- */
+        .wishlist-grid {
+            width: 100%;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .letter-card {
+            background-color: var(--letter-bg);
+            background-image: var(--bg-texture);
+            border: 1px solid var(--letter-border);
+            border-radius: 4px; 
+            padding: 1.5rem;
+            box-shadow: var(--letter-shadow);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .letter-card:hover {
+            transform: translateY(-5px) rotate(1deg);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.9), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+        }
+
+        .letter-card::before, .letter-card::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: rgba(255,255,255,0.03);
+            border-bottom: 1px solid rgba(0,0,0,0.3);
+            pointer-events: none;
+        }
+        .letter-card::before { top: 33%; }
+        .letter-card::after { top: 66%; }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 1px dashed #444;
+            padding-bottom: 0.5rem;
+        }
+
+        .item-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--text-main);
+            text-transform: uppercase;
+        }
+
+        .item-price {
+            font-size: 1rem;
+            color: var(--accent-green);
+            text-shadow: 0 0 5px rgba(0,255,102,0.3);
+            background: #000;
+            padding: 2px 6px;
+            border: 1px solid #333;
+            border-radius: 3px;
+            white-space: nowrap;
+        }
+
+        .item-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            color: var(--accent-green);
+            border: 2px solid var(--accent-green-dim);
+            padding: 2px 6px;
+            border-radius: 2px;
+            text-transform: uppercase;
+            font-weight: bold;
+            opacity: 0.8;
+            transform: rotate(-1deg);
+            background: transparent;
+            box-shadow: inset 0 0 2px rgba(0,255,102,0.2);
+        }
+        
+        .tag.need { border-color: #ff3333; color: #ff5555; transform: rotate(2deg); }
+        .tag.want { border-color: #33aaff; color: #55bbff; transform: rotate(-2deg); }
+        .tag.high-priority { border-color: #ffaa00; color: #ffbb33; }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-top: auto; 
+            padding-top: 15px;
+            border-top: 1px solid #333;
+        }
+
+        .retailer-link {
+            background-color: #111;
+            color: #ddd;
+            text-decoration: none;
+            padding: 5px 10px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #000;
+            box-shadow: inset 1px 1px 0 rgba(255,255,255,0.1), 2px 2px 4px rgba(0,0,0,0.6);
+            text-shadow: -1px -1px 0 rgba(0,0,0,0.8), 1px 1px 0 rgba(255,255,255,0.2);
+            transition: all 0.1s;
+        }
+
+        .retailer-link:hover { background-color: #222; color: #fff; }
+        .retailer-link:active { box-shadow: inset 2px 2px 4px rgba(0,0,0,0.8); transform: translate(1px, 1px); }
+
+        .meta-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.7rem;
+            color: #666;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        .no-results {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-muted);
+            background: var(--panel-bg);
+            border: 1px dashed #444;
+            border-radius: 4px;
+        }
+        
+        @media (max-width: 768px) {
+            .wishlist-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Aarav's Wishlist</h1>
+    </header>
+
+    <div class="control-panel">
+        <div class="control-group">
+            <label for="searchInput">Smart Search</label>
+            <input type="text" id="searchInput" placeholder="Search item, tag, type...">
+        </div>
+
+        <div class="control-group">
+            <label>Status Filter</label>
+            <div class="toggle-container">
+                <span style="font-size: 0.8rem; color: #666;">ALL</span>
+                <div class="toggle-switch" id="statusToggle" onclick="toggleStatus()"></div>
+                <span class="toggle-label" id="statusLabel">ANY</span>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label for="priorityFilter">Priority</label>
+            <select id="priorityFilter">
+                <option value="all">All Priorities</option>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+                <option value="Very Low">Very Low</option>
+            </select>
+        </div>
+
+        <div class="control-group">
+            <label for="sortFilter">Sort By</label>
+            <select id="sortFilter">
+                <option value="default">Default (Smart Sort)</option>
+                <option value="priority-desc">Priority: High to Low</option>
+                <option value="priority-asc">Priority: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="date-desc">Newest First</option>
+                <option value="date-asc">Oldest First</option>
+            </select>
+        </div>
+
+        <div class="control-group">
+            <label for="currencyFilter">Currency</label>
+            <select id="currencyFilter">
+                <option value="INR">₹ INR (Base)</option>
+                <option value="USD">$ USD</option>
+                <option value="EUR">€ EUR</option>
+                <option value="GBP">£ GBP</option>
+                <option value="AUD">$ AUD</option>
+                <option value="CAD">$ CAD</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="stats-panel">
+        <div><span class="stats-label">TOTAL ITEMS:</span><span id="statCount">0</span></div>
+        <div id="apiStatus" style="font-size: 0.7rem; color: #555;">[LIVE FX RATES: LOADING]</div>
+        <div><span class="stats-label">TOTAL VALUE:</span><span id="statValue">₹0</span></div>
+    </div>
+
+    <div class="wishlist-grid" id="wishlistContainer">
+        <!-- Items will be injected here by JS -->
+    </div>
+
+    <script>
+        // --- 1. HARDCODED DATA ---
+        // Base prices are in INR. USD items ($92, $169, $440, $1100) are converted to INR statically for the base dataset.
+        const wishlist = [
+            {
+                id: 1,
+                name: "iPhone 17 Pro",
+                links: [{ retailer: "Apple Store", url: "https://www.apple.com/in/shop/buy-iphone/iphone-17-pro" }],
+                description: "Deep Blue finish. Primary daily driver upgrade. Current phone is completely messed up.",
+                tags: ["tech", "phone", "apple", "mobile"],
+                priority: "High", 
+                status: "need",
+                dateAdded: "2026-03-21",
+                price: 154000
+            },
+            {
+                id: 2,
+                name: "Switch 2 + Mario Kart",
+                links: [{ retailer: "Amazon IN", url: "https://amzn.in/d/0cE1NGeV" }],
+                description: "7.9” HDR LCD, 4K Dock, 256GB Storage. Multiplayer gaming on the go.",
+                tags: ["tech", "gaming", "console", "nintendo"],
+                priority: "Very Low",
+                status: "want",
+                dateAdded: "2026-03-20",
+                price: 61999
+            },
+            {
+                id: 3,
+                name: "VCARB Hugo 2026 T-Shirt",
+                links: [{ retailer: "F1 Store", url: "https://f1store4.formula1.com/en/vcarb/vcarb-hugo-2026-team-t-shirt/t-10204366+p-799992584159334+z-9-607282012" }],
+                description: "Official 2026 Visa Cash App RB team t-shirt by Hugo ($92 base).",
+                tags: ["clothing", "f1", "racing", "apparel"],
+                priority: "High",
+                status: "want",
+                dateAdded: "2026-03-15",
+                price: 7636 
+            },
+            {
+                id: 4,
+                name: "Insta360 GO Ultra",
+                links: [{ retailer: "Insta360", url: "https://store.insta360.com/ph/product/go-ultra?from=cart-thumb&c=6133" }],
+                description: "Tiny, lightweight action camera for effortless POV recording ($440 base).",
+                tags: ["tech", "camera", "photography", "gadget"],
+                priority: "Medium",
+                status: "want",
+                dateAdded: "2026-03-10",
+                price: 36520 
+            },
+            {
+                id: 5,
+                name: "Elgato Stream Deck +",
+                links: [{ retailer: "Amazon IN", url: "https://amzn.in/d/0j9gkQx8" }],
+                description: "Audio Mixer, Production Console and Studio Controller with touch strip dials.",
+                tags: ["tech", "streaming", "productivity", "gaming"],
+                priority: "Medium",
+                status: "want",
+                dateAdded: "2026-03-21",
+                price: 24109 
+            },
+            {
+                id: 6,
+                name: "Keychron V6 Max Wireless",
+                links: [{ retailer: "Amazon IN", url: "https://amzn.in/d/0ifE5WWp" }],
+                description: "Custom Mechanical Keyboard, 2.4 GHz Bluetooth, QMK Full-Size RGB.",
+                tags: ["tech", "keyboard", "mechanical", "wireless"],
+                priority: "Low",
+                status: "want",
+                dateAdded: "2026-03-21",
+                price: 31981
+            },
+            {
+                id: 7,
+                name: "Logitech G PRO X Superlight 2",
+                links: [{ retailer: "Amazon IN", url: "https://amzn.in/d/0gCWDiz3" }],
+                description: "Lightweight, LIGHTFORCE Hybrid Switches, Hero 2 Sensor, 32k DPI.",
+                tags: ["tech", "mouse", "gaming", "esports"],
+                priority: "High",
+                status: "need",
+                dateAdded: "2026-03-21",
+                price: 12495 
+            },
+            {
+                id: 8,
+                name: "Raspberry Pi 5",
+                links: [{ retailer: "Raspberry Pi", url: "https://www.raspberrypi.com/products/raspberry-pi-5/" }],
+                description: "Single-board computer for DIY projects and tinkering.",
+                tags: ["tech", "diy", "computer", "hobby"],
+                priority: "Very Low",
+                status: "want",
+                dateAdded: "2026-03-21",
+                price: 7500
+            },
+            {
+                id: 9,
+                name: "Sandisk Extreme Portable 1TB",
+                links: [{ retailer: "Amazon IN", url: "https://amzn.in/d/081pQG7s" }],
+                description: "1050MB/s R, 1000MB/s W, IP65 Water/dust Resistance, Type-C.",
+                tags: ["tech", "storage", "ssd"],
+                priority: "Medium",
+                status: "want",
+                dateAdded: "2026-03-21",
+                price: 18549
+            },
+            {
+                id: 10,
+                name: "LTT Commuter Backpack",
+                links: [{ retailer: "LTT Store", url: "https://www.lttstore.com/products/commuter-backpack?srsltid=AfmBOoqzI5UkdduuBeEswkfqO4CoeOoPTmj0fj3R_56a_9-za71QlBBC" }],
+                description: "Durable everyday backpack for carrying tech gear securely ($169 base).",
+                tags: ["accessories", "bag", "travel", "edc"],
+                priority: "High",
+                status: "need",
+                dateAdded: "2026-03-21",
+                price: 14027
+            },
+            {
+                id: 11,
+                name: "Sony WH-1000XM6",
+                links: [{ retailer: "Sony", url: "https://www.sony.co.in/headphones/products/wh-1000xm6" }],
+                description: "Next-gen active noise cancelling wireless headphones.",
+                tags: ["tech", "audio", "headphones", "anc"],
+                priority: "Low",
+                status: "want",
+                dateAdded: "2026-03-21",
+                price: 49000
+            },
+            {
+                id: 12,
+                name: "iPad Air 11\" Bundle",
+                links: [
+                    { retailer: "Apple (iPad)", url: "https://www.apple.com/shop/buy-ipad/ipad-air/11-inch-display-256gb-purple-wifi" },
+                    { retailer: "Apple (Pencil Pro)", url: "https://www.apple.com/shop/product/mx2d3am/a/apple-pencil-pro" },
+                    { retailer: "Apple (Keyboard)", url: "https://www.apple.com/shop/product/mdfv4ll/a/magic-keyboard-for-ipad-air-11%E2%80%91inch-m4-us-english-white" }
+                ],
+                description: "iPad Air 11-inch bundled with Pencil Pro and White Magic Keyboard ($1100 base).",
+                tags: ["tech", "tablet", "apple", "productivity"],
+                priority: "Medium",
+                status: "want",
+                dateAdded: "2026-03-21",
+                price: 91300
+            },
+            {
+                id: 13,
+                name: "Logitech G29 Racing Wheel",
+                links: [{ retailer: "Amazon IN", url: "https://amzn.in/d/0cM3ddAM" }],
+                description: "Real Force Feedback, Stainless Steel Paddle Shifters, Floor Pedals.",
+                tags: ["tech", "gaming", "racing", "wheel", "simulator"],
+                priority: "Medium",
+                status: "want",
+                dateAdded: "2026-03-21",
+                price: 31990
+            }
+        ];
+
+        // --- 2. DICTIONARY & STATE ---
+        const synonymMap = {
+            "clothes": ["clothing", "apparel", "shirt", "wearable", "f1"],
+            "mobile": ["phone", "smartphone", "apple"],
+            "computer": ["laptop", "pc", "tech"],
+            "games": ["gaming", "console", "nintendo", "switch"],
+            "photo": ["camera", "photography", "video"]
+        };
+
+        const priorityWeight = { "High": 4, "Medium": 3, "Low": 2, "Very Low": 1 };
+        
+        // Currency Management State
+        let currentCurrency = 'INR';
+        let exchangeRates = { INR: 1, USD: 0.012, EUR: 0.011, GBP: 0.0095, AUD: 0.018, CAD: 0.016 }; // Fallbacks
+        
+        let currentStatusFilter = 'all'; 
+
+        // DOM Nodes
+        const container = document.getElementById('wishlistContainer');
+        const searchInput = document.getElementById('searchInput');
+        const priorityFilter = document.getElementById('priorityFilter');
+        const sortFilter = document.getElementById('sortFilter');
+        const currencyFilter = document.getElementById('currencyFilter');
+        const statusToggle = document.getElementById('statusToggle');
+        const statusLabel = document.getElementById('statusLabel');
+        const apiStatusLabel = document.getElementById('apiStatus');
+
+        // --- 3. LIVE CURRENCY API ---
+        async function fetchExchangeRates() {
+            try {
+                // Using open.er-api for free, no-key, live rates relative to INR
+                const response = await fetch('https://open.er-api.com/v6/latest/INR');
+                if (response.ok) {
+                    const data = await response.json();
+                    exchangeRates.USD = data.rates.USD;
+                    exchangeRates.EUR = data.rates.EUR;
+                    exchangeRates.GBP = data.rates.GBP;
+                    exchangeRates.AUD = data.rates.AUD;
+                    exchangeRates.CAD = data.rates.CAD;
+                    apiStatusLabel.innerText = "[LIVE FX RATES: ACTIVE]";
+                    apiStatusLabel.style.color = 'var(--accent-green)';
+                } else {
+                    apiStatusLabel.innerText = "[LIVE FX RATES: FAILED - USING OFFLINE ESTIMATES]";
+                    apiStatusLabel.style.color = '#ff5555';
+                }
+            } catch (error) {
+                console.error("Currency fetch failed, using fallbacks.", error);
+                apiStatusLabel.innerText = "[LIVE FX RATES: FAILED - USING OFFLINE ESTIMATES]";
+                apiStatusLabel.style.color = '#ff5555';
+            }
+            renderWishlist(); // Re-render with updated values
+        }
+
+        // Initialize currency fetch
+        fetchExchangeRates();
+
+        // --- 4. LOGIC FUNCTIONS ---
+        function toggleStatus() {
+            if (currentStatusFilter === 'all') {
+                currentStatusFilter = 'need';
+                statusToggle.classList.add('active');
+                statusLabel.innerText = 'NEED';
+                statusLabel.style.color = '#ff5555';
+            } else if (currentStatusFilter === 'need') {
+                currentStatusFilter = 'want';
+                statusToggle.classList.add('active');
+                statusLabel.innerText = 'WANT';
+                statusLabel.style.color = '#55bbff';
+            } else {
+                currentStatusFilter = 'all';
+                statusToggle.classList.remove('active');
+                statusLabel.innerText = 'ANY';
+                statusLabel.style.color = 'var(--text-muted)';
+            }
+            renderWishlist();
+        }
+
+        const formatPrice = (priceInINR) => {
+            const convertedPrice = priceInINR * exchangeRates[currentCurrency];
+            return new Intl.NumberFormat('en-IN', {
+                style: 'currency',
+                currency: currentCurrency,
+                maximumFractionDigits: currentCurrency === 'INR' ? 0 : 2
+            }).format(convertedPrice);
+        };
+
+        function smartSearch(query, items) {
+            if (!query) return items;
+
+            const searchTerms = query.toLowerCase().trim().split(" ");
+            let expandedTerms = [...searchTerms];
+            
+            searchTerms.forEach(term => {
+                if (synonymMap[term]) {
+                    expandedTerms = expandedTerms.concat(synonymMap[term]);
+                }
+            });
+
+            return items.filter(item => {
+                const searchableText = [
+                    item.name.toLowerCase(),
+                    item.description.toLowerCase(),
+                    item.status.toLowerCase(),
+                    ...item.tags.map(tag => tag.toLowerCase())
+                ].join(" ");
+
+                return expandedTerms.some(term => searchableText.includes(term));
+            });
+        }
+
+        function filterAndSort() {
+            let filtered = [...wishlist];
+
+            filtered = smartSearch(searchInput.value, filtered);
+
+            if (currentStatusFilter !== 'all') {
+                filtered = filtered.filter(item => item.status === currentStatusFilter);
+            }
+
+            const priority = priorityFilter.value;
+            if (priority !== 'all') {
+                filtered = filtered.filter(item => item.priority === priority);
+            }
+
+            const sort = sortFilter.value;
+            filtered.sort((a, b) => {
+                if (sort === 'default') {
+                    // 1. Need above Want
+                    if (a.status !== b.status) {
+                        return a.status === 'need' ? -1 : 1;
+                    }
+                    // 2. Priority Order (High > Very Low)
+                    if (priorityWeight[a.priority] !== priorityWeight[b.priority]) {
+                        return priorityWeight[b.priority] - priorityWeight[a.priority];
+                    }
+                    // 3. Price (Descending by default, highest price first)
+                    if (a.price !== b.price) {
+                        return b.price - a.price; 
+                    }
+                    // 4. ID
+                    return a.id - b.id;
+                }
+                
+                // Fallback direct sorts
+                switch (sort) {
+                    case 'priority-desc': return priorityWeight[b.priority] - priorityWeight[a.priority];
+                    case 'priority-asc': return priorityWeight[a.priority] - priorityWeight[b.priority];
+                    case 'price-asc': return a.price - b.price;
+                    case 'price-desc': return b.price - a.price;
+                    case 'date-asc': return new Date(a.dateAdded) - new Date(b.dateAdded);
+                    case 'date-desc': return new Date(b.dateAdded) - new Date(a.dateAdded);
+                    default: return 0;
+                }
+            });
+
+            return filtered;
+        }
+
+        function copyLink(url) {
+            const tempInput = document.createElement("input");
+            tempInput.value = url;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+        }
+
+        // --- 5. RENDER FUNCTION ---
+        function renderWishlist() {
+            container.innerHTML = '';
+            const itemsToRender = filterAndSort();
+
+            // Stats Update
+            const statCount = document.getElementById('statCount');
+            const statValue = document.getElementById('statValue');
+            
+            if (statCount && statValue) {
+                statCount.innerText = itemsToRender.length;
+                const totalValINR = itemsToRender.reduce((sum, item) => sum + item.price, 0);
+                statValue.innerText = formatPrice(totalValINR);
+            }
+
+            if (itemsToRender.length === 0) {
+                container.innerHTML = `<div class="no-results">No items found matching your criteria.</div>`;
+                return;
+            }
+
+            itemsToRender.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'letter-card';
+
+                let tagsHtml = `<span class="tag ${item.status}">${item.status}</span>`;
+                tagsHtml += `<span class="tag ${item.priority === 'High' ? 'high-priority' : ''}">PRIORITY: ${item.priority}</span>`;
+                item.tags.forEach(tag => {
+                    tagsHtml += `<span class="tag">${tag}</span>`;
+                });
+
+                let linksHtml = '';
+                item.links.forEach(link => {
+                    linksHtml += `
+                        <div style="display: flex; gap: 5px;">
+                            <a href="${link.url}" target="_blank" class="retailer-link" style="flex-grow: 1;">
+                                <span>BUY @ ${link.retailer}</span>
+                                <span>→</span>
+                            </a>
+                            <button onclick="copyLink('${link.url}')" class="retailer-link" style="padding: 5px 10px; cursor: pointer;" title="Copy Link">📋</button>
+                        </div>
+                    `;
+                });
+
+                card.innerHTML = `
+                    <div class="item-header">
+                        <div class="item-title">${item.name}</div>
+                        <div class="item-price">${formatPrice(item.price)}</div>
+                    </div>
+                    
+                    <div class="item-desc">${item.description}</div>
+                    
+                    <div class="tags-container">
+                        ${tagsHtml}
+                    </div>
+                    
+                    <div class="links-container">
+                        ${linksHtml}
+                    </div>
+
+                    <div class="meta-info">
+                        <span>ID: #${item.id.toString().padStart(4, '0')}</span>
+                        <span>LOGGED: ${item.dateAdded}</span>
+                    </div>
+                `;
+                
+                container.appendChild(card);
+            });
+        }
+
+        // --- 6. EVENT LISTENERS ---
+        searchInput.addEventListener('input', renderWishlist);
+        priorityFilter.addEventListener('change', renderWishlist);
+        sortFilter.addEventListener('change', renderWishlist);
+        currencyFilter.addEventListener('change', (e) => {
+            currentCurrency = e.target.value;
+            renderWishlist();
+        });
+
+        // Initial Render Before FX Fetch resolves
+        renderWishlist();
+
+    </script>
+</body>
+</html>
