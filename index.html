@@ -3,826 +3,1302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aarav's Wishlist</title>
+    <title>Wishlist OS - Windows XP</title>
     <style>
-        /* CSS Variables for Skeuomorphic Theme */
+        /* --- WINDOWS XP THEME --- */
+        @import url('https://fonts.googleapis.com/css2?family=Tahoma&display=swap');
+
         :root {
-            --bg-dark: #121212;
-            --bg-texture: url('data:image/svg+xml;utf8,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noiseFilter)" opacity="0.05"/></svg>');
-            
-            --letter-bg: #1e1e1e;
-            --letter-border: #333;
-            --letter-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), inset 0 1px 1px rgba(255, 255, 255, 0.05);
-            
-            --text-main: #f0f0f0;
-            --text-muted: #a0a0a0;
-            
-            --accent-green: #00ff66;
-            --accent-green-glow: 0 0 10px rgba(0, 255, 102, 0.4);
-            --accent-green-dim: #008833;
-            
-            --panel-bg: #181818;
-            --panel-border: #2a2a2a;
-            --panel-shadow: inset 0 2px 5px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.05);
+            --xp-blue-title: linear-gradient(to bottom, #0058e6 0%, #3a93ff 8%, #288eff 40%, #127dff 88%, #036bfe 100%);
+            --xp-border: #0055e5;
+            --xp-bg: #ece9d8;
+            --xp-sidebar-top: #7ba2e7;
+            --xp-sidebar-bottom: #6375d6;
+            --xp-taskbar: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #333 100%);
+            --xp-start: linear-gradient(to bottom, #44a54c 0%, #319436 9%, #3b913f 18%, #235824 92%);
         }
 
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Tahoma', sans-serif;
+            user-select: none;
         }
 
         body {
-            background-color: var(--bg-dark);
-            background-image: var(--bg-texture);
-            color: var(--text-main);
-            min-height: 100vh;
-            padding: 2rem;
+            /* Classic Bliss Wallpaper */
+            background-image: url('https://upload.wikimedia.org/wikipedia/en/7/7d/Bliss.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            overflow: hidden;
             display: flex;
             flex-direction: column;
+        }
+
+        /* --- DESKTOP AREA --- */
+        #desktop {
+            flex-grow: 1;
+            position: relative;
+            padding: 20px;
+        }
+
+        /* --- XP WINDOW COMPONENT --- */
+        .window {
+            position: absolute;
+            background-color: var(--xp-bg);
+            border: 3px solid var(--xp-border);
+            border-radius: 8px 8px 0 0;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            z-index: 10;
+        }
+
+        .title-bar {
+            background: var(--xp-blue-title);
+            color: white;
+            padding: 4px 8px;
+            display: flex;
+            justify-content: space-between;
             align-items: center;
+            font-size: 13px;
+            font-weight: bold;
+            text-shadow: 1px 1px #0f3680;
+            cursor: default;
         }
 
-        header {
-            width: 100%;
-            max-width: 1200px;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            color: var(--text-main);
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            position: relative;
-            display: inline-block;
-            padding: 10px 20px;
-            border: 2px solid var(--panel-border);
-            background: var(--panel-bg);
-            box-shadow: var(--panel-shadow);
-            border-radius: 4px;
-        }
-
-        h1::after {
-            content: '';
-            position: absolute;
-            top: 5px;
-            right: 5px;
-            width: 8px;
-            height: 8px;
-            background-color: var(--accent-green);
-            border-radius: 50%;
-            box-shadow: var(--accent-green-glow);
-        }
-
-        /* --- CONTROL PANEL --- */
-        .control-panel {
-            width: 100%;
-            max-width: 1200px;
-            background: var(--panel-bg);
-            border: 1px solid var(--panel-border);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-            box-shadow: var(--letter-shadow);
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 1.5rem;
-            position: relative;
-        }
-
-        .control-panel::before {
-            content: '';
-            position: absolute;
-            top: -5px;
-            left: 10px;
-            right: 10px;
-            height: 5px;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
-        }
-
-        .control-group {
+        .title-bar-text {
             display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
+            align-items: center;
+            gap: 5px;
         }
 
-        label {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            text-shadow: 1px 1px 0 rgba(0,0,0,0.8);
+        .title-bar-controls {
+            display: flex;
+            gap: 2px;
         }
 
-        input[type="text"], select {
-            background: #111;
-            border: 1px solid #000;
-            color: var(--accent-green);
+        .ctrl-btn {
+            width: 21px;
+            height: 21px;
+            border: 1px solid #fff;
+            border-radius: 3px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: inset 0 -2px 3px rgba(0,0,0,0.2);
+        }
+
+        .ctrl-max {
+            background: linear-gradient(to bottom, #3f8cf3, #245edb);
+            border-color: #a4c9f7;
+            font-size: 14px;
+        }
+
+        .ctrl-close {
+            background: linear-gradient(to bottom, #e04343, #c92828);
+            border-color: #f7aaaa;
+        }
+
+        .ctrl-close:active, .ctrl-max:active {
+            box-shadow: inset 2px 2px 3px rgba(0,0,0,0.4);
+        }
+
+        /* --- MAIN EXPLORER WINDOW --- */
+        #explorer-window {
+            top: 5vh;
+            left: 5vw;
+            width: 90vw;
+            height: 85vh;
+            max-width: 1200px;
+        }
+
+        .toolbar {
+            background-color: var(--xp-bg);
+            border-bottom: 1px solid #c7c5b2;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            gap: 15px;
+        }
+
+        .address-bar {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            background: white;
+            border: 1px solid #7f9db9;
+            padding: 2px 5px;
+            margin-left: 10px;
+        }
+
+        .explorer-content {
+            display: flex;
+            flex-grow: 1;
+            height: calc(100% - 60px);
+        }
+
+        /* --- LEFT SIDEBAR (XP Common Tasks) --- */
+        .sidebar {
+            width: 250px;
+            background: linear-gradient(to bottom, var(--xp-sidebar-top), var(--xp-sidebar-bottom));
             padding: 10px;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 0.9rem;
-            border-radius: 4px;
-            box-shadow: inset 2px 2px 5px rgba(0,0,0,0.8), 0 1px 0 rgba(255,255,255,0.1);
-            outline: none;
-            transition: all 0.2s;
+            overflow-y: auto;
+            border-right: 1px solid #000;
         }
 
-        input[type="text"]:focus, select:focus {
-            box-shadow: inset 2px 2px 5px rgba(0,0,0,0.8), var(--accent-green-glow);
-            border-color: var(--accent-green-dim);
+        .task-group {
+            background: white;
+            border: 1px solid white;
+            border-radius: 3px;
+            margin-bottom: 15px;
+            overflow: hidden;
         }
 
-        /* Toggle Switch */
-        .toggle-container {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .toggle-switch {
-            position: relative;
-            width: 60px;
-            height: 30px;
-            background: #0a0a0a;
-            border-radius: 15px;
-            border: 2px solid #222;
-            box-shadow: inset 0 2px 5px rgba(0,0,0,0.8), 0 1px 0 rgba(255,255,255,0.1);
+        .task-header {
+            background: linear-gradient(to right, white, #c6d3f7);
+            color: #0c327d;
+            font-weight: bold;
+            font-size: 12px;
+            padding: 5px 10px;
             cursor: pointer;
         }
 
-        .toggle-switch::after {
-            content: '';
-            position: absolute;
-            top: 2px;
-            left: 2px;
-            width: 22px;
-            height: 22px;
-            background: linear-gradient(145deg, #444, #222);
-            border-radius: 50%;
-            box-shadow: 1px 1px 3px rgba(0,0,0,0.5), inset 1px 1px 1px rgba(255,255,255,0.2);
-            transition: 0.3s;
-        }
-
-        .toggle-switch.active::after {
-            left: 32px;
-            background: linear-gradient(145deg, var(--accent-green), var(--accent-green-dim));
-            box-shadow: var(--accent-green-glow), inset 1px 1px 1px rgba(255,255,255,0.5);
-        }
-        
-        .toggle-label {
-            font-weight: bold;
-            color: var(--text-muted);
-        }
-        .toggle-switch.active + .toggle-label {
-            color: var(--accent-green);
-            text-shadow: var(--accent-green-glow);
-        }
-
-        /* --- STATS PANEL --- */
-        .stats-panel {
-            width: 100%;
-            max-width: 1200px;
-            background: #0a0a0a;
-            border: 1px dashed var(--panel-border);
-            padding: 10px 20px;
-            margin-bottom: 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 0.9rem;
-            color: var(--accent-green);
-            text-shadow: var(--accent-green-glow);
-        }
-
-        .stats-label {
-            color: var(--text-muted);
-            text-shadow: none;
-            margin-right: 10px;
-        }
-
-        /* --- WISHLIST GRID --- */
-        .wishlist-grid {
-            width: 100%;
-            max-width: 1200px;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 2.5rem;
-        }
-
-        .letter-card {
-            background-color: var(--letter-bg);
-            background-image: var(--bg-texture);
-            border: 1px solid var(--letter-border);
-            border-radius: 4px; 
-            padding: 1.5rem;
-            box-shadow: var(--letter-shadow);
-            position: relative;
+        .task-body {
+            padding: 10px;
+            background: #f6faff;
+            font-size: 11px;
             display: flex;
             flex-direction: column;
-            gap: 1rem;
-            transition: transform 0.2s, box-shadow 0.2s;
+            gap: 10px;
         }
 
-        .letter-card:hover {
-            transform: translateY(-5px) rotate(1deg);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.9), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+        .task-body input, .task-body select {
+            width: 100%;
+            padding: 4px;
+            border: 1px solid #7f9db9;
+            font-family: 'Tahoma', sans-serif;
+            font-size: 11px;
         }
 
-        .letter-card::before, .letter-card::after {
-            content: '';
-            position: absolute;
+        .task-body label {
+            color: #0c327d;
+            font-weight: bold;
+        }
+
+        .status-msg {
+            font-size: 10px;
+            color: #3b913f;
+        }
+
+        /* --- RIGHT PANE (Product Grid) --- */
+        .file-view {
+            flex-grow: 1;
+            background: white;
+            padding: 15px;
+            overflow-y: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+            grid-auto-rows: min-content;
+            gap: 20px;
+            align-content: start;
+        }
+
+        .product-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+            padding: 5px;
+            border: 1px solid transparent;
+            border-radius: 3px;
+        }
+
+        .product-icon:hover {
+            background-color: rgba(49, 106, 197, 0.1);
+            border-color: rgba(49, 106, 197, 0.3);
+        }
+
+        .product-icon:active {
+            background-color: rgba(49, 106, 197, 0.3);
+        }
+
+        .icon-img {
+            width: 56px;
+            height: 56px;
+            background-color: #e3e3e3;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            overflow: hidden;
+        }
+
+        .icon-text {
+            font-size: 11px;
+            color: black;
+            word-wrap: break-word;
+            max-width: 100%;
+        }
+
+        .icon-price {
+            font-size: 10px;
+            color: #666;
+            margin-top: 2px;
+        }
+
+        /* --- MAXIMIZED DETAIL WINDOW POPUP --- */
+        #detail-window {
+            top: 0;
             left: 0;
             width: 100%;
-            height: 1px;
-            background: rgba(255,255,255,0.03);
-            border-bottom: 1px solid rgba(0,0,0,0.3);
-            pointer-events: none;
+            height: 100%;
+            display: none;
+            z-index: 100;
+            border-radius: 0;
+            border-width: 0 0 3px 0;
         }
-        .letter-card::before { top: 33%; }
-        .letter-card::after { top: 66%; }
 
-        .item-header {
+        .detail-body {
+            padding: 15px;
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            border-bottom: 1px dashed #444;
-            padding-bottom: 0.5rem;
-        }
-
-        .item-title {
-            font-size: 1.1rem;
-            font-weight: bold;
-            color: var(--text-main);
-            text-transform: uppercase;
-        }
-
-        .item-price {
-            font-size: 1rem;
-            color: var(--accent-green);
-            text-shadow: 0 0 5px rgba(0,255,102,0.3);
-            background: #000;
-            padding: 2px 6px;
-            border: 1px solid #333;
-            border-radius: 3px;
-            white-space: nowrap;
-        }
-
-        .item-desc {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            line-height: 1.4;
-        }
-
-        .tags-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 10px;
-        }
-
-        .tag {
-            font-size: 0.75rem;
-            color: var(--accent-green);
-            border: 2px solid var(--accent-green-dim);
-            padding: 2px 6px;
-            border-radius: 2px;
-            text-transform: uppercase;
-            font-weight: bold;
-            opacity: 0.8;
-            transform: rotate(-1deg);
-            background: transparent;
-            box-shadow: inset 0 0 2px rgba(0,255,102,0.2);
+            gap: 20px;
+            background: var(--xp-bg);
+            height: calc(100% - 29px); /* minus titlebar */
         }
         
-        .tag.need { border-color: #ff3333; color: #ff5555; transform: rotate(2deg); }
-        .tag.want { border-color: #33aaff; color: #55bbff; transform: rotate(-2deg); }
-        .tag.high-priority { border-color: #ffaa00; color: #ffbb33; }
-
-        .links-container {
+        .detail-left-pane {
+            width: 320px;
             display: flex;
             flex-direction: column;
-            gap: 5px;
-            margin-top: auto; 
-            padding-top: 15px;
-            border-top: 1px solid #333;
+            gap: 15px;
+        }
+        
+        .detail-right-pane {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            overflow-y: auto;
+            padding-right: 5px;
         }
 
-        .retailer-link {
-            background-color: #111;
-            color: #ddd;
-            text-decoration: none;
-            padding: 5px 10px;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+        .product-image-container {
+            width: 100%;
+            height: 280px;
+            background: var(--xp-bg);
+            border: 2px inset #fff;
+            box-shadow: -1px -1px 2px #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            font-size: 120px;
+        }
+
+        .xp-groupbox {
+            border: 1px solid #d4d0c8;
+            border-radius: 4px;
+            padding: 15px;
+            position: relative;
+            background: white;
+        }
+
+        .xp-groupbox-title {
+            position: absolute;
+            top: -8px;
+            left: 10px;
+            background: var(--xp-bg);
+            padding: 0 5px;
+            font-size: 11px;
+            color: #0c327d;
+        }
+
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+
+        .spec-table td {
+            padding: 6px;
+            border-bottom: 1px dotted #ccc;
+        }
+
+        .spec-table td:first-child {
+            font-weight: bold;
+            color: #333;
+            width: 30%;
+            background: #f9f9f9;
+            border-right: 1px solid #eee;
+        }
+
+        .retailer-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .retailer-item {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            background: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .xp-button {
+            background: linear-gradient(to bottom, #f3f3f3, #e0e0e0);
+            border: 1px solid #003c74;
+            border-radius: 3px;
+            padding: 6px 20px;
+            font-size: 12px;
+            cursor: pointer;
+            color: black;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: inset 1px 1px 0px white;
+        }
+
+        .xp-button:active {
+            background: #d4d0c8;
+            box-shadow: inset 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .action-panel {
+            background: linear-gradient(to bottom, #7ba2e7, #6375d6);
+            padding: 15px;
+            border-radius: 3px;
             border: 1px solid #000;
-            box-shadow: inset 1px 1px 0 rgba(255,255,255,0.1), 2px 2px 4px rgba(0,0,0,0.6);
-            text-shadow: -1px -1px 0 rgba(0,0,0,0.8), 1px 1px 0 rgba(255,255,255,0.2);
-            transition: all 0.1s;
-        }
-
-        .retailer-link:hover { background-color: #222; color: #fff; }
-        .retailer-link:active { box-shadow: inset 2px 2px 4px rgba(0,0,0,0.8); transform: translate(1px, 1px); }
-
-        .meta-info {
             display: flex;
-            justify-content: space-between;
-            font-size: 0.7rem;
-            color: #666;
-            margin-top: 10px;
-            text-transform: uppercase;
+            flex-direction: column;
+            gap: 10px;
         }
 
-        .no-results {
-            grid-column: 1 / -1;
-            text-align: center;
-            padding: 3rem;
-            color: var(--text-muted);
-            background: var(--panel-bg);
-            border: 1px dashed #444;
-            border-radius: 4px;
+        /* --- TASKBAR --- */
+        .taskbar {
+            height: 30px;
+            background: var(--xp-taskbar);
+            display: flex;
+            align-items: center;
+            position: relative;
+            z-index: 1000;
+        }
+
+        .start-btn {
+            height: 100%;
+            background: var(--xp-start);
+            border-radius: 0 10px 10px 0;
+            color: white;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 16px;
+            padding: 0 20px 0 10px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+            box-shadow: inset 1px 1px 2px rgba(255,255,255,0.4), 2px 0 3px rgba(0,0,0,0.3);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .taskbar-items {
+            display: flex;
+            padding: 0 10px;
+            gap: 5px;
+            flex-grow: 1;
+        }
+
+        .task-item {
+            background: linear-gradient(to bottom, #3b81f1, #1a51bd);
+            color: white;
+            padding: 3px 15px;
+            font-size: 12px;
+            border-radius: 3px;
+            box-shadow: inset 1px 1px 1px rgba(255,255,255,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .task-item.active {
+            background: linear-gradient(to bottom, #1a51bd, #0c3da8);
+            box-shadow: inset 2px 2px 4px rgba(0,0,0,0.4);
+        }
+
+        .tray {
+            color: white;
+            font-size: 11px;
+            padding: 0 15px;
+            display: flex;
+            align-items: center;
+            border-left: 1px solid rgba(0,0,0,0.3);
+            height: 100%;
+            background: #0f82d1;
+            box-shadow: inset 1px 0 0 rgba(255,255,255,0.2);
+            position: relative;
+        }
+
+        /* --- XP BALLOON TOOLTIP --- */
+        .xp-balloon {
+            position: fixed;
+            bottom: 40px;
+            right: 10px;
+            background: #ffffe1;
+            border: 1px solid black;
+            border-radius: 7px;
+            padding: 10px 15px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            font-size: 11px;
+            z-index: 2000;
+            display: none;
+            color: black;
+            width: 250px;
+        }
+
+        .xp-balloon::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            right: 20px;
+            border-width: 10px 10px 0 0;
+            border-style: solid;
+            border-color: black transparent transparent transparent;
+            display: block;
+            width: 0;
+        }
+
+        .xp-balloon::before {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            right: 21px;
+            border-width: 8px 8px 0 0;
+            border-style: solid;
+            border-color: #ffffe1 transparent transparent transparent;
+            display: block;
+            width: 0;
+            z-index: 1;
+        }
+
+        .balloon-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .balloon-close {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #666;
         }
         
-        @media (max-width: 768px) {
-            .wishlist-grid { grid-template-columns: 1fr; }
+        /* Custom Scrollbar for inner panes */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+            border-left: 1px solid #ccc;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c1c1c1; 
+            border: 1px solid #a1a1a1;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8; 
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Aarav's Wishlist</h1>
-    </header>
+    <!-- DESKTOP -->
+    <div id="desktop">
+        
+        <!-- MAIN EXPLORER WINDOW -->
+        <div class="window" id="explorer-window">
+            <div class="title-bar">
+                <div class="title-bar-text">📁 <span id="window-title">Wishlist.dando.in - Needs</span></div>
+                <div class="title-bar-controls">
+                    <div class="ctrl-btn ctrl-close">X</div>
+                </div>
+            </div>
+            
+            <div class="toolbar">
+                <span style="color: gray; font-size: 16px;">⇦ ⇨</span> 
+                <span>Search</span>
+                <span>Folders</span>
+                <div class="address-bar">
+                    <span style="color: gray;">Address</span>
+                    <span id="address-path" style="margin-left: 5px; font-family: monospace;">C:\Users\Dando.in\Wishlist\Needs</span>
+                </div>
+            </div>
 
-    <div class="control-panel">
-        <div class="control-group">
-            <label for="searchInput">Smart Search</label>
-            <input type="text" id="searchInput" placeholder="Search item, tag, type...">
-        </div>
+            <div class="explorer-content">
+                <!-- XP Sidebar -->
+                <div class="sidebar">
+                    <div class="task-group">
+                        <div class="task-header">Search & Filter Tasks</div>
+                        <div class="task-body">
+                            <label>Search Inventory:</label>
+                            <input type="text" id="searchInput" placeholder="Type here...">
+                            
+                            <label style="margin-top: 5px;">Category:</label>
+                            <select id="categoryFilter">
+                                <option value="All">All Categories</option>
+                                <option value="Mobile Tech">Mobile Tech</option>
+                                <option value="Tech & Hardware">Tech & Hardware</option>
+                                <option value="Gaming">Gaming</option>
+                                <option value="Audio/Video">Audio & Video</option>
+                                <option value="Lifestyle">Lifestyle & Apparel</option>
+                            </select>
 
-        <div class="control-group">
-            <label>Status Filter</label>
-            <div class="toggle-container">
-                <span style="font-size: 0.8rem; color: #666;">ALL</span>
-                <div class="toggle-switch" id="statusToggle" onclick="toggleStatus()"></div>
-                <span class="toggle-label" id="statusLabel">ANY</span>
+                            <label style="margin-top: 5px;">Sort By:</label>
+                            <select id="sortFilter">
+                                <option value="default">Default Order</option>
+                                <option value="price-desc">Price: High to Low</option>
+                                <option value="price-asc">Price: Low to High</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="task-group">
+                        <div class="task-header">System Settings</div>
+                        <div class="task-body">
+                            <label>Currency Override:</label>
+                            <select id="currencyFilter">
+                                <option value="INR">₹ INR (Indian Rupee)</option>
+                                <option value="USD">$ USD (US Dollar)</option>
+                                <option value="EUR">€ EUR (Euro)</option>
+                                <option value="GBP">£ GBP (British Pound)</option>
+                            </select>
+                            <div class="status-msg" id="apiStatus">Fetching Exchange Rates...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="file-view" id="product-grid">
+                    <!-- Products injected here via JS -->
+                </div>
             </div>
         </div>
 
-        <div class="control-group">
-            <label for="priorityFilter">Priority</label>
-            <select id="priorityFilter">
-                <option value="all">All Priorities</option>
-                <option value="High">High</option>
-                <option value="Medium">Medium</option>
-                <option value="Low">Low</option>
-                <option value="Very Low">Very Low</option>
-            </select>
+        <!-- FULL-SCREEN PRODUCT DETAIL WINDOW -->
+        <div class="window" id="detail-window">
+            <div class="title-bar">
+                <div class="title-bar-text" id="detail-title-bar">📄 Product Properties</div>
+                <div class="title-bar-controls">
+                    <div class="ctrl-btn ctrl-max">□</div>
+                    <div class="ctrl-btn ctrl-close" onclick="closeDetailWindow()">X</div>
+                </div>
+            </div>
+            
+            <div class="detail-body">
+                <!-- LEFT PANE: Image and Actions -->
+                <div class="detail-left-pane">
+                    <div class="product-image-container">
+                        <div id="detail-icon-large">📦</div>
+                    </div>
+                    
+                    <div class="action-panel">
+                        <div style="color: white; font-weight: bold; font-size: 12px; margin-bottom: 5px;">System Tasks</div>
+                        <button class="xp-button" id="copy-link-btn" onclick="" style="width: 100%; text-align: left;">🔗 Copy Direct Shortcut</button>
+                        <button class="xp-button" onclick="closeDetailWindow()" style="width: 100%; text-align: left;">⬅ Return to Directory</button>
+                    </div>
+
+                    <div class="xp-groupbox" style="background: #f9f9f9; padding: 10px;">
+                        <div class="xp-groupbox-title">System Log</div>
+                        <div style="font-size: 11px; color: #555;">
+                            <strong>Status:</strong> Active<br>
+                            <strong>Date Added:</strong> <span id="detail-date"></span><br>
+                            <strong>Priority:</strong> Normal
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT PANE: Heavy Specs and Links -->
+                <div class="detail-right-pane">
+                    <div style="border-bottom: 2px solid #d4d0c8; padding-bottom: 15px; margin-bottom: 5px;">
+                        <h2 id="detail-name" style="font-size: 22px; margin-bottom: 5px; color: #003399;">Product Name</h2>
+                        <div id="detail-cat" style="color: #666; font-size: 13px; font-weight: bold;">Folder: Needs | Category: Tech</div>
+                        <p id="detail-desc" style="margin-top: 10px; font-size: 13px; line-height: 1.4;"></p>
+                    </div>
+
+                    <div class="xp-groupbox">
+                        <div class="xp-groupbox-title">Advanced Hardware & Item Specifications</div>
+                        <table class="spec-table" id="detail-specs">
+                            <!-- Specs injected here -->
+                        </table>
+                    </div>
+
+                    <div class="xp-groupbox" style="background: #f0f0f0;">
+                        <div class="xp-groupbox-title">Available Retailers & Acquisition Points</div>
+                        <div class="retailer-list" id="detail-retailers">
+                            <!-- Links injected here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="control-group">
-            <label for="sortFilter">Sort By</label>
-            <select id="sortFilter">
-                <option value="default">Default (Smart Sort)</option>
-                <option value="priority-desc">Priority: High to Low</option>
-                <option value="priority-asc">Priority: Low to High</option>
-                <option value="price-desc">Price: High to Low</option>
-                <option value="price-asc">Price: Low to High</option>
-                <option value="date-desc">Newest First</option>
-                <option value="date-asc">Oldest First</option>
-            </select>
+        <!-- XP BALLOON TOOLTIP -->
+        <div class="xp-balloon" id="copy-balloon">
+            <div class="balloon-close" onclick="document.getElementById('copy-balloon').style.display='none'">x</div>
+            <div class="balloon-title"><span>ℹ️</span> Shortcut Copied</div>
+            <div>A direct link to this product property window has been copied to your clipboard. You can paste it to share.</div>
         </div>
 
-        <div class="control-group">
-            <label for="currencyFilter">Currency</label>
-            <select id="currencyFilter">
-                <option value="INR">₹ INR (Base)</option>
-                <option value="USD">$ USD</option>
-                <option value="EUR">€ EUR</option>
-                <option value="GBP">£ GBP</option>
-                <option value="AUD">$ AUD</option>
-                <option value="CAD">$ CAD</option>
-            </select>
-        </div>
     </div>
 
-    <div class="stats-panel">
-        <div><span class="stats-label">TOTAL ITEMS:</span><span id="statCount">0</span></div>
-        <div id="apiStatus" style="font-size: 0.7rem; color: #555;">[LIVE FX RATES: LOADING]</div>
-        <div><span class="stats-label">TOTAL VALUE:</span><span id="statValue">₹0</span></div>
-    </div>
-
-    <div class="wishlist-grid" id="wishlistContainer">
-        <!-- Items will be injected here by JS -->
+    <!-- TASKBAR -->
+    <div class="taskbar">
+        <div class="start-btn" onclick="window.location.href='https://dando.in'">
+            <span style="font-style: normal; font-size: 20px;">⊞</span> start
+        </div>
+        <div class="taskbar-items">
+            <div class="task-item active" id="task-needs" onclick="switchPage('Needs')">📁 Needs</div>
+            <div class="task-item" id="task-wants" onclick="switchPage('Wants')">📁 Wants</div>
+            <div class="task-item" id="task-random" onclick="switchPage('Random Projects')">📁 Random Projects</div>
+            <div class="task-item" id="task-detail" style="display: none; background: linear-gradient(to bottom, #4f9cf2, #1f64d4);" onclick="focusDetailWindow()">📄 Properties</div>
+        </div>
+        <div class="tray" id="clock">
+            12:00 PM
+        </div>
     </div>
 
     <script>
-        // --- 1. HARDCODED DATA ---
-        // Base prices are in INR. USD items ($92, $169, $440, $1100) are converted to INR statically for the base dataset.
-        const wishlist = [
+        // --- DATA ARCHITECTURE ---
+        const products = [
+            // --- NEEDS ---
             {
-                id: 1,
-                name: "iPhone 17 Pro",
-                links: [{ retailer: "Apple Store", url: "https://www.apple.com/in/shop/buy-iphone/iphone-17-pro" }],
-                description: "Deep Blue finish. Primary daily driver upgrade. Current phone is completely messed up.",
-                tags: ["tech", "phone", "apple", "mobile"],
-                priority: "High", 
-                status: "need",
-                dateAdded: "2026-03-21",
-                price: 154000
-            },
-            {
-                id: 2,
-                name: "Switch 2 + Mario Kart",
-                links: [{ retailer: "Amazon IN", url: "https://amzn.in/d/0cE1NGeV" }],
-                description: "7.9” HDR LCD, 4K Dock, 256GB Storage. Multiplayer gaming on the go.",
-                tags: ["tech", "gaming", "console", "nintendo"],
-                priority: "Very Low",
-                status: "want",
-                dateAdded: "2026-03-20",
-                price: 61999
-            },
-            {
-                id: 3,
-                name: "VCARB Hugo 2026 T-Shirt",
-                links: [{ retailer: "F1 Store", url: "https://f1store4.formula1.com/en/vcarb/vcarb-hugo-2026-team-t-shirt/t-10204366+p-799992584159334+z-9-607282012" }],
-                description: "Official 2026 Visa Cash App RB team t-shirt by Hugo ($92 base).",
-                tags: ["clothing", "f1", "racing", "apparel"],
-                priority: "High",
-                status: "want",
-                dateAdded: "2026-03-15",
-                price: 7636 
-            },
-            {
-                id: 4,
-                name: "Insta360 GO Ultra",
-                links: [{ retailer: "Insta360", url: "https://store.insta360.com/ph/product/go-ultra?from=cart-thumb&c=6133" }],
-                description: "Tiny, lightweight action camera for effortless POV recording ($440 base).",
-                tags: ["tech", "camera", "photography", "gadget"],
-                priority: "Medium",
-                status: "want",
-                dateAdded: "2026-03-10",
-                price: 36520 
-            },
-            {
-                id: 5,
-                name: "Elgato Stream Deck +",
-                links: [{ retailer: "Amazon IN", url: "https://amzn.in/d/0j9gkQx8" }],
-                description: "Audio Mixer, Production Console and Studio Controller with touch strip dials.",
-                tags: ["tech", "streaming", "productivity", "gaming"],
-                priority: "Medium",
-                status: "want",
-                dateAdded: "2026-03-21",
-                price: 24109 
-            },
-            {
-                id: 6,
-                name: "Keychron V6 Max Wireless",
-                links: [{ retailer: "Amazon IN", url: "https://amzn.in/d/0ifE5WWp" }],
-                description: "Custom Mechanical Keyboard, 2.4 GHz Bluetooth, QMK Full-Size RGB.",
-                tags: ["tech", "keyboard", "mechanical", "wireless"],
-                priority: "Low",
-                status: "want",
-                dateAdded: "2026-03-21",
-                price: 31981
-            },
-            {
-                id: 7,
-                name: "Logitech G PRO X Superlight 2",
-                links: [{ retailer: "Amazon IN", url: "https://amzn.in/d/0gCWDiz3" }],
-                description: "Lightweight, LIGHTFORCE Hybrid Switches, Hero 2 Sensor, 32k DPI.",
-                tags: ["tech", "mouse", "gaming", "esports"],
-                priority: "High",
-                status: "need",
-                dateAdded: "2026-03-21",
-                price: 12495 
-            },
-            {
-                id: 8,
-                name: "Raspberry Pi 5",
-                links: [{ retailer: "Raspberry Pi", url: "https://www.raspberrypi.com/products/raspberry-pi-5/" }],
-                description: "Single-board computer for DIY projects and tinkering.",
-                tags: ["tech", "diy", "computer", "hobby"],
-                priority: "Very Low",
-                status: "want",
-                dateAdded: "2026-03-21",
-                price: 7500
-            },
-            {
-                id: 9,
-                name: "Sandisk Extreme Portable 1TB",
-                links: [{ retailer: "Amazon IN", url: "https://amzn.in/d/081pQG7s" }],
-                description: "1050MB/s R, 1000MB/s W, IP65 Water/dust Resistance, Type-C.",
-                tags: ["tech", "storage", "ssd"],
-                priority: "Medium",
-                status: "want",
-                dateAdded: "2026-03-21",
-                price: 18549
-            },
-            {
-                id: 10,
-                name: "LTT Commuter Backpack",
-                links: [{ retailer: "LTT Store", url: "https://www.lttstore.com/products/commuter-backpack?srsltid=AfmBOoqzI5UkdduuBeEswkfqO4CoeOoPTmj0fj3R_56a_9-za71QlBBC" }],
-                description: "Durable everyday backpack for carrying tech gear securely ($169 base).",
-                tags: ["accessories", "bag", "travel", "edc"],
-                priority: "High",
-                status: "need",
-                dateAdded: "2026-03-21",
-                price: 14027
-            },
-            {
-                id: 11,
-                name: "Sony WH-1000XM6",
-                links: [{ retailer: "Sony", url: "https://www.sony.co.in/headphones/products/wh-1000xm6" }],
-                description: "Next-gen active noise cancelling wireless headphones.",
-                tags: ["tech", "audio", "headphones", "anc"],
-                priority: "Low",
-                status: "want",
-                dateAdded: "2026-03-21",
-                price: 49000
-            },
-            {
-                id: 12,
-                name: "iPad Air 11\" Bundle",
-                links: [
-                    { retailer: "Apple (iPad)", url: "https://www.apple.com/shop/buy-ipad/ipad-air/11-inch-display-256gb-purple-wifi" },
-                    { retailer: "Apple (Pencil Pro)", url: "https://www.apple.com/shop/product/mx2d3am/a/apple-pencil-pro" },
-                    { retailer: "Apple (Keyboard)", url: "https://www.apple.com/shop/product/mdfv4ll/a/magic-keyboard-for-ipad-air-11%E2%80%91inch-m4-us-english-white" }
+                id: "p01", page: "Needs", icon: "📱", name: "Apple iPhone 17 (256GB, Lavender)", category: "Mobile Tech", basePrice: 82900,
+                desc: "The next-generation iPhone featuring a massive leap in processing power, advanced AI integrations via iOS 19, and a refined aerospace-grade titanium chassis. Perfect for heavy daily use, photography, and mobile gaming.",
+                specs: [
+                    { key: "Processor", val: "A19 Pro Bionic Chip (3nm process)" },
+                    { key: "Display", val: "6.3-inch Super Retina XDR OLED (120Hz ProMotion)" },
+                    { key: "Resolution", val: "2556 x 1179 pixels at 460 ppi" },
+                    { key: "Camera System", val: "48MP Main + 48MP Ultra Wide + 12MP Telephoto" },
+                    { key: "Storage Capacity", val: "256GB NVMe" },
+                    { key: "Chassis Material", val: "Aerospace-grade Titanium with textured matte glass" },
+                    { key: "Color Finish", val: "Lavender" },
+                    { key: "Battery Capacity", val: "Approx. 4,000 mAh (All-day battery life)" },
+                    { key: "Charging", val: "USB-C with USB 3 speeds, MagSafe up to 25W" },
+                    { key: "Durability", val: "IP68 dust and water resistance (depth of 6 meters)" }
                 ],
-                description: "iPad Air 11-inch bundled with Pencil Pro and White Magic Keyboard ($1100 base).",
-                tags: ["tech", "tablet", "apple", "productivity"],
-                priority: "Medium",
-                status: "want",
-                dateAdded: "2026-03-21",
-                price: 91300
+                retailers: [
+                    { name: "Apple Store IN", price: 82900, url: "https://www.apple.com/in/shop/buy-iphone/iphone-17/6.3%22-display-256gb-lavender" },
+                    { name: "Amazon IN", price: 82900, url: "#" }
+                ]
             },
             {
-                id: 13,
-                name: "Logitech G29 Racing Wheel",
-                links: [{ retailer: "Amazon IN", url: "https://amzn.in/d/0cM3ddAM" }],
-                description: "Real Force Feedback, Stainless Steel Paddle Shifters, Floor Pedals.",
-                tags: ["tech", "gaming", "racing", "wheel", "simulator"],
-                priority: "High",
-                status: "need",
-                dateAdded: "2026-03-21",
-                price: 31990
+                id: "p04", page: "Needs", icon: "🖱️", name: "Logitech G PRO X Superlight 2", category: "Gaming", basePrice: 12495,
+                desc: "The ultimate esports gaming mouse. Zero additive PTFE feet ensure a smooth glide, while the new LIGHTFORCE hybrid switches provide incredible speed and reliability without compromising on the crisp, tactile click.",
+                specs: [
+                    { key: "Sensor", val: "HERO 2 (100 - 32,000 DPI, 500+ IPS)" },
+                    { key: "Polling Rate", val: "2000Hz (0.5ms response time)" },
+                    { key: "Switches", val: "LIGHTFORCE Optical-Mechanical Hybrid" },
+                    { key: "Weight", val: "60 grams (Ultra-lightweight design)" },
+                    { key: "Dimensions", val: "125.0 mm x 63.5 mm x 40.0 mm" },
+                    { key: "Battery Life", val: "Up to 95 hours constant motion" },
+                    { key: "Connectivity", val: "LIGHTSPEED Wireless & USB-C" },
+                    { key: "Feet", val: "Zero-additive PTFE Mouse Feet" },
+                    { key: "Onboard Memory", val: "Yes (Requires G HUB software)" },
+                    { key: "Compatibility", val: "Windows 10/11, macOS 10.14 or later" }
+                ],
+                retailers: [
+                    { name: "Amazon IN", price: 12495, url: "https://www.amazon.in/Logitech-Superlight-Lightspeed-Lightweight-Programmable/dp/B0CGDZC2FK" }
+                ]
+            },
+            {
+                id: "p05", page: "Needs", icon: "🏎️", name: "Logitech G29 Racing Wheel", category: "Gaming", basePrice: 31991,
+                desc: "Engineered for the perfect driving experience with dual-motor force feedback, stainless steel paddle shifters, and a hand-stitched leather steering wheel. Includes an adjustable floor pedal unit.",
+                specs: [
+                    { key: "Force Feedback", val: "Dual-Motor with Helical Gearing" },
+                    { key: "Steering Rotation", val: "900 degrees lock-to-lock" },
+                    { key: "Wheel Material", val: "Hand-stitched Leather cover over Aluminum" },
+                    { key: "Pedal System", val: "Nonlinear brake pedal (Clutch, Brake, Gas)" },
+                    { key: "Pedal Material", val: "Cold rolled steel frames, brushed stainless steel faces" },
+                    { key: "Shifters", val: "Stainless Steel paddle shifters" },
+                    { key: "Mounting", val: "Built-in clamps and hard-point mounting" },
+                    { key: "Wheel Dimensions", val: "270 x 260 x 278 mm (H x W x D)" },
+                    { key: "Weight", val: "2.25 kg (Wheel) / 3.1 kg (Pedals)" },
+                    { key: "Compatibility", val: "PlayStation 5, PlayStation 4, PC, Mac" }
+                ],
+                retailers: [
+                    { name: "Amazon IN", price: 31991, url: "https://www.amazon.in/Logitech-Superlight-Lightspeed-Lightweight-Programmable/dp/B0CGDZC2FK" }
+                ]
+            },
+
+            // --- WANTS ---
+            {
+                id: "p02", page: "Wants", icon: "💻", name: "MacBook Air 15-inch (M5)", category: "Tech & Hardware", basePrice: 144900,
+                desc: "Apple's incredibly thin and light 15-inch laptop, supercharged by the new M5 chip. It features a fanless design for silent operation, a stunning Liquid Retina display, and an exceptionally long battery life.",
+                specs: [
+                    { key: "Silicon Chip", val: "Apple M5 (10-Core CPU, 10-Core GPU)" },
+                    { key: "Neural Engine", val: "16-core Neural Engine for advanced AI workloads" },
+                    { key: "Display", val: "15.3-inch Liquid Retina display (2880x1864 at 224 ppi)" },
+                    { key: "Brightness", val: "500 nits (True Tone technology)" },
+                    { key: "Memory", val: "16GB Unified Memory (High-bandwidth)" },
+                    { key: "Storage", val: "512GB PCIe-based SSD" },
+                    { key: "Battery Life", val: "Up to 18 hours video playback (66.5-watt-hour battery)" },
+                    { key: "Ports", val: "Two Thunderbolt / USB 4 ports, MagSafe 3, 3.5mm jack" },
+                    { key: "Audio", val: "Six-speaker sound system with Force Cancelling woofers" },
+                    { key: "Color", val: "Midnight" }
+                ],
+                retailers: [
+                    { name: "Apple Store IN", price: 144900, url: "https://www.apple.com/in/shop/buy-mac/macbook-air/15-inch-midnight-m5-chip-10-core-cpu-10-core-gpu-16gb-memory-512gb-storage" }
+                ]
+            },
+            {
+                id: "p03", page: "Wants", icon: "⌨️", name: "Microsoft Surface Pro 11th Gen", category: "Tech & Hardware", basePrice: 119716,
+                desc: "The most flexible Copilot+ PC ever built. It combines the power of a laptop with the portability of a tablet, featuring a stunning OLED display and all-day battery life powered by the Snapdragon X Elite.",
+                specs: [
+                    { key: "Processor", val: "Snapdragon X Elite (Copilot+ PC, NPU 45 TOPS)" },
+                    { key: "Display", val: "13-inch PixelSense Flow OLED touchscreen (2880 x 1920)" },
+                    { key: "Refresh Rate", val: "Dynamic up to 120Hz" },
+                    { key: "RAM", val: "16GB LPDDR5x RAM" },
+                    { key: "Storage", val: "512GB Gen 4 SSD (Removable)" },
+                    { key: "Cameras", val: "Quad HD front-facing, 10M Ultra HD rear-facing" },
+                    { key: "Battery Life", val: "Up to 14 hours of local video playback" },
+                    { key: "Ports", val: "2x USB-C with USB4, Surface Connect" },
+                    { key: "Included Accessory", val: "TECPHILE Rechargeable Bluetooth Keyboard" },
+                    { key: "Operating System", val: "Windows 11 Home" }
+                ],
+                retailers: [
+                    { name: "Amazon (Tablet)", price: 115990, url: "https://www.amazon.in/Microsoft-New-Surface-Pro-11Th/dp/B0D926JN5N" },
+                    { name: "Amazon (Keyboard)", price: 3726, url: "https://www.amazon.in/TECPHILE-Keyboard-Microsoft-Attachment-Rechargeable/dp/B0DZP34F5F" }
+                ]
+            },
+            {
+                id: "p06", page: "Wants", icon: "🎮", name: "Xbox Wireless Controller (Velocity Green)", category: "Gaming", basePrice: 6390,
+                desc: "Experience the modernized design of the Xbox Wireless Controller in striking Velocity Green, featuring sculpted surfaces and refined geometry for enhanced comfort during gameplay.",
+                specs: [
+                    { key: "Connectivity", val: "Xbox Wireless and Bluetooth" },
+                    { key: "Design Features", val: "Textured grip on triggers, bumpers, and backcase" },
+                    { key: "D-Pad", val: "Hybrid D-pad for accurate, sweeping inputs" },
+                    { key: "Buttons", val: "Dedicated Share button to capture/record" },
+                    { key: "Audio Setup", val: "3.5mm stereo headset jack" },
+                    { key: "Power", val: "AA batteries for up to 40 hours of battery life" },
+                    { key: "Customization", val: "Custom button mapping via Xbox Accessories app" },
+                    { key: "Weight", val: "Approx. 287 grams (with batteries)" },
+                    { key: "Compatibility", val: "Xbox Series X|S, Xbox One, Windows PC, Android, iOS" },
+                    { key: "Color", val: "Velocity Green" }
+                ],
+                retailers: [
+                    { name: "Amazon IN", price: 6390, url: "https://www.amazon.in/Microsoft-Xbox-Wireless-Controller-Velocity/dp/B0BYJMXHR3" }
+                ]
+            },
+            {
+                id: "p07", page: "Wants", icon: "🕹️", name: "PlayStation 5 Console", category: "Gaming", basePrice: 54990,
+                desc: "The PS5 console unleashes new gaming possibilities that you never anticipated. Experience lightning-fast loading with an ultra-high-speed SSD, deeper immersion with haptic feedback, adaptive triggers, and 3D Audio.",
+                specs: [
+                    { key: "CPU", val: "x86-64-AMD Ryzen Zen 2 (8 Cores/16 Threads, variable frequency up to 3.5 GHz)" },
+                    { key: "GPU", val: "AMD Radeon RDNA 2-based graphics engine (10.28 TFLOPs)" },
+                    { key: "Memory", val: "16GB GDDR6 (448GB/s bandwidth)" },
+                    { key: "Storage", val: "825GB Custom PCIe Gen 4 NVMe SSD (5.5GB/s Read)" },
+                    { key: "Storage Expansion", val: "NVMe SSD slot, USB HDD support for PS4 games" },
+                    { key: "Optical Drive", val: "Ultra HD Blu-ray (up to 100GB/disc)" },
+                    { key: "Video Output", val: "Support of 4K 120Hz TVs, 8K TVs, VRR (HDMI ver 2.1)" },
+                    { key: "Audio", val: "Tempest 3D AudioTech" },
+                    { key: "Controller", val: "1x DualSense Wireless Controller included" },
+                    { key: "Networking", val: "Ethernet (10BASE-T, 100BASE-TX, 1000BASE-T), Wi-Fi 6" }
+                ],
+                retailers: [
+                    { name: "Amazon IN", price: 54990, url: "#" }
+                ]
+            },
+            {
+                id: "p08", page: "Wants", icon: "🎧", name: "Sony WH-1000XM6", category: "Audio/Video", basePrice: 34990,
+                desc: "Sony's industry-leading noise canceling headphones elevate your listening experience. Boasting exceptional sound quality, AI-powered noise reduction, and a remarkably comfortable, lightweight design.",
+                specs: [
+                    { key: "Acoustic Drivers", val: "30mm Carbon Fiber composite precision drivers" },
+                    { key: "Noise Cancellation", val: "Next-Gen Dual Processor Auto NC Optimizer" },
+                    { key: "Microphone Array", val: "4 beamforming mics per earcup for pristine voice calls" },
+                    { key: "Battery Life", val: "Up to 30 hours with ANC on / 40 hours with ANC off" },
+                    { key: "Fast Charging", val: "3 minutes charge provides 3 hours of playback (USB-PD)" },
+                    { key: "Audio Codecs", val: "LDAC, AAC, SBC, High-Res Audio Wireless support" },
+                    { key: "Upscaling", val: "DSEE Extreme real-time music restoration" },
+                    { key: "Connectivity", val: "Bluetooth 5.3, Multipoint Connection (2 devices)" },
+                    { key: "Controls", val: "Touch sensor volume and playback control" },
+                    { key: "Weight", val: "Approx. 250g" }
+                ],
+                retailers: [
+                    { name: "Amazon IN", price: 34990, url: "https://www.amazon.in/Sony-WH-1000XM6-Headphones-Microphones-Studio-Quality/dp/B0GL1SQRQ2" }
+                ]
+            },
+            {
+                id: "p09", page: "Wants", icon: "🎛️", name: "Elgato Stream Deck MK.2", category: "Audio/Video", basePrice: 17112,
+                desc: "Your ultimate studio controller. 15 LCD keys poised to trigger unlimited actions. Tactile one-touch operation lets you control apps, launch social posts, adjust audio, mute your mic, and much more.",
+                specs: [
+                    { key: "Interface", val: "15 customizable tactile LCD keys" },
+                    { key: "Functionality", val: "Trigger actions, launch media, adjust audio, switch scenes" },
+                    { key: "Customization", val: "Interchangeable front faceplates" },
+                    { key: "Stand", val: "Detachable 45-degree angle desktop stand" },
+                    { key: "Connection", val: "Detachable USB-C to USB-A cable" },
+                    { key: "Plugins", val: "Native integration with OBS, Twitch, Twitter, Spotify, Zoom" },
+                    { key: "Dimensions", val: "118 x 84 x 25 mm (without stand)" },
+                    { key: "Weight", val: "145g without stand / 270g with stand" },
+                    { key: "Software", val: "Stream Deck App (Drag and drop setup)" },
+                    { key: "OS Requirements", val: "Windows 10 (64-bit) or macOS 10.15+" }
+                ],
+                retailers: [
+                    { name: "Amazon IN", price: 17112, url: "https://www.amazon.in/Elgato-Stream-Deck-MK-2-Customizable/dp/B09738CV2G" }
+                ]
+            },
+            {
+                id: "p10", page: "Wants", icon: "👕", name: "Red Bull Racing Replica Polo", category: "Lifestyle", basePrice: 8000,
+                desc: "Wear the team colors with pride. The official Oracle Red Bull Racing Replica Polo is engineered for peak performance and style, mirroring exactly what the drivers and crew wear in the paddock.",
+                specs: [
+                    { key: "Team Affiliation", val: "Oracle Red Bull Racing Formula 1 Team" },
+                    { key: "Material", val: "100% Breathable Polyester (Moisture-wicking)" },
+                    { key: "Design", val: "Classic short-sleeve polo with pointed collar" },
+                    { key: "Closure", val: "Hidden quarter-zip or button placket (varies by year)" },
+                    { key: "Branding", val: "High-quality heat-sealed sponsor and team logos" },
+                    { key: "Print Design", val: "Dynamic 'Power charge' graphic on back and sides" },
+                    { key: "Fit", val: "Men's Regular Athletic Fit" },
+                    { key: "Care Instructions", val: "Machine wash cold inside out, do not iron prints" },
+                    { key: "Authenticity", val: "Official Licensed Merchandise tag" },
+                    { key: "Origin", val: "Designed in collaboration with Castore/Puma" }
+                ],
+                retailers: [
+                    { name: "Red Bull Shop Global", price: 8000, url: "https://www.redbullshop.com/en-int/p/Men/Replica-Polo-Shirt/M-RAB26012" }
+                ]
+            },
+            {
+                id: "p11", page: "Wants", icon: "⬛", name: "Xbox Series X (1TB)", category: "Gaming", basePrice: 45990,
+                desc: "The fastest, most powerful Xbox ever. Explore rich new worlds and enjoy the action like never before with the unmatched 12 teraflops of raw graphic processing power.",
+                specs: [
+                    { key: "Processing Power", val: "12 Teraflops Custom RDNA 2 GPU @ 1.825 GHz" },
+                    { key: "CPU", val: "8X Cores @ 3.8 GHz Custom Zen 2" },
+                    { key: "Target Performance", val: "True 4K gaming, up to 120 FPS capable, 8K HDR Ready" },
+                    { key: "Memory", val: "16GB GDDR6 w/ 320 bit-wide bus" },
+                    { key: "Storage Unit", val: "1TB Custom NVMe SSD (Xbox Velocity Architecture)" },
+                    { key: "Optical Drive", val: "4K UHD Blu-ray Drive" },
+                    { key: "Features", val: "Quick Resume, Hardware Accelerated Raytracing, Auto HDR" },
+                    { key: "Audio", val: "Dolby Digital 5.1, DTS 5.1, Dolby TrueHD with Atmos" },
+                    { key: "Ports", val: "1x HDMI 2.1, 3x USB 3.1 Gen 1, Ethernet" },
+                    { key: "Dimensions", val: "15.1cm x 15.1cm x 30.1cm (Weight: 4.45kg)" }
+                ],
+                retailers: [
+                    { name: "Flipkart", price: 45990, url: "https://www.flipkart.com/microsoft-xbox-series-x-1024-gb/p/itm63ff9bd504f27" }
+                ]
+            },
+            {
+                id: "p12", page: "Wants", icon: "📷", name: "Insta360 Link 2C AI Webcam", category: "Audio/Video", basePrice: 13390,
+                desc: "An AI-powered 4K webcam designed for creators and professionals. It uses advanced algorithms to keep you perfectly framed, while the large 1/2-inch sensor delivers unmatched image quality in any light.",
+                specs: [
+                    { key: "Video Resolution", val: "Up to 4K at 30fps / 1080p at 60fps" },
+                    { key: "Sensor Size", val: "1/2-inch sensor for high dynamic range (HDR)" },
+                    { key: "AI Tracking", val: "Auto-framing keeps you in the center of the shot" },
+                    { key: "Modes", val: "DeskView mode, Whiteboard enhancement mode" },
+                    { key: "Microphone", val: "Built-in dual noise-canceling microphones" },
+                    { key: "Mounting", val: "Built-in monitor clip and 1/4-inch tripod thread" },
+                    { key: "Privacy", val: "Built-in physical privacy shutter" },
+                    { key: "Focus", val: "Phase Detection Auto Focus (PDAF)" },
+                    { key: "Connection", val: "USB-C (Plug and Play)" },
+                    { key: "Software", val: "Insta360 Link Controller software for advanced tweaks" }
+                ],
+                retailers: [
+                    { name: "Amazon IN", price: 13390, url: "https://www.amazon.in/insta360-Link-2C-AI-powerd-Webcam/dp/B0DGQW6PB1" }
+                ]
+            },
+            {
+                id: "p15", page: "Wants", icon: "📱", name: "iPad Air 11\" + Apple Pencil", category: "Mobile Tech", basePrice: 76800,
+                desc: "Supercharged by the M2 chip, the redesigned 11-inch iPad Air is incredibly fast and versatile. Paired with the Apple Pencil, it transforms into the ultimate digital canvas and note-taking device.",
+                specs: [
+                    { key: "Processor", val: "Apple M2 Chip (8-core CPU, 9-core GPU)" },
+                    { key: "Display", val: "11-inch Liquid Retina Display with True Tone, P3 wide color" },
+                    { key: "Brightness", val: "500 nits maximum brightness" },
+                    { key: "Storage", val: "128GB Base Storage" },
+                    { key: "Cameras", val: "12MP Wide back camera, Landscape 12MP Ultra Wide front camera" },
+                    { key: "Authentication", val: "Touch ID integrated into the top button" },
+                    { key: "Connectivity", val: "Wi-Fi 6E (802.11ax), Bluetooth 5.3" },
+                    { key: "Port", val: "USB-C connector with support for DisplayPort" },
+                    { key: "Audio", val: "Landscape stereo speakers" },
+                    { key: "Included Accessory", val: "Apple Pencil Pro included in bundle price" }
+                ],
+                retailers: [
+                    { name: "Apple Store IN", price: 76800, url: "https://www.apple.com/in/shop/buy-ipad/ipad-air/27.96-cm-11%E2%80%9D-display-128gb-purple-wifi" }
+                ]
+            },
+            {
+                id: "p17", page: "Wants", icon: "💎", name: "Valorant Gift Card", category: "Gaming", basePrice: 24000,
+                desc: "Instantly add Valorant Points (VP) to your Riot Games account. Use VP to unlock premium weapon skins, gun buddies, player cards, and the seasonal Battlepass.",
+                specs: [
+                    { key: "Game Platform", val: "Valorant (Riot Games PC)" },
+                    { key: "Item Type", val: "Digital Premium Currency (Valorant Points)" },
+                    { key: "Redemption Region", val: "India Server / Applicable Riot Accounts" },
+                    { key: "Delivery Method", val: "Digital Code delivered via Email instantly" },
+                    { key: "Validity", val: "No expiration date once purchased" },
+                    { key: "Usage Restrictions", val: "Cannot be exchanged for real world currency" },
+                    { key: "In-game Use", val: "Cosmetics, Radianite points, Battlepass unlocking" },
+                    { key: "Security", val: "Non-refundable digital pin" },
+                    { key: "Requirements", val: "Requires a valid Riot Games account to redeem" },
+                    { key: "Developer", val: "Riot Games" }
+                ],
+                retailers: [
+                    { name: "Amazon IN", price: 24000, url: "https://www.amazon.in/Valorant-Additional-Gift-Redeemable-availability/dp/B0G3X4JTJ5" }
+                ]
+            },
+
+            // --- RANDOM PROJECTS ---
+            {
+                id: "p13", page: "Random Projects", icon: "🟩", name: "HIFFIN Photography Backdrop", category: "Audio/Video", basePrice: 2500,
+                desc: "A professional-grade chromakey green screen backdrop designed for video production, streaming, and photography. Perfect for seamless background replacement and VFX work.",
+                specs: [
+                    { key: "Dimensions", val: "8 x 12 Feet (Approx. 2.4m x 3.6m)" },
+                    { key: "Material", val: "100% High-density cotton muslin fabric" },
+                    { key: "Color", val: "Chromakey Green (Optimized for video masking/VFX)" },
+                    { key: "Reflection", val: "Non-glossy, matte finish to absorb light and prevent reflections" },
+                    { key: "Maintenance", val: "Machine washable, ironable for wrinkle removal" },
+                    { key: "Mounting", val: "Pre-stitched rod pocket on top edge for backdrop stands" },
+                    { key: "Edges", val: "Fully hemmed edges to prevent tearing" },
+                    { key: "Weight", val: "Heavyweight drop prevents light leakage" },
+                    { key: "Foldable", val: "Easily folds down for storage or transport" },
+                    { key: "Included Items", val: "Backdrop cloth only (Stands sold separately)" }
+                ],
+                retailers: [
+                    { name: "Amazon IN", price: 2500, url: "https://www.amazon.in/HIFFIN%C2%AE-Photography-Accessories-Backdrop-Background/dp/B08WHQGB45" }
+                ]
+            },
+            {
+                id: "p14", page: "Random Projects", icon: "🎥", name: "Insta360 Action Camera", category: "Audio/Video", basePrice: 36000,
+                desc: "Capture the impossible. The ultimate 360-degree action camera allows you to shoot first and frame later. Features unbeatable image stabilization, waterproof design, and a magic invisible selfie stick effect.",
+                specs: [
+                    { key: "Lens Setup", val: "Dual-Lens 360 Degree Optical Capture (f/1.9 aperture)" },
+                    { key: "Video Resolution", val: "Up to 5.7K 360 Active HDR Video at 30fps" },
+                    { key: "Photo Resolution", val: "72 Megapixel 360 Photos" },
+                    { key: "Stabilization", val: "FlowState Stabilization with 360 Horizon Lock" },
+                    { key: "Durability", val: "Waterproof up to 10m (33ft) out of the box" },
+                    { key: "Audio", val: "4-mic array for immersive 360-degree audio" },
+                    { key: "Battery", val: "1800mAh high-capacity battery (Approx. 81 mins run time)" },
+                    { key: "Editing", val: "AI-powered mobile app reframing tools (Shoot first, point later)" },
+                    { key: "Special Features", val: "Invisible Selfie Stick effect, Me Mode, Bullet Time" },
+                    { key: "Connectivity", val: "Bluetooth 5.0, Wi-Fi (5GHz), USB-C" }
+                ],
+                retailers: [
+                    { name: "Amazon IN", price: 36000, url: "https://www.amazon.in/insta360-Action-Camera-Capture-Optical/dp/B0BCW1S7XR" }
+                ]
+            },
+            {
+                id: "p16", page: "Random Projects", icon: "📚", name: "Astrophysics for People in a Hurry", category: "Lifestyle", basePrice: 350,
+                desc: "What is the nature of space and time? How do we fit within the universe? Neil deGrasse Tyson brings the universe down to Earth succinctly and clearly in this brilliant, digestible read.",
+                specs: [
+                    { key: "Author", val: "Neil deGrasse Tyson" },
+                    { key: "Subject Matter", val: "Space, Time, Quantum Mechanics, the Universe" },
+                    { key: "Page Count", val: "224 pages" },
+                    { key: "Publisher", val: "W. W. Norton & Company" },
+                    { key: "Format", val: "Paperback" },
+                    { key: "Language", val: "English" },
+                    { key: "ISBN-10", val: "0393609391" },
+                    { key: "ISBN-13", val: "978-0393609394" },
+                    { key: "Dimensions", val: "11.9 x 1.8 x 18.8 cm" },
+                    { key: "Bestseller Status", val: "#1 New York Times Bestseller" }
+                ],
+                retailers: [
+                    { name: "Amazon IN", price: 350, url: "https://www.amazon.in/Astrophysics-deGrasse-Science-Universe-Beginners/dp/B0FK5SKMRM" }
+                ]
+            },
+            {
+                id: "p18", page: "Random Projects", icon: "💡", name: "Philips LightTheatre Multi-Color", category: "Lifestyle", basePrice: 5500,
+                desc: "Transform your entertainment setup with vibrant, smart ambient lighting. Paint your room in millions of colors and sync the lights to your movies, music, or video games for absolute immersion.",
+                specs: [
+                    { key: "Color Range", val: "16 Million colors including warm-to-cool white" },
+                    { key: "Luminous Flux", val: "1040 lumens output at 4000K" },
+                    { key: "Smart Sync", val: "Syncs with PC/TV media via Philips Hue Sync App" },
+                    { key: "Control Method", val: "Bluetooth App, Wi-Fi Bridge, or Voice Assistant" },
+                    { key: "Voice Assistants", val: "Compatible with Amazon Alexa, Google Assistant, Apple HomeKit" },
+                    { key: "Placement", val: "Versatile desk/floor standing or monitor backing" },
+                    { key: "Lifespan", val: "Up to 25,000 hours of use" },
+                    { key: "Material", val: "Synthetic casing with diffused light panel" },
+                    { key: "Wattage", val: "12 Watts (Energy Efficient LED)" },
+                    { key: "Dimensions", val: "25.3 x 4.4 x 3.6 cm" }
+                ],
+                retailers: [
+                    { name: "Amazon IN", price: 5500, url: "https://www.amazon.in/Philips-LightTheatre-Multi-Color-Versatile-Compatible/dp/B0FR9J5K1G" }
+                ]
+            },
+            {
+                id: "p19", page: "Random Projects", icon: "🏎️", name: "LEGO Speed Champions (77246)", category: "Lifestyle", basePrice: 2000,
+                desc: "Build, race, and display! This highly detailed LEGO Speed Champions replica captures the aerodynamic design and raw power of a legendary hypercar. Perfect for car enthusiasts and desktop display.",
+                specs: [
+                    { key: "Set Theme", val: "LEGO Speed Champions Vehicle Series" },
+                    { key: "Piece Count", val: "Approx. 260 precision interlocking bricks" },
+                    { key: "Included Items", val: "1x Driver Minifigure with racing helmet and wrench" },
+                    { key: "Age Rating", val: "Recommended for 9+ years" },
+                    { key: "Display", val: "Accurate 8-stud wide scale model for desktop display" },
+                    { key: "Material", val: "High-quality ABS Plastic" },
+                    { key: "Educational Value", val: "Spatial reasoning, following instructions, fine motor skills" },
+                    { key: "Dimensions (Built)", val: "Approx. 4cm high, 15cm long, 7cm wide" },
+                    { key: "Batteries", val: "No batteries required. Powered by imagination." },
+                    { key: "Origin", val: "Designed in Denmark" }
+                ],
+                retailers: [
+                    { name: "Amazon IN", price: 2000, url: "https://www.amazon.in/LEGO-Champions-Vehicle-77246-Building/dp/B0DHS9JVGJ" }
+                ]
             }
         ];
 
-        // --- 2. DICTIONARY & STATE ---
-        const synonymMap = {
-            "clothes": ["clothing", "apparel", "shirt", "wearable", "f1"],
-            "mobile": ["phone", "smartphone", "apple"],
-            "computer": ["laptop", "pc", "tech"],
-            "games": ["gaming", "console", "nintendo", "switch"],
-            "photo": ["camera", "photography", "video"]
-        };
-
-        const priorityWeight = { "High": 4, "Medium": 3, "Low": 2, "Very Low": 1 };
-        
-        // Currency Management State
+        // --- STATE & CURRENCY ---
         let currentCurrency = 'INR';
-        let exchangeRates = { INR: 1, USD: 0.012, EUR: 0.011, GBP: 0.0095, AUD: 0.018, CAD: 0.016 }; // Fallbacks
+        let exchangeRates = { INR: 1, USD: 0.012, EUR: 0.011, GBP: 0.0095 };
+        let currentPage = 'Needs'; // Default page
         
-        let currentStatusFilter = 'all'; 
-
-        // DOM Nodes
-        const container = document.getElementById('wishlistContainer');
+        const grid = document.getElementById('product-grid');
         const searchInput = document.getElementById('searchInput');
-        const priorityFilter = document.getElementById('priorityFilter');
+        const categoryFilter = document.getElementById('categoryFilter');
         const sortFilter = document.getElementById('sortFilter');
         const currencyFilter = document.getElementById('currencyFilter');
-        const statusToggle = document.getElementById('statusToggle');
-        const statusLabel = document.getElementById('statusLabel');
-        const apiStatusLabel = document.getElementById('apiStatus');
+        
+        const detailWindow = document.getElementById('detail-window');
+        const taskDetail = document.getElementById('task-detail');
 
-        // --- 3. LIVE CURRENCY API ---
-        async function fetchExchangeRates() {
+        // FX API Fetch
+        async function fetchRates() {
+            const statusLabel = document.getElementById('apiStatus');
             try {
-                // Using open.er-api for free, no-key, live rates relative to INR
                 const response = await fetch('https://open.er-api.com/v6/latest/INR');
                 if (response.ok) {
                     const data = await response.json();
                     exchangeRates.USD = data.rates.USD;
                     exchangeRates.EUR = data.rates.EUR;
                     exchangeRates.GBP = data.rates.GBP;
-                    exchangeRates.AUD = data.rates.AUD;
-                    exchangeRates.CAD = data.rates.CAD;
-                    apiStatusLabel.innerText = "[LIVE FX RATES: ACTIVE]";
-                    apiStatusLabel.style.color = 'var(--accent-green)';
+                    statusLabel.innerText = "Rates Synced via ER-API";
+                    statusLabel.style.color = "#3b913f";
                 } else {
-                    apiStatusLabel.innerText = "[LIVE FX RATES: FAILED - USING OFFLINE ESTIMATES]";
-                    apiStatusLabel.style.color = '#ff5555';
+                    throw new Error('API down');
                 }
-            } catch (error) {
-                console.error("Currency fetch failed, using fallbacks.", error);
-                apiStatusLabel.innerText = "[LIVE FX RATES: FAILED - USING OFFLINE ESTIMATES]";
-                apiStatusLabel.style.color = '#ff5555';
+            } catch (err) {
+                statusLabel.innerText = "Offline Mode (Estimates)";
+                statusLabel.style.color = "#d9534f";
             }
-            renderWishlist(); // Re-render with updated values
+            renderGrid();
         }
 
-        // Initialize currency fetch
-        fetchExchangeRates();
-
-        // --- 4. LOGIC FUNCTIONS ---
-        function toggleStatus() {
-            if (currentStatusFilter === 'all') {
-                currentStatusFilter = 'need';
-                statusToggle.classList.add('active');
-                statusLabel.innerText = 'NEED';
-                statusLabel.style.color = '#ff5555';
-            } else if (currentStatusFilter === 'need') {
-                currentStatusFilter = 'want';
-                statusToggle.classList.add('active');
-                statusLabel.innerText = 'WANT';
-                statusLabel.style.color = '#55bbff';
-            } else {
-                currentStatusFilter = 'all';
-                statusToggle.classList.remove('active');
-                statusLabel.innerText = 'ANY';
-                statusLabel.style.color = 'var(--text-muted)';
-            }
-            renderWishlist();
-        }
-
-        const formatPrice = (priceInINR) => {
-            const convertedPrice = priceInINR * exchangeRates[currentCurrency];
+        // Price Formatter
+        function formatPrice(priceInINR) {
+            const converted = priceInINR * exchangeRates[currentCurrency];
             return new Intl.NumberFormat('en-IN', {
                 style: 'currency',
                 currency: currentCurrency,
                 maximumFractionDigits: currentCurrency === 'INR' ? 0 : 2
-            }).format(convertedPrice);
-        };
+            }).format(converted);
+        }
 
-        function smartSearch(query, items) {
-            if (!query) return items;
-
-            const searchTerms = query.toLowerCase().trim().split(" ");
-            let expandedTerms = [...searchTerms];
+        // Page Switcher
+        function switchPage(page) {
+            currentPage = page;
             
-            searchTerms.forEach(term => {
-                if (synonymMap[term]) {
-                    expandedTerms = expandedTerms.concat(synonymMap[term]);
-                }
-            });
+            // Update UI
+            document.getElementById('task-needs').classList.toggle('active', page === 'Needs');
+            document.getElementById('task-wants').classList.toggle('active', page === 'Wants');
+            document.getElementById('task-random').classList.toggle('active', page === 'Random Projects');
+            
+            document.getElementById('window-title').innerText = `Wishlist.dando.in - ${page}`;
+            document.getElementById('address-path').innerText = `C:\\Users\\Dando.in\\Wishlist\\${page}`;
+            
+            // Reset filters
+            searchInput.value = '';
+            categoryFilter.value = 'All';
+            sortFilter.value = 'default';
+            
+            renderGrid();
+        }
 
-            return items.filter(item => {
-                const searchableText = [
-                    item.name.toLowerCase(),
-                    item.description.toLowerCase(),
-                    item.status.toLowerCase(),
-                    ...item.tags.map(tag => tag.toLowerCase())
-                ].join(" ");
-
-                return expandedTerms.some(term => searchableText.includes(term));
+        // Copy Share Link Feature
+        function copyShareLink(productId) {
+            const url = new URL('https://aaravdioxide.github.io/wishlist/');
+            url.searchParams.set('p', productId);
+            
+            navigator.clipboard.writeText(url.toString()).then(() => {
+                const balloon = document.getElementById('copy-balloon');
+                balloon.style.display = 'block';
+                
+                // Hide after 4 seconds
+                setTimeout(() => {
+                    balloon.style.display = 'none';
+                }, 4000);
+            }).catch(err => {
+                console.error("Could not copy text: ", err);
             });
         }
 
-        function filterAndSort() {
-            let filtered = [...wishlist];
+        // Logic: Filter and Sort
+        function getFilteredProducts() {
+            // First, filter by the active page (Wants, Needs, Random Projects)
+            let filtered = products.filter(p => p.page === currentPage);
 
-            filtered = smartSearch(searchInput.value, filtered);
-
-            if (currentStatusFilter !== 'all') {
-                filtered = filtered.filter(item => item.status === currentStatusFilter);
+            // Search
+            const query = searchInput.value.toLowerCase();
+            if (query) {
+                filtered = filtered.filter(p => p.name.toLowerCase().includes(query) || p.category.toLowerCase().includes(query));
             }
 
-            const priority = priorityFilter.value;
-            if (priority !== 'all') {
-                filtered = filtered.filter(item => item.priority === priority);
+            // Category
+            const cat = categoryFilter.value;
+            if (cat !== 'All') {
+                filtered = filtered.filter(p => p.category === cat);
             }
 
+            // Sort
             const sort = sortFilter.value;
-            filtered.sort((a, b) => {
-                if (sort === 'default') {
-                    // 1. Need above Want
-                    if (a.status !== b.status) {
-                        return a.status === 'need' ? -1 : 1;
-                    }
-                    // 2. Priority Order (High > Very Low)
-                    if (priorityWeight[a.priority] !== priorityWeight[b.priority]) {
-                        return priorityWeight[b.priority] - priorityWeight[a.priority];
-                    }
-                    // 3. Price (Descending by default, highest price first)
-                    if (a.price !== b.price) {
-                        return b.price - a.price; 
-                    }
-                    // 4. ID
-                    return a.id - b.id;
-                }
-                
-                // Fallback direct sorts
-                switch (sort) {
-                    case 'priority-desc': return priorityWeight[b.priority] - priorityWeight[a.priority];
-                    case 'priority-asc': return priorityWeight[a.priority] - priorityWeight[b.priority];
-                    case 'price-asc': return a.price - b.price;
-                    case 'price-desc': return b.price - a.price;
-                    case 'date-asc': return new Date(a.dateAdded) - new Date(b.dateAdded);
-                    case 'date-desc': return new Date(b.dateAdded) - new Date(a.dateAdded);
-                    default: return 0;
-                }
-            });
+            if (sort === 'price-desc') filtered.sort((a,b) => b.basePrice - a.basePrice);
+            if (sort === 'price-asc') filtered.sort((a,b) => a.basePrice - b.basePrice);
 
             return filtered;
         }
 
-        function copyLink(url) {
-            const tempInput = document.createElement("input");
-            tempInput.value = url;
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand("copy");
-            document.body.removeChild(tempInput);
-        }
+        // Render Main Grid
+        function renderGrid() {
+            grid.innerHTML = '';
+            const items = getFilteredProducts();
 
-        // --- 5. RENDER FUNCTION ---
-        function renderWishlist() {
-            container.innerHTML = '';
-            const itemsToRender = filterAndSort();
-
-            // Stats Update
-            const statCount = document.getElementById('statCount');
-            const statValue = document.getElementById('statValue');
-            
-            if (statCount && statValue) {
-                statCount.innerText = itemsToRender.length;
-                const totalValINR = itemsToRender.reduce((sum, item) => sum + item.price, 0);
-                statValue.innerText = formatPrice(totalValINR);
-            }
-
-            if (itemsToRender.length === 0) {
-                container.innerHTML = `<div class="no-results">No items found matching your criteria.</div>`;
+            if (items.length === 0) {
+                grid.innerHTML = `<div style="grid-column: 1/-1; color: #666; font-style: italic; padding: 20px;">This folder is empty or no items match your search.</div>`;
                 return;
             }
 
-            itemsToRender.forEach(item => {
-                const card = document.createElement('div');
-                card.className = 'letter-card';
+            items.forEach(prod => {
+                const icon = document.createElement('div');
+                icon.className = 'product-icon';
+                icon.ondblclick = () => openDetailWindow(prod.id); 
+                icon.onclick = () => openDetailWindow(prod.id); 
 
-                let tagsHtml = `<span class="tag ${item.status}">${item.status}</span>`;
-                tagsHtml += `<span class="tag ${item.priority === 'High' ? 'high-priority' : ''}">PRIORITY: ${item.priority}</span>`;
-                item.tags.forEach(tag => {
-                    tagsHtml += `<span class="tag">${tag}</span>`;
-                });
-
-                let linksHtml = '';
-                item.links.forEach(link => {
-                    linksHtml += `
-                        <div style="display: flex; gap: 5px;">
-                            <a href="${link.url}" target="_blank" class="retailer-link" style="flex-grow: 1;">
-                                <span>BUY @ ${link.retailer}</span>
-                                <span>→</span>
-                            </a>
-                            <button onclick="copyLink('${link.url}')" class="retailer-link" style="padding: 5px 10px; cursor: pointer;" title="Copy Link">📋</button>
-                        </div>
-                    `;
-                });
-
-                card.innerHTML = `
-                    <div class="item-header">
-                        <div class="item-title">${item.name}</div>
-                        <div class="item-price">${formatPrice(item.price)}</div>
-                    </div>
-                    
-                    <div class="item-desc">${item.description}</div>
-                    
-                    <div class="tags-container">
-                        ${tagsHtml}
-                    </div>
-                    
-                    <div class="links-container">
-                        ${linksHtml}
-                    </div>
-
-                    <div class="meta-info">
-                        <span>ID: #${item.id.toString().padStart(4, '0')}</span>
-                        <span>LOGGED: ${item.dateAdded}</span>
-                    </div>
+                icon.innerHTML = `
+                    <div class="icon-img">${prod.icon}</div>
+                    <div class="icon-text">${prod.name}</div>
+                    <div class="icon-price">${formatPrice(prod.basePrice)}</div>
                 `;
-                
-                container.appendChild(card);
+                grid.appendChild(icon);
             });
         }
 
-        // --- 6. EVENT LISTENERS ---
-        searchInput.addEventListener('input', renderWishlist);
-        priorityFilter.addEventListener('change', renderWishlist);
-        sortFilter.addEventListener('change', renderWishlist);
+        // Window Management
+        function openDetailWindow(id) {
+            const prod = products.find(p => p.id === id);
+            if (!prod) return;
+
+            // Populate Content
+            document.getElementById('detail-icon-large').innerText = prod.icon;
+            document.getElementById('detail-name').innerText = prod.name;
+            document.getElementById('detail-desc').innerText = prod.desc;
+            document.getElementById('detail-cat').innerText = `Folder: ${prod.page} | Category: ${prod.category}`;
+            document.getElementById('detail-title-bar').innerText = `📄 ${prod.name} - Properties`;
+            
+            // Random date generator for log
+            const fakeDate = new Date(Date.now() - Math.floor(Math.random() * 10000000000)).toLocaleDateString();
+            document.getElementById('detail-date').innerText = fakeDate;
+
+            // Bind Copy Link Button
+            document.getElementById('copy-link-btn').onclick = () => copyShareLink(prod.id);
+
+            // Specs
+            let specsHTML = '';
+            prod.specs.forEach(s => {
+                specsHTML += `<tr><td>${s.key}</td><td>${s.val}</td></tr>`;
+            });
+            document.getElementById('detail-specs').innerHTML = specsHTML;
+
+            // Retailers
+            let retailersHTML = '';
+            prod.retailers.forEach(r => {
+                retailersHTML += `
+                    <div class="retailer-item">
+                        <div>
+                            <strong>${r.name}</strong><br>
+                            <span style="color: #0058e6; font-weight: bold;">${formatPrice(r.price)}</span>
+                        </div>
+                        <a href="${r.url}" target="_blank" class="xp-button">Buy / Open Link</a>
+                    </div>
+                `;
+            });
+            document.getElementById('detail-retailers').innerHTML = retailersHTML;
+
+            // Show Window
+            detailWindow.style.display = 'block';
+            taskDetail.style.display = 'flex';
+            focusDetailWindow();
+        }
+
+        function closeDetailWindow() {
+            detailWindow.style.display = 'none';
+            taskDetail.style.display = 'none';
+        }
+
+        function focusDetailWindow() {
+            if(detailWindow.style.display === 'block') {
+                detailWindow.style.zIndex = 100;
+            }
+        }
+
+        // Event Listeners
+        searchInput.addEventListener('input', renderGrid);
+        categoryFilter.addEventListener('change', renderGrid);
+        sortFilter.addEventListener('change', renderGrid);
         currencyFilter.addEventListener('change', (e) => {
             currentCurrency = e.target.value;
-            renderWishlist();
+            renderGrid();
+            if (detailWindow.style.display === 'block') {
+                const currentName = document.getElementById('detail-name').innerText;
+                const prod = products.find(p => p.name === currentName);
+                if(prod) openDetailWindow(prod.id);
+            }
         });
 
-        // Initial Render Before FX Fetch resolves
-        renderWishlist();
+        // XP Clock
+        setInterval(() => {
+            const now = new Date();
+            let hours = now.getHours();
+            let mins = now.getMinutes();
+            let ampm = hours >= 12 ? 'PM' : 'AM';
+            hours = hours % 12;
+            hours = hours ? hours : 12; 
+            mins = mins < 10 ? '0' + mins : mins;
+            document.getElementById('clock').innerText = hours + ':' + mins + ' ' + ampm;
+        }, 1000);
+
+        // Init App & Handle Deep Linking
+        window.onload = () => {
+            fetchRates();
+            
+            // Check for shared product link in URL (e.g., ?p=p04)
+            const params = new URLSearchParams(window.location.search);
+            const sharedProductId = params.get('p');
+            
+            if (sharedProductId) {
+                const targetProduct = products.find(p => p.id === sharedProductId);
+                if (targetProduct) {
+                    // Navigate to the correct folder and open the window
+                    switchPage(targetProduct.page);
+                    openDetailWindow(sharedProductId);
+                } else {
+                    switchPage('Needs');
+                }
+            } else {
+                switchPage('Needs');
+            }
+        };
 
     </script>
 </body>
