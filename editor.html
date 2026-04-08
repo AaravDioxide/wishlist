@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist OS - Product Manager</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tahoma&display=swap');
+
+        :root {
+            --xp-blue-title: linear-gradient(to bottom, #0058e6 0%, #3a93ff 8%, #288eff 40%, #127dff 88%, #036bfe 100%);
+            --xp-border: #0055e5;
+            --xp-bg: #ece9d8;
+            --xp-sidebar-top: #7ba2e7;
+            --xp-sidebar-bottom: #6375d6;
+            --xp-taskbar: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #333 100%);
+            --xp-btn-bg: linear-gradient(to bottom, #f3f3f3, #e0e0e0);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Tahoma', sans-serif;
+        }
+
+        body {
+            background-color: #3a6ea5; /* Classic Teal background */
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            font-size: 12px;
+        }
+
+        /* --- UI COMPONENTS --- */
+        .window {
+            background-color: var(--xp-bg);
+            border: 3px solid var(--xp-border);
+            border-radius: 8px 8px 0 0;
+            box-shadow: 2px 2px 15px rgba(0,0,0,0.4);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            margin: 10px;
+        }
+
+        .title-bar {
+            background: var(--xp-blue-title);
+            color: white;
+            padding: 4px 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            text-shadow: 1px 1px #0f3680;
+        }
+
+        .title-bar-controls {
+            display: flex;
+            gap: 2px;
+        }
+
+        .ctrl-btn {
+            width: 21px;
+            height: 21px;
+            border: 1px solid #fff;
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: inset 0 -2px 3px rgba(0,0,0,0.2);
+        }
+
+        .ctrl-close { background: linear-gradient(to bottom, #e04343, #c92828); }
+
+        .toolbar {
+            background-color: var(--xp-bg);
+            border-bottom: 1px solid #c7c5b2;
+            padding: 6px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .xp-button {
+            background: var(--xp-btn-bg);
+            border: 1px solid #003c74;
+            border-radius: 3px;
+            padding: 4px 12px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 11px;
+        }
+
+        .xp-button:hover { background: #fff; }
+        .xp-button:active { background: #d4d0c8; box-shadow: inset 1px 1px 2px rgba(0,0,0,0.2); }
+        .xp-button:disabled { opacity: 0.6; cursor: wait; }
+
+        .main-container {
+            display: flex;
+            flex-grow: 1;
+            height: calc(100vh - 100px);
+            background: white;
+        }
+
+        /* --- PRODUCT LIST --- */
+        .list-pane {
+            width: 350px;
+            border-right: 2px solid #d4d0c8;
+            display: flex;
+            flex-direction: column;
+            background: #f0f0f0;
+        }
+
+        .search-box {
+            padding: 8px;
+            background: #fff;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 4px;
+            border: 1px solid #7f9db9;
+        }
+
+        .product-list {
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+
+        .product-item {
+            padding: 8px 12px;
+            border-bottom: 1px solid #e0e0e0;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .product-item:hover { background: #e5f1fb; }
+        .product-item.active { background: #316ac5; color: white; }
+
+        .product-item .icon { font-size: 20px; }
+        .product-item .info { flex-grow: 1; overflow: hidden; }
+        .product-item .name { font-weight: bold; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+        .product-item .meta { font-size: 10px; opacity: 0.8; }
+
+        /* --- EDITOR PANE --- */
+        .editor-pane {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background: #fff;
+        }
+
+        .form-section {
+            margin-bottom: 20px;
+            border: 1px solid #d4d0c8;
+            padding: 15px;
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .form-section-title {
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            background: white;
+            padding: 0 5px;
+            color: #0c327d;
+            font-weight: bold;
+        }
+
+        .grid-form {
+            display: grid;
+            grid-template-columns: 100px 1fr 100px 1fr;
+            gap: 10px;
+            align-items: center;
+        }
+
+        label { font-weight: bold; color: #555; }
+
+        input[type="text"], input[type="number"], select, textarea {
+            width: 100%;
+            padding: 4px;
+            border: 1px solid #7f9db9;
+            font-size: 12px;
+        }
+
+        textarea { height: 60px; resize: vertical; }
+
+        .dynamic-list {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .dynamic-row {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+
+        .btn-del {
+            background: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 2px 6px;
+            border-radius: 2px;
+            cursor: pointer;
+            font-size: 10px;
+        }
+
+        /* --- MODALS --- */
+        #json-modal {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+
+        .modal-body {
+            width: 600px;
+            background: var(--xp-bg);
+            border: 3px solid var(--xp-border);
+        }
+
+        #json-input {
+            width: 100%;
+            height: 300px;
+            font-family: monospace;
+            padding: 10px;
+            font-size: 11px;
+        }
+
+        /* --- TASKBAR --- */
+        .taskbar {
+            height: 30px;
+            background: var(--xp-taskbar);
+            display: flex;
+            align-items: center;
+            padding-right: 10px;
+        }
+
+        .start-btn {
+            background: linear-gradient(to bottom, #44a54c 0%, #235824 92%);
+            color: white;
+            padding: 0 15px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-style: italic;
+            border-radius: 0 10px 10px 0;
+            cursor: pointer;
+        }
+
+        .task-item {
+            background: #1a51bd;
+            color: white;
+            padding: 2px 10px;
+            margin-left: 5px;
+            border-radius: 3px;
+            border: 1px solid #3b81f1;
+        }
+
+        .hidden { display: none !important; }
+
+        #status-bar {
+            background: #f0f0f0;
+            border-top: 1px solid #ccc;
+            padding: 2px 10px;
+            font-size: 10px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="window" style="flex-grow: 1;">
+        <div class="title-bar">
+            <span>🛠️ Wishlist Data Architect - product.json Editor</span>
+            <div class="title-bar-controls">
+                <div class="ctrl-btn ctrl-close" onclick="window.close()">X</div>
+            </div>
+        </div>
+
+        <div class="toolbar">
+            <button class="xp-button" id="github-sync-btn" onclick="loadFromGitHub()">🌐 Sync from GitHub</button>
+            <div style="width: 1px; height: 20px; background: #ccc; margin: 0 5px;"></div>
+            <button class="xp-button" onclick="openImportModal()">📂 Manual Import</button>
+            <button class="xp-button" onclick="downloadJSON()">💾 Export product.json</button>
+            <div style="width: 1px; height: 20px; background: #ccc; margin: 0 5px;"></div>
+            <button class="xp-button" onclick="addNewProduct()">➕ New Product</button>
+            <button class="xp-button" id="save-btn" onclick="saveCurrentProduct()" style="background: #e1f5fe; border-color: #039be5;">✔️ Save Changes</button>
+            <button class="xp-button" id="delete-btn" onclick="deleteCurrentProduct()" style="background: #ffebee; border-color: #e53935;">🗑️ Delete</button>
+        </div>
+
+        <div class="main-container">
+            <!-- Sidebar: List of Products -->
+            <div class="list-pane">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search products..." oninput="renderList()">
+                </div>
+                <div class="product-list" id="product-list">
+                    <!-- List items injected here -->
+                </div>
+            </div>
+
+            <!-- Editor: Form -->
+            <div class="editor-pane" id="editor-pane">
+                <div id="no-selection" style="text-align: center; color: #999; margin-top: 50px;">
+                    <span style="font-size: 40px;">📂</span><br>
+                    Select a product to edit or create a new one.
+                </div>
+
+                <div id="editor-form" class="hidden">
+                    <div class="form-section">
+                        <div class="form-section-title">Identity & Placement</div>
+                        <div class="grid-form">
+                            <label>ID:</label>
+                            <input type="text" id="f-id" readonly title="Generated automatically">
+                            
+                            <label>Page:</label>
+                            <select id="f-page">
+                                <option value="Needs">Needs</option>
+                                <option value="Wants">Wants</option>
+                                <option value="Random Products">Random Products</option>
+                            </select>
+
+                            <label>Name:</label>
+                            <input type="text" id="f-name" style="grid-column: span 3;">
+
+                            <label>Icon:</label>
+                            <input type="text" id="f-icon" placeholder="Emoji or path">
+
+                            <label>Category:</label>
+                            <select id="f-category">
+                                <option value="Mobile Tech">Mobile Tech</option>
+                                <option value="Tech & Hardware">Tech & Hardware</option>
+                                <option value="Gaming">Gaming</option>
+                                <option value="Audio/Video">Audio/Video</option>
+                                <option value="Lifestyle">Lifestyle</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="form-section-title">Pricing & Descriptions</div>
+                        <div class="grid-form">
+                            <label>Base Price:</label>
+                            <input type="number" id="f-price" placeholder="82900">
+                            <span></span><span></span>
+
+                            <label>Description:</label>
+                            <textarea id="f-desc" style="grid-column: span 3;"></textarea>
+
+                            <label>Review:</label>
+                            <textarea id="f-review" style="grid-column: span 3;"></textarea>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div class="form-section">
+                            <div class="form-section-title">Specifications</div>
+                            <div id="specs-list" class="dynamic-list"></div>
+                            <button class="xp-button" style="margin-top: 10px; width: 100%; justify-content: center;" onclick="addRow('specs')">+ Add Spec Line</button>
+                        </div>
+
+                        <div class="form-section">
+                            <div class="form-section-title">Retailers</div>
+                            <div id="retailers-list" class="dynamic-list"></div>
+                            <button class="xp-button" style="margin-top: 10px; width: 100%; justify-content: center;" onclick="addRow('retailers')">+ Add Retailer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="status-bar">
+            <span id="sync-status">Status: Waiting for input...</span>
+            <span id="product-count">Products: 0</span>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="json-modal">
+        <div class="modal-body window">
+            <div class="title-bar">
+                <span>📂 Import JSON Data</span>
+                <div class="title-bar-controls">
+                    <div class="ctrl-btn ctrl-close" onclick="closeImportModal()">X</div>
+                </div>
+            </div>
+            <div style="padding: 15px;">
+                <p style="margin-bottom: 10px;">Paste the contents of your <code>product.json</code> file here:</p>
+                <textarea id="json-input" placeholder="[{ ... }]"></textarea>
+                <div style="margin-top: 15px; display: flex; justify-content: flex-end; gap: 10px;">
+                    <button class="xp-button" onclick="closeImportModal()">Cancel</button>
+                    <button class="xp-button" onclick="processImport()" style="font-weight: bold;">✅ Process Import</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="taskbar">
+        <div class="start-btn">start</div>
+        <div class="task-item">Architect Mode</div>
+    </div>
+
+    <script>
+        let products = [];
+        let selectedProductId = null;
+        const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/AaravDioxide/wishlist/main/products.json';
+
+        // --- Core Functions ---
+
+        async function loadFromGitHub() {
+            const btn = document.getElementById('github-sync-btn');
+            const status = document.getElementById('sync-status');
+            
+            btn.disabled = true;
+            status.innerText = "Status: Syncing from GitHub...";
+            
+            try {
+                const response = await fetch(GITHUB_RAW_URL);
+                if (!response.ok) throw new Error('Could not fetch from GitHub');
+                const data = await response.json();
+                
+                products = data;
+                renderList();
+                status.innerText = "Status: Synced with main branch.";
+                status.style.color = "green";
+                updateCount();
+            } catch (error) {
+                console.error('Error syncing:', error);
+                status.innerText = "Status: Sync failed. Using local state.";
+                status.style.color = "red";
+                alert("Failed to fetch products from GitHub. Using existing or empty state.");
+            } finally {
+                btn.disabled = false;
+            }
+        }
+
+        function openImportModal() {
+            document.getElementById('json-modal').style.display = 'flex';
+        }
+
+        function closeImportModal() {
+            document.getElementById('json-modal').style.display = 'none';
+        }
+
+        function processImport() {
+            const raw = document.getElementById('json-input').value;
+            try {
+                const parsed = JSON.parse(raw);
+                if (!Array.isArray(parsed)) throw new Error("Must be an array of products");
+                products = parsed;
+                renderList();
+                closeImportModal();
+                updateCount();
+                alert("Successfully imported " + products.length + " products.");
+            } catch (e) {
+                alert("Invalid JSON format: " + e.message);
+            }
+        }
+
+        function updateCount() {
+            document.getElementById('product-count').innerText = `Products: ${products.length}`;
+        }
+
+        function renderList() {
+            const listEl = document.getElementById('product-list');
+            const search = document.getElementById('search-input').value.toLowerCase();
+            listEl.innerHTML = '';
+
+            products.filter(p => p.name.toLowerCase().includes(search) || p.id.toLowerCase().includes(search))
+            .forEach(p => {
+                const item = document.createElement('div');
+                item.className = `product-item ${p.id === selectedProductId ? 'active' : ''}`;
+                item.onclick = () => selectProduct(p.id);
+                item.innerHTML = `
+                    <div class="icon">${p.icon || '📦'}</div>
+                    <div class="info">
+                        <div class="name">${p.name}</div>
+                        <div class="meta">${p.id} | ${p.page} | ₹${p.basePrice}</div>
+                    </div>
+                `;
+                listEl.appendChild(item);
+            });
+        }
+
+        function selectProduct(id) {
+            selectedProductId = id;
+            const p = products.find(prod => prod.id === id);
+            
+            document.getElementById('no-selection').classList.add('hidden');
+            document.getElementById('editor-form').classList.remove('hidden');
+            
+            // Basic Fields
+            document.getElementById('f-id').value = p.id;
+            document.getElementById('f-page').value = p.page;
+            document.getElementById('f-name').value = p.name;
+            document.getElementById('f-icon').value = p.icon;
+            document.getElementById('f-category').value = p.category;
+            document.getElementById('f-price').value = p.basePrice;
+            document.getElementById('f-desc').value = p.desc;
+            document.getElementById('f-review').value = p.review || '';
+
+            // Dynamic Specs
+            const specListEl = document.getElementById('specs-list');
+            specListEl.innerHTML = '';
+            (p.specs || []).forEach(s => addRow('specs', s));
+
+            // Dynamic Retailers
+            const retailListEl = document.getElementById('retailers-list');
+            retailListEl.innerHTML = '';
+            (p.retailers || []).forEach(r => addRow('retailers', r));
+
+            renderList();
+        }
+
+        function addRow(type, data = {}) {
+            const container = document.getElementById(type + '-list');
+            const row = document.createElement('div');
+            row.className = 'dynamic-row';
+
+            if (type === 'specs') {
+                row.innerHTML = `
+                    <input type="text" placeholder="Key (e.g. CPU)" value="${data.key || ''}" class="spec-key" style="width: 35%;">
+                    <input type="text" placeholder="Value (e.g. M2)" value="${data.val || ''}" class="spec-val" style="width: 55%;">
+                    <button class="btn-del" onclick="this.parentElement.remove()">X</button>
+                `;
+            } else {
+                row.innerHTML = `
+                    <div style="display: flex; flex-direction: column; gap: 2px; width: 100%;">
+                        <input type="text" placeholder="Retailer Name" value="${data.name || ''}" class="ret-name">
+                        <div style="display: flex; gap: 2px;">
+                            <input type="number" placeholder="Price" value="${data.price || ''}" class="ret-price" style="width: 40%;">
+                            <input type="text" placeholder="URL" value="${data.url || ''}" class="ret-url" style="width: 60%;">
+                        </div>
+                    </div>
+                    <button class="btn-del" onclick="this.parentElement.remove()">X</button>
+                `;
+            }
+            container.appendChild(row);
+        }
+
+        function saveCurrentProduct() {
+            if (!selectedProductId) return;
+
+            const idx = products.findIndex(p => p.id === selectedProductId);
+            const p = products[idx];
+
+            // Update Basic
+            p.page = document.getElementById('f-page').value;
+            p.name = document.getElementById('f-name').value;
+            p.icon = document.getElementById('f-icon').value;
+            p.category = document.getElementById('f-category').value;
+            p.basePrice = parseInt(document.getElementById('f-price').value);
+            p.desc = document.getElementById('f-desc').value;
+            p.review = document.getElementById('f-review').value;
+
+            // Update Specs
+            const specRows = document.querySelectorAll('#specs-list .dynamic-row');
+            p.specs = Array.from(specRows).map(row => ({
+                key: row.querySelector('.spec-key').value,
+                val: row.querySelector('.spec-val').value
+            })).filter(s => s.key && s.val);
+
+            // Update Retailers
+            const retailRows = document.querySelectorAll('#retailers-list .dynamic-row');
+            p.retailers = Array.from(retailRows).map(row => ({
+                name: row.querySelector('.ret-name').value,
+                price: parseInt(row.querySelector('.ret-price').value),
+                url: row.querySelector('.ret-url').value
+            })).filter(r => r.name && r.price);
+
+            alert("Product saved to local memory!");
+            renderList();
+        }
+
+        function addNewProduct() {
+            const newId = "prod_" + Math.random().toString(36).substr(2, 5);
+            const newProd = {
+                id: newId,
+                page: "Needs",
+                icon: "📦",
+                name: "New Product Name",
+                category: "Mobile Tech",
+                basePrice: 0,
+                desc: "",
+                review: "",
+                specs: [],
+                retailers: []
+            };
+            products.unshift(newProd);
+            renderList();
+            selectProduct(newId);
+            updateCount();
+        }
+
+        function deleteCurrentProduct() {
+            if (!selectedProductId) return;
+            if (confirm("Are you sure you want to delete this product?")) {
+                products = products.filter(p => p.id !== selectedProductId);
+                selectedProductId = null;
+                document.getElementById('editor-form').classList.add('hidden');
+                document.getElementById('no-selection').classList.remove('hidden');
+                renderList();
+                updateCount();
+            }
+        }
+
+        function downloadJSON() {
+            if (products.length === 0) {
+                alert("No products to export!");
+                return;
+            }
+            const dataStr = JSON.stringify(products, null, 2);
+            const blob = new Blob([dataStr], { type: "application/json" });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = "products.json";
+            link.click();
+            URL.revokeObjectURL(url);
+        }
+
+        // Auto-load from GitHub on startup
+        window.onload = () => {
+            loadFromGitHub();
+        };
+
+    </script>
+</body>
+</html>
