@@ -1,0 +1,949 @@
+[
+  {
+    "id": "p01",
+    "page": "Needs",
+    "icon": "📱",
+    "name": "Apple iPhone 17 (256GB, Lavender)",
+    "category": "Mobile Tech",
+    "basePrice": 82900,
+    "desc": "The next-generation iPhone featuring a massive leap in processing power, advanced AI integrations via iOS, and a refined aerospace-grade titanium chassis. Perfect for heavy daily use, photography, and mobile gaming.",
+    "review": "I'm keeping this as a priority. My current phone is completely messed up, and the new A19 chip combined with the lavender finish makes this the perfect daily driver upgrade.",
+    "specs": [
+      { "key": "Processor", "val": "A19 Bionic Chip (3nm process)" },
+      { "key": "Display", "val": "6.3-inch Super Retina XDR OLED (2556 x 1179 pixels)" },
+      { "key": "Camera System", "val": "48MP Main + 12MP Ultra Wide" },
+      { "key": "Video Recording", "val": "4K Dolby Vision HDR up to 60 fps" },
+      { "key": "Storage Capacity", "val": "256GB NVMe" },
+      { "key": "Chassis Material", "val": "Aerospace-grade Aluminum with matte glass" },
+      { "key": "Battery Capacity", "val": "Approx. 4,000 mAh (All-day battery life)" },
+      { "key": "Charging", "val": "USB-C, MagSafe wireless charging up to 25W" },
+      { "key": "Biometrics", "val": "Face ID (TrueDepth camera)" },
+      { "key": "Durability", "val": "IP68 dust and water resistance (depth of 6 meters)" }
+    ],
+    "retailers": [
+      { "name": "Apple Store IN", "price": 82900, "url": "https://www.apple.com/in/shop/buy-iphone/iphone-17/6.3%22-display-256gb-lavender" }
+    ]
+  },
+  {
+    "id": "p04",
+    "page": "Needs",
+    "icon": "🖱️",
+    "name": "Logitech G PRO X Superlight 2",
+    "category": "Gaming",
+    "basePrice": 12495,
+    "desc": "The ultimate esports gaming mouse. Zero additive PTFE feet ensure a smooth glide, while the new LIGHTFORCE hybrid switches provide incredible speed and reliability without compromising on the crisp, tactile click.",
+    "review": "",
+    "specs": [
+      { "key": "Sensor", "val": "HERO 2 (100 - 32,000 DPI, 500+ IPS)" },
+      { "key": "Polling Rate", "val": "2000Hz (0.5ms response time)" },
+      { "key": "Switches", "val": "LIGHTFORCE Optical-Mechanical Hybrid" },
+      { "key": "Weight", "val": "60 grams (Ultra-lightweight design)" },
+      { "key": "Battery Life", "val": "Up to 95 hours constant motion" },
+      { "key": "Dimensions", "val": "125.0 mm x 63.5 mm x 40.0 mm" },
+      { "key": "Connectivity", "val": "LIGHTSPEED Wireless & USB-C" },
+      { "key": "Feet", "val": "Zero-additive PTFE Mouse Feet" },
+      { "key": "Onboard Memory", "val": "Yes (Requires G HUB software)" }
+    ],
+    "retailers": [
+      { "name": "Amazon IN", "price": 12495, "url": "https://www.amazon.in/Logitech-Superlight-Lightspeed-Lightweight-Programmable/dp/B0CGDZC2FK" }
+    ]
+  },
+  {
+    "id": "p05",
+    "page": "Needs",
+    "icon": "🏎️",
+    "name": "Logitech G29 Racing Wheel",
+    "category": "Gaming",
+    "basePrice": 31991,
+    "desc": "Engineered for the perfect driving experience with dual-motor force feedback, stainless steel paddle shifters, and a hand-stitched leather steering wheel. Includes an adjustable floor pedal unit.",
+    "review": "",
+    "specs": [
+      { "key": "Force Feedback", "val": "Dual-Motor with Helical Gearing" },
+      { "key": "Steering Rotation", "val": "900 degrees lock-to-lock" },
+      { "key": "Wheel Material", "val": "Hand-stitched Leather cover over Aluminum" },
+      { "key": "Pedal System", "val": "Nonlinear brake pedal (Clutch, Brake, Gas)" },
+      { "key": "Pedal Material", "val": "Cold rolled steel frames, brushed stainless steel faces" },
+      { "key": "Shifters", "val": "Stainless Steel paddle shifters" },
+      { "key": "Mounting", "val": "Built-in clamps and hard-point mounting" },
+      { "key": "Compatibility", "val": "PlayStation 5, PlayStation 4, PC, Mac" }
+    ],
+    "retailers": [
+      { "name": "Amazon IN", "price": 31991, "url": "https://www.amazon.in/Logitech-Superlight-Lightspeed-Lightweight-Programmable/dp/B0CGDZC2FK" }
+    ]
+  },
+  {
+    "id": "w01",
+    "page": "Wants",
+    "icon": "👓",
+    "name": "Ray-Ban Meta Smart Glasses",
+    "category": "Mobile Tech",
+    "basePrice": 30000,
+    "desc": "Iconic Ray-Ban Wayfarer style fused with Meta's cutting-edge AI. Capture ultra-wide 12MP photos and 1080p video, listen to music via open-ear speakers, and interact with Meta AI directly from your face.",
+    "review": "",
+    "specs": [
+      { "key": "Camera", "val": "Ultra-Wide 12MP" },
+      { "key": "Video Recording", "val": "1080p at 30fps (Up to 60 second clips)" },
+      { "key": "Audio", "val": "Custom-built open-ear speakers with deep bass" },
+      { "key": "Microphones", "val": "5-mic array for immersive audio capture" },
+      { "key": "AI Integration", "val": "Voice-activated Meta AI (Hey Meta)" },
+      { "key": "Storage", "val": "32GB Onboard storage (approx. 500+ photos)" },
+      { "key": "Battery", "val": "Up to 4 hours (Case provides 8 additional charges)" },
+      { "key": "Connectivity", "val": "Bluetooth 5.3, Wi-Fi 6" },
+      { "key": "Frame Style", "val": "Wayfarer (Standard/Large)" }
+    ],
+    "retailers": [
+      { "name": "Amazon IN", "price": 30000, "url": "https://www.amazon.in/Ray-Ban-Wayfarer-Ultra-Wide-Recording-Bluetooth/dp/B0G24PX37V/ref=sr_1_2_sspa?aref=qyCW6jK6e3" }
+    ]
+  },
+  {
+    "id": "p02",
+    "page": "Wants",
+    "icon": "💻",
+    "name": "MacBook Air 15-inch (M5)",
+    "category": "Tech & Hardware",
+    "basePrice": 144900,
+    "desc": "Apple's incredibly thin and light 15-inch laptop, supercharged by the new M5 chip. It features a fanless design for silent operation, a stunning Liquid Retina display, and an exceptionally long battery life.",
+    "review": "",
+    "specs": [
+      { "key": "Silicon Chip", "val": "Apple M5 (10-Core CPU, 10-Core GPU)" },
+      { "key": "Neural Engine", "val": "16-core Neural Engine for advanced AI workloads" },
+      { "key": "Display", "val": "15.3-inch Liquid Retina display (2880x1864 at 224 ppi)" },
+      { "key": "Brightness", "val": "500 nits (True Tone technology)" },
+      { "key": "Memory", "val": "16GB Unified Memory" },
+      { "key": "Storage", "val": "512GB PCIe-based SSD" },
+      { "key": "Battery Life", "val": "Up to 18 hours video playback (66.5-watt-hour battery)" },
+      { "key": "Ports", "val": "Two Thunderbolt / USB 4 ports, MagSafe 3, 3.5mm jack" },
+      { "key": "Audio", "val": "Six-speaker sound system with Force Cancelling woofers" }
+    ],
+    "retailers": [
+      { "name": "Apple Store IN", "price": 144900, "url": "https://www.apple.com/in/shop/buy-mac/macbook-air/15-inch-midnight-m5-chip-10-core-cpu-10-core-gpu-16gb-memory-512gb-storage" }
+    ]
+  },
+  {
+    "id": "p03",
+    "page": "Wants",
+    "icon": "⌨️",
+    "name": "Microsoft Surface Pro 11th Gen",
+    "category": "Tech & Hardware",
+    "basePrice": 119716,
+    "desc": "The most flexible Copilot+ PC ever built. It combines the power of a laptop with the portability of a tablet, featuring a stunning OLED display and all-day battery life powered by the Snapdragon X Elite.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "Snapdragon X Elite (Copilot+ PC, NPU 45 TOPS)" },
+      { "key": "Display", "val": "13-inch PixelSense Flow OLED touchscreen (2880 x 1920)" },
+      { "key": "Refresh Rate", "val": "Dynamic up to 120Hz" },
+      { "key": "RAM", "val": "16GB LPDDR5x RAM" },
+      { "key": "Storage", "val": "512GB Gen 4 SSD (Removable)" },
+      { "key": "Cameras", "val": "Quad HD front-facing, 10M Ultra HD rear-facing" },
+      { "key": "Battery Life", "val": "Up to 14 hours of local video playback" },
+      { "key": "Ports", "val": "2x USB-C with USB4, Surface Connect" },
+      { "key": "Included Accessory", "val": "TECPHILE Rechargeable Bluetooth Keyboard" },
+      { "key": "Operating System", "val": "Windows 11 Home" }
+    ],
+    "retailers": [
+      { "name": "Amazon IN (Tablet)", "price": 115990, "url": "https://www.amazon.in/Microsoft-New-Surface-Pro-11Th/dp/B0D926JN5N" },
+      { "name": "Amazon IN (Keyboard)", "price": 3726, "url": "https://www.amazon.in/TECPHILE-Keyboard-Microsoft-Attachment-Rechargeable/dp/B0DZP34F5F" }
+    ]
+  },
+  {
+    "id": "p06",
+    "page": "Wants",
+    "icon": "🎮",
+    "name": "Xbox Wireless Controller (Velocity Green)",
+    "category": "Gaming",
+    "basePrice": 6390,
+    "desc": "Experience the modernized design of the Xbox Wireless Controller in striking Velocity Green, featuring sculpted surfaces and refined geometry for enhanced comfort during gameplay.",
+    "review": "",
+    "specs": [
+      { "key": "Connectivity", "val": "Xbox Wireless and Bluetooth" },
+      { "key": "Design Features", "val": "Textured grip on triggers, bumpers, and backcase" },
+      { "key": "D-Pad", "val": "Hybrid D-pad for accurate, sweeping inputs" },
+      { "key": "Buttons", "val": "Dedicated Share button to capture/record" },
+      { "key": "Audio Setup", "val": "3.5mm stereo headset jack" },
+      { "key": "Power", "val": "AA batteries for up to 40 hours of battery life" },
+      { "key": "Customization", "val": "Custom button mapping via Xbox Accessories app" },
+      { "key": "Compatibility", "val": "Xbox Series X|S, Xbox One, Windows PC, Android, iOS" }
+    ],
+    "retailers": [
+      { "name": "Amazon IN", "price": 6390, "url": "https://www.amazon.in/Microsoft-Xbox-Wireless-Controller-Velocity/dp/B0BYJMXHR3" }
+    ]
+  },
+  {
+    "id": "p09",
+    "page": "Wants",
+    "icon": "🎛️",
+    "name": "Elgato Stream Deck MK.2",
+    "category": "Audio/Video",
+    "basePrice": 17112,
+    "desc": "Your ultimate studio controller. 15 LCD keys poised to trigger unlimited actions. Tactile one-touch operation lets you control apps, launch social posts, adjust audio, mute your mic, and much more.",
+    "review": "",
+    "specs": [
+      { "key": "Interface", "val": "15 customizable tactile LCD keys" },
+      { "key": "Functionality", "val": "Trigger actions, launch media, adjust audio, switch scenes" },
+      { "key": "Customization", "val": "Interchangeable front faceplates" },
+      { "key": "Stand", "val": "Detachable 45-degree angle desktop stand" },
+      { "key": "Connection", "val": "Detachable USB-C to USB-A cable" },
+      { "key": "Plugins", "val": "Native integration with OBS, Twitch, Twitter, Spotify, Zoom" },
+      { "key": "Software", "val": "Stream Deck App (Drag and drop setup)" },
+      { "key": "OS Requirements", "val": "Windows 10 (64-bit) or macOS 10.15+" }
+    ],
+    "retailers": [
+      { "name": "Amazon IN", "price": 17112, "url": "https://www.amazon.in/Elgato-Stream-Deck-MK-2-Customizable/dp/B09738CV2G" }
+    ]
+  },
+  {
+    "id": "p10",
+    "page": "Wants",
+    "icon": "👕",
+    "name": "Red Bull Racing Replica Polo",
+    "category": "Lifestyle",
+    "basePrice": 8000,
+    "desc": "Wear the team colors with pride. The official Oracle Red Bull Racing Replica Polo is engineered for peak performance and style, mirroring exactly what the drivers and crew wear in the paddock.",
+    "review": "",
+    "specs": [
+      { "key": "Team Affiliation", "val": "Oracle Red Bull Racing Formula 1 Team" },
+      { "key": "Material", "val": "100% Breathable Polyester (Moisture-wicking)" },
+      { "key": "Design", "val": "Classic short-sleeve polo with pointed collar" },
+      { "key": "Branding", "val": "High-quality heat-sealed sponsor and team logos" },
+      { "key": "Print Design", "val": "Dynamic 'Power charge' graphic on back and sides" },
+      { "key": "Fit", "val": "Men's Regular Athletic Fit" },
+      { "key": "Authenticity", "val": "Official Licensed Merchandise tag" },
+      { "key": "Origin", "val": "Designed in collaboration with Castore/Puma" }
+    ],
+    "retailers": [
+      { "name": "Red Bull Shop", "price": 8000, "url": "https://www.redbullshop.com/en-int/p/Men/Replica-Polo-Shirt/M-RAB26012" }
+    ]
+  },
+  {
+    "id": "p11",
+    "page": "Wants",
+    "icon": "⬛",
+    "name": "Xbox Series X (1TB)",
+    "category": "Gaming",
+    "basePrice": 45990,
+    "desc": "The fastest, most powerful Xbox ever. Explore rich new worlds and enjoy the action like never before with the unmatched 12 teraflops of raw graphic processing power.",
+    "review": "",
+    "specs": [
+      { "key": "Processing Power", "val": "12 Teraflops Custom RDNA 2 GPU @ 1.825 GHz" },
+      { "key": "CPU", "val": "8X Cores @ 3.8 GHz Custom Zen 2" },
+      { "key": "Target Performance", "val": "True 4K gaming, up to 120 FPS capable, 8K HDR Ready" },
+      { "key": "Memory", "val": "16GB GDDR6 w/ 320 bit-wide bus" },
+      { "key": "Storage Unit", "val": "1TB Custom NVMe SSD (Xbox Velocity Architecture)" },
+      { "key": "Optical Drive", "val": "4K UHD Blu-ray Drive" },
+      { "key": "Features", "val": "Quick Resume, Hardware Accelerated Raytracing, Auto HDR" },
+      { "key": "Ports", "val": "1x HDMI 2.1, 3x USB 3.1 Gen 1, Ethernet" }
+    ],
+    "retailers": [
+      { "name": "Flipkart", "price": 45990, "url": "https://www.flipkart.com/microsoft-xbox-series-x-1024-gb/p/itm63ff9bd504f27" }
+    ]
+  },
+  {
+    "id": "p12",
+    "page": "Wants",
+    "icon": "📷",
+    "name": "Insta360 Link 2C AI Webcam",
+    "category": "Audio/Video",
+    "basePrice": 13390,
+    "desc": "An AI-powered 4K webcam designed for creators and professionals. It uses advanced algorithms to keep you perfectly framed, while the large 1/2-inch sensor delivers unmatched image quality in any light.",
+    "review": "",
+    "specs": [
+      { "key": "Video Resolution", "val": "Up to 4K at 30fps / 1080p at 60fps" },
+      { "key": "Sensor Size", "val": "1/2-inch sensor for high dynamic range (HDR)" },
+      { "key": "AI Tracking", "val": "Auto-framing keeps you in the center of the shot" },
+      { "key": "Modes", "val": "DeskView mode, Whiteboard enhancement mode" },
+      { "key": "Microphone", "val": "Built-in dual noise-canceling microphones" },
+      { "key": "Mounting", "val": "Built-in monitor clip and 1/4-inch tripod thread" },
+      { "key": "Privacy", "val": "Built-in physical privacy shutter" },
+      { "key": "Connection", "val": "USB-C (Plug and Play)" }
+    ],
+    "retailers": [
+      { "name": "Amazon IN", "price": 13390, "url": "https://www.amazon.in/insta360-Link-2C-AI-powerd-Webcam/dp/B0DGQW6PB1" }
+    ]
+  },
+  {
+    "id": "p15",
+    "page": "Wants",
+    "icon": "📱",
+    "name": "iPad Air 11\" + Apple Pencil",
+    "category": "Mobile Tech",
+    "basePrice": 76800,
+    "desc": "Supercharged by the M2 chip, the redesigned 11-inch iPad Air is incredibly fast and versatile. Paired with the Apple Pencil, it transforms into the ultimate digital canvas and note-taking device.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "Apple M2 Chip (8-core CPU, 9-core GPU)" },
+      { "key": "Display", "val": "11-inch Liquid Retina Display with True Tone, P3 wide color" },
+      { "key": "Brightness", "val": "500 nits maximum brightness" },
+      { "key": "Storage", "val": "128GB Base Storage" },
+      { "key": "Cameras", "val": "12MP Wide back camera, Landscape 12MP Ultra Wide front camera" },
+      { "key": "Authentication", "val": "Touch ID integrated into the top button" },
+      { "key": "Connectivity", "val": "Wi-Fi 6E (802.11ax), Bluetooth 5.3" },
+      { "key": "Included Accessory", "val": "Apple Pencil Pro included in bundle price" }
+    ],
+    "retailers": [
+      { "name": "Apple Store IN", "price": 76800, "url": "https://www.apple.com/in/shop/buy-ipad/ipad-air/27.96-cm-11%E2%80%9D-display-128gb-purple-wifi" }
+    ]
+  },
+  {
+    "id": "p17",
+    "page": "Wants",
+    "icon": "💎",
+    "name": "Valorant Gift Card",
+    "category": "Gaming",
+    "basePrice": 24000,
+    "desc": "Instantly add Valorant Points (VP) to your Riot Games account. Use VP to unlock premium weapon skins, gun buddies, player cards, and the seasonal Battlepass.",
+    "review": "",
+    "specs": [
+      { "key": "Game Platform", "val": "Valorant (Riot Games PC)" },
+      { "key": "Item Type", "val": "Digital Premium Currency (Valorant Points)" },
+      { "key": "Redemption Region", "val": "India Server / Applicable Riot Accounts" },
+      { "key": "Delivery Method", "val": "Digital Code delivered via Email instantly" },
+      { "key": "Validity", "val": "No expiration date once purchased" },
+      { "key": "In-game Use", "val": "Cosmetics, Radianite points, Battlepass unlocking" },
+      { "key": "Requirements", "val": "Requires a valid Riot Games account to redeem" }
+    ],
+    "retailers": [
+      { "name": "Amazon IN", "price": 24000, "url": "https://www.amazon.in/Valorant-Additional-Gift-Redeemable-availability/dp/B0G3X4JTJ5" }
+    ]
+  },
+  {
+    "id": "p13",
+    "page": "Wants",
+    "icon": "🟩",
+    "name": "HIFFIN Photography Backdrop",
+    "category": "Audio/Video",
+    "basePrice": 2500,
+    "desc": "A professional-grade chromakey green screen backdrop designed for video production, streaming, and photography. Perfect for seamless background replacement and VFX work.",
+    "review": "",
+    "specs": [
+      { "key": "Dimensions", "val": "8 x 12 Feet (Approx. 2.4m x 3.6m)" },
+      { "key": "Material", "val": "100% High-density cotton muslin fabric" },
+      { "key": "Color", "val": "Chromakey Green (Optimized for video masking/VFX)" },
+      { "key": "Reflection", "val": "Non-glossy, matte finish to absorb light and prevent reflections" },
+      { "key": "Maintenance", "val": "Machine washable, ironable for wrinkle removal" },
+      { "key": "Mounting", "val": "Pre-stitched rod pocket on top edge for backdrop stands" },
+      { "key": "Edges", "val": "Fully hemmed edges to prevent tearing" },
+      { "key": "Included Items", "val": "Backdrop cloth only (Stands sold separately)" }
+    ],
+    "retailers": [
+      { "name": "Amazon IN", "price": 2500, "url": "https://www.amazon.in/HIFFIN%C2%AE-Photography-Accessories-Backdrop-Background/dp/B08WHQGB45" }
+    ]
+  },
+  {
+    "id": "p14",
+    "page": "Wants",
+    "icon": "🎥",
+    "name": "Insta360 Action Camera",
+    "category": "Audio/Video",
+    "basePrice": 36000,
+    "desc": "Capture the impossible. The ultimate 360-degree action camera allows you to shoot first and frame later. Features unbeatable image stabilization, waterproof design, and a magic invisible selfie stick effect.",
+    "review": "",
+    "specs": [
+      { "key": "Lens Setup", "val": "Dual-Lens 360 Degree Optical Capture (f/1.9 aperture)" },
+      { "key": "Video Resolution", "val": "Up to 5.7K 360 Active HDR Video at 30fps" },
+      { "key": "Photo Resolution", "val": "72 Megapixel 360 Photos" },
+      { "key": "Stabilization", "val": "FlowState Stabilization with 360 Horizon Lock" },
+      { "key": "Durability", "val": "Waterproof up to 10m (33ft) out of the box" },
+      { "key": "Battery", "val": "1800mAh high-capacity battery (Approx. 81 mins run time)" },
+      { "key": "Editing", "val": "AI-powered mobile app reframing tools (Shoot first, point later)" },
+      { "key": "Special Features", "val": "Invisible Selfie Stick effect, Me Mode, Bullet Time" }
+    ],
+    "retailers": [
+      { "name": "Amazon IN", "price": 36000, "url": "https://www.amazon.in/insta360-Action-Camera-Capture-Optical/dp/B0BCW1S7XR" }
+    ]
+  },
+  {
+    "id": "p16",
+    "page": "Wants",
+    "icon": "📚",
+    "name": "Astrophysics for People in a Hurry",
+    "category": "Lifestyle",
+    "basePrice": 350,
+    "desc": "What is the nature of space and time? How do we fit within the universe? Neil deGrasse Tyson brings the universe down to Earth succinctly and clearly in this brilliant, digestible read.",
+    "review": "",
+    "specs": [
+      { "key": "Author", "val": "Neil deGrasse Tyson" },
+      { "key": "Subject Matter", "val": "Space, Time, Quantum Mechanics, the Universe" },
+      { "key": "Page Count", "val": "224 pages" },
+      { "key": "Publisher", "val": "W. W. Norton & Company" },
+      { "key": "Format", "val": "Paperback" },
+      { "key": "Language", "val": "English" },
+      { "key": "ISBN-13", "val": "978-0393609394" }
+    ],
+    "retailers": [
+      { "name": "Amazon IN", "price": 350, "url": "https://www.amazon.in/Astrophysics-deGrasse-Science-Universe-Beginners/dp/B0FK5SKMRM" }
+    ]
+  },
+  {
+    "id": "p18",
+    "page": "Wants",
+    "icon": "💡",
+    "name": "Philips LightTheatre Multi-Color",
+    "category": "Lifestyle",
+    "basePrice": 5500,
+    "desc": "Transform your entertainment setup with vibrant, smart ambient lighting. Paint your room in millions of colors and sync the lights to your movies, music, or video games for absolute immersion.",
+    "review": "",
+    "specs": [
+      { "key": "Color Range", "val": "16 Million colors including warm-to-cool white" },
+      { "key": "Luminous Flux", "val": "1040 lumens output at 4000K" },
+      { "key": "Smart Sync", "val": "Syncs with PC/TV media via Philips Hue Sync App" },
+      { "key": "Control Method", "val": "Bluetooth App, Wi-Fi Bridge, or Voice Assistant" },
+      { "key": "Voice Assistants", "val": "Compatible with Amazon Alexa, Google Assistant, Apple HomeKit" },
+      { "key": "Placement", "val": "Versatile desk/floor standing or monitor backing" },
+      { "key": "Wattage", "val": "12 Watts (Energy Efficient LED)" }
+    ],
+    "retailers": [
+      { "name": "Amazon IN", "price": 5500, "url": "https://www.amazon.in/Philips-LightTheatre-Multi-Color-Versatile-Compatible/dp/B0FR9J5K1G" }
+    ]
+  },
+  {
+    "id": "p19",
+    "page": "Wants",
+    "icon": "🏎️",
+    "name": "LEGO Speed Champions (77246)",
+    "category": "Lifestyle",
+    "basePrice": 2000,
+    "desc": "Build, race, and display! This highly detailed LEGO Speed Champions replica captures the aerodynamic design and raw power of a legendary hypercar. Perfect for car enthusiasts and desktop display.",
+    "review": "",
+    "specs": [
+      { "key": "Set Theme", "val": "LEGO Speed Champions Vehicle Series" },
+      { "key": "Piece Count", "val": "Approx. 260 precision interlocking bricks" },
+      { "key": "Included Items", "val": "1x Driver Minifigure with racing helmet and wrench" },
+      { "key": "Display", "val": "Accurate 8-stud wide scale model for desktop display" },
+      { "key": "Material", "val": "High-quality ABS Plastic" },
+      { "key": "Dimensions (Built)", "val": "Approx. 4cm high, 15cm long, 7cm wide" }
+    ],
+    "retailers": [
+      { "name": "Amazon IN", "price": 2000, "url": "https://www.amazon.in/LEGO-Champions-Vehicle-77246-Building/dp/B0DHS9JVGJ" }
+    ]
+  },
+  {
+    "id": "rp01",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "Samsung Galaxy S26 Ultra",
+    "category": "Mobile Tech",
+    "basePrice": 134999,
+    "desc": "The pinnacle of Samsung's engineering. Boasting the ultimate Snapdragon processor, a built-in S-Pen, and an unmatched multi-lens zoom camera system for content creators and power users.",
+    "review": "A 4.3/5 rating tells me this is an incredible piece of hardware, but honestly, it might just be too bulky for my day-to-day use. The anti-reflective screen is a major selling point though.",
+    "specs": [
+      { "key": "Processor", "val": "Snapdragon 8 Gen 5 for Galaxy" },
+      { "key": "Display", "val": "6.8-inch Dynamic AMOLED 2x (1-120Hz Anti-Reflective)" },
+      { "key": "Camera System", "val": "200MP Main + 50MP 5x Zoom + 10MP 3x Zoom + 50MP Ultrawide" },
+      { "key": "S-Pen", "val": "Integrated active stylus" },
+      { "key": "Battery", "val": "5000 mAh with 45W Fast Charging" },
+      { "key": "Durability", "val": "Titanium Armor frame, IP68 rated" },
+      { "key": "OS", "val": "One UI 8 based on Android 16" }
+    ],
+    "retailers": [
+      { "name": "Samsung Store IN", "price": 134999, "url": "https://www.samsung.com/in/smartphones/galaxy-s26-ultra/buy/" }
+    ]
+  },
+  {
+    "id": "rp02",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "Samsung Galaxy S26",
+    "category": "Mobile Tech",
+    "basePrice": 79999,
+    "desc": "The compact flagship. Delivering all of Samsung's core Galaxy AI features and premium build quality in a much smaller, pocket-friendly form factor.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "Exynos 2600 / Snapdragon 8 Gen 5" },
+      { "key": "Display", "val": "6.2-inch Dynamic AMOLED 2x (120Hz)" },
+      { "key": "Camera System", "val": "50MP Main + 12MP Ultrawide + 10MP 3x Zoom" },
+      { "key": "Battery", "val": "4000 mAh with 25W Fast Charging" },
+      { "key": "Build", "val": "Armor Aluminum frame, Gorilla Glass Armor" }
+    ],
+    "retailers": [
+      { "name": "Samsung Store IN", "price": 79999, "url": "https://www.samsung.com/in/smartphones/galaxy-s26/buy/" }
+    ]
+  },
+  {
+    "id": "rp03",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "Apple iPhone 17",
+    "category": "Mobile Tech",
+    "basePrice": 82900,
+    "desc": "The baseline iPhone 17 model, featuring iterative updates over the 16, a powerful new A-series chip, and the dynamic island.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "A19 Bionic Chip" },
+      { "key": "Display", "val": "6.1-inch Super Retina XDR (60Hz)" },
+      { "key": "Camera", "val": "48MP Main + 12MP Ultrawide" },
+      { "key": "Material", "val": "Aluminum with color-infused glass" },
+      { "key": "Charging", "val": "MagSafe and USB-C" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp04",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "Apple iPhone 17 Air",
+    "category": "Mobile Tech",
+    "basePrice": 95000,
+    "desc": "Apple's radical new ultra-thin redesign. Sacrificing some battery and camera hardware to achieve the thinnest iPhone ever created.",
+    "review": "",
+    "specs": [
+      { "key": "Design", "val": "Ultra-thin chassis (approx 5-6mm thickness)" },
+      { "key": "Processor", "val": "A19 Bionic Chip" },
+      { "key": "Display", "val": "6.6-inch Super Retina XDR" },
+      { "key": "Camera", "val": "Single 48MP Rear Camera System" },
+      { "key": "Material", "val": "Titanium/Aluminum hybrid frame" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp05",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "Apple iPhone 17 Pro",
+    "category": "Mobile Tech",
+    "basePrice": 134900,
+    "desc": "The sweet spot for professionals. Combines the lighter titanium frame with a 120Hz ProMotion display and the triple-lens camera system.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "A19 Pro Bionic Chip" },
+      { "key": "Display", "val": "6.3-inch Super Retina XDR (120Hz ProMotion)" },
+      { "key": "Material", "val": "Aerospace-grade Titanium" },
+      { "key": "Camera", "val": "48MP Main + 48MP Ultrawide + 12MP 5x Telephoto" },
+      { "key": "Connectivity", "val": "USB-C with USB 3 data speeds" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp06",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "Apple iPhone 17 Pro Max",
+    "category": "Mobile Tech",
+    "basePrice": 154900,
+    "desc": "The largest and most powerful iPhone. Features a massive battery and an expansive screen for unparalleled media consumption and battery endurance.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "A19 Pro Bionic Chip" },
+      { "key": "Display", "val": "6.9-inch Super Retina XDR (120Hz ProMotion)" },
+      { "key": "Material", "val": "Aerospace-grade Titanium" },
+      { "key": "Battery", "val": "Largest battery in iPhone lineup (4600+ mAh)" },
+      { "key": "Camera", "val": "Advanced 48MP triple array with tetraprism lens" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp07",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "OnePlus 15",
+    "category": "Mobile Tech",
+    "basePrice": 65999,
+    "desc": "The flagship killer returns. The OnePlus 15 focuses on raw speed, incredibly fast charging, and smooth software to undercut the major players.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "Snapdragon 8 Gen 5" },
+      { "key": "Display", "val": "6.82-inch 120Hz LTPO AMOLED" },
+      { "key": "Charging", "val": "100W SuperVOOC Wired Charging" },
+      { "key": "Camera", "val": "Hasselblad tuned 50MP Triple Setup" },
+      { "key": "OS", "val": "OxygenOS 15" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp08",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "iQOO 13",
+    "category": "Mobile Tech",
+    "basePrice": 55999,
+    "desc": "A gaming-focused powerhouse. iQOO delivers the absolute highest tier processing hardware at a budget price, aimed squarely at mobile gamers.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "Snapdragon 8 Gen 4/5" },
+      { "key": "Display", "val": "144Hz AMOLED Flat Display" },
+      { "key": "Gaming", "val": "Q2 Supercomputing Gaming Chip for frame interpolation" },
+      { "key": "Battery", "val": "6000 mAh with 120W FlashCharge" },
+      { "key": "Cooling", "val": "Massive Vapor Chamber Liquid Cooling" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp09",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "Samsung Galaxy Z Fold7",
+    "category": "Mobile Tech",
+    "basePrice": 164999,
+    "desc": "Samsung's premier foldable device. Unfolding from a standard phone into a mini-tablet, perfect for heavy multitasking and media consumption.",
+    "review": "",
+    "specs": [
+      { "key": "Inner Display", "val": "7.6-inch Dynamic AMOLED 2x Folding" },
+      { "key": "Cover Display", "val": "6.3-inch Dynamic AMOLED 2x" },
+      { "key": "Processor", "val": "Snapdragon 8 Gen 5 for Galaxy" },
+      { "key": "Features", "val": "S-Pen Support on inner screen" },
+      { "key": "Durability", "val": "IP48 Water and Dust resistance" }
+    ],
+    "retailers": [
+      { "name": "Samsung Store IN", "price": 164999, "url": "https://www.samsung.com/in/smartphones/galaxy-z-fold7/" }
+    ]
+  },
+  {
+    "id": "rp10",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "Samsung Galaxy Z Flip7",
+    "category": "Mobile Tech",
+    "basePrice": 94999,
+    "desc": "The stylish, pocketable foldable. Closes down to the size of a coaster, making it the most portable flagship on the market with a highly usable cover screen.",
+    "review": "",
+    "specs": [
+      { "key": "Inner Display", "val": "6.7-inch Folding AMOLED (120Hz)" },
+      { "key": "Cover Display", "val": "3.4-inch AMOLED FlexWindow" },
+      { "key": "Processor", "val": "Snapdragon 8 Gen 5 for Galaxy" },
+      { "key": "Form Factor", "val": "Clamshell folding design" },
+      { "key": "Cameras", "val": "Dual 12MP rear sensors optimized for Flex Mode" }
+    ],
+    "retailers": [
+      { "name": "Samsung Store IN", "price": 94999, "url": "https://www.samsung.com/in/smartphones/galaxy-z-flip7/" }
+    ]
+  },
+  {
+    "id": "rp11",
+    "page": "Random Products",
+    "icon": "🎮",
+    "name": "Steam Deck OLED (1TB)",
+    "category": "Gaming",
+    "basePrice": 65000,
+    "desc": "Valve's incredible handheld PC gaming console, now with a stunning HDR OLED display, better battery life, and faster Wi-Fi.",
+    "review": "",
+    "specs": [
+      { "key": "Display", "val": "7.4-inch HDR OLED (90Hz)" },
+      { "key": "Processor", "val": "6 nm AMD APU" },
+      { "key": "Storage", "val": "1TB NVMe SSD" },
+      { "key": "OS", "val": "SteamOS 3.0 (Arch Linux based)" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp12",
+    "page": "Random Products",
+    "icon": "💻",
+    "name": "Asus ROG Zephyrus G14",
+    "category": "Tech & Hardware",
+    "basePrice": 175000,
+    "desc": "A beautifully crafted, ultra-portable 14-inch gaming laptop packing Desktop-class Nvidia RTX graphics and an AMD Ryzen 9 processor.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "AMD Ryzen 9 8945HS" },
+      { "key": "Graphics", "val": "Nvidia GeForce RTX 4070" },
+      { "key": "Display", "val": "14-inch 3K OLED (120Hz)" },
+      { "key": "Build", "val": "CNC Machined Aluminum chassis" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp13",
+    "page": "Random Products",
+    "icon": "⌚",
+    "name": "Apple Watch Ultra 3",
+    "category": "Mobile Tech",
+    "basePrice": 89900,
+    "desc": "The most rugged and capable Apple Watch. Features a titanium case, precision dual-frequency GPS, and up to 36 hours of battery life.",
+    "review": "",
+    "specs": [
+      { "key": "Material", "val": "Aerospace-grade Titanium" },
+      { "key": "Display", "val": "Always-On Retina LTPO OLED (3000 nits)" },
+      { "key": "Water Resistance", "val": "100m (Dive ready up to 40m)" },
+      { "key": "Battery", "val": "Up to 36 hours standard use" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp14",
+    "page": "Random Products",
+    "icon": "📷",
+    "name": "Sony Alpha a7 IV",
+    "category": "Audio/Video",
+    "basePrice": 210000,
+    "desc": "A true hybrid mirrorless camera, delivering outstanding 33MP stills and stunning 4K 60p video capabilities for advanced creators.",
+    "review": "",
+    "specs": [
+      { "key": "Sensor", "val": "33MP Full-Frame Exmor R CMOS" },
+      { "key": "Processor", "val": "BIONZ XR image processor" },
+      { "key": "Autofocus", "val": "Real-time Eye AF for humans/animals/birds" },
+      { "key": "Video", "val": "4K 60p in 10-bit 4:2:2" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp15",
+    "page": "Random Products",
+    "icon": "🚁",
+    "name": "DJI Mini 4 Pro",
+    "category": "Audio/Video",
+    "basePrice": 85000,
+    "desc": "A sub-250g drone that packs serious power. Features omnidirectional obstacle sensing, 4K/60fps HDR video, and 34 minutes of flight time.",
+    "review": "",
+    "specs": [
+      { "key": "Weight", "val": "Under 249 grams" },
+      { "key": "Video", "val": "4K/60fps HDR True Vertical Shooting" },
+      { "key": "Safety", "val": "Omnidirectional Obstacle Sensing" },
+      { "key": "Range", "val": "20km FHD Video Transmission" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp16",
+    "page": "Random Products",
+    "icon": "⌨️",
+    "name": "Keychron Q1 Pro",
+    "category": "Tech & Hardware",
+    "basePrice": 18000,
+    "desc": "A premium full metal QMK/VIA custom mechanical keyboard with wireless connectivity, perfect for productivity and typing enthusiasts.",
+    "review": "",
+    "specs": [
+      { "key": "Build", "val": "Full CNC Machined Aluminum Body" },
+      { "key": "Connectivity", "val": "Bluetooth 5.1 & Type-C Wired" },
+      { "key": "Layout", "val": "75% with Rotary Knob" },
+      { "key": "Customization", "val": "Hot-swappable switches, QMK/VIA supported" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp17",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "Google Pixel 9 Pro Fold",
+    "category": "Mobile Tech",
+    "basePrice": 175000,
+    "desc": "Google's sleekest foldable yet. Features the brightest displays, advanced Gemini AI integrated directly into the OS, and exceptional Pixel cameras.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "Google Tensor G4" },
+      { "key": "Inner Display", "val": "8-inch Super Actua Flex Display" },
+      { "key": "AI Features", "val": "Deep Gemini Nano integration" },
+      { "key": "Design", "val": "Thinnest foldable profile in North America" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp18",
+    "page": "Random Products",
+    "icon": "🎧",
+    "name": "Bose QuietComfort Ultra",
+    "category": "Audio/Video",
+    "basePrice": 35900,
+    "desc": "Bose's flagship noise-cancelling headphones featuring spatial audio for a wildly immersive experience and world-class comfort.",
+    "review": "",
+    "specs": [
+      { "key": "Audio", "val": "Bose Immersive Audio (Spatial Audio)" },
+      { "key": "Noise Cancellation", "val": "CustomTune technology for personalized ANC" },
+      { "key": "Battery", "val": "Up to 24 hours of play time" },
+      { "key": "Comfort", "val": "Premium synthetic leather ear cushions" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp19",
+    "page": "Random Products",
+    "icon": "💻",
+    "name": "Framework Laptop 16",
+    "category": "Tech & Hardware",
+    "basePrice": 160000,
+    "desc": "A high-performance 16-inch laptop designed to be completely upgradeable, repairable, and customizable, including a hot-swappable GPU bay.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "AMD Ryzen 9 7940HS" },
+      { "key": "Graphics", "val": "Modular Graphics Module (Radeon RX 7700S)" },
+      { "key": "Customization", "val": "Fully modular input deck and ports" },
+      { "key": "Repairability", "val": "Every part is replaceable by the user" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp20",
+    "page": "Random Products",
+    "icon": "🥽",
+    "name": "Meta Quest 3 (512GB)",
+    "category": "Gaming",
+    "basePrice": 65000,
+    "desc": "The premier mixed reality headset. Blends the physical and virtual worlds with high-fidelity color passthrough and pancake lenses.",
+    "review": "",
+    "specs": [
+      { "key": "Resolution", "val": "2064x2208 pixels per eye (4K+ Infinite Display)" },
+      { "key": "Processor", "val": "Snapdragon XR2 Gen 2" },
+      { "key": "Passthrough", "val": "Full-color, high-fidelity mixed reality" },
+      { "key": "Storage", "val": "512GB Onboard" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp21",
+    "page": "Random Products",
+    "icon": "🎹",
+    "name": "Teenage Engineering OP-1 Field",
+    "category": "Audio/Video",
+    "basePrice": 180000,
+    "desc": "A beautifully engineered, ultra-portable synthesizer, sampler, and sequencer. An entire electronic music studio packed into a sleek aluminum frame.",
+    "review": "",
+    "specs": [
+      { "key": "Type", "val": "Portable Synthesizer & Workstation" },
+      { "key": "Build", "val": "Low profile aluminum body" },
+      { "key": "Battery", "val": "24-hour battery life" },
+      { "key": "Features", "val": "Multiple synth engines, built-in FM radio, 32-bit audio" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp22",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "Nothing Phone (3)",
+    "category": "Mobile Tech",
+    "basePrice": 45000,
+    "desc": "The unique transparent smartphone returns with improved Glyph lighting, a refined minimalist OS, and upper-midrange specs that punch above their weight.",
+    "review": "",
+    "specs": [
+      { "key": "Design", "val": "Transparent back with customizable Glyph LED interface" },
+      { "key": "Processor", "val": "Snapdragon 8s Gen 3" },
+      { "key": "OS", "val": "Nothing OS (Bloat-free Android)" },
+      { "key": "Camera", "val": "Dual 50MP Rear Array" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp23",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "Xiaomi 15 Ultra",
+    "category": "Mobile Tech",
+    "basePrice": 110000,
+    "desc": "A massive camera powerhouse co-engineered with Leica. Features a massive 1-inch main sensor and dual telephoto lenses for supreme photography.",
+    "review": "",
+    "specs": [
+      { "key": "Camera System", "val": "Leica Summilux Quad Camera System" },
+      { "key": "Main Sensor", "val": "50MP 1-inch type sensor" },
+      { "key": "Processor", "val": "Snapdragon 8 Gen 4" },
+      { "key": "Battery", "val": "High-density silicon-carbon battery" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp24",
+    "page": "Random Products",
+    "icon": "⌚",
+    "name": "Garmin Fenix 8",
+    "category": "Tech & Hardware",
+    "basePrice": 105000,
+    "desc": "The ultimate multisport GPS smartwatch. Features solar charging, an LED flashlight, and advanced training metrics for serious athletes.",
+    "review": "",
+    "specs": [
+      { "key": "Display", "val": "AMOLED or Solar charging options" },
+      { "key": "Battery Life", "val": "Up to 28 days in smartwatch mode" },
+      { "key": "Sensors", "val": "Multi-band GPS, Heart rate, Pulse Ox, Altimeter" },
+      { "key": "Build", "val": "Titanium bezel and scratch-resistant sapphire lens" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp25",
+    "page": "Random Products",
+    "icon": "🪑",
+    "name": "Herman Miller Aeron",
+    "category": "Lifestyle",
+    "basePrice": 150000,
+    "desc": "The gold standard of ergonomic office chairs. Features Pellicle mesh suspension for cooling and PostureFit SL for total spinal support.",
+    "review": "",
+    "specs": [
+      { "key": "Material", "val": "8Z Pellicle elastomeric suspension" },
+      { "key": "Ergonomics", "val": "Adjustable PostureFit SL for lumbar/sacral support" },
+      { "key": "Adjustability", "val": "Fully adjustable arms, tilt limiter, seat angle" },
+      { "key": "Warranty", "val": "12-year 3-shift warranty" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp26",
+    "page": "Random Products",
+    "icon": "📺",
+    "name": "LG C4 42-inch OLED TV",
+    "category": "Tech & Hardware",
+    "basePrice": 95000,
+    "desc": "An incredible OLED television that doubles as the ultimate PC gaming monitor, featuring deep blacks, 144Hz refresh rate, and NVIDIA G-Sync.",
+    "review": "",
+    "specs": [
+      { "key": "Panel Type", "val": "OLED evo (Self-lit pixels)" },
+      { "key": "Refresh Rate", "val": "144Hz Native" },
+      { "key": "Gaming", "val": "NVIDIA G-Sync, AMD FreeSync Premium, VRR" },
+      { "key": "Processor", val: "a9 AI Processor Gen7" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp27",
+    "page": "Random Products",
+    "icon": "🔊",
+    "name": "Sonos Arc Soundbar",
+    "category": "Audio/Video",
+    "basePrice": 85000,
+    "desc": "A premium smart soundbar for TV, movies, and gaming. Bring all your entertainment to life with the brilliantly realistic sound of Dolby Atmos.",
+    "review": "",
+    "specs": [
+      { "key": "Audio Format", "val": "Dolby Atmos 3D Sound" },
+      { "key": "Acoustics", "val": "11 high-performance internal drivers" },
+      { "key": "Connectivity", "val": "Wi-Fi, Apple AirPlay 2, HDMI eARC" },
+      { "key": "Smart Features", "val": "Built-in Voice control (Alexa/Sonos Voice)" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp28",
+    "page": "Random Products",
+    "icon": "💺",
+    "name": "Secretlab Titan Evo",
+    "category": "Lifestyle",
+    "basePrice": 45000,
+    "desc": "A highly acclaimed gaming chair featuring proprietary cold-cure foam, magnetic memory foam head pillow, and a built-in 4-way lumbar support system.",
+    "review": "",
+    "specs": [
+      { "key": "Upholstery", "val": "Secretlab NEO Hybrid Leatherette / SoftWeave Plus" },
+      { "key": "Lumbar Support", "val": "L-ADAPT 4-Way system built into backrest" },
+      { "key": "Armrests", "val": "Full-Metal 4D with CloudSwap tech" },
+      { "key": "Pillow", "val": "Magnetic Memory Foam Head Pillow" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp29",
+    "page": "Random Products",
+    "icon": "🖊️",
+    "name": "Wacom Cintiq Pro 16",
+    "category": "Tech & Hardware",
+    "basePrice": 120000,
+    "desc": "A professional 4K pen display designed for digital artists. Delivers natural pen-on-screen feel with stunning color accuracy.",
+    "review": "",
+    "specs": [
+      { "key": "Display", "val": "15.6-inch 4K UHD (3840 x 2160)" },
+      { "key": "Color Gamut", "val": "98% Adobe RGB" },
+      { "key": "Pen Technology", "val": "Wacom Pro Pen 2 (8,192 pressure levels)" },
+      { "key": "Surface", "val": "Etched anti-glare glass" }
+    ],
+    "retailers": []
+  },
+  {
+    "id": "rp30",
+    "page": "Random Products",
+    "icon": "🔧",
+    "name": "Raspberry Pi 5 (8GB)",
+    "category": "Tech & Hardware",
+    "basePrice": 8500,
+    "desc": "The tiny, dual-display desktop computer. Perfect for DIY electronics, retro gaming emulation, or building your own home server.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "Broadcom BCM2712 2.4GHz quad-core 64-bit Arm Cortex-A76" },
+      { "key": "RAM", "val": "8GB LPDDR4X" },
+      { "key": "Connectivity", val: "Dual-band 802.11ac Wi-Fi, Bluetooth 5.0" },
+      { "key": "Expansion", val: "PCIe 2.0 x1 interface for fast peripherals" }
+    ],
+    "retailers": []
+  }
+]
