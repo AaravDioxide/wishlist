@@ -1381,5 +1381,371 @@
     "retailers": [
       { "name": "Amazon IN", "price": 145000, "url": "https://www.amazon.in/Lenovo-ThinkPad-X1-Carbon-Gen12/dp/B0CRFNQ5WZ" }
     ]
+  },
+  {
+    "id": "rp39",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "Samsung Galaxy S26+",
+    "category": "Mobile Tech",
+    "basePrice": 99999,
+    "desc": "The perfect middle child in the S26 series, offering a larger screen and significantly better battery life than the base model, all without the bulk of the Ultra.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "Snapdragon 8 Gen 5 for Galaxy (3nm)" },
+      { "key": "Display", "val": "6.7-inch Dynamic AMOLED 2x (1-120Hz, 2600 nits)" },
+      { "key": "Camera System", "val": "50MP Main (f/1.8) + 12MP Ultrawide + 10MP 3x Zoom" },
+      { "key": "Front Camera", "val": "12MP Dual Pixel AF" },
+      { "key": "Battery", "val": "4900mAh, 45W wired fast charge, 15W wireless" },
+      { "key": "RAM", "val": "12GB LPDDR5x" },
+      { "key": "Storage", "val": "256GB / 512GB UFS 4.0" },
+      { "key": "Build", "val": "Armor Aluminum frame, Gorilla Glass Victus 3" },
+      { "key": "Durability", "val": "IP68 (6m/30min)" },
+      { "key": "OS", "val": "One UI 8 based on Android 16" }
+    ],
+    "retailers": [
+      { "name": "Samsung Store IN", "price": 99999, "url": "https://www.samsung.com/in/smartphones/galaxy-s26/buy/" },
+      { "name": "Amazon IN", "price": 99999, "url": "https://www.google.com/search?tbm=shop&q=buy+Samsung+Galaxy+S26+Plus+India" }
+    ]
+  },
+  {
+    "id": "rp40",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "Samsung Galaxy A56 5G",
+    "category": "Mobile Tech",
+    "basePrice": 39999,
+    "desc": "Samsung's most popular mid-range phone, bringing flagship-level AI features, excellent battery life, and a refined metal frame to a much more accessible price point.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "Exynos 1680 (4nm)" },
+      { "key": "Display", "val": "6.6-inch Super AMOLED (120Hz, 1200 nits peak)" },
+      { "key": "Camera System", "val": "50MP OIS Main + 12MP Ultrawide + 5MP Macro" },
+      { "key": "Front Camera", "val": "32MP" },
+      { "key": "Battery", "val": "5000mAh, 25W wired fast charge" },
+      { "key": "RAM", "val": "8GB / 12GB" },
+      { "key": "Storage", "val": "128GB / 256GB (Expandable via MicroSD)" },
+      { "key": "Build", "val": "Aluminum frame, Glass back" },
+      { "key": "Durability", "val": "IP67 dust and water resistance" },
+      { "key": "OS", "val": "One UI 8 based on Android 16 (4 years OS updates)" }
+    ],
+    "retailers": [
+      { "name": "Samsung Store IN", "price": 39999, "url": "https://www.samsung.com/in/smartphones/galaxy-a/galaxy-a56-5g/buy/" },
+      { "name": "Flipkart", "price": 39999, "url": "https://www.google.com/search?tbm=shop&q=buy+Samsung+Galaxy+A56+5G+India" }
+    ]
+  },
+  {
+    "id": "rp41",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "Google Pixel 10 Pro XL",
+    "category": "Mobile Tech",
+    "basePrice": 119999,
+    "desc": "The absolute pinnacle of Google's hardware. Powered by the completely custom-built Tensor G5 chip (TSMC 3nm), it delivers unprecedented AI performance, battery life, and the most advanced computational photography on the market.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "Google Tensor G5 (TSMC 3nm custom architecture)" },
+      { "key": "Display", "val": "6.8-inch Super Actua LTPO OLED (1-120Hz, 3200 nits peak)" },
+      { "key": "Camera", "val": "50MP Main OIS + 48MP Ultrawide + 48MP 5x Optical Telephoto" },
+      { "key": "Front Camera", "val": "42MP with Autofocus" },
+      { "key": "AI Features", "val": "On-device Gemini Advanced, Video Boost 2.0, Live Translate" },
+      { "key": "Battery", "val": "5060mAh, 45W wired, 23W wireless" },
+      { "key": "RAM", "val": "16GB LPDDR5x" },
+      { "key": "Storage", "val": "256GB / 512GB / 1TB UFS 4.0" },
+      { "key": "OS Support", "val": "7 years of OS + Security updates (Android 16 out of box)" },
+      { "key": "Durability", "val": "IP68, Corning Gorilla Armor" }
+    ],
+    "retailers": [
+      { "name": "Flipkart", "price": 119999, "url": "https://www.google.com/search?tbm=shop&q=buy+Google+Pixel+10+Pro+XL+India" }
+    ]
+  },
+  {
+    "id": "rp42",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "Google Pixel 10",
+    "category": "Mobile Tech",
+    "basePrice": 79999,
+    "desc": "Google's sleek, mainstream flagship offering the exact same fully-custom Tensor G5 chip as the Pro models, housed in a beautifully compact and pocketable design.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "Google Tensor G5 (TSMC 3nm custom architecture)" },
+      { "key": "Display", "val": "6.3-inch Actua OLED (60-120Hz, 2800 nits peak)" },
+      { "key": "Camera", "val": "50MP Main OIS + 48MP Ultrawide (Macro focus enabled)" },
+      { "key": "Front Camera", "val": "10.5MP PD autofocus" },
+      { "key": "Battery", "val": "4700mAh, 27W wired, 15W wireless" },
+      { "key": "RAM", "val": "12GB LPDDR5x" },
+      { "key": "Storage", "val": "128GB / 256GB UFS 4.0" },
+      { "key": "OS Support", "val": "7 years of OS + Security updates (Android 16 out of box)" },
+      { "key": "Durability", "val": "IP68, Gorilla Glass Victus 2" }
+    ],
+    "retailers": [
+      { "name": "Flipkart", "price": 79999, "url": "https://www.google.com/search?tbm=shop&q=buy+Google+Pixel+10+India" }
+    ]
+  },
+  {
+    "id": "rp43",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "Apple iPhone SE (4th Gen)",
+    "category": "Mobile Tech",
+    "basePrice": 49900,
+    "desc": "The biggest upgrade to the iPhone SE in history. Finally adopting the modern iPhone design language, it brings an edge-to-edge OLED display, Face ID, USB-C, and the blazing fast A18 chip to Apple's most affordable phone.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "A18 Bionic Chip (3nm)" },
+      { "key": "Display", "val": "6.1-inch Super Retina XDR OLED (60Hz)" },
+      { "key": "Camera", "val": "Single 48MP Main Camera (f/1.6, 2x in-sensor optical quality zoom)" },
+      { "key": "Front Camera", "val": "12MP TrueDepth" },
+      { "key": "Biometrics", "val": "Face ID (No more Home Button)" },
+      { "key": "Charging", "val": "USB-C, MagSafe wireless charging" },
+      { "key": "Material", "val": "Aerospace-grade Aluminum, glass back" },
+      { "key": "Connectivity", "val": "5G, Wi-Fi 6E, Bluetooth 5.3" },
+      { "key": "Features", "val": "Action Button included, Apple Intelligence support" }
+    ],
+    "retailers": [
+      { "name": "Apple Store IN", "price": 49900, "url": "https://www.apple.com/in/shop/buy-iphone/iphone-se" }
+    ]
+  },
+  {
+    "id": "rp44",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "OnePlus 14",
+    "category": "Mobile Tech",
+    "basePrice": 69999,
+    "desc": "A masterclass in performance. The OnePlus 14 pairs the latest Snapdragon 8 Gen 5 processor with a massive battery and incredibly fast 100W charging, continuing their legacy of speed.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "Snapdragon 8 Gen 5 (3nm)" },
+      { "key": "Display", "val": "6.82-inch 120Hz LTPO BOE AMOLED (4500 nits peak, 2K resolution)" },
+      { "key": "Camera", "val": "50MP Main + 50MP Periscope 3x + 50MP Ultrawide (Hasselblad tuned)" },
+      { "key": "Battery", "val": "6000mAh Silicon Carbon" },
+      { "key": "Charging", "val": "100W SUPERVOOC wired, 50W AIRVOOC wireless" },
+      { "key": "RAM", "val": "12GB / 16GB LPDDR5x" },
+      { "key": "Storage", "val": "256GB / 512GB UFS 4.0" },
+      { "key": "Durability", "val": "IP65 Rating" },
+      { "key": "OS", "val": "OxygenOS 16 (Android 16)" }
+    ],
+    "retailers": [
+      { "name": "Amazon IN", "price": 69999, "url": "https://www.google.com/search?tbm=shop&q=buy+OnePlus+14+India" }
+    ]
+  },
+  {
+    "id": "rp45",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "OnePlus 14R",
+    "category": "Mobile Tech",
+    "basePrice": 42999,
+    "desc": "The performance king of the mid-range. Utilizing last year's flagship Snapdragon processor to deliver unrelenting gaming frame rates and speed at a fraction of the flagship price.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "Snapdragon 8 Gen 4 (3nm)" },
+      { "key": "Display", "val": "6.78-inch 1.5K AMOLED (120Hz LTPO, 4000 nits peak)" },
+      { "key": "Camera", "val": "50MP Sony IMX890 Main + 8MP Ultrawide + 2MP Macro" },
+      { "key": "Battery", "val": "5500mAh" },
+      { "key": "Charging", "val": "100W SUPERVOOC wired (no wireless)" },
+      { "key": "RAM", "val": "8GB / 16GB LPDDR5x" },
+      { "key": "Storage", "val": "128GB (UFS 3.1) / 256GB (UFS 4.0)" },
+      { "key": "Cooling", "val": "Cryo-velocity VC cooling system" },
+      { "key": "OS", "val": "OxygenOS 16 (Android 16)" }
+    ],
+    "retailers": [
+      { "name": "Amazon IN", "price": 42999, "url": "https://www.google.com/search?tbm=shop&q=buy+OnePlus+14R+India" }
+    ]
+  },
+  {
+    "id": "rp46",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "Xiaomi 16",
+    "category": "Mobile Tech",
+    "basePrice": 74999,
+    "desc": "Xiaomi's incredibly capable compact flagship. Featuring a flat display, symmetrical bezels, and Leica-engineered optics, this is the premier small Android phone on the market.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "Snapdragon 8 Gen 5 (3nm)" },
+      { "key": "Display", "val": "6.36-inch Flat LTPO AMOLED (1-120Hz, 1.5K, 3000 nits peak)" },
+      { "key": "Camera", "val": "Leica Summilux: 50MP Light Hunter Main + 50MP 2.6x Telephoto + 50MP Ultrawide" },
+      { "key": "Front Camera", "val": "32MP" },
+      { "key": "Battery", "val": "4800mAh High-density Silicon, 90W wired, 50W wireless" },
+      { "key": "RAM", "val": "12GB LPDDR5x" },
+      { "key": "Storage", "val": "256GB / 512GB UFS 4.0" },
+      { "key": "Durability", "val": "IP68 Rating" },
+      { "key": "OS", "val": "HyperOS 2.0 (Android 16)" }
+    ],
+    "retailers": [
+      { "name": "Amazon IN", "price": 74999, "url": "https://www.google.com/search?tbm=shop&q=buy+Xiaomi+16+India" }
+    ]
+  },
+  {
+    "id": "rp47",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "Motorola Edge 60 Ultra",
+    "category": "Mobile Tech",
+    "basePrice": 89999,
+    "desc": "A stunning flagship wrapped in premium materials like real wood and vegan leather. Known for its ultra-smooth 144Hz display, near-stock Android software, and ridiculously fast 125W charging.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "Snapdragon 8 Gen 5 (3nm)" },
+      { "key": "Display", "val": "6.7-inch pOLED (144Hz, Pantone Validated Colors, HDR10+)" },
+      { "key": "Camera", "val": "50MP Main OIS + 50MP Ultrawide + 64MP 3x Periscope Telephoto" },
+      { "key": "Front Camera", "val": "50MP with Autofocus" },
+      { "key": "Battery", "val": "4600mAh, 125W TurboPower wired, 50W wireless charging" },
+      { "key": "RAM", "val": "12GB / 16GB" },
+      { "key": "Storage", "val": "512GB / 1TB" },
+      { "key": "Materials", "val": "Aluminum frame, Real Wood / Vegan Leather back options" },
+      { "key": "Durability", "val": "IP68 water and dust resistance" },
+      { "key": "OS", "val": "Hello UI (Android 16)" }
+    ],
+    "retailers": [
+      { "name": "Flipkart", "price": 89999, "url": "https://www.google.com/search?tbm=shop&q=buy+Motorola+Edge+60+Ultra+India" }
+    ]
+  },
+  {
+    "id": "rp48",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "Nothing Phone (3)",
+    "category": "Mobile Tech",
+    "basePrice": 44999,
+    "desc": "The much-anticipated true successor to Phone (2). Refining the transparent aesthetic with a more intricate Glyph Interface, improved cameras, and deeply integrated AI across Nothing OS.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "Snapdragon 8s Gen 4 (4nm)" },
+      { "key": "Display", "val": "6.7-inch LTPO OLED (1-120Hz, 2000 nits peak, symmetrical bezels)" },
+      { "key": "Design", "val": "Transparent glass back, Glyph Interface v3.0 (more LED zones)" },
+      { "key": "Camera", "val": "50MP Sony IMX890 Main + 50MP Ultrawide + 32MP 2x Portrait Telephoto" },
+      { "key": "Battery", "val": "4900mAh, 45W wired, 15W wireless" },
+      { "key": "RAM", "val": "8GB / 12GB LPDDR5" },
+      { "key": "Storage", "val": "256GB / 512GB UFS 3.1" },
+      { "key": "OS", "val": "Nothing OS 3.5 (Android 16)" }
+    ],
+    "retailers": [
+      { "name": "Flipkart", "price": 44999, "url": "https://www.google.com/search?tbm=shop&q=buy+Nothing+Phone+3+India" }
+    ]
+  },
+  {
+    "id": "rp49",
+    "page": "Random Products",
+    "icon": "🖥️",
+    "name": "Apple iPad Pro 13-inch (M5)",
+    "category": "Tech & Hardware",
+    "basePrice": 129900,
+    "desc": "The most advanced tablet in the world, now impossibly thin. Features a breathtaking Tandem OLED display for insane brightness and contrast, completely powered by the M5 chip.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "Apple M5 Chip (10-core CPU, 10-core GPU, 16-core Neural Engine)" },
+      { "key": "Display", "val": "13-inch Ultra Retina XDR (Tandem OLED, 120Hz ProMotion, 1000 nits SDR/1600 nits HDR)" },
+      { "key": "Storage Options", "val": "256GB, 512GB, 1TB, 2TB" },
+      { "key": "RAM", "val": "8GB (on 256/512GB models), 16GB (on 1TB/2TB models)" },
+      { "key": "Cameras", "val": "12MP Wide rear + LiDAR Scanner, 12MP Ultra Wide front (landscape)" },
+      { "key": "Thickness", "val": "5.1mm (thinnest Apple product ever made)" },
+      { "key": "Connectivity", "val": "Wi-Fi 7, Bluetooth 5.3, Thunderbolt / USB 4" },
+      { "key": "Accessories Supported", "val": "Apple Pencil Pro, Apple Magic Keyboard for iPad Pro" },
+      { "key": "Biometrics", "val": "Face ID" }
+    ],
+    "retailers": [
+      { "name": "Apple Store IN", "price": 129900, "url": "https://www.apple.com/in/shop/buy-ipad/ipad-pro" }
+    ]
+  },
+  {
+    "id": "rp50",
+    "page": "Random Products",
+    "icon": "🖥️",
+    "name": "Samsung Galaxy Tab S10 Ultra",
+    "category": "Tech & Hardware",
+    "basePrice": 108999,
+    "desc": "A massive, uncompromised canvas for creativity and productivity. The 14.6-inch AMOLED display and included S-Pen make it the ultimate Android laptop replacement and media machine.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "MediaTek Dimensity 9300+ (4nm)" },
+      { "key": "Display", "val": "14.6-inch Dynamic AMOLED 2X (120Hz, Anti-Reflective coating)" },
+      { "key": "S-Pen", "val": "Included in box (Ultra-low latency, Bluetooth enabled)" },
+      { "key": "RAM", "val": "12GB / 16GB" },
+      { "key": "Storage", "val": "256GB / 512GB / 1TB (Expandable via MicroSD up to 1.5TB)" },
+      { "key": "Cameras", "val": "Rear: 13MP + 8MP Ultrawide | Front: 12MP + 12MP Ultrawide" },
+      { "key": "Battery", "val": "11,200mAh, 45W Fast Charging" },
+      { "key": "Audio", "val": "Quad Speakers tuned by AKG, Dolby Atmos" },
+      { "key": "Durability", "val": "IP68 water and dust resistant, Armor Aluminum chassis" },
+      { "key": "OS", "val": "One UI 7 (Android 15) with Galaxy AI" }
+    ],
+    "retailers": [
+      { "name": "Samsung Store IN", "price": 108999, "url": "https://www.samsung.com/in/tablets/galaxy-tab-s/galaxy-tab-s10-ultra/" }
+    ]
+  },
+  {
+    "id": "rp51",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "Google Pixel Tablet 2",
+    "category": "Tech & Hardware",
+    "basePrice": 49999,
+    "desc": "Google's versatile tablet that acts as a powerful handheld device and seamlessly transforms into a smart home hub when magnetically attached to its charging speaker dock.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "Google Tensor G4 (optimized for efficiency)" },
+      { "key": "Display", "val": "11-inch LCD (2560x1600, 90Hz)" },
+      { "key": "Included Accessory", "val": "Magnetic Charging Speaker Dock (doubles as smart display stand)" },
+      { "key": "Cameras", "val": "8MP Rear + 8MP Front (optimized for video calling)" },
+      { "key": "RAM", "val": "8GB LPDDR5" },
+      { "key": "Storage", "val": "128GB / 256GB UFS 3.1" },
+      { "key": "Productivity Features", "val": "Pogo pins for new Google Keyboard Folio case support" },
+      { "key": "Smart Home", "val": "Hub Mode activated on dock, built-in Chromecast" },
+      { "key": "OS", "val": "Android 16 (optimized for large screens)" }
+    ],
+    "retailers": [
+      { "name": "Flipkart", "price": 49999, "url": "https://www.google.com/search?tbm=shop&q=buy+Google+Pixel+Tablet+2+India" }
+    ]
+  },
+  {
+    "id": "rp52",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "OnePlus Pad 3",
+    "category": "Tech & Hardware",
+    "basePrice": 39999,
+    "desc": "An aggressively priced powerhouse tablet. Features a unique 7:5 aspect ratio perfect for reading and browsing, paired with flagship-tier processing for effortless multitasking and gaming.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "Snapdragon 8 Gen 3 (4nm)" },
+      { "key": "Display", "val": "12.1-inch LCD (144Hz, 3K resolution, 7:5 aspect ratio, 900 nits)" },
+      { "key": "RAM", "val": "8GB / 12GB LPDDR5x" },
+      { "key": "Storage", "val": "128GB / 256GB UFS 3.1" },
+      { "key": "Battery", "val": "9510mAh, 67W SUPERVOOC fast charging" },
+      { "key": "Audio", "val": "6-Speaker system with Omnibearing Sound Field" },
+      { "key": "Cameras", "val": "13MP Rear, 8MP Front" },
+      { "key": "Accessories", "val": "Supports OnePlus Stylo 2 and Smart Keyboard (sold separately)" },
+      { "key": "OS", "val": "OxygenOS 15 (Android 15) for Pad" }
+    ],
+    "retailers": [
+      { "name": "Amazon IN", "price": 39999, "url": "https://www.google.com/search?tbm=shop&q=buy+OnePlus+Pad+3+India" }
+    ]
+  },
+  {
+    "id": "rp53",
+    "page": "Random Products",
+    "icon": "📱",
+    "name": "Apple iPad mini (7th Gen)",
+    "category": "Tech & Hardware",
+    "basePrice": 49900,
+    "desc": "Mega power in a mini size. The perfect 8.3-inch form factor, upgraded with the incredibly fast A17 Pro chip to support Apple Intelligence and high-end console gaming on the go.",
+    "review": "",
+    "specs": [
+      { "key": "Processor", "val": "A17 Pro Chip (6-core CPU, 5-core GPU, Hardware Ray Tracing)" },
+      { "key": "Display", "val": "8.3-inch Liquid Retina display (True Tone, P3 wide color)" },
+      { "key": "Storage Options", "val": "128GB (Base), 256GB, 512GB" },
+      { "key": "RAM", "val": "8GB (Enabled for Apple Intelligence)" },
+      { "key": "Cameras", "val": "12MP Wide Rear (Smart HDR 4), 12MP Ultra Wide Front (Center Stage)" },
+      { "key": "Connectivity", "val": "Wi-Fi 6E, Bluetooth 5.3, USB-C (10Gbps)" },
+      { "key": "Apple Pencil", "val": "Supports Apple Pencil Pro and Apple Pencil (USB-C)" },
+      { "key": "Biometrics", "val": "Touch ID integrated into the top button" },
+      { "key": "OS", "val": "iPadOS 18" }
+    ],
+    "retailers": [
+      { "name": "Apple Store IN", "price": 49900, "url": "https://www.apple.com/in/shop/buy-ipad/ipad-mini" }
+    ]
   }
 ]
