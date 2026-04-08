@@ -7,24 +7,67 @@
     "category": "Mobile Tech",
     "basePrice": 82900,
     "desc": "The next-generation iPhone featuring a massive leap in processing power, advanced AI integrations via iOS, and a refined aerospace-grade aluminum chassis. Perfect for heavy daily use, photography, and mobile gaming.",
-    "review": "I'm keeping this as a priority. My current phone is completely messed up, and the new A19 chip combined with the lavender finish makes this the perfect daily driver upgrade.",
+    "review": "My phone is broken , sad lmao",
     "specs": [
-      { "key": "Processor", "val": "A19 Bionic Chip (3nm process)" },
-      { "key": "Display", "val": "6.3-inch Super Retina XDR OLED (2556 x 1179 pixels, 60Hz)" },
-      { "key": "Camera System", "val": "48MP Main + 12MP Ultra Wide" },
-      { "key": "Front Camera", "val": "12MP TrueDepth with autofocus" },
-      { "key": "Video Recording", "val": "4K Dolby Vision HDR up to 60 fps" },
-      { "key": "Storage Capacity", "val": "256GB NVMe" },
-      { "key": "Chassis Material", "val": "Aerospace-grade Aluminum with matte glass back" },
-      { "key": "Battery Capacity", "val": "Approx. 3,800 mAh (All-day battery life)" },
-      { "key": "Charging", "val": "USB-C, MagSafe wireless charging up to 25W" },
-      { "key": "Biometrics", "val": "Face ID (TrueDepth camera)" },
-      { "key": "Connectivity", "val": "5G, Wi-Fi 7, Bluetooth 5.3, UWB, NFC" },
-      { "key": "Durability", "val": "IP68 dust and water resistance (6 meters for 30 mins)" },
-      { "key": "OS", "val": "iOS 18 (upgradeable to iOS 19)" }
+      {
+        "key": "Processor",
+        "val": "A19 Bionic Chip (3nm process)"
+      },
+      {
+        "key": "Display",
+        "val": "6.3-inch Super Retina XDR OLED (2556 x 1179 pixels, 60Hz)"
+      },
+      {
+        "key": "Camera System",
+        "val": "48MP Main + 12MP Ultra Wide"
+      },
+      {
+        "key": "Front Camera",
+        "val": "12MP TrueDepth with autofocus"
+      },
+      {
+        "key": "Video Recording",
+        "val": "4K Dolby Vision HDR up to 60 fps"
+      },
+      {
+        "key": "Storage Capacity",
+        "val": "256GB NVMe"
+      },
+      {
+        "key": "Chassis Material",
+        "val": "Aerospace-grade Aluminum with matte glass back"
+      },
+      {
+        "key": "Battery Capacity",
+        "val": "Approx. 3,800 mAh (All-day battery life)"
+      },
+      {
+        "key": "Charging",
+        "val": "USB-C, MagSafe wireless charging up to 25W"
+      },
+      {
+        "key": "Biometrics",
+        "val": "Face ID (TrueDepth camera)"
+      },
+      {
+        "key": "Connectivity",
+        "val": "5G, Wi-Fi 7, Bluetooth 5.3, UWB, NFC"
+      },
+      {
+        "key": "Durability",
+        "val": "IP68 dust and water resistance (6 meters for 30 mins)"
+      },
+      {
+        "key": "OS",
+        "val": "iOS 18 (upgradeable to iOS 19)"
+      }
     ],
     "retailers": [
-      { "name": "Apple Store IN", "price": 82900, "url": "https://www.apple.com/in/shop/buy-iphone/iphone-17/6.3%22-display-256gb-lavender" }
+      {
+        "name": "Apple Store IN",
+        "price": 82900,
+        "url": "https://www.apple.com/in/shop/buy-iphone/iphone-17/6.3%22-display-256gb-lavender"
+      }
     ]
   },
   {
@@ -35,22 +78,59 @@
     "category": "Gaming",
     "basePrice": 12495,
     "desc": "The ultimate esports gaming mouse. Zero additive PTFE feet ensure a smooth glide, while the new LIGHTFORCE hybrid switches provide incredible speed and reliability without compromising on the crisp, tactile click.",
-    "review": "",
+    "review": "my mouse has a broken button",
     "specs": [
-      { "key": "Sensor", "val": "HERO 2 (100 - 44,000 DPI, 888+ IPS, 88G acceleration)" },
-      { "key": "Polling Rate", "val": "Up to 8000Hz (0.125ms response time)" },
-      { "key": "Switches", "val": "LIGHTFORCE Optical-Mechanical Hybrid" },
-      { "key": "Weight", "val": "60 grams (Ultra-lightweight design)" },
-      { "key": "Battery Life", "val": "Up to 95 hours constant motion (1000Hz polling)" },
-      { "key": "Dimensions", "val": "125.9 mm x 63.5 mm x 40.0 mm" },
-      { "key": "Connectivity", "val": "LIGHTSPEED 2.4GHz Wireless & USB-C wired" },
-      { "key": "Feet", "val": "Zero-additive PTFE Mouse Feet" },
-      { "key": "Buttons", "val": "5 Programmable Buttons" },
-      { "key": "Onboard Memory", "val": "Yes (Requires G HUB software)" },
-      { "key": "Compatibility", "val": "PC and Mac" }
+      {
+        "key": "Sensor",
+        "val": "HERO 2 (100 - 44,000 DPI, 888+ IPS, 88G acceleration)"
+      },
+      {
+        "key": "Polling Rate",
+        "val": "Up to 8000Hz (0.125ms response time)"
+      },
+      {
+        "key": "Switches",
+        "val": "LIGHTFORCE Optical-Mechanical Hybrid"
+      },
+      {
+        "key": "Weight",
+        "val": "60 grams (Ultra-lightweight design)"
+      },
+      {
+        "key": "Battery Life",
+        "val": "Up to 95 hours constant motion (1000Hz polling)"
+      },
+      {
+        "key": "Dimensions",
+        "val": "125.9 mm x 63.5 mm x 40.0 mm"
+      },
+      {
+        "key": "Connectivity",
+        "val": "LIGHTSPEED 2.4GHz Wireless & USB-C wired"
+      },
+      {
+        "key": "Feet",
+        "val": "Zero-additive PTFE Mouse Feet"
+      },
+      {
+        "key": "Buttons",
+        "val": "5 Programmable Buttons"
+      },
+      {
+        "key": "Onboard Memory",
+        "val": "Yes (Requires G HUB software)"
+      },
+      {
+        "key": "Compatibility",
+        "val": "PC and Mac"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 12495, "url": "https://www.amazon.in/Logitech-Superlight-Lightspeed-Lightweight-Programmable/dp/B0CGDZC2FK" }
+      {
+        "name": "Amazon IN",
+        "price": 12495,
+        "url": "https://www.amazon.in/Logitech-Superlight-Lightspeed-Lightweight-Programmable/dp/B0CGDZC2FK"
+      }
     ]
   },
   {
@@ -61,23 +141,64 @@
     "category": "Gaming",
     "basePrice": 31995,
     "desc": "Engineered for the perfect driving experience with dual-motor force feedback, stainless steel paddle shifters, and a hand-stitched leather steering wheel. Includes an adjustable floor pedal unit.",
-    "review": "",
+    "review": "I WANNA GET INTO SIM RACING, HELP ME PLS",
     "specs": [
-      { "key": "Force Feedback", "val": "Dual-Motor with Helical Gearing (anti-backlash)" },
-      { "key": "Steering Rotation", "val": "900 degrees lock-to-lock" },
-      { "key": "Wheel Diameter", "val": "280mm" },
-      { "key": "Wheel Material", "val": "Hand-stitched Leather cover over Aluminum spokes" },
-      { "key": "Pedal System", "val": "3-pedal set: Clutch, Brake (nonlinear), Gas" },
-      { "key": "Pedal Material", "val": "Cold rolled steel frames, brushed stainless steel faces" },
-      { "key": "Shifters", "val": "Stainless Steel paddle shifters" },
-      { "key": "Mounting", "val": "Built-in clamps + hard-point mounting holes" },
-      { "key": "Buttons", "val": "24 action buttons + D-pad" },
-      { "key": "Compatibility", "val": "PlayStation 5, PlayStation 4, PC, Mac" },
-      { "key": "Interface", "val": "USB (includes USB-A cable)" }
+      {
+        "key": "Force Feedback",
+        "val": "Dual-Motor with Helical Gearing (anti-backlash)"
+      },
+      {
+        "key": "Steering Rotation",
+        "val": "900 degrees lock-to-lock"
+      },
+      {
+        "key": "Wheel Diameter",
+        "val": "280mm"
+      },
+      {
+        "key": "Wheel Material",
+        "val": "Hand-stitched Leather cover over Aluminum spokes"
+      },
+      {
+        "key": "Pedal System",
+        "val": "3-pedal set: Clutch, Brake (nonlinear), Gas"
+      },
+      {
+        "key": "Pedal Material",
+        "val": "Cold rolled steel frames, brushed stainless steel faces"
+      },
+      {
+        "key": "Shifters",
+        "val": "Stainless Steel paddle shifters"
+      },
+      {
+        "key": "Mounting",
+        "val": "Built-in clamps + hard-point mounting holes"
+      },
+      {
+        "key": "Buttons",
+        "val": "24 action buttons + D-pad"
+      },
+      {
+        "key": "Compatibility",
+        "val": "PlayStation 5, PlayStation 4, PC, Mac"
+      },
+      {
+        "key": "Interface",
+        "val": "USB (includes USB-A cable)"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 31995, "url": "https://www.amazon.in/Logitech-G29-Driving-Force-Racing/dp/B013DYX7BS" },
-      { "name": "Flipkart", "price": 31995, "url": "https://www.flipkart.com/logitech-g29-driving-force-racing-wheel-floor-pedals-motion-controller/p/itm8635450225b85" }
+      {
+        "name": "Amazon IN",
+        "price": 31995,
+        "url": "https://www.amazon.in/Logitech-G29-Driving-Force-Racing/dp/B013DYX7BS"
+      },
+      {
+        "name": "Flipkart",
+        "price": 31995,
+        "url": "https://www.flipkart.com/logitech-g29-driving-force-racing-wheel-floor-pedals-motion-controller/p/itm8635450225b85"
+      }
     ]
   },
   {
@@ -88,22 +209,59 @@
     "category": "Mobile Tech",
     "basePrice": 30000,
     "desc": "Iconic Ray-Ban Wayfarer style fused with Meta's cutting-edge AI. Capture ultra-wide 12MP photos and 1080p video, listen to music via open-ear speakers, and interact with Meta AI directly from your face.",
-    "review": "",
+    "review": "i really wanted this for a while now lol",
     "specs": [
-      { "key": "Camera", "val": "Ultra-Wide 12MP (f/2.2 aperture)" },
-      { "key": "Video Recording", "val": "1080p at 30fps (Up to 60 second clips)" },
-      { "key": "Audio", "val": "Custom-built open-ear speakers with enhanced bass" },
-      { "key": "Microphones", "val": "5-mic array for immersive spatial audio capture" },
-      { "key": "AI Integration", "val": "Voice-activated Meta AI ('Hey Meta' trigger)" },
-      { "key": "Storage", "val": "32GB Onboard (approx. 500+ photos / 100+ videos)" },
-      { "key": "Battery", "val": "Up to 4 hours active use (case provides 8 additional charges)" },
-      { "key": "Connectivity", "val": "Bluetooth 5.3, Wi-Fi 6 (2.4GHz/5GHz)" },
-      { "key": "Frame Style", "val": "Wayfarer (Standard / Large)" },
-      { "key": "IP Rating", "val": "IPX4 splash resistant" },
-      { "key": "Weight", "val": "50g (Standard), 55g (Large)" }
+      {
+        "key": "Camera",
+        "val": "Ultra-Wide 12MP (f/2.2 aperture)"
+      },
+      {
+        "key": "Video Recording",
+        "val": "1080p at 30fps (Up to 60 second clips)"
+      },
+      {
+        "key": "Audio",
+        "val": "Custom-built open-ear speakers with enhanced bass"
+      },
+      {
+        "key": "Microphones",
+        "val": "5-mic array for immersive spatial audio capture"
+      },
+      {
+        "key": "AI Integration",
+        "val": "Voice-activated Meta AI ('Hey Meta' trigger)"
+      },
+      {
+        "key": "Storage",
+        "val": "32GB Onboard (approx. 500+ photos / 100+ videos)"
+      },
+      {
+        "key": "Battery",
+        "val": "Up to 4 hours active use (case provides 8 additional charges)"
+      },
+      {
+        "key": "Connectivity",
+        "val": "Bluetooth 5.3, Wi-Fi 6 (2.4GHz/5GHz)"
+      },
+      {
+        "key": "Frame Style",
+        "val": "Wayfarer (Standard / Large)"
+      },
+      {
+        "key": "IP Rating",
+        "val": "IPX4 splash resistant"
+      },
+      {
+        "key": "Weight",
+        "val": "50g (Standard), 55g (Large)"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 30000, "url": "https://www.amazon.in/Ray-Ban-Wayfarer-Ultra-Wide-Recording-Bluetooth/dp/B0G24PX37V" }
+      {
+        "name": "Amazon IN",
+        "price": 30000,
+        "url": "https://www.amazon.in/Ray-Ban-Wayfarer-Ultra-Wide-Recording-Bluetooth/dp/B0G24PX37V"
+      }
     ]
   },
   {
@@ -116,22 +274,65 @@
     "desc": "Apple's incredibly thin and light 15-inch laptop, supercharged by the new M5 chip. Features a fanless design for silent operation, a stunning Liquid Retina display, Wi-Fi 7, Bluetooth 6, and up to 18 hours of battery life.",
     "review": "",
     "specs": [
-      { "key": "Silicon Chip", "val": "Apple M5 (10-Core CPU, 10-Core GPU, 3nm+)" },
-      { "key": "Neural Engine", "val": "16-core Neural Engine (Neural Accelerator per GPU core)" },
-      { "key": "Display", "val": "15.3-inch Liquid Retina display (2880x1864 at 224 ppi, 500 nits)" },
-      { "key": "Memory", "val": "16GB Unified Memory (153GB/s bandwidth)" },
-      { "key": "Storage", "val": "512GB PCIe SSD (2x faster R/W than M4 gen)" },
-      { "key": "Battery Life", "val": "Up to 18 hours video playback (66.5Wh battery)" },
-      { "key": "Camera", "val": "12MP Center Stage camera with Desk View" },
-      { "key": "Audio", "val": "Six-speaker sound system with Force Cancelling woofers, Spatial Audio" },
-      { "key": "Ports", "val": "Two Thunderbolt 4 / USB 4, MagSafe 3, 3.5mm headphone jack" },
-      { "key": "Connectivity", "val": "Wi-Fi 7 (802.11be), Bluetooth 6 (Apple N1 chip)" },
-      { "key": "Display Support", "val": "Two external displays simultaneously (lid closed)" },
-      { "key": "Dimensions", "val": "340.4mm x 237.6mm x 11.5mm, 1.51kg" },
-      { "key": "Colours", "val": "Sky Blue, Midnight, Starlight, Silver" }
+      {
+        "key": "Silicon Chip",
+        "val": "Apple M5 (10-Core CPU, 10-Core GPU, 3nm+)"
+      },
+      {
+        "key": "Neural Engine",
+        "val": "16-core Neural Engine (Neural Accelerator per GPU core)"
+      },
+      {
+        "key": "Display",
+        "val": "15.3-inch Liquid Retina display (2880x1864 at 224 ppi, 500 nits)"
+      },
+      {
+        "key": "Memory",
+        "val": "16GB Unified Memory (153GB/s bandwidth)"
+      },
+      {
+        "key": "Storage",
+        "val": "512GB PCIe SSD (2x faster R/W than M4 gen)"
+      },
+      {
+        "key": "Battery Life",
+        "val": "Up to 18 hours video playback (66.5Wh battery)"
+      },
+      {
+        "key": "Camera",
+        "val": "12MP Center Stage camera with Desk View"
+      },
+      {
+        "key": "Audio",
+        "val": "Six-speaker sound system with Force Cancelling woofers, Spatial Audio"
+      },
+      {
+        "key": "Ports",
+        "val": "Two Thunderbolt 4 / USB 4, MagSafe 3, 3.5mm headphone jack"
+      },
+      {
+        "key": "Connectivity",
+        "val": "Wi-Fi 7 (802.11be), Bluetooth 6 (Apple N1 chip)"
+      },
+      {
+        "key": "Display Support",
+        "val": "Two external displays simultaneously (lid closed)"
+      },
+      {
+        "key": "Dimensions",
+        "val": "340.4mm x 237.6mm x 11.5mm, 1.51kg"
+      },
+      {
+        "key": "Colours",
+        "val": "Sky Blue, Midnight, Starlight, Silver"
+      }
     ],
     "retailers": [
-      { "name": "Apple Store IN", "price": 144900, "url": "https://www.apple.com/in/shop/buy-mac/macbook-air/15-inch-midnight-m5-chip-10-core-cpu-10-core-gpu-16gb-memory-512gb-storage" }
+      {
+        "name": "Apple Store IN",
+        "price": 144900,
+        "url": "https://www.apple.com/in/shop/buy-mac/macbook-air/15-inch-midnight-m5-chip-10-core-cpu-10-core-gpu-16gb-memory-512gb-storage"
+      }
     ]
   },
   {
@@ -144,22 +345,66 @@
     "desc": "The most flexible Copilot+ PC ever built. Combines the power of a laptop with the portability of a tablet, featuring a stunning OLED display and all-day battery life powered by the Snapdragon X Elite.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "Snapdragon X Elite X1E-80-100 (Copilot+ PC, NPU 45 TOPS)" },
-      { "key": "Display", "val": "13-inch PixelSense Flow OLED touchscreen (2880 x 1920, 267 PPI)" },
-      { "key": "Refresh Rate", "val": "Dynamic 1–120Hz (ProMotion)" },
-      { "key": "RAM", "val": "16GB LPDDR5x RAM" },
-      { "key": "Storage", "val": "512GB Gen 4 SSD (Removable / Upgradeable)" },
-      { "key": "Cameras", "val": "1080p IR front camera, 10MP Ultra HD rear camera" },
-      { "key": "Battery Life", "val": "Up to 14 hours local video playback" },
-      { "key": "Ports", "val": "2x USB-C (USB4 / Thunderbolt 4), Surface Connect, nano SIM slot" },
-      { "key": "Connectivity", "val": "Wi-Fi 7, Bluetooth 5.4, optional 5G" },
-      { "key": "Weight", "val": "879g (tablet only)" },
-      { "key": "Operating System", "val": "Windows 11 Home" },
-      { "key": "Included Accessory", "val": "TECPHILE Rechargeable Bluetooth Keyboard (sold separately)" }
+      {
+        "key": "Processor",
+        "val": "Snapdragon X Elite X1E-80-100 (Copilot+ PC, NPU 45 TOPS)"
+      },
+      {
+        "key": "Display",
+        "val": "13-inch PixelSense Flow OLED touchscreen (2880 x 1920, 267 PPI)"
+      },
+      {
+        "key": "Refresh Rate",
+        "val": "Dynamic 1–120Hz (ProMotion)"
+      },
+      {
+        "key": "RAM",
+        "val": "16GB LPDDR5x RAM"
+      },
+      {
+        "key": "Storage",
+        "val": "512GB Gen 4 SSD (Removable / Upgradeable)"
+      },
+      {
+        "key": "Cameras",
+        "val": "1080p IR front camera, 10MP Ultra HD rear camera"
+      },
+      {
+        "key": "Battery Life",
+        "val": "Up to 14 hours local video playback"
+      },
+      {
+        "key": "Ports",
+        "val": "2x USB-C (USB4 / Thunderbolt 4), Surface Connect, nano SIM slot"
+      },
+      {
+        "key": "Connectivity",
+        "val": "Wi-Fi 7, Bluetooth 5.4, optional 5G"
+      },
+      {
+        "key": "Weight",
+        "val": "879g (tablet only)"
+      },
+      {
+        "key": "Operating System",
+        "val": "Windows 11 Home"
+      },
+      {
+        "key": "Included Accessory",
+        "val": "TECPHILE Rechargeable Bluetooth Keyboard (sold separately)"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN (Tablet)", "price": 115990, "url": "https://www.amazon.in/Microsoft-New-Surface-Pro-11Th/dp/B0D926JN5N" },
-      { "name": "Amazon IN (Keyboard)", "price": 3726, "url": "https://www.amazon.in/TECPHILE-Keyboard-Microsoft-Attachment-Rechargeable/dp/B0DZP34F5F" }
+      {
+        "name": "Amazon IN (Tablet)",
+        "price": 115990,
+        "url": "https://www.amazon.in/Microsoft-New-Surface-Pro-11Th/dp/B0D926JN5N"
+      },
+      {
+        "name": "Amazon IN (Keyboard)",
+        "price": 3726,
+        "url": "https://www.amazon.in/TECPHILE-Keyboard-Microsoft-Attachment-Rechargeable/dp/B0DZP34F5F"
+      }
     ]
   },
   {
@@ -172,19 +417,53 @@
     "desc": "Experience the modernized design of the Xbox Wireless Controller in striking Velocity Green, featuring sculpted surfaces and refined geometry for enhanced comfort during gameplay.",
     "review": "",
     "specs": [
-      { "key": "Connectivity", "val": "Xbox Wireless (2.4GHz) and Bluetooth 4.0" },
-      { "key": "Design Features", "val": "Textured grip on triggers, bumpers, and backcase" },
-      { "key": "D-Pad", "val": "Hybrid D-pad for accurate, sweeping inputs" },
-      { "key": "Buttons", "val": "Dedicated Share button for screenshots/video capture" },
-      { "key": "Trigger Vibration", "val": "Impulse Triggers (haptic feedback)" },
-      { "key": "Audio", "val": "3.5mm stereo headset jack" },
-      { "key": "Power", "val": "2x AA batteries, up to 40 hours battery life" },
-      { "key": "Customization", "val": "Custom button mapping via Xbox Accessories app" },
-      { "key": "Compatibility", "val": "Xbox Series X|S, Xbox One, Windows PC, Android, iOS" },
-      { "key": "Cable", "val": "USB-C included" }
+      {
+        "key": "Connectivity",
+        "val": "Xbox Wireless (2.4GHz) and Bluetooth 4.0"
+      },
+      {
+        "key": "Design Features",
+        "val": "Textured grip on triggers, bumpers, and backcase"
+      },
+      {
+        "key": "D-Pad",
+        "val": "Hybrid D-pad for accurate, sweeping inputs"
+      },
+      {
+        "key": "Buttons",
+        "val": "Dedicated Share button for screenshots/video capture"
+      },
+      {
+        "key": "Trigger Vibration",
+        "val": "Impulse Triggers (haptic feedback)"
+      },
+      {
+        "key": "Audio",
+        "val": "3.5mm stereo headset jack"
+      },
+      {
+        "key": "Power",
+        "val": "2x AA batteries, up to 40 hours battery life"
+      },
+      {
+        "key": "Customization",
+        "val": "Custom button mapping via Xbox Accessories app"
+      },
+      {
+        "key": "Compatibility",
+        "val": "Xbox Series X|S, Xbox One, Windows PC, Android, iOS"
+      },
+      {
+        "key": "Cable",
+        "val": "USB-C included"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 6390, "url": "https://www.amazon.in/Microsoft-Xbox-Wireless-Controller-Velocity/dp/B0BYJMXHR3" }
+      {
+        "name": "Amazon IN",
+        "price": 6390,
+        "url": "https://www.amazon.in/Microsoft-Xbox-Wireless-Controller-Velocity/dp/B0BYJMXHR3"
+      }
     ]
   },
   {
@@ -197,24 +476,58 @@
     "desc": "Your ultimate studio controller. 15 LCD keys poised to trigger unlimited actions. Tactile one-touch operation lets you control apps, launch social posts, adjust audio, mute your mic, and much more.",
     "review": "",
     "specs": [
-      { "key": "Interface", "val": "15 customizable RGB LCD keys (72x72 pixels each)" },
-      { "key": "Functionality", "val": "Trigger macros, switch OBS scenes, control audio, launch apps" },
-      { "key": "Profiles", "val": "Unlimited nested pages/folders per key" },
-      { "key": "Customization", "val": "Interchangeable front faceplates (sold separately)" },
-      { "key": "Stand", "val": "Detachable adjustable-angle desktop stand" },
-      { "key": "Connection", "val": "Detachable USB-C to USB-A cable" },
-      { "key": "Plugins", "val": "Native: OBS, Twitch, YouTube, Discord, Spotify, Zoom, Adobe CC" },
-      { "key": "Software", "val": "Stream Deck App (drag-and-drop, free)" },
-      { "key": "OS Requirements", "val": "Windows 10 64-bit (build 1809+) or macOS 10.15+" },
-      { "key": "Dimensions", "val": "118mm x 84mm x 23mm (footprint)" }
+      {
+        "key": "Interface",
+        "val": "15 customizable RGB LCD keys (72x72 pixels each)"
+      },
+      {
+        "key": "Functionality",
+        "val": "Trigger macros, switch OBS scenes, control audio, launch apps"
+      },
+      {
+        "key": "Profiles",
+        "val": "Unlimited nested pages/folders per key"
+      },
+      {
+        "key": "Customization",
+        "val": "Interchangeable front faceplates (sold separately)"
+      },
+      {
+        "key": "Stand",
+        "val": "Detachable adjustable-angle desktop stand"
+      },
+      {
+        "key": "Connection",
+        "val": "Detachable USB-C to USB-A cable"
+      },
+      {
+        "key": "Plugins",
+        "val": "Native: OBS, Twitch, YouTube, Discord, Spotify, Zoom, Adobe CC"
+      },
+      {
+        "key": "Software",
+        "val": "Stream Deck App (drag-and-drop, free)"
+      },
+      {
+        "key": "OS Requirements",
+        "val": "Windows 10 64-bit (build 1809+) or macOS 10.15+"
+      },
+      {
+        "key": "Dimensions",
+        "val": "118mm x 84mm x 23mm (footprint)"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 17112, "url": "https://www.amazon.in/Elgato-Stream-Deck-MK-2-Customizable/dp/B09738CV2G" }
+      {
+        "name": "Amazon IN",
+        "price": 17112,
+        "url": "https://www.amazon.in/Elgato-Stream-Deck-MK-2-Customizable/dp/B09738CV2G"
+      }
     ]
   },
   {
     "id": "p10",
-    "page": "Wants",
+    "page": "Needs",
     "icon": "👕",
     "name": "Red Bull Racing Replica Polo",
     "category": "Lifestyle",
@@ -222,18 +535,49 @@
     "desc": "Wear the team colors with pride. The official Oracle Red Bull Racing Replica Polo is engineered for peak performance and style, mirroring exactly what the drivers and crew wear in the paddock.",
     "review": "",
     "specs": [
-      { "key": "Team Affiliation", "val": "Oracle Red Bull Racing Formula 1 Team" },
-      { "key": "Material", "val": "100% Breathable Polyester (moisture-wicking technology)" },
-      { "key": "Design", "val": "Classic short-sleeve polo with pointed collar and button placket" },
-      { "key": "Branding", "val": "High-quality heat-sealed sponsor and team logos" },
-      { "key": "Print Design", "val": "Dynamic 'Power charge' graphic on back and sides" },
-      { "key": "Fit", "val": "Men's Regular Athletic Fit" },
-      { "key": "Sizes Available", "val": "XS, S, M, L, XL, XXL" },
-      { "key": "Authenticity", "val": "Official Licensed Merchandise tag" },
-      { "key": "Origin", "val": "Designed in collaboration with Castore/Puma" }
+      {
+        "key": "Team Affiliation",
+        "val": "Oracle Red Bull Racing Formula 1 Team"
+      },
+      {
+        "key": "Material",
+        "val": "100% Breathable Polyester (moisture-wicking technology)"
+      },
+      {
+        "key": "Design",
+        "val": "Classic short-sleeve polo with pointed collar and button placket"
+      },
+      {
+        "key": "Branding",
+        "val": "High-quality heat-sealed sponsor and team logos"
+      },
+      {
+        "key": "Print Design",
+        "val": "Dynamic 'Power charge' graphic on back and sides"
+      },
+      {
+        "key": "Fit",
+        "val": "Men's Regular Athletic Fit"
+      },
+      {
+        "key": "Sizes Available",
+        "val": "XS, S, M, L, XL, XXL"
+      },
+      {
+        "key": "Authenticity",
+        "val": "Official Licensed Merchandise tag"
+      },
+      {
+        "key": "Origin",
+        "val": "Designed in collaboration with Castore/Puma"
+      }
     ],
     "retailers": [
-      { "name": "Red Bull Shop", "price": 8000, "url": "https://www.redbullshop.com/en-int/p/Men/Replica-Polo-Shirt/M-RAB26012" }
+      {
+        "name": "Red Bull Shop",
+        "price": 8000,
+        "url": "https://www.redbullshop.com/en-int/p/Men/Replica-Polo-Shirt/M-RAB26012"
+      }
     ]
   },
   {
@@ -246,20 +590,58 @@
     "desc": "The fastest, most powerful Xbox ever. Explore rich new worlds and enjoy the action like never before with 12 teraflops of raw graphic processing power, plus Game Pass access to hundreds of titles.",
     "review": "",
     "specs": [
-      { "key": "CPU", "val": "8x Cores @ 3.8GHz Custom AMD Zen 2 (3.6GHz with SMT)" },
-      { "key": "GPU", "val": "12 Teraflops Custom RDNA 2 GPU @ 1.825GHz" },
-      { "key": "Target Performance", "val": "True 4K at up to 120 FPS, 8K HDR capable" },
-      { "key": "Memory", "val": "16GB GDDR6 with 320-bit bus (10GB @ 560GB/s, 6GB @ 336GB/s)" },
-      { "key": "Storage", "val": "1TB Custom NVMe SSD (Xbox Velocity Architecture)" },
-      { "key": "Optical Drive", "val": "4K UHD Blu-ray Drive" },
-      { "key": "Features", "val": "Quick Resume, Hardware Ray Tracing, Auto HDR, DirectX 12 Ultimate" },
-      { "key": "Ports", "val": "1x HDMI 2.1, 3x USB 3.1 Gen 1, 1x Storage Expansion Slot, Ethernet" },
-      { "key": "Connectivity", "val": "Wi-Fi 5 (802.11ac), Bluetooth 5.0" },
-      { "key": "Dimensions", "val": "301mm x 151mm x 151mm, 4.45kg" }
+      {
+        "key": "CPU",
+        "val": "8x Cores @ 3.8GHz Custom AMD Zen 2 (3.6GHz with SMT)"
+      },
+      {
+        "key": "GPU",
+        "val": "12 Teraflops Custom RDNA 2 GPU @ 1.825GHz"
+      },
+      {
+        "key": "Target Performance",
+        "val": "True 4K at up to 120 FPS, 8K HDR capable"
+      },
+      {
+        "key": "Memory",
+        "val": "16GB GDDR6 with 320-bit bus (10GB @ 560GB/s, 6GB @ 336GB/s)"
+      },
+      {
+        "key": "Storage",
+        "val": "1TB Custom NVMe SSD (Xbox Velocity Architecture)"
+      },
+      {
+        "key": "Optical Drive",
+        "val": "4K UHD Blu-ray Drive"
+      },
+      {
+        "key": "Features",
+        "val": "Quick Resume, Hardware Ray Tracing, Auto HDR, DirectX 12 Ultimate"
+      },
+      {
+        "key": "Ports",
+        "val": "1x HDMI 2.1, 3x USB 3.1 Gen 1, 1x Storage Expansion Slot, Ethernet"
+      },
+      {
+        "key": "Connectivity",
+        "val": "Wi-Fi 5 (802.11ac), Bluetooth 5.0"
+      },
+      {
+        "key": "Dimensions",
+        "val": "301mm x 151mm x 151mm, 4.45kg"
+      }
     ],
     "retailers": [
-      { "name": "Flipkart", "price": 55990, "url": "https://www.flipkart.com/microsoft-xbox-series-x-1024-gb/p/itm63ff9bd504f27" },
-      { "name": "Amazon IN", "price": 83990, "url": "https://www.amazon.in/Xbox-Series-X/dp/B08J7QX1N1" }
+      {
+        "name": "Flipkart",
+        "price": 55990,
+        "url": "https://www.flipkart.com/microsoft-xbox-series-x-1024-gb/p/itm63ff9bd504f27"
+      },
+      {
+        "name": "Amazon IN",
+        "price": 83990,
+        "url": "https://www.amazon.in/Xbox-Series-X/dp/B08J7QX1N1"
+      }
     ]
   },
   {
@@ -272,20 +654,57 @@
     "desc": "An AI-powered 4K webcam designed for creators and professionals. Uses advanced algorithms to keep you perfectly framed, while the large 1/2-inch sensor delivers unmatched image quality in any light.",
     "review": "",
     "specs": [
-      { "key": "Video Resolution", "val": "Up to 4K at 30fps / 1080p at 60fps" },
-      { "key": "Sensor Size", "val": "1/2-inch CMOS sensor" },
-      { "key": "Aperture", "val": "f/1.8 (low-light performance)" },
-      { "key": "HDR", "val": "High Dynamic Range capture" },
-      { "key": "AI Tracking", "val": "Auto-framing, gesture control, face tracking" },
-      { "key": "Modes", "val": "DeskView mode, Whiteboard mode, Overhead mode" },
-      { "key": "Microphone", "val": "Built-in dual noise-canceling mics with AI voice enhancement" },
-      { "key": "Mounting", "val": "Built-in monitor clip and 1/4-inch tripod thread" },
-      { "key": "Privacy", "val": "Built-in physical privacy shutter" },
-      { "key": "Connection", "val": "USB-C (Plug and Play, no driver needed)" },
-      { "key": "FOV", "val": "79° diagonal field of view" }
+      {
+        "key": "Video Resolution",
+        "val": "Up to 4K at 30fps / 1080p at 60fps"
+      },
+      {
+        "key": "Sensor Size",
+        "val": "1/2-inch CMOS sensor"
+      },
+      {
+        "key": "Aperture",
+        "val": "f/1.8 (low-light performance)"
+      },
+      {
+        "key": "HDR",
+        "val": "High Dynamic Range capture"
+      },
+      {
+        "key": "AI Tracking",
+        "val": "Auto-framing, gesture control, face tracking"
+      },
+      {
+        "key": "Modes",
+        "val": "DeskView mode, Whiteboard mode, Overhead mode"
+      },
+      {
+        "key": "Microphone",
+        "val": "Built-in dual noise-canceling mics with AI voice enhancement"
+      },
+      {
+        "key": "Mounting",
+        "val": "Built-in monitor clip and 1/4-inch tripod thread"
+      },
+      {
+        "key": "Privacy",
+        "val": "Built-in physical privacy shutter"
+      },
+      {
+        "key": "Connection",
+        "val": "USB-C (Plug and Play, no driver needed)"
+      },
+      {
+        "key": "FOV",
+        "val": "79° diagonal field of view"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 13390, "url": "https://www.amazon.in/insta360-Link-2C-AI-powerd-Webcam/dp/B0DGQW6PB1" }
+      {
+        "name": "Amazon IN",
+        "price": 13390,
+        "url": "https://www.amazon.in/insta360-Link-2C-AI-powerd-Webcam/dp/B0DGQW6PB1"
+      }
     ]
   },
   {
@@ -298,19 +717,53 @@
     "desc": "Supercharged by the M2 chip, the redesigned 11-inch iPad Air is incredibly fast and versatile. Paired with the Apple Pencil Pro, it transforms into the ultimate digital canvas and note-taking device.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "Apple M2 Chip (8-core CPU, 9-core GPU, 16-core Neural Engine)" },
-      { "key": "Display", "val": "11-inch Liquid Retina (2360x1640 at 264 ppi, 500 nits, True Tone, P3)" },
-      { "key": "Storage", "val": "128GB base (256GB, 512GB, 1TB also available)" },
-      { "key": "Cameras", "val": "12MP f/1.8 Wide rear, 12MP Ultra Wide front (landscape, Center Stage)" },
-      { "key": "Authentication", "val": "Touch ID integrated into the top button" },
-      { "key": "Connectivity", "val": "Wi-Fi 6E (802.11ax), Bluetooth 5.3, USB-C (USB 3.2 Gen 2)" },
-      { "key": "Apple Pencil", "val": "Apple Pencil Pro (hover, barrel roll, squeeze, find my)" },
-      { "key": "Battery", "val": "Up to 10 hours Wi-Fi, 28.65Wh" },
-      { "key": "OS", "val": "iPadOS 18 (Apple Intelligence supported)" },
-      { "key": "Colours", "val": "Blue, Purple, Starlight, Space Grey" }
+      {
+        "key": "Processor",
+        "val": "Apple M2 Chip (8-core CPU, 9-core GPU, 16-core Neural Engine)"
+      },
+      {
+        "key": "Display",
+        "val": "11-inch Liquid Retina (2360x1640 at 264 ppi, 500 nits, True Tone, P3)"
+      },
+      {
+        "key": "Storage",
+        "val": "128GB base (256GB, 512GB, 1TB also available)"
+      },
+      {
+        "key": "Cameras",
+        "val": "12MP f/1.8 Wide rear, 12MP Ultra Wide front (landscape, Center Stage)"
+      },
+      {
+        "key": "Authentication",
+        "val": "Touch ID integrated into the top button"
+      },
+      {
+        "key": "Connectivity",
+        "val": "Wi-Fi 6E (802.11ax), Bluetooth 5.3, USB-C (USB 3.2 Gen 2)"
+      },
+      {
+        "key": "Apple Pencil",
+        "val": "Apple Pencil Pro (hover, barrel roll, squeeze, find my)"
+      },
+      {
+        "key": "Battery",
+        "val": "Up to 10 hours Wi-Fi, 28.65Wh"
+      },
+      {
+        "key": "OS",
+        "val": "iPadOS 18 (Apple Intelligence supported)"
+      },
+      {
+        "key": "Colours",
+        "val": "Blue, Purple, Starlight, Space Grey"
+      }
     ],
     "retailers": [
-      { "name": "Apple Store IN", "price": 76800, "url": "https://www.apple.com/in/shop/buy-ipad/ipad-air/27.96-cm-11%E2%80%9D-display-128gb-purple-wifi" }
+      {
+        "name": "Apple Store IN",
+        "price": 76800,
+        "url": "https://www.apple.com/in/shop/buy-ipad/ipad-air/27.96-cm-11%E2%80%9D-display-128gb-purple-wifi"
+      }
     ]
   },
   {
@@ -323,40 +776,96 @@
     "desc": "Instantly add Valorant Points (VP) to your Riot Games account. Use VP to unlock premium weapon skins, gun buddies, player cards, and the seasonal Battlepass.",
     "review": "",
     "specs": [
-      { "key": "Game Platform", "val": "Valorant (Riot Games, PC only)" },
-      { "key": "Item Type", "val": "Digital Premium Currency (Valorant Points / VP)" },
-      { "key": "Approximate VP", "val": "~22,000 VP for ₹24,000 (India region rates)" },
-      { "key": "Redemption Region", "val": "India Server (applicable Riot Games accounts)" },
-      { "key": "Delivery Method", "val": "Digital code via email — instant delivery" },
-      { "key": "Validity", "val": "No expiration date once purchased and redeemed" },
-      { "key": "In-game Use", "val": "Skins, Radianite Points, Battlepass, Gun Buddies, Cards" },
-      { "key": "Requirements", "val": "Valid Riot Games account required for redemption" }
+      {
+        "key": "Game Platform",
+        "val": "Valorant (Riot Games, PC only)"
+      },
+      {
+        "key": "Item Type",
+        "val": "Digital Premium Currency (Valorant Points / VP)"
+      },
+      {
+        "key": "Approximate VP",
+        "val": "~22,000 VP for ₹24,000 (India region rates)"
+      },
+      {
+        "key": "Redemption Region",
+        "val": "India Server (applicable Riot Games accounts)"
+      },
+      {
+        "key": "Delivery Method",
+        "val": "Digital code via email — instant delivery"
+      },
+      {
+        "key": "Validity",
+        "val": "No expiration date once purchased and redeemed"
+      },
+      {
+        "key": "In-game Use",
+        "val": "Skins, Radianite Points, Battlepass, Gun Buddies, Cards"
+      },
+      {
+        "key": "Requirements",
+        "val": "Valid Riot Games account required for redemption"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 24000, "url": "https://www.amazon.in/Valorant-Additional-Gift-Redeemable-availability/dp/B0G3X4JTJ5" }
+      {
+        "name": "Amazon IN",
+        "price": 24000,
+        "url": "https://www.amazon.in/Valorant-Additional-Gift-Redeemable-availability/dp/B0G3X4JTJ5"
+      }
     ]
   },
   {
     "id": "p13",
     "page": "Wants",
     "icon": "🟩",
-    "name": "HIFFIN Photography Backdrop",
+    "name": "GREEN SCREEN",
     "category": "Audio/Video",
     "basePrice": 2500,
     "desc": "A professional-grade chromakey green screen backdrop designed for video production, streaming, and photography. Perfect for seamless background replacement and VFX work.",
     "review": "",
     "specs": [
-      { "key": "Dimensions", "val": "8 x 12 Feet (2.4m x 3.6m)" },
-      { "key": "Material", "val": "100% High-density cotton muslin fabric" },
-      { "key": "Color", "val": "Chromakey Green (550nm optimized for video masking)" },
-      { "key": "Reflection", "val": "Non-glossy matte finish — absorbs light, prevents hotspots" },
-      { "key": "Maintenance", "val": "Machine washable (cold), ironable on low heat" },
-      { "key": "Mounting", "val": "Pre-stitched rod pocket on top edge for backdrop stands" },
-      { "key": "Edges", "val": "Fully hemmed edges to prevent tearing and fraying" },
-      { "key": "Included Items", "val": "Backdrop cloth only (stands and stand adapters sold separately)" }
+      {
+        "key": "Dimensions",
+        "val": "8 x 12 Feet (2.4m x 3.6m)"
+      },
+      {
+        "key": "Material",
+        "val": "100% High-density cotton muslin fabric"
+      },
+      {
+        "key": "Color",
+        "val": "Chromakey Green (550nm optimized for video masking)"
+      },
+      {
+        "key": "Reflection",
+        "val": "Non-glossy matte finish — absorbs light, prevents hotspots"
+      },
+      {
+        "key": "Maintenance",
+        "val": "Machine washable (cold), ironable on low heat"
+      },
+      {
+        "key": "Mounting",
+        "val": "Pre-stitched rod pocket on top edge for backdrop stands"
+      },
+      {
+        "key": "Edges",
+        "val": "Fully hemmed edges to prevent tearing and fraying"
+      },
+      {
+        "key": "Included Items",
+        "val": "Backdrop cloth only (stands and stand adapters sold separately)"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 2500, "url": "https://www.amazon.in/HIFFIN%C2%AE-Photography-Accessories-Backdrop-Background/dp/B08WHQGB45" }
+      {
+        "name": "Amazon IN",
+        "price": 2500,
+        "url": "https://www.amazon.in/HIFFIN%C2%AE-Photography-Accessories-Backdrop-Background/dp/B08WHQGB45"
+      }
     ]
   },
   {
@@ -369,19 +878,53 @@
     "desc": "Capture the impossible. The ultimate 360-degree action camera allows you to shoot first and frame later. Features unbeatable image stabilization, waterproof design, and a magic invisible selfie stick effect.",
     "review": "",
     "specs": [
-      { "key": "Lens Setup", "val": "Dual 1/2-inch sensors, f/1.9 aperture, 360° optical capture" },
-      { "key": "Video Resolution", "val": "8K 360° at 30fps / 5.7K at 60fps / 4K single-lens wide" },
-      { "key": "Photo Resolution", "val": "72 Megapixel 360 Photos" },
-      { "key": "Stabilization", "val": "FlowState Stabilization with 360° Horizon Lock" },
-      { "key": "Durability", "val": "Waterproof to 10m (33ft) out of the box, no case needed" },
-      { "key": "Battery", "val": "2290mAh (approx. 135 mins at 5.7K30)" },
-      { "key": "Storage", "val": "MicroSD up to 1TB (Class 10 / U3 / V30 required)" },
-      { "key": "Editing", "val": "Insta360 AI app — reframe after shooting, auto edits" },
-      { "key": "Special Modes", "val": "Invisible Selfie Stick, Me Mode, Bullet Time, TimeShift" },
-      { "key": "Display", "val": "2.5-inch color touchscreen" }
+      {
+        "key": "Lens Setup",
+        "val": "Dual 1/2-inch sensors, f/1.9 aperture, 360° optical capture"
+      },
+      {
+        "key": "Video Resolution",
+        "val": "8K 360° at 30fps / 5.7K at 60fps / 4K single-lens wide"
+      },
+      {
+        "key": "Photo Resolution",
+        "val": "72 Megapixel 360 Photos"
+      },
+      {
+        "key": "Stabilization",
+        "val": "FlowState Stabilization with 360° Horizon Lock"
+      },
+      {
+        "key": "Durability",
+        "val": "Waterproof to 10m (33ft) out of the box, no case needed"
+      },
+      {
+        "key": "Battery",
+        "val": "2290mAh (approx. 135 mins at 5.7K30)"
+      },
+      {
+        "key": "Storage",
+        "val": "MicroSD up to 1TB (Class 10 / U3 / V30 required)"
+      },
+      {
+        "key": "Editing",
+        "val": "Insta360 AI app — reframe after shooting, auto edits"
+      },
+      {
+        "key": "Special Modes",
+        "val": "Invisible Selfie Stick, Me Mode, Bullet Time, TimeShift"
+      },
+      {
+        "key": "Display",
+        "val": "2.5-inch color touchscreen"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 36000, "url": "https://www.amazon.in/insta360-Action-Camera-Capture-Optical/dp/B0BCW1S7XR" }
+      {
+        "name": "Amazon IN",
+        "price": 36000,
+        "url": "https://www.amazon.in/insta360-Action-Camera-Capture-Optical/dp/B0BCW1S7XR"
+      }
     ]
   },
   {
@@ -394,18 +937,49 @@
     "desc": "What is the nature of space and time? How do we fit within the universe? Neil deGrasse Tyson brings the universe down to Earth succinctly and clearly in this brilliant, digestible read.",
     "review": "",
     "specs": [
-      { "key": "Author", "val": "Neil deGrasse Tyson" },
-      { "key": "Subject Matter", "val": "Cosmology, Dark Matter, Dark Energy, Space-Time, Quantum Mechanics" },
-      { "key": "Page Count", "val": "224 pages" },
-      { "key": "Publisher", "val": "W. W. Norton & Company" },
-      { "key": "Format", "val": "Paperback (Kindle edition also available)" },
-      { "key": "Language", "val": "English" },
-      { "key": "ISBN-13", "val": "978-0393609394" },
-      { "key": "Reading Level", "val": "Beginner-friendly — no prior science background needed" },
-      { "key": "Originally Published", "val": "2017" }
+      {
+        "key": "Author",
+        "val": "Neil deGrasse Tyson"
+      },
+      {
+        "key": "Subject Matter",
+        "val": "Cosmology, Dark Matter, Dark Energy, Space-Time, Quantum Mechanics"
+      },
+      {
+        "key": "Page Count",
+        "val": "224 pages"
+      },
+      {
+        "key": "Publisher",
+        "val": "W. W. Norton & Company"
+      },
+      {
+        "key": "Format",
+        "val": "Paperback (Kindle edition also available)"
+      },
+      {
+        "key": "Language",
+        "val": "English"
+      },
+      {
+        "key": "ISBN-13",
+        "val": "978-0393609394"
+      },
+      {
+        "key": "Reading Level",
+        "val": "Beginner-friendly — no prior science background needed"
+      },
+      {
+        "key": "Originally Published",
+        "val": "2017"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 350, "url": "https://www.amazon.in/Astrophysics-People-Hurry-Neil-deGrasse/dp/0393609391" }
+      {
+        "name": "Amazon IN",
+        "price": 350,
+        "url": "https://www.amazon.in/Astrophysics-People-Hurry-Neil-deGrasse/dp/0393609391"
+      }
     ]
   },
   {
@@ -418,17 +992,45 @@
     "desc": "Transform your entertainment setup with vibrant, smart ambient lighting. Paint your room in millions of colors and sync the lights to your movies, music, or video games for absolute immersion.",
     "review": "",
     "specs": [
-      { "key": "Color Range", "val": "16 Million colors including warm-to-cool white (2200K–6500K)" },
-      { "key": "Luminous Flux", "val": "1040 lumens at 4000K" },
-      { "key": "Smart Sync", "val": "Syncs with PC/TV content via Philips Hue Sync app" },
-      { "key": "Control Method", "val": "Philips Hue app (Bluetooth), Hue Bridge (Wi-Fi), Voice" },
-      { "key": "Voice Assistants", "val": "Amazon Alexa, Google Assistant, Apple HomeKit, Siri" },
-      { "key": "Placement", "val": "Floor/desk stand or monitor bias lighting mount" },
-      { "key": "Wattage", "val": "12W LED (energy efficient)" },
-      { "key": "Connectivity", "val": "Bluetooth 5.0 (bridge not required for basic use)" }
+      {
+        "key": "Color Range",
+        "val": "16 Million colors including warm-to-cool white (2200K–6500K)"
+      },
+      {
+        "key": "Luminous Flux",
+        "val": "1040 lumens at 4000K"
+      },
+      {
+        "key": "Smart Sync",
+        "val": "Syncs with PC/TV content via Philips Hue Sync app"
+      },
+      {
+        "key": "Control Method",
+        "val": "Philips Hue app (Bluetooth), Hue Bridge (Wi-Fi), Voice"
+      },
+      {
+        "key": "Voice Assistants",
+        "val": "Amazon Alexa, Google Assistant, Apple HomeKit, Siri"
+      },
+      {
+        "key": "Placement",
+        "val": "Floor/desk stand or monitor bias lighting mount"
+      },
+      {
+        "key": "Wattage",
+        "val": "12W LED (energy efficient)"
+      },
+      {
+        "key": "Connectivity",
+        "val": "Bluetooth 5.0 (bridge not required for basic use)"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 5500, "url": "https://www.amazon.in/Philips-LightTheatre-Multi-Color-Versatile-Compatible/dp/B0FR9J5K1G" }
+      {
+        "name": "Amazon IN",
+        "price": 5500,
+        "url": "https://www.amazon.in/Philips-LightTheatre-Multi-Color-Versatile-Compatible/dp/B0FR9J5K1G"
+      }
     ]
   },
   {
@@ -441,17 +1043,45 @@
     "desc": "Build, race, and display! A highly detailed LEGO Speed Champions replica capturing the aerodynamic design and raw power of a legendary hypercar. Perfect for car enthusiasts and desktop display.",
     "review": "",
     "specs": [
-      { "key": "Set Theme", "val": "LEGO Speed Champions" },
-      { "key": "Set Number", "val": "77246" },
-      { "key": "Piece Count", "val": "Approx. 260 precision interlocking bricks" },
-      { "key": "Included Items", "val": "1x Driver Minifigure with racing helmet and wrench accessory" },
-      { "key": "Scale", "val": "8-stud wide (standard Speed Champions scale)" },
-      { "key": "Material", "val": "High-quality ABS Plastic" },
-      { "key": "Dimensions (Built)", "val": "~4cm high x 15cm long x 7cm wide" },
-      { "key": "Recommended Age", "val": "9+" }
+      {
+        "key": "Set Theme",
+        "val": "LEGO Speed Champions"
+      },
+      {
+        "key": "Set Number",
+        "val": "77246"
+      },
+      {
+        "key": "Piece Count",
+        "val": "Approx. 260 precision interlocking bricks"
+      },
+      {
+        "key": "Included Items",
+        "val": "1x Driver Minifigure with racing helmet and wrench accessory"
+      },
+      {
+        "key": "Scale",
+        "val": "8-stud wide (standard Speed Champions scale)"
+      },
+      {
+        "key": "Material",
+        "val": "High-quality ABS Plastic"
+      },
+      {
+        "key": "Dimensions (Built)",
+        "val": "~4cm high x 15cm long x 7cm wide"
+      },
+      {
+        "key": "Recommended Age",
+        "val": "9+"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 2000, "url": "https://www.amazon.in/LEGO-Champions-Vehicle-77246-Building/dp/B0DHS9JVGJ" }
+      {
+        "name": "Amazon IN",
+        "price": 2000,
+        "url": "https://www.amazon.in/LEGO-Champions-Vehicle-77246-Building/dp/B0DHS9JVGJ"
+      }
     ]
   },
   {
@@ -464,20 +1094,57 @@
     "desc": "The pinnacle of Samsung's engineering. Boasting the ultimate Snapdragon processor, a built-in S-Pen, and an unmatched multi-lens zoom camera system for content creators and power users.",
     "review": "A 4.3/5 rating tells me this is an incredible piece of hardware, but honestly, it might just be too bulky for my day-to-day use. The anti-reflective screen is a major selling point though.",
     "specs": [
-      { "key": "Processor", "val": "Snapdragon 8 Gen 5 for Galaxy (3nm)" },
-      { "key": "Display", "val": "6.8-inch Dynamic AMOLED 2x (1-120Hz, 2600 nits, Anti-Reflective)" },
-      { "key": "Camera System", "val": "200MP Main + 50MP 5x Optical Zoom + 10MP 3x Zoom + 50MP Ultrawide" },
-      { "key": "Front Camera", "val": "12MP Dual Pixel AF" },
-      { "key": "Video", "val": "8K at 30fps, 4K at 120fps" },
-      { "key": "S-Pen", "val": "Built-in active stylus (0.7mm tip, 2.8ms latency)" },
-      { "key": "Battery", "val": "5000mAh, 45W wired, 15W wireless, 4.5W reverse wireless" },
-      { "key": "RAM", "val": "12GB LPDDR5x" },
-      { "key": "Storage", "val": "256GB / 512GB / 1TB UFS 4.0" },
-      { "key": "Durability", "val": "Titanium Armor frame, Corning Gorilla Armor 2, IP68 (6m/30min)" },
-      { "key": "OS", "val": "One UI 8 based on Android 16" }
+      {
+        "key": "Processor",
+        "val": "Snapdragon 8 Gen 5 for Galaxy (3nm)"
+      },
+      {
+        "key": "Display",
+        "val": "6.8-inch Dynamic AMOLED 2x (1-120Hz, 2600 nits, Anti-Reflective)"
+      },
+      {
+        "key": "Camera System",
+        "val": "200MP Main + 50MP 5x Optical Zoom + 10MP 3x Zoom + 50MP Ultrawide"
+      },
+      {
+        "key": "Front Camera",
+        "val": "12MP Dual Pixel AF"
+      },
+      {
+        "key": "Video",
+        "val": "8K at 30fps, 4K at 120fps"
+      },
+      {
+        "key": "S-Pen",
+        "val": "Built-in active stylus (0.7mm tip, 2.8ms latency)"
+      },
+      {
+        "key": "Battery",
+        "val": "5000mAh, 45W wired, 15W wireless, 4.5W reverse wireless"
+      },
+      {
+        "key": "RAM",
+        "val": "12GB LPDDR5x"
+      },
+      {
+        "key": "Storage",
+        "val": "256GB / 512GB / 1TB UFS 4.0"
+      },
+      {
+        "key": "Durability",
+        "val": "Titanium Armor frame, Corning Gorilla Armor 2, IP68 (6m/30min)"
+      },
+      {
+        "key": "OS",
+        "val": "One UI 8 based on Android 16"
+      }
     ],
     "retailers": [
-      { "name": "Samsung Store IN", "price": 134999, "url": "https://www.samsung.com/in/smartphones/galaxy-s26-ultra/buy/" }
+      {
+        "name": "Samsung Store IN",
+        "price": 134999,
+        "url": "https://www.samsung.com/in/smartphones/galaxy-s26-ultra/buy/"
+      }
     ]
   },
   {
@@ -490,43 +1157,53 @@
     "desc": "The compact flagship. Delivering all of Samsung's core Galaxy AI features and premium build quality in a much smaller, pocket-friendly form factor.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "Exynos 2600 / Snapdragon 8 Gen 5 (region dependent)" },
-      { "key": "Display", "val": "6.2-inch Dynamic AMOLED 2x (120Hz, 2600 nits)" },
-      { "key": "Camera System", "val": "50MP Main (f/1.8) + 12MP Ultrawide + 10MP 3x Zoom" },
-      { "key": "Front Camera", "val": "12MP Dual Pixel AF" },
-      { "key": "Battery", "val": "4000mAh, 25W wired fast charge, 15W wireless" },
-      { "key": "RAM", "val": "8GB LPDDR5x" },
-      { "key": "Storage", "val": "128GB / 256GB UFS 4.0" },
-      { "key": "Build", "val": "Armor Aluminum frame, Gorilla Glass Victus 3" },
-      { "key": "Durability", "val": "IP68 (6m/30min)" },
-      { "key": "OS", "val": "One UI 8 based on Android 16" }
+      {
+        "key": "Processor",
+        "val": "Exynos 2600 / Snapdragon 8 Gen 5 (region dependent)"
+      },
+      {
+        "key": "Display",
+        "val": "6.2-inch Dynamic AMOLED 2x (120Hz, 2600 nits)"
+      },
+      {
+        "key": "Camera System",
+        "val": "50MP Main (f/1.8) + 12MP Ultrawide + 10MP 3x Zoom"
+      },
+      {
+        "key": "Front Camera",
+        "val": "12MP Dual Pixel AF"
+      },
+      {
+        "key": "Battery",
+        "val": "4000mAh, 25W wired fast charge, 15W wireless"
+      },
+      {
+        "key": "RAM",
+        "val": "8GB LPDDR5x"
+      },
+      {
+        "key": "Storage",
+        "val": "128GB / 256GB UFS 4.0"
+      },
+      {
+        "key": "Build",
+        "val": "Armor Aluminum frame, Gorilla Glass Victus 3"
+      },
+      {
+        "key": "Durability",
+        "val": "IP68 (6m/30min)"
+      },
+      {
+        "key": "OS",
+        "val": "One UI 8 based on Android 16"
+      }
     ],
     "retailers": [
-      { "name": "Samsung Store IN", "price": 79999, "url": "https://www.samsung.com/in/smartphones/galaxy-s26/buy/" }
-    ]
-  },
-  {
-    "id": "rp03",
-    "page": "Random Products",
-    "icon": "📱",
-    "name": "Apple iPhone 17",
-    "category": "Mobile Tech",
-    "basePrice": 82900,
-    "desc": "The baseline iPhone 17 model, featuring iterative updates, a powerful A19 chip, and the Dynamic Island. Best value entry point into the iPhone 17 lineup.",
-    "review": "",
-    "specs": [
-      { "key": "Processor", "val": "A19 Bionic Chip (3nm)" },
-      { "key": "Display", "val": "6.1-inch Super Retina XDR OLED (2556x1179, 60Hz, Dynamic Island)" },
-      { "key": "Camera", "val": "48MP Main (f/1.6) + 12MP Ultrawide" },
-      { "key": "Front Camera", "val": "12MP TrueDepth with autofocus" },
-      { "key": "Battery", "val": "Approx. 3,600mAh, MagSafe + USB-C" },
-      { "key": "Material", "val": "Aluminum frame with color-infused matte glass back" },
-      { "key": "Biometrics", "val": "Face ID" },
-      { "key": "Connectivity", "val": "5G, Wi-Fi 7, Bluetooth 5.3" },
-      { "key": "Durability", "val": "IP68 (6m/30min)" }
-    ],
-    "retailers": [
-      { "name": "Apple Store IN", "price": 82900, "url": "https://www.apple.com/in/shop/buy-iphone/iphone-17" }
+      {
+        "name": "Samsung Store IN",
+        "price": 79999,
+        "url": "https://www.samsung.com/in/smartphones/galaxy-s26/buy/"
+      }
     ]
   },
   {
@@ -539,18 +1216,49 @@
     "desc": "Apple's radical new ultra-thin redesign. Sacrificing some battery and camera hardware to achieve the thinnest iPhone ever created — a truly pocketable powerhouse.",
     "review": "",
     "specs": [
-      { "key": "Design", "val": "Ultra-thin chassis (~5.5mm thickness — thinnest iPhone ever)" },
-      { "key": "Processor", "val": "A19 Bionic Chip (3nm)" },
-      { "key": "Display", "val": "6.6-inch Super Retina XDR OLED (Dynamic Island)" },
-      { "key": "Camera", "val": "Single 48MP Rear Camera (f/1.6)" },
-      { "key": "Front Camera", "val": "12MP TrueDepth" },
-      { "key": "Battery", "val": "Reduced capacity vs standard (thinner chassis tradeoff)" },
-      { "key": "Material", "val": "Titanium / Aluminum hybrid frame, glass back" },
-      { "key": "Connectivity", "val": "5G, Wi-Fi 7, Bluetooth 5.3" },
-      { "key": "Biometrics", "val": "Face ID" }
+      {
+        "key": "Design",
+        "val": "Ultra-thin chassis (~5.5mm thickness — thinnest iPhone ever)"
+      },
+      {
+        "key": "Processor",
+        "val": "A19 Bionic Chip (3nm)"
+      },
+      {
+        "key": "Display",
+        "val": "6.6-inch Super Retina XDR OLED (Dynamic Island)"
+      },
+      {
+        "key": "Camera",
+        "val": "Single 48MP Rear Camera (f/1.6)"
+      },
+      {
+        "key": "Front Camera",
+        "val": "12MP TrueDepth"
+      },
+      {
+        "key": "Battery",
+        "val": "Reduced capacity vs standard (thinner chassis tradeoff)"
+      },
+      {
+        "key": "Material",
+        "val": "Titanium / Aluminum hybrid frame, glass back"
+      },
+      {
+        "key": "Connectivity",
+        "val": "5G, Wi-Fi 7, Bluetooth 5.3"
+      },
+      {
+        "key": "Biometrics",
+        "val": "Face ID"
+      }
     ],
     "retailers": [
-      { "name": "Apple Store IN", "price": 95000, "url": "https://www.apple.com/in/shop/buy-iphone/iphone-17-air" }
+      {
+        "name": "Apple Store IN",
+        "price": 95000,
+        "url": "https://www.apple.com/in/shop/buy-iphone/iphone-17-air"
+      }
     ]
   },
   {
@@ -563,18 +1271,49 @@
     "desc": "The sweet spot for professionals. Titanium frame, 120Hz ProMotion, a triple-lens camera system, and USB 3 speeds. The best iPhone for most power users.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "A19 Pro Bionic Chip (3nm+)" },
-      { "key": "Display", "val": "6.3-inch Super Retina XDR OLED (120Hz ProMotion, Always-On)" },
-      { "key": "Material", "val": "Aerospace-grade Grade 5 Titanium frame" },
-      { "key": "Camera", "val": "48MP Main + 48MP Ultrawide + 12MP 5x Tetraprism Telephoto" },
-      { "key": "Front Camera", "val": "12MP TrueDepth with autofocus" },
-      { "key": "Video", "val": "4K ProRes at 120fps, Log video, Camera Control button" },
-      { "key": "Battery", "val": "Approx. 3,900mAh, 30W MagSafe, USB-C 3.0" },
-      { "key": "Connectivity", "val": "5G, Wi-Fi 7, Bluetooth 5.3, USB 3 (10Gbps data)" },
-      { "key": "Durability", "val": "IP68 (6m/30min), Ceramic Shield front" }
+      {
+        "key": "Processor",
+        "val": "A19 Pro Bionic Chip (3nm+)"
+      },
+      {
+        "key": "Display",
+        "val": "6.3-inch Super Retina XDR OLED (120Hz ProMotion, Always-On)"
+      },
+      {
+        "key": "Material",
+        "val": "Aerospace-grade Grade 5 Titanium frame"
+      },
+      {
+        "key": "Camera",
+        "val": "48MP Main + 48MP Ultrawide + 12MP 5x Tetraprism Telephoto"
+      },
+      {
+        "key": "Front Camera",
+        "val": "12MP TrueDepth with autofocus"
+      },
+      {
+        "key": "Video",
+        "val": "4K ProRes at 120fps, Log video, Camera Control button"
+      },
+      {
+        "key": "Battery",
+        "val": "Approx. 3,900mAh, 30W MagSafe, USB-C 3.0"
+      },
+      {
+        "key": "Connectivity",
+        "val": "5G, Wi-Fi 7, Bluetooth 5.3, USB 3 (10Gbps data)"
+      },
+      {
+        "key": "Durability",
+        "val": "IP68 (6m/30min), Ceramic Shield front"
+      }
     ],
     "retailers": [
-      { "name": "Apple Store IN", "price": 134900, "url": "https://www.apple.com/in/shop/buy-iphone/iphone-17-pro" }
+      {
+        "name": "Apple Store IN",
+        "price": 134900,
+        "url": "https://www.apple.com/in/shop/buy-iphone/iphone-17-pro"
+      }
     ]
   },
   {
@@ -587,17 +1326,45 @@
     "desc": "The largest and most powerful iPhone. Massive battery, expansive screen, and unparalleled media consumption and photography capabilities.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "A19 Pro Bionic Chip (3nm+)" },
-      { "key": "Display", "val": "6.9-inch Super Retina XDR OLED (120Hz ProMotion, Always-On)" },
-      { "key": "Material", "val": "Aerospace-grade Grade 5 Titanium frame" },
-      { "key": "Battery", "val": "Approx. 4,600mAh (largest iPhone battery to date)" },
-      { "key": "Camera", "val": "48MP Main + 48MP Ultrawide + 12MP 5x Tetraprism Telephoto" },
-      { "key": "Video", "val": "4K ProRes at 120fps, Log video recording" },
-      { "key": "Connectivity", "val": "5G, Wi-Fi 7, Bluetooth 5.3, USB 3 (10Gbps data)" },
-      { "key": "Durability", "val": "IP68 (6m/30min), Ceramic Shield front" }
+      {
+        "key": "Processor",
+        "val": "A19 Pro Bionic Chip (3nm+)"
+      },
+      {
+        "key": "Display",
+        "val": "6.9-inch Super Retina XDR OLED (120Hz ProMotion, Always-On)"
+      },
+      {
+        "key": "Material",
+        "val": "Aerospace-grade Grade 5 Titanium frame"
+      },
+      {
+        "key": "Battery",
+        "val": "Approx. 4,600mAh (largest iPhone battery to date)"
+      },
+      {
+        "key": "Camera",
+        "val": "48MP Main + 48MP Ultrawide + 12MP 5x Tetraprism Telephoto"
+      },
+      {
+        "key": "Video",
+        "val": "4K ProRes at 120fps, Log video recording"
+      },
+      {
+        "key": "Connectivity",
+        "val": "5G, Wi-Fi 7, Bluetooth 5.3, USB 3 (10Gbps data)"
+      },
+      {
+        "key": "Durability",
+        "val": "IP68 (6m/30min), Ceramic Shield front"
+      }
     ],
     "retailers": [
-      { "name": "Apple Store IN", "price": 154900, "url": "https://www.apple.com/in/shop/buy-iphone/iphone-17-pro-max" }
+      {
+        "name": "Apple Store IN",
+        "price": 154900,
+        "url": "https://www.apple.com/in/shop/buy-iphone/iphone-17-pro-max"
+      }
     ]
   },
   {
@@ -610,20 +1377,58 @@
     "desc": "The flagship killer returns. The OnePlus 13 focuses on raw speed, Hasselblad cameras, incredibly fast charging, and buttery-smooth software.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "Snapdragon 8 Elite (3nm, fastest Android chip)" },
-      { "key": "Display", "val": "6.82-inch 120Hz LTPO 4.0 BOE AMOLED (4500 nits peak)" },
-      { "key": "Camera", "val": "Hasselblad tuned: 50MP Main (f/1.6) + 50MP Periscope 3x + 50MP Ultrawide" },
-      { "key": "Charging", "val": "100W SUPERVOOC wired (full charge in ~36 min)" },
-      { "key": "Wireless Charging", "val": "50W AirVOOC wireless" },
-      { "key": "Battery", "val": "6000mAh Silicon Carbon" },
-      { "key": "RAM", "val": "12GB / 16GB LPDDR5x" },
-      { "key": "Storage", "val": "256GB / 512GB UFS 4.0" },
-      { "key": "Durability", "val": "IP65 dust and water resistance" },
-      { "key": "OS", "val": "OxygenOS 15 (Android 15)" }
+      {
+        "key": "Processor",
+        "val": "Snapdragon 8 Elite (3nm, fastest Android chip)"
+      },
+      {
+        "key": "Display",
+        "val": "6.82-inch 120Hz LTPO 4.0 BOE AMOLED (4500 nits peak)"
+      },
+      {
+        "key": "Camera",
+        "val": "Hasselblad tuned: 50MP Main (f/1.6) + 50MP Periscope 3x + 50MP Ultrawide"
+      },
+      {
+        "key": "Charging",
+        "val": "100W SUPERVOOC wired (full charge in ~36 min)"
+      },
+      {
+        "key": "Wireless Charging",
+        "val": "50W AirVOOC wireless"
+      },
+      {
+        "key": "Battery",
+        "val": "6000mAh Silicon Carbon"
+      },
+      {
+        "key": "RAM",
+        "val": "12GB / 16GB LPDDR5x"
+      },
+      {
+        "key": "Storage",
+        "val": "256GB / 512GB UFS 4.0"
+      },
+      {
+        "key": "Durability",
+        "val": "IP65 dust and water resistance"
+      },
+      {
+        "key": "OS",
+        "val": "OxygenOS 15 (Android 15)"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 69999, "url": "https://www.amazon.in/OnePlus-13-Silky-Black-512GB/dp/B0DN3DZLS6" },
-      { "name": "Flipkart", "price": 69999, "url": "https://www.flipkart.com/oneplus-13-silky-black-512-gb/p/itm3b5e2f6c5fa3e" }
+      {
+        "name": "Amazon IN",
+        "price": 69999,
+        "url": "https://www.amazon.in/OnePlus-13-Silky-Black-512GB/dp/B0DN3DZLS6"
+      },
+      {
+        "name": "Flipkart",
+        "price": 69999,
+        "url": "https://www.flipkart.com/oneplus-13-silky-black-512-gb/p/itm3b5e2f6c5fa3e"
+      }
     ]
   },
   {
@@ -636,20 +1441,58 @@
     "desc": "A gaming-focused powerhouse. iQOO delivers the absolute highest tier processing hardware with a massive battery and blazing-fast charging at an incredible price point for Indian gamers.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "Snapdragon 8 Elite (3nm, top-tier Android SoC)" },
-      { "key": "Display", "val": "6.82-inch 144Hz LTPO4 BOE AMOLED (4500 nits peak)" },
-      { "key": "Gaming Chip", "val": "Q2 Pro supercomputing chip (frame interpolation, game latency reduction)" },
-      { "key": "Camera", "val": "50MP OIS Main (ZEISS) + 50MP Ultrawide + 50MP 2x Portrait" },
-      { "key": "Battery", "val": "6000mAh Silicon Carbon" },
-      { "key": "Charging", "val": "120W FlashCharge wired (full charge ~30 min)" },
-      { "key": "RAM", "val": "12GB / 16GB LPDDR5x" },
-      { "key": "Storage", "val": "256GB / 512GB UFS 4.0" },
-      { "key": "Cooling", "val": "Ultra-large Vapor Chamber for sustained gaming" },
-      { "key": "OS", "val": "FuntouchOS 15 (Android 15)" }
+      {
+        "key": "Processor",
+        "val": "Snapdragon 8 Elite (3nm, top-tier Android SoC)"
+      },
+      {
+        "key": "Display",
+        "val": "6.82-inch 144Hz LTPO4 BOE AMOLED (4500 nits peak)"
+      },
+      {
+        "key": "Gaming Chip",
+        "val": "Q2 Pro supercomputing chip (frame interpolation, game latency reduction)"
+      },
+      {
+        "key": "Camera",
+        "val": "50MP OIS Main (ZEISS) + 50MP Ultrawide + 50MP 2x Portrait"
+      },
+      {
+        "key": "Battery",
+        "val": "6000mAh Silicon Carbon"
+      },
+      {
+        "key": "Charging",
+        "val": "120W FlashCharge wired (full charge ~30 min)"
+      },
+      {
+        "key": "RAM",
+        "val": "12GB / 16GB LPDDR5x"
+      },
+      {
+        "key": "Storage",
+        "val": "256GB / 512GB UFS 4.0"
+      },
+      {
+        "key": "Cooling",
+        "val": "Ultra-large Vapor Chamber for sustained gaming"
+      },
+      {
+        "key": "OS",
+        "val": "FuntouchOS 15 (Android 15)"
+      }
     ],
     "retailers": [
-      { "name": "Flipkart", "price": 54999, "url": "https://www.flipkart.com/iqoo-13-legend-512-gb/p/itmede748ef67ff8" },
-      { "name": "Amazon IN", "price": 54999, "url": "https://www.amazon.in/iQOO-13-Dimensity-Storage-Charging/dp/B0DPBJ6N3P" }
+      {
+        "name": "Flipkart",
+        "price": 54999,
+        "url": "https://www.flipkart.com/iqoo-13-legend-512-gb/p/itmede748ef67ff8"
+      },
+      {
+        "name": "Amazon IN",
+        "price": 54999,
+        "url": "https://www.amazon.in/iQOO-13-Dimensity-Storage-Charging/dp/B0DPBJ6N3P"
+      }
     ]
   },
   {
@@ -662,19 +1505,53 @@
     "desc": "Samsung's premier foldable. Unfolds from a standard-sized phone into a mini-tablet — ideal for heavy multitasking, video consumption, and Pro-grade photography.",
     "review": "",
     "specs": [
-      { "key": "Inner Display", "val": "7.6-inch Dynamic AMOLED 2x Folding (1-120Hz LTPO)" },
-      { "key": "Cover Display", "val": "6.3-inch Dynamic AMOLED 2x (1-120Hz)" },
-      { "key": "Processor", "val": "Snapdragon 8 Gen 5 for Galaxy (3nm)" },
-      { "key": "Camera", "val": "200MP Main + 10MP 3x Zoom + 12MP Ultrawide + Under-display front cam" },
-      { "key": "RAM", "val": "12GB LPDDR5x" },
-      { "key": "Storage", "val": "256GB / 512GB / 1TB UFS 4.0" },
-      { "key": "Battery", "val": "4400mAh, 25W wired, 15W wireless" },
-      { "key": "S-Pen", "val": "S-Pen Fold Edition support (sold separately)" },
-      { "key": "Durability", "val": "IP48, Armor Aluminum, Corning Gorilla Glass Victus 3" },
-      { "key": "Hinge", "val": "FlexHinge with Flex Mode (stays open at any angle)" }
+      {
+        "key": "Inner Display",
+        "val": "7.6-inch Dynamic AMOLED 2x Folding (1-120Hz LTPO)"
+      },
+      {
+        "key": "Cover Display",
+        "val": "6.3-inch Dynamic AMOLED 2x (1-120Hz)"
+      },
+      {
+        "key": "Processor",
+        "val": "Snapdragon 8 Gen 5 for Galaxy (3nm)"
+      },
+      {
+        "key": "Camera",
+        "val": "200MP Main + 10MP 3x Zoom + 12MP Ultrawide + Under-display front cam"
+      },
+      {
+        "key": "RAM",
+        "val": "12GB LPDDR5x"
+      },
+      {
+        "key": "Storage",
+        "val": "256GB / 512GB / 1TB UFS 4.0"
+      },
+      {
+        "key": "Battery",
+        "val": "4400mAh, 25W wired, 15W wireless"
+      },
+      {
+        "key": "S-Pen",
+        "val": "S-Pen Fold Edition support (sold separately)"
+      },
+      {
+        "key": "Durability",
+        "val": "IP48, Armor Aluminum, Corning Gorilla Glass Victus 3"
+      },
+      {
+        "key": "Hinge",
+        "val": "FlexHinge with Flex Mode (stays open at any angle)"
+      }
     ],
     "retailers": [
-      { "name": "Samsung Store IN", "price": 164999, "url": "https://www.samsung.com/in/smartphones/galaxy-z-fold7/" }
+      {
+        "name": "Samsung Store IN",
+        "price": 164999,
+        "url": "https://www.samsung.com/in/smartphones/galaxy-z-fold7/"
+      }
     ]
   },
   {
@@ -687,19 +1564,53 @@
     "desc": "The stylish, pocketable clamshell foldable. Closes down to the size of a coaster — the most portable flagship on the market, with a highly functional cover screen.",
     "review": "",
     "specs": [
-      { "key": "Inner Display", "val": "6.7-inch Folding AMOLED (120Hz LTPO)" },
-      { "key": "Cover Display", "val": "3.9-inch Super AMOLED FlexWindow (full apps support)" },
-      { "key": "Processor", "val": "Snapdragon 8 Gen 5 for Galaxy (3nm)" },
-      { "key": "Camera", "val": "50MP OIS f/1.8 Main + 12MP Ultrawide (Flex Mode optimized)" },
-      { "key": "Front Camera", "val": "10MP" },
-      { "key": "Battery", "val": "4000mAh, 25W wired, 15W wireless" },
-      { "key": "RAM", "val": "8GB LPDDR5x" },
-      { "key": "Storage", "val": "256GB UFS 4.0" },
-      { "key": "Durability", "val": "IPX8 water resistance, Armor Aluminum" },
-      { "key": "Form Factor", "val": "Clamshell folding (folds flat)" }
+      {
+        "key": "Inner Display",
+        "val": "6.7-inch Folding AMOLED (120Hz LTPO)"
+      },
+      {
+        "key": "Cover Display",
+        "val": "3.9-inch Super AMOLED FlexWindow (full apps support)"
+      },
+      {
+        "key": "Processor",
+        "val": "Snapdragon 8 Gen 5 for Galaxy (3nm)"
+      },
+      {
+        "key": "Camera",
+        "val": "50MP OIS f/1.8 Main + 12MP Ultrawide (Flex Mode optimized)"
+      },
+      {
+        "key": "Front Camera",
+        "val": "10MP"
+      },
+      {
+        "key": "Battery",
+        "val": "4000mAh, 25W wired, 15W wireless"
+      },
+      {
+        "key": "RAM",
+        "val": "8GB LPDDR5x"
+      },
+      {
+        "key": "Storage",
+        "val": "256GB UFS 4.0"
+      },
+      {
+        "key": "Durability",
+        "val": "IPX8 water resistance, Armor Aluminum"
+      },
+      {
+        "key": "Form Factor",
+        "val": "Clamshell folding (folds flat)"
+      }
     ],
     "retailers": [
-      { "name": "Samsung Store IN", "price": 94999, "url": "https://www.samsung.com/in/smartphones/galaxy-z-flip7/" }
+      {
+        "name": "Samsung Store IN",
+        "price": 94999,
+        "url": "https://www.samsung.com/in/smartphones/galaxy-z-flip7/"
+      }
     ]
   },
   {
@@ -712,19 +1623,53 @@
     "desc": "Valve's incredible handheld PC gaming console, now with a stunning HDR OLED display, dramatically improved battery life, and faster Wi-Fi 6E for cloud gaming on the go.",
     "review": "",
     "specs": [
-      { "key": "Display", "val": "7.4-inch HDR OLED (90Hz, 1000 nits HDR, 600 nits SDR)" },
-      { "key": "Processor", "val": "AMD APU (Zen 2 CPU + RDNA 2 GPU, 6nm)" },
-      { "key": "RAM", "val": "16GB LPDDR5 (on-package)" },
-      { "key": "Storage", "val": "1TB NVMe SSD (M.2 2230, user-replaceable)" },
-      { "key": "Battery", "val": "50Whr (~3–12 hours depending on game)" },
-      { "key": "Connectivity", "val": "Wi-Fi 6E (802.11ax), Bluetooth 5.3" },
-      { "key": "OS", "val": "SteamOS 3 (Arch Linux + Proton for Windows game compatibility)" },
-      { "key": "Controls", "val": "Dual thumbsticks, trackpads, gyro, L/R triggers, back paddles" },
-      { "key": "Ports", "val": "USB-C (USB 3.2 Gen 2, DP 1.4, 45W charging)" },
-      { "key": "Weight", "val": "640g" }
+      {
+        "key": "Display",
+        "val": "7.4-inch HDR OLED (90Hz, 1000 nits HDR, 600 nits SDR)"
+      },
+      {
+        "key": "Processor",
+        "val": "AMD APU (Zen 2 CPU + RDNA 2 GPU, 6nm)"
+      },
+      {
+        "key": "RAM",
+        "val": "16GB LPDDR5 (on-package)"
+      },
+      {
+        "key": "Storage",
+        "val": "1TB NVMe SSD (M.2 2230, user-replaceable)"
+      },
+      {
+        "key": "Battery",
+        "val": "50Whr (~3–12 hours depending on game)"
+      },
+      {
+        "key": "Connectivity",
+        "val": "Wi-Fi 6E (802.11ax), Bluetooth 5.3"
+      },
+      {
+        "key": "OS",
+        "val": "SteamOS 3 (Arch Linux + Proton for Windows game compatibility)"
+      },
+      {
+        "key": "Controls",
+        "val": "Dual thumbsticks, trackpads, gyro, L/R triggers, back paddles"
+      },
+      {
+        "key": "Ports",
+        "val": "USB-C (USB 3.2 Gen 2, DP 1.4, 45W charging)"
+      },
+      {
+        "key": "Weight",
+        "val": "640g"
+      }
     ],
     "retailers": [
-      { "name": "Flipkart", "price": 65000, "url": "https://www.flipkart.com/valve-steam-deck-oled-512gb/p/itm1234steadeckoled" }
+      {
+        "name": "Flipkart",
+        "price": 65000,
+        "url": "https://www.flipkart.com/valve-steam-deck-oled-512gb/p/itm1234steadeckoled"
+      }
     ]
   },
   {
@@ -737,19 +1682,53 @@
     "desc": "A beautifully crafted, ultra-portable 14-inch gaming laptop packing desktop-class Nvidia RTX graphics and an AMD Ryzen 9 processor. Arguably the best thin-and-light gaming laptop money can buy.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "AMD Ryzen 9 8945HS (8-core, 5.2GHz boost, RDNA iGPU)" },
-      { "key": "Graphics", "val": "Nvidia GeForce RTX 4070 (8GB GDDR6, 100W TGP)" },
-      { "key": "Display", "val": "14-inch 3K OLED (2880x1800 at 120Hz, 0.2ms, 100% DCI-P3)" },
-      { "key": "RAM", "val": "16GB LPDDR5x-7500 (on-board, max 32GB with SODIMM slot)" },
-      { "key": "Storage", "val": "1TB PCIe 4.0 NVMe SSD (user-replaceable)" },
-      { "key": "Battery", "val": "73Whr (~8 hours productivity, ~2-3 hours gaming)" },
-      { "key": "Build", "val": "CNC Machined Aluminum chassis (AniMe Matrix LED lid optional)" },
-      { "key": "Ports", "val": "2x USB-A 3.2, 1x USB-C (DP+PD), 1x HDMI 2.1, SD Card, 3.5mm" },
-      { "key": "Connectivity", "val": "Wi-Fi 7, Bluetooth 5.4" },
-      { "key": "Weight", "val": "1.65kg" }
+      {
+        "key": "Processor",
+        "val": "AMD Ryzen 9 8945HS (8-core, 5.2GHz boost, RDNA iGPU)"
+      },
+      {
+        "key": "Graphics",
+        "val": "Nvidia GeForce RTX 4070 (8GB GDDR6, 100W TGP)"
+      },
+      {
+        "key": "Display",
+        "val": "14-inch 3K OLED (2880x1800 at 120Hz, 0.2ms, 100% DCI-P3)"
+      },
+      {
+        "key": "RAM",
+        "val": "16GB LPDDR5x-7500 (on-board, max 32GB with SODIMM slot)"
+      },
+      {
+        "key": "Storage",
+        "val": "1TB PCIe 4.0 NVMe SSD (user-replaceable)"
+      },
+      {
+        "key": "Battery",
+        "val": "73Whr (~8 hours productivity, ~2-3 hours gaming)"
+      },
+      {
+        "key": "Build",
+        "val": "CNC Machined Aluminum chassis (AniMe Matrix LED lid optional)"
+      },
+      {
+        "key": "Ports",
+        "val": "2x USB-A 3.2, 1x USB-C (DP+PD), 1x HDMI 2.1, SD Card, 3.5mm"
+      },
+      {
+        "key": "Connectivity",
+        "val": "Wi-Fi 7, Bluetooth 5.4"
+      },
+      {
+        "key": "Weight",
+        "val": "1.65kg"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 175000, "url": "https://www.amazon.in/ASUS-Zephyrus-G14-GA403UV-Gaming/dp/B0CZGJ8Q6X" }
+      {
+        "name": "Amazon IN",
+        "price": 175000,
+        "url": "https://www.amazon.in/ASUS-Zephyrus-G14-GA403UV-Gaming/dp/B0CZGJ8Q6X"
+      }
     ]
   },
   {
@@ -762,19 +1741,53 @@
     "desc": "The most rugged and capable Apple Watch. Features a titanium case, precision dual-frequency GPS, up to 36 hours battery life, and a 100m water resistance rating for extreme athletes.",
     "review": "",
     "specs": [
-      { "key": "Chip", "val": "Apple S10 SiP" },
-      { "key": "Case Material", "val": "Aerospace-grade Titanium (natural / black)" },
-      { "key": "Display", "val": "49mm Always-On Retina LTPO OLED (3000 nits peak)" },
-      { "key": "Water Resistance", "val": "100m (EN 13319 dive computer standard)" },
-      { "key": "GPS", "val": "Precision dual-frequency (L1+L5), compass, altimeter, depth gauge" },
-      { "key": "Battery", "val": "Up to 36 hours standard / 60 hours low-power mode" },
-      { "key": "Connectivity", "val": "LTE + Wi-Fi 4 + Bluetooth 5.3 + UWB" },
-      { "key": "Sensors", "val": "Blood oxygen, ECG, heart rate, skin temp, crash detection" },
-      { "key": "Durability", "val": "MIL-STD-810H, IP6X dust resistant" },
-      { "key": "Bands", "val": "Alpine, Trail, Ocean Loop (universal 49mm lug)" }
+      {
+        "key": "Chip",
+        "val": "Apple S10 SiP"
+      },
+      {
+        "key": "Case Material",
+        "val": "Aerospace-grade Titanium (natural / black)"
+      },
+      {
+        "key": "Display",
+        "val": "49mm Always-On Retina LTPO OLED (3000 nits peak)"
+      },
+      {
+        "key": "Water Resistance",
+        "val": "100m (EN 13319 dive computer standard)"
+      },
+      {
+        "key": "GPS",
+        "val": "Precision dual-frequency (L1+L5), compass, altimeter, depth gauge"
+      },
+      {
+        "key": "Battery",
+        "val": "Up to 36 hours standard / 60 hours low-power mode"
+      },
+      {
+        "key": "Connectivity",
+        "val": "LTE + Wi-Fi 4 + Bluetooth 5.3 + UWB"
+      },
+      {
+        "key": "Sensors",
+        "val": "Blood oxygen, ECG, heart rate, skin temp, crash detection"
+      },
+      {
+        "key": "Durability",
+        "val": "MIL-STD-810H, IP6X dust resistant"
+      },
+      {
+        "key": "Bands",
+        "val": "Alpine, Trail, Ocean Loop (universal 49mm lug)"
+      }
     ],
     "retailers": [
-      { "name": "Apple Store IN", "price": 89900, "url": "https://www.apple.com/in/shop/buy-watch/apple-watch-ultra" }
+      {
+        "name": "Apple Store IN",
+        "price": 89900,
+        "url": "https://www.apple.com/in/shop/buy-watch/apple-watch-ultra"
+      }
     ]
   },
   {
@@ -787,19 +1800,53 @@
     "desc": "A true hybrid mirrorless camera delivering outstanding 33MP stills and stunning 4K 60p video. The perfect all-rounder for photographers and video creators stepping up to full-frame.",
     "review": "",
     "specs": [
-      { "key": "Sensor", "val": "33MP Full-Frame Exmor R BSI CMOS" },
-      { "key": "Processor", "val": "BIONZ XR image processor (8x faster than BIONZ X)" },
-      { "key": "Autofocus", "val": "Real-time Eye AF (humans, animals, birds), 759 phase detect points" },
-      { "key": "Video", "val": "4K 60p in 10-bit 4:2:2, 4K 120p Super35, S-Log3" },
-      { "key": "ISO Range", "val": "100-51200 (expandable to 50-204800)" },
-      { "key": "Burst Rate", "val": "10 fps compressed RAW" },
-      { "key": "Stabilization", "val": "5-axis in-body optical (5.5 stops)" },
-      { "key": "EVF", "val": "0.5-inch Quad-XGA OLED (3.68M dots)" },
-      { "key": "LCD", "val": "3-inch fully articulating touchscreen (1.03M dots)" },
-      { "key": "Connectivity", "val": "Wi-Fi 5, Bluetooth 4.1, dual UHS-II SD slots, USB-C 3.2" }
+      {
+        "key": "Sensor",
+        "val": "33MP Full-Frame Exmor R BSI CMOS"
+      },
+      {
+        "key": "Processor",
+        "val": "BIONZ XR image processor (8x faster than BIONZ X)"
+      },
+      {
+        "key": "Autofocus",
+        "val": "Real-time Eye AF (humans, animals, birds), 759 phase detect points"
+      },
+      {
+        "key": "Video",
+        "val": "4K 60p in 10-bit 4:2:2, 4K 120p Super35, S-Log3"
+      },
+      {
+        "key": "ISO Range",
+        "val": "100-51200 (expandable to 50-204800)"
+      },
+      {
+        "key": "Burst Rate",
+        "val": "10 fps compressed RAW"
+      },
+      {
+        "key": "Stabilization",
+        "val": "5-axis in-body optical (5.5 stops)"
+      },
+      {
+        "key": "EVF",
+        "val": "0.5-inch Quad-XGA OLED (3.68M dots)"
+      },
+      {
+        "key": "LCD",
+        "val": "3-inch fully articulating touchscreen (1.03M dots)"
+      },
+      {
+        "key": "Connectivity",
+        "val": "Wi-Fi 5, Bluetooth 4.1, dual UHS-II SD slots, USB-C 3.2"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 210000, "url": "https://www.amazon.in/Sony-Full-Frame-Mirrorless-Camera-ILCE-7M4/dp/B09HJMY68T" }
+      {
+        "name": "Amazon IN",
+        "price": 210000,
+        "url": "https://www.amazon.in/Sony-Full-Frame-Mirrorless-Camera-ILCE-7M4/dp/B09HJMY68T"
+      }
     ]
   },
   {
@@ -812,18 +1859,49 @@
     "desc": "A sub-250g drone with omnidirectional obstacle sensing, 4K/60fps HDR video, and 34 minutes of flight time. No registration required in most countries due to its ultra-light weight.",
     "review": "",
     "specs": [
-      { "key": "Weight", "val": "249g (no registration required in most regions)" },
-      { "key": "Video", "val": "4K/60fps HDR, 4K/100fps slow-mo, 10-bit D-Log M" },
-      { "key": "Photo", "val": "48MP RAW (vertical shooting supported for social media)" },
-      { "key": "Safety", "val": "Omnidirectional Obstacle Sensing (APAS 360°)" },
-      { "key": "Range", "val": "20km O4 FHD video transmission" },
-      { "key": "Flight Time", "val": "34 minutes (Pro Battery) / 45 minutes (Pro Plus Battery)" },
-      { "key": "Stabilization", "val": "3-axis mechanical gimbal, EIS" },
-      { "key": "Wind Resistance", "val": "Level 5 (up to 38 km/h)" },
-      { "key": "Smart Modes", "val": "ActiveTrack 360°, QuickShots, Hyperlapse, Cruise Control" }
+      {
+        "key": "Weight",
+        "val": "249g (no registration required in most regions)"
+      },
+      {
+        "key": "Video",
+        "val": "4K/60fps HDR, 4K/100fps slow-mo, 10-bit D-Log M"
+      },
+      {
+        "key": "Photo",
+        "val": "48MP RAW (vertical shooting supported for social media)"
+      },
+      {
+        "key": "Safety",
+        "val": "Omnidirectional Obstacle Sensing (APAS 360°)"
+      },
+      {
+        "key": "Range",
+        "val": "20km O4 FHD video transmission"
+      },
+      {
+        "key": "Flight Time",
+        "val": "34 minutes (Pro Battery) / 45 minutes (Pro Plus Battery)"
+      },
+      {
+        "key": "Stabilization",
+        "val": "3-axis mechanical gimbal, EIS"
+      },
+      {
+        "key": "Wind Resistance",
+        "val": "Level 5 (up to 38 km/h)"
+      },
+      {
+        "key": "Smart Modes",
+        "val": "ActiveTrack 360°, QuickShots, Hyperlapse, Cruise Control"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 85000, "url": "https://www.amazon.in/DJI-Mini-Pro-Obstacle-Avoidance/dp/B0CMG2D3B3" }
+      {
+        "name": "Amazon IN",
+        "price": 85000,
+        "url": "https://www.amazon.in/DJI-Mini-Pro-Obstacle-Avoidance/dp/B0CMG2D3B3"
+      }
     ]
   },
   {
@@ -836,18 +1914,49 @@
     "desc": "A premium full-metal QMK/VIA custom mechanical keyboard with wireless connectivity, perfect for productivity and typing enthusiasts who want both form and function.",
     "review": "",
     "specs": [
-      { "key": "Build", "val": "Full CNC Machined Aluminum Body (anodized)" },
-      { "key": "Layout", "val": "75% (84-key) with Rotary Knob" },
-      { "key": "Connectivity", "val": "Bluetooth 5.1 (3 devices) + USB-C wired" },
-      { "key": "Battery", "val": "4000mAh (up to 300 hours with backlight off)" },
-      { "key": "Switches", "val": "Gateron G Pro (hot-swap PCB, fits MX-compatible switches)" },
-      { "key": "Customization", "val": "Full QMK + VIA firmware, remappable via GUI" },
-      { "key": "Stabilizers", "val": "Pre-lubed screw-in stabilizers" },
-      { "key": "Backlight", "val": "South-facing per-key RGB" },
-      { "key": "Sound", "val": "Gasket-mounted plate, double-sided tape, foam dampening" }
+      {
+        "key": "Build",
+        "val": "Full CNC Machined Aluminum Body (anodized)"
+      },
+      {
+        "key": "Layout",
+        "val": "75% (84-key) with Rotary Knob"
+      },
+      {
+        "key": "Connectivity",
+        "val": "Bluetooth 5.1 (3 devices) + USB-C wired"
+      },
+      {
+        "key": "Battery",
+        "val": "4000mAh (up to 300 hours with backlight off)"
+      },
+      {
+        "key": "Switches",
+        "val": "Gateron G Pro (hot-swap PCB, fits MX-compatible switches)"
+      },
+      {
+        "key": "Customization",
+        "val": "Full QMK + VIA firmware, remappable via GUI"
+      },
+      {
+        "key": "Stabilizers",
+        "val": "Pre-lubed screw-in stabilizers"
+      },
+      {
+        "key": "Backlight",
+        "val": "South-facing per-key RGB"
+      },
+      {
+        "key": "Sound",
+        "val": "Gasket-mounted plate, double-sided tape, foam dampening"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 18000, "url": "https://www.amazon.in/Keychron-QMK-Via-Custom-Mechanical/dp/B0B63ZRZPZ" }
+      {
+        "name": "Amazon IN",
+        "price": 18000,
+        "url": "https://www.amazon.in/Keychron-QMK-Via-Custom-Mechanical/dp/B0B63ZRZPZ"
+      }
     ]
   },
   {
@@ -860,19 +1969,53 @@
     "desc": "Google's best camera phone, with Gemini AI baked deep into the OS. Exceptional pure-Android experience, 7 years of OS updates, and industry-leading computational photography.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "Google Tensor G4 (Samsung 4nm)" },
-      { "key": "Display", "val": "6.3-inch LTPO OLED (1-120Hz, 3000 nits peak, Always-On)" },
-      { "key": "Camera", "val": "50MP Main OIS + 48MP Ultrawide + 48MP 5x Telephoto" },
-      { "key": "Front Camera", "val": "10.5MP (dual PD autofocus)" },
-      { "key": "AI Features", "val": "Gemini Nano, Magic Eraser, Best Take, Add Me, Photo Unblur" },
-      { "key": "Battery", "val": "4700mAh, 37W wired, 23W wireless, 12W reverse wireless" },
-      { "key": "RAM", "val": "16GB LPDDR5x" },
-      { "key": "Storage", "val": "128GB / 256GB / 512GB / 1TB UFS 3.1" },
-      { "key": "OS Support", "val": "7 years of Android OS + Security updates" },
-      { "key": "Durability", "val": "IP68 (6m/30min)" }
+      {
+        "key": "Processor",
+        "val": "Google Tensor G4 (Samsung 4nm)"
+      },
+      {
+        "key": "Display",
+        "val": "6.3-inch LTPO OLED (1-120Hz, 3000 nits peak, Always-On)"
+      },
+      {
+        "key": "Camera",
+        "val": "50MP Main OIS + 48MP Ultrawide + 48MP 5x Telephoto"
+      },
+      {
+        "key": "Front Camera",
+        "val": "10.5MP (dual PD autofocus)"
+      },
+      {
+        "key": "AI Features",
+        "val": "Gemini Nano, Magic Eraser, Best Take, Add Me, Photo Unblur"
+      },
+      {
+        "key": "Battery",
+        "val": "4700mAh, 37W wired, 23W wireless, 12W reverse wireless"
+      },
+      {
+        "key": "RAM",
+        "val": "16GB LPDDR5x"
+      },
+      {
+        "key": "Storage",
+        "val": "128GB / 256GB / 512GB / 1TB UFS 3.1"
+      },
+      {
+        "key": "OS Support",
+        "val": "7 years of Android OS + Security updates"
+      },
+      {
+        "key": "Durability",
+        "val": "IP68 (6m/30min)"
+      }
     ],
     "retailers": [
-      { "name": "Flipkart", "price": 109999, "url": "https://www.flipkart.com/google-pixel-9-pro-obsidian-128-gb/p/itm4e2827bfce70a" }
+      {
+        "name": "Flipkart",
+        "price": 109999,
+        "url": "https://www.flipkart.com/google-pixel-9-pro-obsidian-128-gb/p/itm4e2827bfce70a"
+      }
     ]
   },
   {
@@ -885,19 +2028,54 @@
     "desc": "Sony's flagship noise-cancelling headphones. Industry-leading ANC, exceptional sound quality, 30-hour battery, and multipoint connectivity across two devices simultaneously.",
     "review": "",
     "specs": [
-      { "key": "Drivers", "val": "30mm carbon fiber composite (HD Noise Cancelling Processor QN1)" },
-      { "key": "ANC", "val": "8 microphones, 2 processors — industry-leading noise cancellation" },
-      { "key": "Battery", "val": "Up to 30 hours ANC on (3 min charge = 3 hours)" },
-      { "key": "Multipoint", "val": "Connect 2 devices simultaneously" },
-      { "key": "Microphone", "val": "Precise Voice Pickup tech, 4 beamforming mics" },
-      { "key": "Audio Codec", "val": "LDAC (990kbps hi-res wireless), AAC, SBC" },
-      { "key": "Connectivity", "val": "Bluetooth 5.2, 3.5mm analog input" },
-      { "key": "Weight", "val": "250g" },
-      { "key": "App", "val": "Sony Headphones Connect (EQ, ANC control, Speak-to-Chat)" }
+      {
+        "key": "Drivers",
+        "val": "30mm carbon fiber composite (HD Noise Cancelling Processor QN1)"
+      },
+      {
+        "key": "ANC",
+        "val": "8 microphones, 2 processors — industry-leading noise cancellation"
+      },
+      {
+        "key": "Battery",
+        "val": "Up to 30 hours ANC on (3 min charge = 3 hours)"
+      },
+      {
+        "key": "Multipoint",
+        "val": "Connect 2 devices simultaneously"
+      },
+      {
+        "key": "Microphone",
+        "val": "Precise Voice Pickup tech, 4 beamforming mics"
+      },
+      {
+        "key": "Audio Codec",
+        "val": "LDAC (990kbps hi-res wireless), AAC, SBC"
+      },
+      {
+        "key": "Connectivity",
+        "val": "Bluetooth 5.2, 3.5mm analog input"
+      },
+      {
+        "key": "Weight",
+        "val": "250g"
+      },
+      {
+        "key": "App",
+        "val": "Sony Headphones Connect (EQ, ANC control, Speak-to-Chat)"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 26990, "url": "https://www.amazon.in/Sony-WH-1000XM5-Wireless-Cancelling-Headphones/dp/B09XS7JWHH" },
-      { "name": "Flipkart", "price": 26990, "url": "https://www.flipkart.com/sony-wh-1000xm5-bluetooth-headset/p/itmcfe2d8b35e3ab" }
+      {
+        "name": "Amazon IN",
+        "price": 26990,
+        "url": "https://www.amazon.in/Sony-WH-1000XM5-Wireless-Cancelling-Headphones/dp/B09XS7JWHH"
+      },
+      {
+        "name": "Flipkart",
+        "price": 26990,
+        "url": "https://www.flipkart.com/sony-wh-1000xm5-bluetooth-headset/p/itmcfe2d8b35e3ab"
+      }
     ]
   },
   {
@@ -910,19 +2088,53 @@
     "desc": "A high-performance 16-inch laptop designed to be completely upgradeable, repairable, and customizable — including a hot-swappable discrete GPU expansion bay.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "AMD Ryzen 9 7940HS (8-core, 5.2GHz boost)" },
-      { "key": "Graphics", "val": "Swappable GPU Module: Radeon RX 7700S (8GB GDDR6)" },
-      { "key": "Display", "val": "16-inch 2560x1600 165Hz IPS (100% sRGB)" },
-      { "key": "RAM", "val": "32GB DDR5-5600 (2x SO-DIMM, upgradeable up to 64GB)" },
-      { "key": "Storage", "val": "1TB PCIe 4.0 NVMe (2x M.2 slots)" },
-      { "key": "Battery", "val": "85Whr" },
-      { "key": "Ports", "val": "Fully modular expansion card system (USB-A, USB-C, HDMI, DP, SD, etc.)" },
-      { "key": "Input Deck", "val": "Customizable hot-swap keyboard/number pad/touchpad modules" },
-      { "key": "Repairability", "val": "Every component user-replaceable (iFixit partnership)" },
-      { "key": "Connectivity", "val": "Wi-Fi 7, Bluetooth 5.4" }
+      {
+        "key": "Processor",
+        "val": "AMD Ryzen 9 7940HS (8-core, 5.2GHz boost)"
+      },
+      {
+        "key": "Graphics",
+        "val": "Swappable GPU Module: Radeon RX 7700S (8GB GDDR6)"
+      },
+      {
+        "key": "Display",
+        "val": "16-inch 2560x1600 165Hz IPS (100% sRGB)"
+      },
+      {
+        "key": "RAM",
+        "val": "32GB DDR5-5600 (2x SO-DIMM, upgradeable up to 64GB)"
+      },
+      {
+        "key": "Storage",
+        "val": "1TB PCIe 4.0 NVMe (2x M.2 slots)"
+      },
+      {
+        "key": "Battery",
+        "val": "85Whr"
+      },
+      {
+        "key": "Ports",
+        "val": "Fully modular expansion card system (USB-A, USB-C, HDMI, DP, SD, etc.)"
+      },
+      {
+        "key": "Input Deck",
+        "val": "Customizable hot-swap keyboard/number pad/touchpad modules"
+      },
+      {
+        "key": "Repairability",
+        "val": "Every component user-replaceable (iFixit partnership)"
+      },
+      {
+        "key": "Connectivity",
+        "val": "Wi-Fi 7, Bluetooth 5.4"
+      }
     ],
     "retailers": [
-      { "name": "Framework (Direct)", "price": 160000, "url": "https://frame.work/in/en/products/laptop16-diy-amd-7040" }
+      {
+        "name": "Framework (Direct)",
+        "price": 160000,
+        "url": "https://frame.work/in/en/products/laptop16-diy-amd-7040"
+      }
     ]
   },
   {
@@ -935,18 +2147,49 @@
     "desc": "The premier mixed reality headset. Blends the physical and virtual worlds with stunning full-color passthrough and pancake lenses for a far more comfortable extended-wear experience.",
     "review": "",
     "specs": [
-      { "key": "Resolution", "val": "2064x2208 per eye (Infinite Display, 25% more pixels than Quest 2)" },
-      { "key": "Processor", "val": "Snapdragon XR2 Gen 2 (double the GPU perf of Quest 2)" },
-      { "key": "Passthrough", "val": "Full-color 18 PPD mixed reality (passthrough at 4.3MP effective)" },
-      { "key": "Lenses", "val": "Pancake optics (40% thinner vs Fresnel, wider sweet spot)" },
-      { "key": "Storage", "val": "512GB onboard" },
-      { "key": "Battery", "val": "Up to 2.9 hours (3 hours with best-effort game mode)" },
-      { "key": "Controllers", "val": "Touch Plus (no outer rings, slimmer profile)" },
-      { "key": "Tracking", "val": "4 inside-out cameras, hand tracking, eye tracking" },
-      { "key": "Connectivity", "val": "Wi-Fi 6E, Bluetooth 5.2, USB-C (PC link support)" }
+      {
+        "key": "Resolution",
+        "val": "2064x2208 per eye (Infinite Display, 25% more pixels than Quest 2)"
+      },
+      {
+        "key": "Processor",
+        "val": "Snapdragon XR2 Gen 2 (double the GPU perf of Quest 2)"
+      },
+      {
+        "key": "Passthrough",
+        "val": "Full-color 18 PPD mixed reality (passthrough at 4.3MP effective)"
+      },
+      {
+        "key": "Lenses",
+        "val": "Pancake optics (40% thinner vs Fresnel, wider sweet spot)"
+      },
+      {
+        "key": "Storage",
+        "val": "512GB onboard"
+      },
+      {
+        "key": "Battery",
+        "val": "Up to 2.9 hours (3 hours with best-effort game mode)"
+      },
+      {
+        "key": "Controllers",
+        "val": "Touch Plus (no outer rings, slimmer profile)"
+      },
+      {
+        "key": "Tracking",
+        "val": "4 inside-out cameras, hand tracking, eye tracking"
+      },
+      {
+        "key": "Connectivity",
+        "val": "Wi-Fi 6E, Bluetooth 5.2, USB-C (PC link support)"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 65000, "url": "https://www.amazon.in/Meta-Quest-512GB-Breakthrough-Reality/dp/B0CGK2HHMD" }
+      {
+        "name": "Amazon IN",
+        "price": 65000,
+        "url": "https://www.amazon.in/Meta-Quest-512GB-Breakthrough-Reality/dp/B0CGK2HHMD"
+      }
     ]
   },
   {
@@ -959,18 +2202,49 @@
     "desc": "A beautifully engineered, ultra-portable synthesizer, sampler, and sequencer. An entire professional electronic music studio packed into a sleek aluminum frame the size of a pencil case.",
     "review": "",
     "specs": [
-      { "key": "Type", "val": "Portable Synthesizer, Sampler & 4-track Tape Recorder" },
-      { "key": "Synth Engines", "val": "8 synthesis methods (Digital, FM, Phase, String, Cluster, etc.)" },
-      { "key": "Effects", "val": "16 onboard effects (reverb, delay, chorus, EQ, etc.)" },
-      { "key": "Build", "val": "Low profile aerospace aluminum body" },
-      { "key": "Display", "val": "Color display with real-time visualizers" },
-      { "key": "Battery", "val": "Rechargeable Li-Po, up to 24 hours" },
-      { "key": "Audio Quality", "val": "32-bit DSP, 44.1kHz" },
-      { "key": "Connectivity", "val": "USB-C (audio interface), 3.5mm line in/out, FM Radio" },
-      { "key": "Special Features", "val": "Built-in FM Radio sampler, Tape Mode w/ time-stretch, LFO modulation" }
+      {
+        "key": "Type",
+        "val": "Portable Synthesizer, Sampler & 4-track Tape Recorder"
+      },
+      {
+        "key": "Synth Engines",
+        "val": "8 synthesis methods (Digital, FM, Phase, String, Cluster, etc.)"
+      },
+      {
+        "key": "Effects",
+        "val": "16 onboard effects (reverb, delay, chorus, EQ, etc.)"
+      },
+      {
+        "key": "Build",
+        "val": "Low profile aerospace aluminum body"
+      },
+      {
+        "key": "Display",
+        "val": "Color display with real-time visualizers"
+      },
+      {
+        "key": "Battery",
+        "val": "Rechargeable Li-Po, up to 24 hours"
+      },
+      {
+        "key": "Audio Quality",
+        "val": "32-bit DSP, 44.1kHz"
+      },
+      {
+        "key": "Connectivity",
+        "val": "USB-C (audio interface), 3.5mm line in/out, FM Radio"
+      },
+      {
+        "key": "Special Features",
+        "val": "Built-in FM Radio sampler, Tape Mode w/ time-stretch, LFO modulation"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 180000, "url": "https://www.amazon.in/Teenage-Engineering-OP-1-field/dp/B09ZH7TX6W" }
+      {
+        "name": "Amazon IN",
+        "price": 180000,
+        "url": "https://www.amazon.in/Teenage-Engineering-OP-1-field/dp/B09ZH7TX6W"
+      }
     ]
   },
   {
@@ -983,19 +2257,54 @@
     "desc": "Nothing's best-value phone yet — transparent back, iconic Glyph LED interface, clean Android OS, and a surprisingly capable camera system at a mid-range price.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "Snapdragon 7s Gen 3 (4nm)" },
-      { "key": "Display", "val": "6.77-inch AMOLED (120Hz, 2392x1080, 1300 nits peak)" },
-      { "key": "Design", "val": "Semi-transparent back with Glyph LED interface (Essential Light)" },
-      { "key": "Camera", "val": "50MP OIS Main + 50MP 2x Telephoto + 8MP Ultrawide" },
-      { "key": "Battery", "val": "5000mAh, 50W fast charge, 15W wireless" },
-      { "key": "RAM", "val": "8GB / 12GB LPDDR4x" },
-      { "key": "Storage", "val": "128GB / 256GB UFS 2.2" },
-      { "key": "OS", "val": "Nothing OS 3.0 (Android 15, 3 years OS updates)" },
-      { "key": "Durability", "val": "IP64 dust and splash resistance" }
+      {
+        "key": "Processor",
+        "val": "Snapdragon 7s Gen 3 (4nm)"
+      },
+      {
+        "key": "Display",
+        "val": "6.77-inch AMOLED (120Hz, 2392x1080, 1300 nits peak)"
+      },
+      {
+        "key": "Design",
+        "val": "Semi-transparent back with Glyph LED interface (Essential Light)"
+      },
+      {
+        "key": "Camera",
+        "val": "50MP OIS Main + 50MP 2x Telephoto + 8MP Ultrawide"
+      },
+      {
+        "key": "Battery",
+        "val": "5000mAh, 50W fast charge, 15W wireless"
+      },
+      {
+        "key": "RAM",
+        "val": "8GB / 12GB LPDDR4x"
+      },
+      {
+        "key": "Storage",
+        "val": "128GB / 256GB UFS 2.2"
+      },
+      {
+        "key": "OS",
+        "val": "Nothing OS 3.0 (Android 15, 3 years OS updates)"
+      },
+      {
+        "key": "Durability",
+        "val": "IP64 dust and splash resistance"
+      }
     ],
     "retailers": [
-      { "name": "Flipkart", "price": 25999, "url": "https://www.flipkart.com/nothing-phone-3a-black-128-gb/p/itm4c1b0db50fef4" },
-      { "name": "Amazon IN", "price": 25999, "url": "https://www.amazon.in/Nothing-Phone-3a-Black-128GB/dp/B0DTNQYZYK" }
+      {
+        "name": "Flipkart",
+        "price": 25999,
+        "url": "https://www.flipkart.com/nothing-phone-3a-black-128-gb/p/itm4c1b0db50fef4"
+      },
+      {
+        "name": "Amazon IN",
+        "price": 25999,
+        "url": "https://www.amazon.in/Nothing-Phone-3a-Black-128GB/dp/B0DTNQYZYK"
+      }
     ]
   },
   {
@@ -1008,18 +2317,49 @@
     "desc": "A massive camera powerhouse co-engineered with Leica. Features a 1-inch main sensor and a pro-grade quad-camera system that competes directly with dedicated cameras.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "Snapdragon 8 Elite (3nm, top-tier)" },
-      { "key": "Display", "val": "6.73-inch LTPO AMOLED (1-120Hz, 3200 nits peak)" },
-      { "key": "Camera System", "val": "Leica Summilux quad-lens: 50MP 1-inch Main + 200MP Periscope 4.3x + 50MP 2x + 50MP Ultrawide" },
-      { "key": "Front Camera", "val": "32MP" },
-      { "key": "Battery", "val": "6000mAh Silicon-Carbon, 90W wired, 80W wireless, 10W reverse" },
-      { "key": "RAM", "val": "16GB LPDDR5x" },
-      { "key": "Storage", "val": "256GB / 512GB / 1TB UFS 4.0" },
-      { "key": "Durability", "val": "IP68 (6m/30min)" },
-      { "key": "OS", "val": "HyperOS 2 (Android 15)" }
+      {
+        "key": "Processor",
+        "val": "Snapdragon 8 Elite (3nm, top-tier)"
+      },
+      {
+        "key": "Display",
+        "val": "6.73-inch LTPO AMOLED (1-120Hz, 3200 nits peak)"
+      },
+      {
+        "key": "Camera System",
+        "val": "Leica Summilux quad-lens: 50MP 1-inch Main + 200MP Periscope 4.3x + 50MP 2x + 50MP Ultrawide"
+      },
+      {
+        "key": "Front Camera",
+        "val": "32MP"
+      },
+      {
+        "key": "Battery",
+        "val": "6000mAh Silicon-Carbon, 90W wired, 80W wireless, 10W reverse"
+      },
+      {
+        "key": "RAM",
+        "val": "16GB LPDDR5x"
+      },
+      {
+        "key": "Storage",
+        "val": "256GB / 512GB / 1TB UFS 4.0"
+      },
+      {
+        "key": "Durability",
+        "val": "IP68 (6m/30min)"
+      },
+      {
+        "key": "OS",
+        "val": "HyperOS 2 (Android 15)"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 109999, "url": "https://www.amazon.in/Xiaomi-15-Ultra/dp/B0DLJ4V3PP" }
+      {
+        "name": "Amazon IN",
+        "price": 109999,
+        "url": "https://www.amazon.in/Xiaomi-15-Ultra/dp/B0DLJ4V3PP"
+      }
     ]
   },
   {
@@ -1032,18 +2372,49 @@
     "desc": "The ultimate multisport GPS smartwatch. Features a vivid AMOLED display, LED flashlight, solar charging option, and advanced training metrics used by elite athletes worldwide.",
     "review": "",
     "specs": [
-      { "key": "Display", "val": "47mm AMOLED (1.4-inch, 454x454, sapphire lens, always-on)" },
-      { "key": "Battery Life", "val": "Up to 29 days smartwatch / 16 days GPS / 131 hours UltraTrac" },
-      { "key": "GPS", "val": "Multi-band multi-GNSS (GPS, GLONASS, Galileo, BeiDou)" },
-      { "key": "Sensors", "val": "HR, SpO2, Altimeter, Barometer, Compass, Thermometer, Gyroscope" },
-      { "key": "Flashlight", "val": "Built-in LED white + red light (100 lumens)" },
-      { "key": "Sports Profiles", "val": "150+ activity modes including diving, skiing, golf" },
-      { "key": "Durability", "val": "Titanium bezel, 100m water resistance, MIL-STD-810" },
-      { "key": "Maps", "val": "Preloaded TopoActive maps, ski maps, golf course maps" },
-      { "key": "Connectivity", "val": "Wi-Fi, Bluetooth, ANT+, NFC payments" }
+      {
+        "key": "Display",
+        "val": "47mm AMOLED (1.4-inch, 454x454, sapphire lens, always-on)"
+      },
+      {
+        "key": "Battery Life",
+        "val": "Up to 29 days smartwatch / 16 days GPS / 131 hours UltraTrac"
+      },
+      {
+        "key": "GPS",
+        "val": "Multi-band multi-GNSS (GPS, GLONASS, Galileo, BeiDou)"
+      },
+      {
+        "key": "Sensors",
+        "val": "HR, SpO2, Altimeter, Barometer, Compass, Thermometer, Gyroscope"
+      },
+      {
+        "key": "Flashlight",
+        "val": "Built-in LED white + red light (100 lumens)"
+      },
+      {
+        "key": "Sports Profiles",
+        "val": "150+ activity modes including diving, skiing, golf"
+      },
+      {
+        "key": "Durability",
+        "val": "Titanium bezel, 100m water resistance, MIL-STD-810"
+      },
+      {
+        "key": "Maps",
+        "val": "Preloaded TopoActive maps, ski maps, golf course maps"
+      },
+      {
+        "key": "Connectivity",
+        "val": "Wi-Fi, Bluetooth, ANT+, NFC payments"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 105000, "url": "https://www.amazon.in/Garmin-fenix-8-47mm-AMOLED/dp/B0D5VL4QBN" }
+      {
+        "name": "Amazon IN",
+        "price": 105000,
+        "url": "https://www.amazon.in/Garmin-fenix-8-47mm-AMOLED/dp/B0D5VL4QBN"
+      }
     ]
   },
   {
@@ -1056,18 +2427,49 @@
     "desc": "The gold standard of ergonomic office chairs, used in offices and studios worldwide. Pellicle mesh suspension for cooling airflow and PostureFit SL for total spinal support.",
     "review": "",
     "specs": [
-      { "key": "Suspension Material", "val": "8Z Pellicle elastomeric mesh (zoned flex + air permeability)" },
-      { "key": "Ergonomics", "val": "PostureFit SL — separate sacrum + lumbar support panels" },
-      { "key": "Armrests", "val": "4D adjustable arms (height, width, depth, pivot)" },
-      { "key": "Tilt Mechanism", "val": "Tilt limiter (5 positions) + Forward Tilt + Seat angle adjustment" },
-      { "key": "Sizes", "val": "A (petite), B (standard/most common), C (large)" },
-      { "key": "Weight Capacity", "val": "135kg (Size B)" },
-      { "key": "Casters", "val": "Soft casters for hardwood, hard casters for carpet (interchangeable)" },
-      { "key": "Warranty", "val": "12-year 3-shift warranty (full parts + labor)" },
-      { "key": "Origin", "val": "Made in USA" }
+      {
+        "key": "Suspension Material",
+        "val": "8Z Pellicle elastomeric mesh (zoned flex + air permeability)"
+      },
+      {
+        "key": "Ergonomics",
+        "val": "PostureFit SL — separate sacrum + lumbar support panels"
+      },
+      {
+        "key": "Armrests",
+        "val": "4D adjustable arms (height, width, depth, pivot)"
+      },
+      {
+        "key": "Tilt Mechanism",
+        "val": "Tilt limiter (5 positions) + Forward Tilt + Seat angle adjustment"
+      },
+      {
+        "key": "Sizes",
+        "val": "A (petite), B (standard/most common), C (large)"
+      },
+      {
+        "key": "Weight Capacity",
+        "val": "135kg (Size B)"
+      },
+      {
+        "key": "Casters",
+        "val": "Soft casters for hardwood, hard casters for carpet (interchangeable)"
+      },
+      {
+        "key": "Warranty",
+        "val": "12-year 3-shift warranty (full parts + labor)"
+      },
+      {
+        "key": "Origin",
+        "val": "Made in USA"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 150000, "url": "https://www.amazon.in/Herman-Miller-Ergonomic-PostureFit-Adjustable/dp/B07BWMWS2J" }
+      {
+        "name": "Amazon IN",
+        "price": 150000,
+        "url": "https://www.amazon.in/Herman-Miller-Ergonomic-PostureFit-Adjustable/dp/B07BWMWS2J"
+      }
     ]
   },
   {
@@ -1080,18 +2482,49 @@
     "desc": "An incredible OLED television that doubles as the ultimate PC gaming monitor — deep perfect blacks, 144Hz native refresh rate, NVIDIA G-Sync, and AMD FreeSync Premium.",
     "review": "",
     "specs": [
-      { "key": "Panel Type", "val": "OLED evo (self-lit pixels, perfect blacks, infinite contrast)" },
-      { "key": "Resolution", "val": "4K UHD (3840x2160)" },
-      { "key": "Refresh Rate", "val": "144Hz native (HDMI 2.1 required for 4K@144)" },
-      { "key": "Gaming", "val": "NVIDIA G-Sync Compatible, AMD FreeSync Premium Pro, VRR, ALLM" },
-      { "key": "Processor", "val": "a9 Gen7 AI Processor 4K" },
-      { "key": "HDR Support", "val": "Dolby Vision IQ, HDR10, HLG, Dolby Atmos audio" },
-      { "key": "Ports", "val": "4x HDMI 2.1 (48Gbps), 3x USB, 1x Ethernet" },
-      { "key": "Gaming Input Lag", "val": "1.3ms @ 4K/120Hz (Game Optimizer mode)" },
-      { "key": "OS", "val": "webOS 24 (ThinQ AI)" }
+      {
+        "key": "Panel Type",
+        "val": "OLED evo (self-lit pixels, perfect blacks, infinite contrast)"
+      },
+      {
+        "key": "Resolution",
+        "val": "4K UHD (3840x2160)"
+      },
+      {
+        "key": "Refresh Rate",
+        "val": "144Hz native (HDMI 2.1 required for 4K@144)"
+      },
+      {
+        "key": "Gaming",
+        "val": "NVIDIA G-Sync Compatible, AMD FreeSync Premium Pro, VRR, ALLM"
+      },
+      {
+        "key": "Processor",
+        "val": "a9 Gen7 AI Processor 4K"
+      },
+      {
+        "key": "HDR Support",
+        "val": "Dolby Vision IQ, HDR10, HLG, Dolby Atmos audio"
+      },
+      {
+        "key": "Ports",
+        "val": "4x HDMI 2.1 (48Gbps), 3x USB, 1x Ethernet"
+      },
+      {
+        "key": "Gaming Input Lag",
+        "val": "1.3ms @ 4K/120Hz (Game Optimizer mode)"
+      },
+      {
+        "key": "OS",
+        "val": "webOS 24 (ThinQ AI)"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 95000, "url": "https://www.amazon.in/LG-139cm-Smart-Television-OLED42C4PSA/dp/B0CTPYVVQY" }
+      {
+        "name": "Amazon IN",
+        "price": 95000,
+        "url": "https://www.amazon.in/LG-139cm-Smart-Television-OLED42C4PSA/dp/B0CTPYVVQY"
+      }
     ]
   },
   {
@@ -1104,17 +2537,45 @@
     "desc": "A premium smart soundbar for TV, movies, and gaming. Dolby Atmos object-based 3D audio fills your room, while Trueplay tuning automatically optimizes sound for your space.",
     "review": "",
     "specs": [
-      { "key": "Audio Format", "val": "Dolby Atmos, DTS:X, Dolby TrueHD, PCM 7.1" },
-      { "key": "Drivers", "val": "9 class-D amplifiers powering 9 custom speakers (6 tweeters + 3 woofers)" },
-      { "key": "Trueplay Tuning", "val": "Automatic room calibration via phone microphone" },
-      { "key": "Connectivity", "val": "HDMI eARC, Wi-Fi (2.4+5GHz), Apple AirPlay 2, Ethernet" },
-      { "key": "Smart Features", "val": "Amazon Alexa built-in, Sonos Voice Control" },
-      { "key": "Expandability", "val": "Pairs with Sonos Sub, Era 300/100 surround speakers" },
-      { "key": "Dimensions", "val": "1141mm x 87mm x 115mm" },
-      { "key": "App", "val": "Sonos App (EQ, streaming services, multi-room)" }
+      {
+        "key": "Audio Format",
+        "val": "Dolby Atmos, DTS:X, Dolby TrueHD, PCM 7.1"
+      },
+      {
+        "key": "Drivers",
+        "val": "9 class-D amplifiers powering 9 custom speakers (6 tweeters + 3 woofers)"
+      },
+      {
+        "key": "Trueplay Tuning",
+        "val": "Automatic room calibration via phone microphone"
+      },
+      {
+        "key": "Connectivity",
+        "val": "HDMI eARC, Wi-Fi (2.4+5GHz), Apple AirPlay 2, Ethernet"
+      },
+      {
+        "key": "Smart Features",
+        "val": "Amazon Alexa built-in, Sonos Voice Control"
+      },
+      {
+        "key": "Expandability",
+        "val": "Pairs with Sonos Sub, Era 300/100 surround speakers"
+      },
+      {
+        "key": "Dimensions",
+        "val": "1141mm x 87mm x 115mm"
+      },
+      {
+        "key": "App",
+        "val": "Sonos App (EQ, streaming services, multi-room)"
+      }
     ],
     "retailers": [
-      { "name": "Croma", "price": 85000, "url": "https://www.croma.com/sonos-arc-ultra-soundbar-black/p/294499" }
+      {
+        "name": "Croma",
+        "price": 85000,
+        "url": "https://www.croma.com/sonos-arc-ultra-soundbar-black/p/294499"
+      }
     ]
   },
   {
@@ -1127,18 +2588,49 @@
     "desc": "A highly acclaimed gaming chair with proprietary cold-cure foam, magnetic memory foam neck pillow, and an integrated 4-way lumbar support system built into the backrest.",
     "review": "",
     "specs": [
-      { "key": "Upholstery Options", "val": "Secretlab NEO Hybrid Leatherette or SoftWeave Plus Fabric" },
-      { "key": "Seat Foam", "val": "Proprietary cold-cure foam (denser than standard memory foam)" },
-      { "key": "Lumbar Support", "val": "L-ADAPT 4-Way integrated lumbar system (up/down, in/out)" },
-      { "key": "Armrests", "val": "Full-metal CloudSwap 4D (height, width, depth, pivot)" },
-      { "key": "Neck Pillow", "val": "Magnetic memory foam head pillow (adjustable height)" },
-      { "key": "Recline", "val": "Full multi-tilt recline up to 165°, tilt-lock at any angle" },
-      { "key": "Sizes", "val": "Small, Regular, XL (weight capacity up to 180kg for XL)" },
-      { "key": "Base", "val": "Steel, heavy-duty aluminum 5-point base" },
-      { "key": "Warranty", "val": "5-year warranty" }
+      {
+        "key": "Upholstery Options",
+        "val": "Secretlab NEO Hybrid Leatherette or SoftWeave Plus Fabric"
+      },
+      {
+        "key": "Seat Foam",
+        "val": "Proprietary cold-cure foam (denser than standard memory foam)"
+      },
+      {
+        "key": "Lumbar Support",
+        "val": "L-ADAPT 4-Way integrated lumbar system (up/down, in/out)"
+      },
+      {
+        "key": "Armrests",
+        "val": "Full-metal CloudSwap 4D (height, width, depth, pivot)"
+      },
+      {
+        "key": "Neck Pillow",
+        "val": "Magnetic memory foam head pillow (adjustable height)"
+      },
+      {
+        "key": "Recline",
+        "val": "Full multi-tilt recline up to 165°, tilt-lock at any angle"
+      },
+      {
+        "key": "Sizes",
+        "val": "Small, Regular, XL (weight capacity up to 180kg for XL)"
+      },
+      {
+        "key": "Base",
+        "val": "Steel, heavy-duty aluminum 5-point base"
+      },
+      {
+        "key": "Warranty",
+        "val": "5-year warranty"
+      }
     ],
     "retailers": [
-      { "name": "Secretlab IN", "price": 45000, "url": "https://secretlab.in/products/titan-evo" }
+      {
+        "name": "Secretlab IN",
+        "price": 45000,
+        "url": "https://secretlab.in/products/titan-evo"
+      }
     ]
   },
   {
@@ -1151,18 +2643,49 @@
     "desc": "A professional 4K pen display designed for digital artists. Natural pen-on-screen feel with stunning color accuracy, making it the preferred tool of illustrators and concept artists worldwide.",
     "review": "",
     "specs": [
-      { "key": "Display", "val": "15.6-inch 4K UHD IPS (3840x2160, 226 PPI)" },
-      { "key": "Color Accuracy", "val": "98% Adobe RGB, 95% DCI-P3, Delta E < 2" },
-      { "key": "Pen", "val": "Wacom Pro Pen 2 (8,192 pressure levels, ±60° tilt recognition)" },
-      { "key": "Pen Latency", "val": "~20ms reported latency" },
-      { "key": "Surface", "val": "Etched anti-glare glass (feels like paper)" },
-      { "key": "Touch", "val": "Pro Pen 2 touch version (finger gesture support)" },
-      { "key": "Ports", "val": "2x USB-C (DisplayPort + charging), USB-A, full-size HDMI" },
-      { "key": "Included", "val": "Pro Pen 2, Pen Stand, 3x Express Keys, adjustable stand" },
-      { "key": "Compatibility", "val": "Windows 10+ and macOS 10.15+" }
+      {
+        "key": "Display",
+        "val": "15.6-inch 4K UHD IPS (3840x2160, 226 PPI)"
+      },
+      {
+        "key": "Color Accuracy",
+        "val": "98% Adobe RGB, 95% DCI-P3, Delta E < 2"
+      },
+      {
+        "key": "Pen",
+        "val": "Wacom Pro Pen 2 (8,192 pressure levels, ±60° tilt recognition)"
+      },
+      {
+        "key": "Pen Latency",
+        "val": "~20ms reported latency"
+      },
+      {
+        "key": "Surface",
+        "val": "Etched anti-glare glass (feels like paper)"
+      },
+      {
+        "key": "Touch",
+        "val": "Pro Pen 2 touch version (finger gesture support)"
+      },
+      {
+        "key": "Ports",
+        "val": "2x USB-C (DisplayPort + charging), USB-A, full-size HDMI"
+      },
+      {
+        "key": "Included",
+        "val": "Pro Pen 2, Pen Stand, 3x Express Keys, adjustable stand"
+      },
+      {
+        "key": "Compatibility",
+        "val": "Windows 10+ and macOS 10.15+"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 120000, "url": "https://www.amazon.in/Wacom-Cintiq-Pro-16-Creative/dp/B08MLKCP4H" }
+      {
+        "name": "Amazon IN",
+        "price": 120000,
+        "url": "https://www.amazon.in/Wacom-Cintiq-Pro-16-Creative/dp/B08MLKCP4H"
+      }
     ]
   },
   {
@@ -1175,18 +2698,49 @@
     "desc": "The tiny, powerful desktop computer and DIY king. Dramatically faster than Pi 4, now with PCIe for SSDs, an RTC, and a dedicated power button. Perfect for servers, retro gaming, and hardware projects.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "Broadcom BCM2712 quad-core Cortex-A76 @ 2.4GHz (16nm)" },
-      { "key": "RAM", "val": "8GB LPDDR4X-4267 (on-package)" },
-      { "key": "GPU", "val": "VideoCore VII (OpenGL ES 3.1, Vulkan 1.2)" },
-      { "key": "Storage", "val": "MicroSD slot + PCIe 2.0 x1 FPC connector (for M.2 HAT+)" },
-      { "key": "Connectivity", "val": "Dual-band Wi-Fi 5 (802.11ac), Bluetooth 5.0, Gigabit Ethernet" },
-      { "key": "Display Outputs", "val": "2x micro-HDMI (4K@60fps simultaneously)" },
-      { "key": "Ports", "val": "2x USB 3.0, 2x USB 2.0, 40-pin GPIO, 2x 4-lane MIPI" },
-      { "key": "Power", "val": "USB-C PD (27W recommended), dedicated power button + RTC" },
-      { "key": "OS", "val": "Raspberry Pi OS (Debian-based), Ubuntu, many others" }
+      {
+        "key": "Processor",
+        "val": "Broadcom BCM2712 quad-core Cortex-A76 @ 2.4GHz (16nm)"
+      },
+      {
+        "key": "RAM",
+        "val": "8GB LPDDR4X-4267 (on-package)"
+      },
+      {
+        "key": "GPU",
+        "val": "VideoCore VII (OpenGL ES 3.1, Vulkan 1.2)"
+      },
+      {
+        "key": "Storage",
+        "val": "MicroSD slot + PCIe 2.0 x1 FPC connector (for M.2 HAT+)"
+      },
+      {
+        "key": "Connectivity",
+        "val": "Dual-band Wi-Fi 5 (802.11ac), Bluetooth 5.0, Gigabit Ethernet"
+      },
+      {
+        "key": "Display Outputs",
+        "val": "2x micro-HDMI (4K@60fps simultaneously)"
+      },
+      {
+        "key": "Ports",
+        "val": "2x USB 3.0, 2x USB 2.0, 40-pin GPIO, 2x 4-lane MIPI"
+      },
+      {
+        "key": "Power",
+        "val": "USB-C PD (27W recommended), dedicated power button + RTC"
+      },
+      {
+        "key": "OS",
+        "val": "Raspberry Pi OS (Debian-based), Ubuntu, many others"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 8500, "url": "https://www.amazon.in/Raspberry-Pi-Single-board-Computer/dp/B0CPBL6SGN" }
+      {
+        "name": "Amazon IN",
+        "price": 8500,
+        "url": "https://www.amazon.in/Raspberry-Pi-Single-board-Computer/dp/B0CPBL6SGN"
+      }
     ]
   },
   {
@@ -1199,19 +2753,54 @@
     "desc": "Sony's slimmed-down PS5 with a detachable disc drive, 1TB SSD, and the iconic DualSense controller. The definitive console for PlayStation exclusives.",
     "review": "",
     "specs": [
-      { "key": "CPU", "val": "8-core AMD Zen 2 @ 3.5GHz (variable)" },
-      { "key": "GPU", "val": "10.28 TFLOPS AMD RDNA 2 @ 2.23GHz (variable)" },
-      { "key": "RAM", "val": "16GB GDDR6 (448GB/s bandwidth)" },
-      { "key": "Storage", "val": "1TB Custom PCIe Gen 4 NVMe SSD (5.5GB/s)" },
-      { "key": "Optical Drive", "val": "4K UHD Blu-ray (detachable)" },
-      { "key": "Resolution", "val": "Up to 8K, 4K at 120fps, 1080p up to 120fps" },
-      { "key": "Controller", "val": "DualSense (haptic feedback, adaptive triggers, built-in mic/speaker)" },
-      { "key": "Connectivity", "val": "Wi-Fi 6, Bluetooth 5.1, HDMI 2.1, USB-C, USB-A" },
-      { "key": "Size Reduction", "val": "30% smaller volume vs original PS5" }
+      {
+        "key": "CPU",
+        "val": "8-core AMD Zen 2 @ 3.5GHz (variable)"
+      },
+      {
+        "key": "GPU",
+        "val": "10.28 TFLOPS AMD RDNA 2 @ 2.23GHz (variable)"
+      },
+      {
+        "key": "RAM",
+        "val": "16GB GDDR6 (448GB/s bandwidth)"
+      },
+      {
+        "key": "Storage",
+        "val": "1TB Custom PCIe Gen 4 NVMe SSD (5.5GB/s)"
+      },
+      {
+        "key": "Optical Drive",
+        "val": "4K UHD Blu-ray (detachable)"
+      },
+      {
+        "key": "Resolution",
+        "val": "Up to 8K, 4K at 120fps, 1080p up to 120fps"
+      },
+      {
+        "key": "Controller",
+        "val": "DualSense (haptic feedback, adaptive triggers, built-in mic/speaker)"
+      },
+      {
+        "key": "Connectivity",
+        "val": "Wi-Fi 6, Bluetooth 5.1, HDMI 2.1, USB-C, USB-A"
+      },
+      {
+        "key": "Size Reduction",
+        "val": "30% smaller volume vs original PS5"
+      }
     ],
     "retailers": [
-      { "name": "Flipkart", "price": 49990, "url": "https://www.flipkart.com/sony-playstation-5-slim-disc-edition/p/itma6d08cda74ef3" },
-      { "name": "Amazon IN", "price": 49990, "url": "https://www.amazon.in/PlayStation-5-Slim-Console/dp/B0CL61F39H" }
+      {
+        "name": "Flipkart",
+        "price": 49990,
+        "url": "https://www.flipkart.com/sony-playstation-5-slim-disc-edition/p/itma6d08cda74ef3"
+      },
+      {
+        "name": "Amazon IN",
+        "price": 49990,
+        "url": "https://www.amazon.in/PlayStation-5-Slim-Console/dp/B0CL61F39H"
+      }
     ]
   },
   {
@@ -1224,42 +2813,49 @@
     "desc": "Nintendo's next-gen hybrid console. Play at home on your TV or take it anywhere as a handheld. Features a larger, sharper display, a new magnetic Joy-Con system, and a more powerful processor.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "Custom Nvidia Tegra T239 (Ampere GPU)" },
-      { "key": "Handheld Display", "val": "8-inch LCD (1080p, improved brightness vs Switch 1)" },
-      { "key": "TV Output", "val": "Up to 4K via dock (TV Mode)" },
-      { "key": "RAM", "val": "12GB LPDDR5x" },
-      { "key": "Storage", "val": "256GB UFS internal + microSD Express slot" },
-      { "key": "Joy-Con", "val": "New magnetic attachment, mouse-mode (can be used flat like mouse)" },
-      { "key": "Battery", "val": "Approx. 2–6.5 hours (game dependent)" },
-      { "key": "Connectivity", "val": "Wi-Fi 6, Bluetooth 5.1, USB-C" },
-      { "key": "Backward Compat.", "val": "Most Nintendo Switch 1 games supported" }
+      {
+        "key": "Processor",
+        "val": "Custom Nvidia Tegra T239 (Ampere GPU)"
+      },
+      {
+        "key": "Handheld Display",
+        "val": "8-inch LCD (1080p, improved brightness vs Switch 1)"
+      },
+      {
+        "key": "TV Output",
+        "val": "Up to 4K via dock (TV Mode)"
+      },
+      {
+        "key": "RAM",
+        "val": "12GB LPDDR5x"
+      },
+      {
+        "key": "Storage",
+        "val": "256GB UFS internal + microSD Express slot"
+      },
+      {
+        "key": "Joy-Con",
+        "val": "New magnetic attachment, mouse-mode (can be used flat like mouse)"
+      },
+      {
+        "key": "Battery",
+        "val": "Approx. 2–6.5 hours (game dependent)"
+      },
+      {
+        "key": "Connectivity",
+        "val": "Wi-Fi 6, Bluetooth 5.1, USB-C"
+      },
+      {
+        "key": "Backward Compat.",
+        "val": "Most Nintendo Switch 1 games supported"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 38000, "url": "https://www.amazon.in/Nintendo-Switch-2/dp/B0DX1B8QR8" }
-    ]
-  },
-  {
-    "id": "rp33",
-    "page": "Random Products",
-    "icon": "🖥️",
-    "name": "Dell S3222DGM 32\" Curved Monitor",
-    "category": "Tech & Hardware",
-    "basePrice": 32000,
-    "desc": "A 32-inch curved VA panel gaming monitor with QHD resolution, 165Hz refresh rate, and FreeSync Premium Pro. Exceptional value for an immersive curved gaming setup.",
-    "review": "",
-    "specs": [
-      { "key": "Panel Type", "val": "32-inch VA Curved (1800R curvature)" },
-      { "key": "Resolution", "val": "QHD 2560x1440 (WQHD)" },
-      { "key": "Refresh Rate", "val": "165Hz (OC)" },
-      { "key": "Response Time", "val": "1ms MPRT (4ms GtG)" },
-      { "key": "Brightness", "val": "350 nits (400 nits peak)" },
-      { "key": "Color", "val": "99% sRGB, 90% DCI-P3" },
-      { "key": "VRR", "val": "AMD FreeSync Premium Pro" },
-      { "key": "Ports", "val": "2x HDMI 2.0, 1x DisplayPort 1.2, 4x USB 3.2 hub" },
-      { "key": "Stand", "val": "Height, tilt, swivel adjustable" }
-    ],
-    "retailers": [
-      { "name": "Amazon IN", "price": 32000, "url": "https://www.amazon.in/Dell-S3222DGM-Curved-Gaming-Monitor/dp/B09FWLN2L7" }
+      {
+        "name": "Amazon IN",
+        "price": 38000,
+        "url": "https://www.amazon.in/Nintendo-Switch-2/dp/B0DX1B8QR8"
+      }
     ]
   },
   {
@@ -1272,19 +2868,54 @@
     "desc": "Bose's flagship noise-cancelling headphones featuring Immersive Audio (spatial audio) for a wildly immersive 3D soundstage, plus world-class comfort for all-day wear.",
     "review": "",
     "specs": [
-      { "key": "Audio", "val": "Bose Immersive Audio with head tracking (spatial 3D audio)" },
-      { "key": "ANC", "val": "CustomTune technology — auto-calibrates ANC to your ear shape" },
-      { "key": "Battery", "val": "24 hours (ANC + Immersive Audio on)" },
-      { "key": "Quick Charge", "val": "15 min charge = 2.5 hours playback" },
-      { "key": "Modes", "val": "Quiet, Immersive, Aware mode" },
-      { "key": "Connectivity", "val": "Bluetooth 5.3, multipoint (2 devices), USB-C, 2.5mm audio" },
-      { "key": "Microphone", "val": "8-mic array for calls" },
-      { "key": "Weight", "val": "254g" },
-      { "key": "App", "val": "Bose Music app (EQ, spatial audio control, ANC adjustment)" }
+      {
+        "key": "Audio",
+        "val": "Bose Immersive Audio with head tracking (spatial 3D audio)"
+      },
+      {
+        "key": "ANC",
+        "val": "CustomTune technology — auto-calibrates ANC to your ear shape"
+      },
+      {
+        "key": "Battery",
+        "val": "24 hours (ANC + Immersive Audio on)"
+      },
+      {
+        "key": "Quick Charge",
+        "val": "15 min charge = 2.5 hours playback"
+      },
+      {
+        "key": "Modes",
+        "val": "Quiet, Immersive, Aware mode"
+      },
+      {
+        "key": "Connectivity",
+        "val": "Bluetooth 5.3, multipoint (2 devices), USB-C, 2.5mm audio"
+      },
+      {
+        "key": "Microphone",
+        "val": "8-mic array for calls"
+      },
+      {
+        "key": "Weight",
+        "val": "254g"
+      },
+      {
+        "key": "App",
+        "val": "Bose Music app (EQ, spatial audio control, ANC adjustment)"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 35900, "url": "https://www.amazon.in/Bose-QuietComfort-Ultra-Headphones-Cancelling/dp/B0CCZ7XQWL" },
-      { "name": "Croma", "price": 35900, "url": "https://www.croma.com/bose-quietcomfort-ultra-over-ear-headphones-white/p/266449" }
+      {
+        "name": "Amazon IN",
+        "price": 35900,
+        "url": "https://www.amazon.in/Bose-QuietComfort-Ultra-Headphones-Cancelling/dp/B0CCZ7XQWL"
+      },
+      {
+        "name": "Croma",
+        "price": 35900,
+        "url": "https://www.croma.com/bose-quietcomfort-ultra-over-ear-headphones-white/p/266449"
+      }
     ]
   },
   {
@@ -1297,17 +2928,45 @@
     "desc": "The legendary LEGO Technic flagship model — 3,599 pieces, functioning W16 engine with moving pistons, all-wheel drive, and a deployable rear spoiler. A masterpiece of engineering.",
     "review": "",
     "specs": [
-      { "key": "Set Number", "val": "42083 (Technic series)" },
-      { "key": "Piece Count", "val": "3,599 pieces" },
-      { "key": "Scale", "val": "1:8 replica of the Bugatti Chiron" },
-      { "key": "Moving Features", "val": "8-cylinder W16 engine, 4-speed gearbox, all-wheel steering, rear wing" },
-      { "key": "Dimensions (Built)", "val": "56cm long x 23cm wide x 14cm tall" },
-      { "key": "Included", "val": "Bugatti tote bag (collector's edition)" },
-      { "key": "Recommended Age", "val": "16+" },
-      { "key": "Materials", "val": "High-quality ABS plastic + metal axles" }
+      {
+        "key": "Set Number",
+        "val": "42083 (Technic series)"
+      },
+      {
+        "key": "Piece Count",
+        "val": "3,599 pieces"
+      },
+      {
+        "key": "Scale",
+        "val": "1:8 replica of the Bugatti Chiron"
+      },
+      {
+        "key": "Moving Features",
+        "val": "8-cylinder W16 engine, 4-speed gearbox, all-wheel steering, rear wing"
+      },
+      {
+        "key": "Dimensions (Built)",
+        "val": "56cm long x 23cm wide x 14cm tall"
+      },
+      {
+        "key": "Included",
+        "val": "Bugatti tote bag (collector's edition)"
+      },
+      {
+        "key": "Recommended Age",
+        "val": "16+"
+      },
+      {
+        "key": "Materials",
+        "val": "High-quality ABS plastic + metal axles"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 22000, "url": "https://www.amazon.in/LEGO-Technic-Bugatti-Chiron-42083/dp/B07BNL6FX3" }
+      {
+        "name": "Amazon IN",
+        "price": 22000,
+        "url": "https://www.amazon.in/LEGO-Technic-Bugatti-Chiron-42083/dp/B07BNL6FX3"
+      }
     ]
   },
   {
@@ -1320,18 +2979,49 @@
     "desc": "The world's most popular USB microphone for streaming, podcasting, gaming, and home recording. Four polar patterns and near-zero latency headphone monitoring built right in.",
     "review": "",
     "specs": [
-      { "key": "Capsules", "val": "Three 14mm condenser capsules" },
-      { "key": "Polar Patterns", "val": "Cardioid, Bidirectional, Omnidirectional, Stereo" },
-      { "key": "Frequency Response", "val": "20Hz – 20kHz" },
-      { "key": "Sample Rate", "val": "48kHz / 16-bit" },
-      { "key": "Connection", "val": "USB-C to USB-A (plug-and-play)" },
-      { "key": "Headphone Monitoring", "val": "3.5mm jack with no-latency monitoring + volume knob" },
-      { "key": "Controls", "val": "Gain knob, instant mute button, pattern selector" },
-      { "key": "Mount", "val": "Built-in desktop stand + 5/8-inch threaded mount for boom arms" },
-      { "key": "Compatibility", "val": "Mac and Windows (no drivers needed)" }
+      {
+        "key": "Capsules",
+        "val": "Three 14mm condenser capsules"
+      },
+      {
+        "key": "Polar Patterns",
+        "val": "Cardioid, Bidirectional, Omnidirectional, Stereo"
+      },
+      {
+        "key": "Frequency Response",
+        "val": "20Hz – 20kHz"
+      },
+      {
+        "key": "Sample Rate",
+        "val": "48kHz / 16-bit"
+      },
+      {
+        "key": "Connection",
+        "val": "USB-C to USB-A (plug-and-play)"
+      },
+      {
+        "key": "Headphone Monitoring",
+        "val": "3.5mm jack with no-latency monitoring + volume knob"
+      },
+      {
+        "key": "Controls",
+        "val": "Gain knob, instant mute button, pattern selector"
+      },
+      {
+        "key": "Mount",
+        "val": "Built-in desktop stand + 5/8-inch threaded mount for boom arms"
+      },
+      {
+        "key": "Compatibility",
+        "val": "Mac and Windows (no drivers needed)"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 12000, "url": "https://www.amazon.in/Blue-Yeti-USB-Microphone-Podcasting/dp/B00N1YPXW2" }
+      {
+        "name": "Amazon IN",
+        "price": 12000,
+        "url": "https://www.amazon.in/Blue-Yeti-USB-Microphone-Podcasting/dp/B00N1YPXW2"
+      }
     ]
   },
   {
@@ -1344,17 +3034,45 @@
     "desc": "The premium full-size wireless keyboard for productivity. Spherically-dished keys, smart backlighting that activates as your hands approach, and seamless multi-device switching.",
     "review": "",
     "specs": [
-      { "key": "Key Type", "val": "Low-profile spherical dish keys (scissor mechanism)" },
-      { "key": "Backlight", "val": "Per-key RGB with proximity sensor (activates as hands approach)" },
-      { "key": "Connectivity", "val": "Bluetooth (3 devices) + USB Logi Bolt (2.4GHz)" },
-      { "key": "Battery", "val": "Up to 10 days (backlit) / 5 months (no backlight)" },
-      { "key": "Smart Actions", "val": "Logi Options+ app — programmable keys, app-specific shortcuts" },
-      { "key": "Multi-Device", "val": "Easy-Switch button for instant 1–2–3 device toggle" },
-      { "key": "Layout", "val": "Full-size with numpad (US ANSI)" },
-      { "key": "Compatibility", "val": "Windows, macOS, Linux, iOS, Android" }
+      {
+        "key": "Key Type",
+        "val": "Low-profile spherical dish keys (scissor mechanism)"
+      },
+      {
+        "key": "Backlight",
+        "val": "Per-key RGB with proximity sensor (activates as hands approach)"
+      },
+      {
+        "key": "Connectivity",
+        "val": "Bluetooth (3 devices) + USB Logi Bolt (2.4GHz)"
+      },
+      {
+        "key": "Battery",
+        "val": "Up to 10 days (backlit) / 5 months (no backlight)"
+      },
+      {
+        "key": "Smart Actions",
+        "val": "Logi Options+ app — programmable keys, app-specific shortcuts"
+      },
+      {
+        "key": "Multi-Device",
+        "val": "Easy-Switch button for instant 1–2–3 device toggle"
+      },
+      {
+        "key": "Layout",
+        "val": "Full-size with numpad (US ANSI)"
+      },
+      {
+        "key": "Compatibility",
+        "val": "Windows, macOS, Linux, iOS, Android"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 9995, "url": "https://www.amazon.in/Logitech-MX-Keys-Advanced-Illuminated/dp/B09HKLKGXY" }
+      {
+        "name": "Amazon IN",
+        "price": 9995,
+        "url": "https://www.amazon.in/Logitech-MX-Keys-Advanced-Illuminated/dp/B09HKLKGXY"
+      }
     ]
   },
   {
@@ -1367,19 +3085,53 @@
     "desc": "The gold standard of business ultrabooks. Carbon fiber body under 1.12kg, a gorgeous OLED display, legendary ThinkPad keyboard, and MIL-STD-810H durability.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "Intel Core Ultra 7 165U (Intel vPro, Evo certified)" },
-      { "key": "Display", "val": "14-inch OLED 2.8K (2880x1800, 120Hz, 400 nits, 100% DCI-P3)" },
-      { "key": "RAM", "val": "32GB LPDDR5x-6400 (soldered)" },
-      { "key": "Storage", "val": "1TB PCIe Gen 4 NVMe" },
-      { "key": "Battery", "val": "57Whr, up to 15 hours (65W USB-C charging)" },
-      { "key": "Weight", "val": "1.12kg (lightest X1 Carbon ever)" },
-      { "key": "Keyboard", "val": "Backlit ThinkPad keyboard with TrackPoint nub" },
-      { "key": "Ports", "val": "2x Thunderbolt 4, 2x USB-A 3.2, HDMI 2.1, headphone jack" },
-      { "key": "Durability", "val": "MIL-STD-810H, carbon fiber + magnesium alloy lid" },
-      { "key": "Connectivity", "val": "Wi-Fi 7, Bluetooth 5.4, optional 5G WWAN" }
+      {
+        "key": "Processor",
+        "val": "Intel Core Ultra 7 165U (Intel vPro, Evo certified)"
+      },
+      {
+        "key": "Display",
+        "val": "14-inch OLED 2.8K (2880x1800, 120Hz, 400 nits, 100% DCI-P3)"
+      },
+      {
+        "key": "RAM",
+        "val": "32GB LPDDR5x-6400 (soldered)"
+      },
+      {
+        "key": "Storage",
+        "val": "1TB PCIe Gen 4 NVMe"
+      },
+      {
+        "key": "Battery",
+        "val": "57Whr, up to 15 hours (65W USB-C charging)"
+      },
+      {
+        "key": "Weight",
+        "val": "1.12kg (lightest X1 Carbon ever)"
+      },
+      {
+        "key": "Keyboard",
+        "val": "Backlit ThinkPad keyboard with TrackPoint nub"
+      },
+      {
+        "key": "Ports",
+        "val": "2x Thunderbolt 4, 2x USB-A 3.2, HDMI 2.1, headphone jack"
+      },
+      {
+        "key": "Durability",
+        "val": "MIL-STD-810H, carbon fiber + magnesium alloy lid"
+      },
+      {
+        "key": "Connectivity",
+        "val": "Wi-Fi 7, Bluetooth 5.4, optional 5G WWAN"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 145000, "url": "https://www.amazon.in/Lenovo-ThinkPad-X1-Carbon-Gen12/dp/B0CRFNQ5WZ" }
+      {
+        "name": "Amazon IN",
+        "price": 145000,
+        "url": "https://www.amazon.in/Lenovo-ThinkPad-X1-Carbon-Gen12/dp/B0CRFNQ5WZ"
+      }
     ]
   },
   {
@@ -1392,20 +3144,58 @@
     "desc": "The perfect middle child in the S26 series, offering a larger screen and significantly better battery life than the base model, all without the bulk of the Ultra.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "Snapdragon 8 Gen 5 for Galaxy (3nm)" },
-      { "key": "Display", "val": "6.7-inch Dynamic AMOLED 2x (1-120Hz, 2600 nits)" },
-      { "key": "Camera System", "val": "50MP Main (f/1.8) + 12MP Ultrawide + 10MP 3x Zoom" },
-      { "key": "Front Camera", "val": "12MP Dual Pixel AF" },
-      { "key": "Battery", "val": "4900mAh, 45W wired fast charge, 15W wireless" },
-      { "key": "RAM", "val": "12GB LPDDR5x" },
-      { "key": "Storage", "val": "256GB / 512GB UFS 4.0" },
-      { "key": "Build", "val": "Armor Aluminum frame, Gorilla Glass Victus 3" },
-      { "key": "Durability", "val": "IP68 (6m/30min)" },
-      { "key": "OS", "val": "One UI 8 based on Android 16" }
+      {
+        "key": "Processor",
+        "val": "Snapdragon 8 Gen 5 for Galaxy (3nm)"
+      },
+      {
+        "key": "Display",
+        "val": "6.7-inch Dynamic AMOLED 2x (1-120Hz, 2600 nits)"
+      },
+      {
+        "key": "Camera System",
+        "val": "50MP Main (f/1.8) + 12MP Ultrawide + 10MP 3x Zoom"
+      },
+      {
+        "key": "Front Camera",
+        "val": "12MP Dual Pixel AF"
+      },
+      {
+        "key": "Battery",
+        "val": "4900mAh, 45W wired fast charge, 15W wireless"
+      },
+      {
+        "key": "RAM",
+        "val": "12GB LPDDR5x"
+      },
+      {
+        "key": "Storage",
+        "val": "256GB / 512GB UFS 4.0"
+      },
+      {
+        "key": "Build",
+        "val": "Armor Aluminum frame, Gorilla Glass Victus 3"
+      },
+      {
+        "key": "Durability",
+        "val": "IP68 (6m/30min)"
+      },
+      {
+        "key": "OS",
+        "val": "One UI 8 based on Android 16"
+      }
     ],
     "retailers": [
-      { "name": "Samsung Store IN", "price": 99999, "url": "https://www.samsung.com/in/smartphones/galaxy-s26/buy/" },
-      { "name": "Amazon IN", "price": 99999, "url": "https://www.google.com/search?tbm=shop&q=buy+Samsung+Galaxy+S26+Plus+India" }
+      {
+        "name": "Samsung Store IN",
+        "price": 99999,
+        "url": "https://www.samsung.com/in/smartphones/galaxy-s26/buy/"
+      },
+      {
+        "name": "Amazon IN",
+        "price": 99999,
+        "url": "https://www.google.com/search?tbm=shop&q=buy+Samsung+Galaxy+S26+Plus+India"
+      }
     ]
   },
   {
@@ -1418,20 +3208,58 @@
     "desc": "Samsung's most popular mid-range phone, bringing flagship-level AI features, excellent battery life, and a refined metal frame to a much more accessible price point.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "Exynos 1680 (4nm)" },
-      { "key": "Display", "val": "6.6-inch Super AMOLED (120Hz, 1200 nits peak)" },
-      { "key": "Camera System", "val": "50MP OIS Main + 12MP Ultrawide + 5MP Macro" },
-      { "key": "Front Camera", "val": "32MP" },
-      { "key": "Battery", "val": "5000mAh, 25W wired fast charge" },
-      { "key": "RAM", "val": "8GB / 12GB" },
-      { "key": "Storage", "val": "128GB / 256GB (Expandable via MicroSD)" },
-      { "key": "Build", "val": "Aluminum frame, Glass back" },
-      { "key": "Durability", "val": "IP67 dust and water resistance" },
-      { "key": "OS", "val": "One UI 8 based on Android 16 (4 years OS updates)" }
+      {
+        "key": "Processor",
+        "val": "Exynos 1680 (4nm)"
+      },
+      {
+        "key": "Display",
+        "val": "6.6-inch Super AMOLED (120Hz, 1200 nits peak)"
+      },
+      {
+        "key": "Camera System",
+        "val": "50MP OIS Main + 12MP Ultrawide + 5MP Macro"
+      },
+      {
+        "key": "Front Camera",
+        "val": "32MP"
+      },
+      {
+        "key": "Battery",
+        "val": "5000mAh, 25W wired fast charge"
+      },
+      {
+        "key": "RAM",
+        "val": "8GB / 12GB"
+      },
+      {
+        "key": "Storage",
+        "val": "128GB / 256GB (Expandable via MicroSD)"
+      },
+      {
+        "key": "Build",
+        "val": "Aluminum frame, Glass back"
+      },
+      {
+        "key": "Durability",
+        "val": "IP67 dust and water resistance"
+      },
+      {
+        "key": "OS",
+        "val": "One UI 8 based on Android 16 (4 years OS updates)"
+      }
     ],
     "retailers": [
-      { "name": "Samsung Store IN", "price": 39999, "url": "https://www.samsung.com/in/smartphones/galaxy-a/galaxy-a56-5g/buy/" },
-      { "name": "Flipkart", "price": 39999, "url": "https://www.google.com/search?tbm=shop&q=buy+Samsung+Galaxy+A56+5G+India" }
+      {
+        "name": "Samsung Store IN",
+        "price": 39999,
+        "url": "https://www.samsung.com/in/smartphones/galaxy-a/galaxy-a56-5g/buy/"
+      },
+      {
+        "name": "Flipkart",
+        "price": 39999,
+        "url": "https://www.google.com/search?tbm=shop&q=buy+Samsung+Galaxy+A56+5G+India"
+      }
     ]
   },
   {
@@ -1444,19 +3272,53 @@
     "desc": "The absolute pinnacle of Google's hardware. Powered by the completely custom-built Tensor G5 chip (TSMC 3nm), it delivers unprecedented AI performance, battery life, and the most advanced computational photography on the market.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "Google Tensor G5 (TSMC 3nm custom architecture)" },
-      { "key": "Display", "val": "6.8-inch Super Actua LTPO OLED (1-120Hz, 3200 nits peak)" },
-      { "key": "Camera", "val": "50MP Main OIS + 48MP Ultrawide + 48MP 5x Optical Telephoto" },
-      { "key": "Front Camera", "val": "42MP with Autofocus" },
-      { "key": "AI Features", "val": "On-device Gemini Advanced, Video Boost 2.0, Live Translate" },
-      { "key": "Battery", "val": "5060mAh, 45W wired, 23W wireless" },
-      { "key": "RAM", "val": "16GB LPDDR5x" },
-      { "key": "Storage", "val": "256GB / 512GB / 1TB UFS 4.0" },
-      { "key": "OS Support", "val": "7 years of OS + Security updates (Android 16 out of box)" },
-      { "key": "Durability", "val": "IP68, Corning Gorilla Armor" }
+      {
+        "key": "Processor",
+        "val": "Google Tensor G5 (TSMC 3nm custom architecture)"
+      },
+      {
+        "key": "Display",
+        "val": "6.8-inch Super Actua LTPO OLED (1-120Hz, 3200 nits peak)"
+      },
+      {
+        "key": "Camera",
+        "val": "50MP Main OIS + 48MP Ultrawide + 48MP 5x Optical Telephoto"
+      },
+      {
+        "key": "Front Camera",
+        "val": "42MP with Autofocus"
+      },
+      {
+        "key": "AI Features",
+        "val": "On-device Gemini Advanced, Video Boost 2.0, Live Translate"
+      },
+      {
+        "key": "Battery",
+        "val": "5060mAh, 45W wired, 23W wireless"
+      },
+      {
+        "key": "RAM",
+        "val": "16GB LPDDR5x"
+      },
+      {
+        "key": "Storage",
+        "val": "256GB / 512GB / 1TB UFS 4.0"
+      },
+      {
+        "key": "OS Support",
+        "val": "7 years of OS + Security updates (Android 16 out of box)"
+      },
+      {
+        "key": "Durability",
+        "val": "IP68, Corning Gorilla Armor"
+      }
     ],
     "retailers": [
-      { "name": "Flipkart", "price": 119999, "url": "https://www.google.com/search?tbm=shop&q=buy+Google+Pixel+10+Pro+XL+India" }
+      {
+        "name": "Flipkart",
+        "price": 119999,
+        "url": "https://www.google.com/search?tbm=shop&q=buy+Google+Pixel+10+Pro+XL+India"
+      }
     ]
   },
   {
@@ -1469,42 +3331,49 @@
     "desc": "Google's sleek, mainstream flagship offering the exact same fully-custom Tensor G5 chip as the Pro models, housed in a beautifully compact and pocketable design.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "Google Tensor G5 (TSMC 3nm custom architecture)" },
-      { "key": "Display", "val": "6.3-inch Actua OLED (60-120Hz, 2800 nits peak)" },
-      { "key": "Camera", "val": "50MP Main OIS + 48MP Ultrawide (Macro focus enabled)" },
-      { "key": "Front Camera", "val": "10.5MP PD autofocus" },
-      { "key": "Battery", "val": "4700mAh, 27W wired, 15W wireless" },
-      { "key": "RAM", "val": "12GB LPDDR5x" },
-      { "key": "Storage", "val": "128GB / 256GB UFS 4.0" },
-      { "key": "OS Support", "val": "7 years of OS + Security updates (Android 16 out of box)" },
-      { "key": "Durability", "val": "IP68, Gorilla Glass Victus 2" }
+      {
+        "key": "Processor",
+        "val": "Google Tensor G5 (TSMC 3nm custom architecture)"
+      },
+      {
+        "key": "Display",
+        "val": "6.3-inch Actua OLED (60-120Hz, 2800 nits peak)"
+      },
+      {
+        "key": "Camera",
+        "val": "50MP Main OIS + 48MP Ultrawide (Macro focus enabled)"
+      },
+      {
+        "key": "Front Camera",
+        "val": "10.5MP PD autofocus"
+      },
+      {
+        "key": "Battery",
+        "val": "4700mAh, 27W wired, 15W wireless"
+      },
+      {
+        "key": "RAM",
+        "val": "12GB LPDDR5x"
+      },
+      {
+        "key": "Storage",
+        "val": "128GB / 256GB UFS 4.0"
+      },
+      {
+        "key": "OS Support",
+        "val": "7 years of OS + Security updates (Android 16 out of box)"
+      },
+      {
+        "key": "Durability",
+        "val": "IP68, Gorilla Glass Victus 2"
+      }
     ],
     "retailers": [
-      { "name": "Flipkart", "price": 79999, "url": "https://www.google.com/search?tbm=shop&q=buy+Google+Pixel+10+India" }
-    ]
-  },
-  {
-    "id": "rp43",
-    "page": "Random Products",
-    "icon": "📱",
-    "name": "Apple iPhone SE (4th Gen)",
-    "category": "Mobile Tech",
-    "basePrice": 49900,
-    "desc": "The biggest upgrade to the iPhone SE in history. Finally adopting the modern iPhone design language, it brings an edge-to-edge OLED display, Face ID, USB-C, and the blazing fast A18 chip to Apple's most affordable phone.",
-    "review": "",
-    "specs": [
-      { "key": "Processor", "val": "A18 Bionic Chip (3nm)" },
-      { "key": "Display", "val": "6.1-inch Super Retina XDR OLED (60Hz)" },
-      { "key": "Camera", "val": "Single 48MP Main Camera (f/1.6, 2x in-sensor optical quality zoom)" },
-      { "key": "Front Camera", "val": "12MP TrueDepth" },
-      { "key": "Biometrics", "val": "Face ID (No more Home Button)" },
-      { "key": "Charging", "val": "USB-C, MagSafe wireless charging" },
-      { "key": "Material", "val": "Aerospace-grade Aluminum, glass back" },
-      { "key": "Connectivity", "val": "5G, Wi-Fi 6E, Bluetooth 5.3" },
-      { "key": "Features", "val": "Action Button included, Apple Intelligence support" }
-    ],
-    "retailers": [
-      { "name": "Apple Store IN", "price": 49900, "url": "https://www.apple.com/in/shop/buy-iphone/iphone-se" }
+      {
+        "name": "Flipkart",
+        "price": 79999,
+        "url": "https://www.google.com/search?tbm=shop&q=buy+Google+Pixel+10+India"
+      }
     ]
   },
   {
@@ -1517,18 +3386,49 @@
     "desc": "A masterclass in performance. The oneplus 15 pairs the latest Snapdragon 8 Gen 5 processor with a massive battery and incredibly fast 100W charging, continuing their legacy of speed.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "Snapdragon 8 Gen 5 (3nm)" },
-      { "key": "Display", "val": "6.82-inch 120Hz LTPO BOE AMOLED (4500 nits peak, 2K resolution)" },
-      { "key": "Camera", "val": "50MP Main + 50MP Periscope 3x + 50MP Ultrawide (Hasselblad tuned)" },
-      { "key": "Battery", "val": "6000mAh Silicon Carbon" },
-      { "key": "Charging", "val": "100W SUPERVOOC wired, 50W AIRVOOC wireless" },
-      { "key": "RAM", "val": "12GB / 16GB LPDDR5x" },
-      { "key": "Storage", "val": "256GB / 512GB UFS 4.0" },
-      { "key": "Durability", "val": "IP65 Rating" },
-      { "key": "OS", "val": "OxygenOS 16 (Android 16)" }
+      {
+        "key": "Processor",
+        "val": "Snapdragon 8 Gen 5 (3nm)"
+      },
+      {
+        "key": "Display",
+        "val": "6.82-inch 120Hz LTPO BOE AMOLED (4500 nits peak, 2K resolution)"
+      },
+      {
+        "key": "Camera",
+        "val": "50MP Main + 50MP Periscope 3x + 50MP Ultrawide (Hasselblad tuned)"
+      },
+      {
+        "key": "Battery",
+        "val": "6000mAh Silicon Carbon"
+      },
+      {
+        "key": "Charging",
+        "val": "100W SUPERVOOC wired, 50W AIRVOOC wireless"
+      },
+      {
+        "key": "RAM",
+        "val": "12GB / 16GB LPDDR5x"
+      },
+      {
+        "key": "Storage",
+        "val": "256GB / 512GB UFS 4.0"
+      },
+      {
+        "key": "Durability",
+        "val": "IP65 Rating"
+      },
+      {
+        "key": "OS",
+        "val": "OxygenOS 16 (Android 16)"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 69999, "url": "https://www.google.com/search?tbm=shop&q=buy+OnePlus+14+India" }
+      {
+        "name": "Amazon IN",
+        "price": 69999,
+        "url": "https://www.google.com/search?tbm=shop&q=buy+OnePlus+14+India"
+      }
     ]
   },
   {
@@ -1541,18 +3441,49 @@
     "desc": "The performance king of the mid-range. Utilizing last year's flagship Snapdragon processor to deliver unrelenting gaming frame rates and speed at a fraction of the flagship price.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "Snapdragon 8 Gen 4 (3nm)" },
-      { "key": "Display", "val": "6.78-inch 1.5K AMOLED (120Hz LTPO, 4000 nits peak)" },
-      { "key": "Camera", "val": "50MP Sony IMX890 Main + 8MP Ultrawide + 2MP Macro" },
-      { "key": "Battery", "val": "5500mAh" },
-      { "key": "Charging", "val": "100W SUPERVOOC wired (no wireless)" },
-      { "key": "RAM", "val": "8GB / 16GB LPDDR5x" },
-      { "key": "Storage", "val": "128GB (UFS 3.1) / 256GB (UFS 4.0)" },
-      { "key": "Cooling", "val": "Cryo-velocity VC cooling system" },
-      { "key": "OS", "val": "OxygenOS 16 (Android 16)" }
+      {
+        "key": "Processor",
+        "val": "Snapdragon 8 Gen 4 (3nm)"
+      },
+      {
+        "key": "Display",
+        "val": "6.78-inch 1.5K AMOLED (120Hz LTPO, 4000 nits peak)"
+      },
+      {
+        "key": "Camera",
+        "val": "50MP Sony IMX890 Main + 8MP Ultrawide + 2MP Macro"
+      },
+      {
+        "key": "Battery",
+        "val": "5500mAh"
+      },
+      {
+        "key": "Charging",
+        "val": "100W SUPERVOOC wired (no wireless)"
+      },
+      {
+        "key": "RAM",
+        "val": "8GB / 16GB LPDDR5x"
+      },
+      {
+        "key": "Storage",
+        "val": "128GB (UFS 3.1) / 256GB (UFS 4.0)"
+      },
+      {
+        "key": "Cooling",
+        "val": "Cryo-velocity VC cooling system"
+      },
+      {
+        "key": "OS",
+        "val": "OxygenOS 16 (Android 16)"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 42999, "url": "https://www.google.com/search?tbm=shop&q=buy+OnePlus+14R+India" }
+      {
+        "name": "Amazon IN",
+        "price": 42999,
+        "url": "https://www.google.com/search?tbm=shop&q=buy+OnePlus+14R+India"
+      }
     ]
   },
   {
@@ -1565,43 +3496,49 @@
     "desc": "Xiaomi's incredibly capable compact flagship. Featuring a flat display, symmetrical bezels, and Leica-engineered optics, this is the premier small Android phone on the market.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "Snapdragon 8 Gen 5 (3nm)" },
-      { "key": "Display", "val": "6.36-inch Flat LTPO AMOLED (1-120Hz, 1.5K, 3000 nits peak)" },
-      { "key": "Camera", "val": "Leica Summilux: 50MP Light Hunter Main + 50MP 2.6x Telephoto + 50MP Ultrawide" },
-      { "key": "Front Camera", "val": "32MP" },
-      { "key": "Battery", "val": "4800mAh High-density Silicon, 90W wired, 50W wireless" },
-      { "key": "RAM", "val": "12GB LPDDR5x" },
-      { "key": "Storage", "val": "256GB / 512GB UFS 4.0" },
-      { "key": "Durability", "val": "IP68 Rating" },
-      { "key": "OS", "val": "HyperOS 2.0 (Android 16)" }
+      {
+        "key": "Processor",
+        "val": "Snapdragon 8 Gen 5 (3nm)"
+      },
+      {
+        "key": "Display",
+        "val": "6.36-inch Flat LTPO AMOLED (1-120Hz, 1.5K, 3000 nits peak)"
+      },
+      {
+        "key": "Camera",
+        "val": "Leica Summilux: 50MP Light Hunter Main + 50MP 2.6x Telephoto + 50MP Ultrawide"
+      },
+      {
+        "key": "Front Camera",
+        "val": "32MP"
+      },
+      {
+        "key": "Battery",
+        "val": "4800mAh High-density Silicon, 90W wired, 50W wireless"
+      },
+      {
+        "key": "RAM",
+        "val": "12GB LPDDR5x"
+      },
+      {
+        "key": "Storage",
+        "val": "256GB / 512GB UFS 4.0"
+      },
+      {
+        "key": "Durability",
+        "val": "IP68 Rating"
+      },
+      {
+        "key": "OS",
+        "val": "HyperOS 2.0 (Android 16)"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 74999, "url": "https://www.google.com/search?tbm=shop&q=buy+Xiaomi+16+India" }
-    ]
-  },
-  {
-    "id": "rp47",
-    "page": "Random Products",
-    "icon": "📱",
-    "name": "Motorola Edge 60 Ultra",
-    "category": "Mobile Tech",
-    "basePrice": 89999,
-    "desc": "A stunning flagship wrapped in premium materials like real wood and vegan leather. Known for its ultra-smooth 144Hz display, near-stock Android software, and ridiculously fast 125W charging.",
-    "review": "",
-    "specs": [
-      { "key": "Processor", "val": "Snapdragon 8 Gen 5 (3nm)" },
-      { "key": "Display", "val": "6.7-inch pOLED (144Hz, Pantone Validated Colors, HDR10+)" },
-      { "key": "Camera", "val": "50MP Main OIS + 50MP Ultrawide + 64MP 3x Periscope Telephoto" },
-      { "key": "Front Camera", "val": "50MP with Autofocus" },
-      { "key": "Battery", "val": "4600mAh, 125W TurboPower wired, 50W wireless charging" },
-      { "key": "RAM", "val": "12GB / 16GB" },
-      { "key": "Storage", "val": "512GB / 1TB" },
-      { "key": "Materials", "val": "Aluminum frame, Real Wood / Vegan Leather back options" },
-      { "key": "Durability", "val": "IP68 water and dust resistance" },
-      { "key": "OS", "val": "Hello UI (Android 16)" }
-    ],
-    "retailers": [
-      { "name": "Flipkart", "price": 89999, "url": "https://www.google.com/search?tbm=shop&q=buy+Motorola+Edge+60+Ultra+India" }
+      {
+        "name": "Amazon IN",
+        "price": 74999,
+        "url": "https://www.google.com/search?tbm=shop&q=buy+Xiaomi+16+India"
+      }
     ]
   },
   {
@@ -1614,17 +3551,45 @@
     "desc": "The much-anticipated true successor to Phone (2). Refining the transparent aesthetic with a more intricate Glyph Interface, improved cameras, and deeply integrated AI across Nothing OS.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "Snapdragon 8s Gen 4 (4nm)" },
-      { "key": "Display", "val": "6.7-inch LTPO OLED (1-120Hz, 2000 nits peak, symmetrical bezels)" },
-      { "key": "Design", "val": "Transparent glass back, Glyph Interface v3.0 (more LED zones)" },
-      { "key": "Camera", "val": "50MP Sony IMX890 Main + 50MP Ultrawide + 32MP 2x Portrait Telephoto" },
-      { "key": "Battery", "val": "4900mAh, 45W wired, 15W wireless" },
-      { "key": "RAM", "val": "8GB / 12GB LPDDR5" },
-      { "key": "Storage", "val": "256GB / 512GB UFS 3.1" },
-      { "key": "OS", "val": "Nothing OS 3.5 (Android 16)" }
+      {
+        "key": "Processor",
+        "val": "Snapdragon 8s Gen 4 (4nm)"
+      },
+      {
+        "key": "Display",
+        "val": "6.7-inch LTPO OLED (1-120Hz, 2000 nits peak, symmetrical bezels)"
+      },
+      {
+        "key": "Design",
+        "val": "Transparent glass back, Glyph Interface v3.0 (more LED zones)"
+      },
+      {
+        "key": "Camera",
+        "val": "50MP Sony IMX890 Main + 50MP Ultrawide + 32MP 2x Portrait Telephoto"
+      },
+      {
+        "key": "Battery",
+        "val": "4900mAh, 45W wired, 15W wireless"
+      },
+      {
+        "key": "RAM",
+        "val": "8GB / 12GB LPDDR5"
+      },
+      {
+        "key": "Storage",
+        "val": "256GB / 512GB UFS 3.1"
+      },
+      {
+        "key": "OS",
+        "val": "Nothing OS 3.5 (Android 16)"
+      }
     ],
     "retailers": [
-      { "name": "Flipkart", "price": 44999, "url": "https://www.google.com/search?tbm=shop&q=buy+Nothing+Phone+3+India" }
+      {
+        "name": "Flipkart",
+        "price": 44999,
+        "url": "https://www.google.com/search?tbm=shop&q=buy+Nothing+Phone+3+India"
+      }
     ]
   },
   {
@@ -1637,18 +3602,49 @@
     "desc": "The most advanced tablet in the world, now impossibly thin. Features a breathtaking Tandem OLED display for insane brightness and contrast, completely powered by the M5 chip.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "Apple M5 Chip (10-core CPU, 10-core GPU, 16-core Neural Engine)" },
-      { "key": "Display", "val": "13-inch Ultra Retina XDR (Tandem OLED, 120Hz ProMotion, 1000 nits SDR/1600 nits HDR)" },
-      { "key": "Storage Options", "val": "256GB, 512GB, 1TB, 2TB" },
-      { "key": "RAM", "val": "8GB (on 256/512GB models), 16GB (on 1TB/2TB models)" },
-      { "key": "Cameras", "val": "12MP Wide rear + LiDAR Scanner, 12MP Ultra Wide front (landscape)" },
-      { "key": "Thickness", "val": "5.1mm (thinnest Apple product ever made)" },
-      { "key": "Connectivity", "val": "Wi-Fi 7, Bluetooth 5.3, Thunderbolt / USB 4" },
-      { "key": "Accessories Supported", "val": "Apple Pencil Pro, Apple Magic Keyboard for iPad Pro" },
-      { "key": "Biometrics", "val": "Face ID" }
+      {
+        "key": "Processor",
+        "val": "Apple M5 Chip (10-core CPU, 10-core GPU, 16-core Neural Engine)"
+      },
+      {
+        "key": "Display",
+        "val": "13-inch Ultra Retina XDR (Tandem OLED, 120Hz ProMotion, 1000 nits SDR/1600 nits HDR)"
+      },
+      {
+        "key": "Storage Options",
+        "val": "256GB, 512GB, 1TB, 2TB"
+      },
+      {
+        "key": "RAM",
+        "val": "8GB (on 256/512GB models), 16GB (on 1TB/2TB models)"
+      },
+      {
+        "key": "Cameras",
+        "val": "12MP Wide rear + LiDAR Scanner, 12MP Ultra Wide front (landscape)"
+      },
+      {
+        "key": "Thickness",
+        "val": "5.1mm (thinnest Apple product ever made)"
+      },
+      {
+        "key": "Connectivity",
+        "val": "Wi-Fi 7, Bluetooth 5.3, Thunderbolt / USB 4"
+      },
+      {
+        "key": "Accessories Supported",
+        "val": "Apple Pencil Pro, Apple Magic Keyboard for iPad Pro"
+      },
+      {
+        "key": "Biometrics",
+        "val": "Face ID"
+      }
     ],
     "retailers": [
-      { "name": "Apple Store IN", "price": 129900, "url": "https://www.apple.com/in/shop/buy-ipad/ipad-pro" }
+      {
+        "name": "Apple Store IN",
+        "price": 129900,
+        "url": "https://www.apple.com/in/shop/buy-ipad/ipad-pro"
+      }
     ]
   },
   {
@@ -1661,19 +3657,53 @@
     "desc": "A massive, uncompromised canvas for creativity and productivity. The 14.6-inch AMOLED display and included S-Pen make it the ultimate Android laptop replacement and media machine.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "MediaTek Dimensity 9300+ (4nm)" },
-      { "key": "Display", "val": "14.6-inch Dynamic AMOLED 2X (120Hz, Anti-Reflective coating)" },
-      { "key": "S-Pen", "val": "Included in box (Ultra-low latency, Bluetooth enabled)" },
-      { "key": "RAM", "val": "12GB / 16GB" },
-      { "key": "Storage", "val": "256GB / 512GB / 1TB (Expandable via MicroSD up to 1.5TB)" },
-      { "key": "Cameras", "val": "Rear: 13MP + 8MP Ultrawide | Front: 12MP + 12MP Ultrawide" },
-      { "key": "Battery", "val": "11,200mAh, 45W Fast Charging" },
-      { "key": "Audio", "val": "Quad Speakers tuned by AKG, Dolby Atmos" },
-      { "key": "Durability", "val": "IP68 water and dust resistant, Armor Aluminum chassis" },
-      { "key": "OS", "val": "One UI 7 (Android 15) with Galaxy AI" }
+      {
+        "key": "Processor",
+        "val": "MediaTek Dimensity 9300+ (4nm)"
+      },
+      {
+        "key": "Display",
+        "val": "14.6-inch Dynamic AMOLED 2X (120Hz, Anti-Reflective coating)"
+      },
+      {
+        "key": "S-Pen",
+        "val": "Included in box (Ultra-low latency, Bluetooth enabled)"
+      },
+      {
+        "key": "RAM",
+        "val": "12GB / 16GB"
+      },
+      {
+        "key": "Storage",
+        "val": "256GB / 512GB / 1TB (Expandable via MicroSD up to 1.5TB)"
+      },
+      {
+        "key": "Cameras",
+        "val": "Rear: 13MP + 8MP Ultrawide | Front: 12MP + 12MP Ultrawide"
+      },
+      {
+        "key": "Battery",
+        "val": "11,200mAh, 45W Fast Charging"
+      },
+      {
+        "key": "Audio",
+        "val": "Quad Speakers tuned by AKG, Dolby Atmos"
+      },
+      {
+        "key": "Durability",
+        "val": "IP68 water and dust resistant, Armor Aluminum chassis"
+      },
+      {
+        "key": "OS",
+        "val": "One UI 7 (Android 15) with Galaxy AI"
+      }
     ],
     "retailers": [
-      { "name": "Samsung Store IN", "price": 108999, "url": "https://www.samsung.com/in/tablets/galaxy-tab-s/galaxy-tab-s10-ultra/" }
+      {
+        "name": "Samsung Store IN",
+        "price": 108999,
+        "url": "https://www.samsung.com/in/tablets/galaxy-tab-s/galaxy-tab-s10-ultra/"
+      }
     ]
   },
   {
@@ -1686,18 +3716,49 @@
     "desc": "Google's versatile tablet that acts as a powerful handheld device and seamlessly transforms into a smart home hub when magnetically attached to its charging speaker dock.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "Google Tensor G4 (optimized for efficiency)" },
-      { "key": "Display", "val": "11-inch LCD (2560x1600, 90Hz)" },
-      { "key": "Included Accessory", "val": "Magnetic Charging Speaker Dock (doubles as smart display stand)" },
-      { "key": "Cameras", "val": "8MP Rear + 8MP Front (optimized for video calling)" },
-      { "key": "RAM", "val": "8GB LPDDR5" },
-      { "key": "Storage", "val": "128GB / 256GB UFS 3.1" },
-      { "key": "Productivity Features", "val": "Pogo pins for new Google Keyboard Folio case support" },
-      { "key": "Smart Home", "val": "Hub Mode activated on dock, built-in Chromecast" },
-      { "key": "OS", "val": "Android 16 (optimized for large screens)" }
+      {
+        "key": "Processor",
+        "val": "Google Tensor G4 (optimized for efficiency)"
+      },
+      {
+        "key": "Display",
+        "val": "11-inch LCD (2560x1600, 90Hz)"
+      },
+      {
+        "key": "Included Accessory",
+        "val": "Magnetic Charging Speaker Dock (doubles as smart display stand)"
+      },
+      {
+        "key": "Cameras",
+        "val": "8MP Rear + 8MP Front (optimized for video calling)"
+      },
+      {
+        "key": "RAM",
+        "val": "8GB LPDDR5"
+      },
+      {
+        "key": "Storage",
+        "val": "128GB / 256GB UFS 3.1"
+      },
+      {
+        "key": "Productivity Features",
+        "val": "Pogo pins for new Google Keyboard Folio case support"
+      },
+      {
+        "key": "Smart Home",
+        "val": "Hub Mode activated on dock, built-in Chromecast"
+      },
+      {
+        "key": "OS",
+        "val": "Android 16 (optimized for large screens)"
+      }
     ],
     "retailers": [
-      { "name": "Flipkart", "price": 49999, "url": "https://www.google.com/search?tbm=shop&q=buy+Google+Pixel+Tablet+2+India" }
+      {
+        "name": "Flipkart",
+        "price": 49999,
+        "url": "https://www.google.com/search?tbm=shop&q=buy+Google+Pixel+Tablet+2+India"
+      }
     ]
   },
   {
@@ -1710,18 +3771,49 @@
     "desc": "An aggressively priced powerhouse tablet. Features a unique 7:5 aspect ratio perfect for reading and browsing, paired with flagship-tier processing for effortless multitasking and gaming.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "Snapdragon 8 Gen 3 (4nm)" },
-      { "key": "Display", "val": "12.1-inch LCD (144Hz, 3K resolution, 7:5 aspect ratio, 900 nits)" },
-      { "key": "RAM", "val": "8GB / 12GB LPDDR5x" },
-      { "key": "Storage", "val": "128GB / 256GB UFS 3.1" },
-      { "key": "Battery", "val": "9510mAh, 67W SUPERVOOC fast charging" },
-      { "key": "Audio", "val": "6-Speaker system with Omnibearing Sound Field" },
-      { "key": "Cameras", "val": "13MP Rear, 8MP Front" },
-      { "key": "Accessories", "val": "Supports OnePlus Stylo 2 and Smart Keyboard (sold separately)" },
-      { "key": "OS", "val": "OxygenOS 15 (Android 15) for Pad" }
+      {
+        "key": "Processor",
+        "val": "Snapdragon 8 Gen 3 (4nm)"
+      },
+      {
+        "key": "Display",
+        "val": "12.1-inch LCD (144Hz, 3K resolution, 7:5 aspect ratio, 900 nits)"
+      },
+      {
+        "key": "RAM",
+        "val": "8GB / 12GB LPDDR5x"
+      },
+      {
+        "key": "Storage",
+        "val": "128GB / 256GB UFS 3.1"
+      },
+      {
+        "key": "Battery",
+        "val": "9510mAh, 67W SUPERVOOC fast charging"
+      },
+      {
+        "key": "Audio",
+        "val": "6-Speaker system with Omnibearing Sound Field"
+      },
+      {
+        "key": "Cameras",
+        "val": "13MP Rear, 8MP Front"
+      },
+      {
+        "key": "Accessories",
+        "val": "Supports OnePlus Stylo 2 and Smart Keyboard (sold separately)"
+      },
+      {
+        "key": "OS",
+        "val": "OxygenOS 15 (Android 15) for Pad"
+      }
     ],
     "retailers": [
-      { "name": "Amazon IN", "price": 39999, "url": "https://www.google.com/search?tbm=shop&q=buy+OnePlus+Pad+3+India" }
+      {
+        "name": "Amazon IN",
+        "price": 39999,
+        "url": "https://www.google.com/search?tbm=shop&q=buy+OnePlus+Pad+3+India"
+      }
     ]
   },
   {
@@ -1734,18 +3826,49 @@
     "desc": "Mega power in a mini size. The perfect 8.3-inch form factor, upgraded with the incredibly fast A17 Pro chip to support Apple Intelligence and high-end console gaming on the go.",
     "review": "",
     "specs": [
-      { "key": "Processor", "val": "A17 Pro Chip (6-core CPU, 5-core GPU, Hardware Ray Tracing)" },
-      { "key": "Display", "val": "8.3-inch Liquid Retina display (True Tone, P3 wide color)" },
-      { "key": "Storage Options", "val": "128GB (Base), 256GB, 512GB" },
-      { "key": "RAM", "val": "8GB (Enabled for Apple Intelligence)" },
-      { "key": "Cameras", "val": "12MP Wide Rear (Smart HDR 4), 12MP Ultra Wide Front (Center Stage)" },
-      { "key": "Connectivity", "val": "Wi-Fi 6E, Bluetooth 5.3, USB-C (10Gbps)" },
-      { "key": "Apple Pencil", "val": "Supports Apple Pencil Pro and Apple Pencil (USB-C)" },
-      { "key": "Biometrics", "val": "Touch ID integrated into the top button" },
-      { "key": "OS", "val": "iPadOS 18" }
+      {
+        "key": "Processor",
+        "val": "A17 Pro Chip (6-core CPU, 5-core GPU, Hardware Ray Tracing)"
+      },
+      {
+        "key": "Display",
+        "val": "8.3-inch Liquid Retina display (True Tone, P3 wide color)"
+      },
+      {
+        "key": "Storage Options",
+        "val": "128GB (Base), 256GB, 512GB"
+      },
+      {
+        "key": "RAM",
+        "val": "8GB (Enabled for Apple Intelligence)"
+      },
+      {
+        "key": "Cameras",
+        "val": "12MP Wide Rear (Smart HDR 4), 12MP Ultra Wide Front (Center Stage)"
+      },
+      {
+        "key": "Connectivity",
+        "val": "Wi-Fi 6E, Bluetooth 5.3, USB-C (10Gbps)"
+      },
+      {
+        "key": "Apple Pencil",
+        "val": "Supports Apple Pencil Pro and Apple Pencil (USB-C)"
+      },
+      {
+        "key": "Biometrics",
+        "val": "Touch ID integrated into the top button"
+      },
+      {
+        "key": "OS",
+        "val": "iPadOS 18"
+      }
     ],
     "retailers": [
-      { "name": "Apple Store IN", "price": 49900, "url": "https://www.apple.com/in/shop/buy-ipad/ipad-mini" }
+      {
+        "name": "Apple Store IN",
+        "price": 49900,
+        "url": "https://www.apple.com/in/shop/buy-ipad/ipad-mini"
+      }
     ]
   }
 ]
