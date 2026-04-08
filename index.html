@@ -146,7 +146,7 @@
             height: calc(100% - 60px);
         }
 
-        /* --- LEFT SIDEBAR (XP Common Tasks) --- */
+        /* --- LEFT SIDEBAR --- */
         .sidebar {
             width: 250px;
             background: linear-gradient(to bottom, var(--xp-sidebar-top), var(--xp-sidebar-bottom));
@@ -199,7 +199,7 @@
             color: #3b913f;
         }
 
-        /* --- RIGHT PANE (Product Grid) --- */
+        /* --- RIGHT PANE --- */
         .file-view {
             flex-grow: 1;
             background: white;
@@ -514,20 +514,10 @@
         }
         
         /* Custom Scrollbar for inner panes */
-        ::-webkit-scrollbar {
-            width: 12px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1; 
-            border-left: 1px solid #ccc;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #c1c1c1; 
-            border: 1px solid #a1a1a1;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #a8a8a8; 
-        }
+        ::-webkit-scrollbar { width: 12px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; border-left: 1px solid #ccc; }
+        ::-webkit-scrollbar-thumb { background: #c1c1c1; border: 1px solid #a1a1a1; }
+        ::-webkit-scrollbar-thumb:hover { background: #a8a8a8; }
     </style>
 </head>
 <body>
@@ -645,7 +635,14 @@
                         <p id="detail-desc" style="margin-top: 10px; font-size: 13px; line-height: 1.4;"></p>
                     </div>
 
-                    <div class="xp-groupbox">
+                    <!-- PERSONAL REVIEW SECTION -->
+                    <div class="xp-groupbox" id="detail-review-container" style="margin-top: 10px; display: none; background: #ffffe1; border-color: #e5e5c3;">
+                        <div class="xp-groupbox-title" style="background: #ffffe1;">Personal Review & Notes</div>
+                        <div id="detail-review" style="font-size: 12px; line-height: 1.5; color: #333; font-style: italic; padding: 5px;"></div>
+                    </div>
+
+                    <!-- FULL SPECS SECTION -->
+                    <div class="xp-groupbox" style="margin-top: 10px;">
                         <div class="xp-groupbox-title">Advanced Hardware & Item Specifications</div>
                         <table class="spec-table" id="detail-specs">
                             <!-- Specs injected here -->
@@ -679,7 +676,7 @@
         <div class="taskbar-items">
             <div class="task-item active" id="task-needs" onclick="switchPage('Needs')">📁 Needs</div>
             <div class="task-item" id="task-wants" onclick="switchPage('Wants')">📁 Wants</div>
-            <div class="task-item" id="task-random" onclick="switchPage('Random Projects')">📁 Random Projects</div>
+            <div class="task-item" id="task-random" onclick="switchPage('Random Products')">📁 Random Products</div>
             <div class="task-item" id="task-detail" style="display: none; background: linear-gradient(to bottom, #4f9cf2, #1f64d4);" onclick="focusDetailWindow()">📄 Properties</div>
         </div>
         <div class="tray" id="clock">
@@ -689,376 +686,7 @@
 
     <script>
         // --- DATA ARCHITECTURE ---
-        const products = [
-            // --- NEEDS ---
-            {
-                id: "p01", page: "Needs", icon: "📱", name: "Apple iPhone 17 (256GB, Lavender)", category: "Mobile Tech", basePrice: 82900,
-                desc: "The next-generation iPhone featuring a massive leap in processing power, advanced AI integrations via iOS 19, and a refined aerospace-grade titanium chassis. Perfect for heavy daily use, photography, and mobile gaming.",
-                specs: [
-                    { key: "Processor", val: "A19 Pro Bionic Chip (3nm process)" },
-                    { key: "Display", val: "6.3-inch Super Retina XDR OLED (120Hz ProMotion)" },
-                    { key: "Resolution", val: "2556 x 1179 pixels at 460 ppi" },
-                    { key: "Camera System", val: "48MP Main + 48MP Ultra Wide + 12MP Telephoto" },
-                    { key: "Storage Capacity", val: "256GB NVMe" },
-                    { key: "Chassis Material", val: "Aerospace-grade Titanium with textured matte glass" },
-                    { key: "Color Finish", val: "Lavender" },
-                    { key: "Battery Capacity", val: "Approx. 4,000 mAh (All-day battery life)" },
-                    { key: "Charging", val: "USB-C with USB 3 speeds, MagSafe up to 25W" },
-                    { key: "Durability", val: "IP68 dust and water resistance (depth of 6 meters)" }
-                ],
-                retailers: [
-                    { name: "Apple Store IN", price: 82900, url: "https://www.apple.com/in/shop/buy-iphone/iphone-17/6.3%22-display-256gb-lavender" },
-                    { name: "Amazon IN", price: 82900, url: "#" }
-                ]
-            },
-            {
-                id: "p04", page: "Needs", icon: "🖱️", name: "Logitech G PRO X Superlight 2", category: "Gaming", basePrice: 12495,
-                desc: "The ultimate esports gaming mouse. Zero additive PTFE feet ensure a smooth glide, while the new LIGHTFORCE hybrid switches provide incredible speed and reliability without compromising on the crisp, tactile click.",
-                specs: [
-                    { key: "Sensor", val: "HERO 2 (100 - 32,000 DPI, 500+ IPS)" },
-                    { key: "Polling Rate", val: "2000Hz (0.5ms response time)" },
-                    { key: "Switches", val: "LIGHTFORCE Optical-Mechanical Hybrid" },
-                    { key: "Weight", val: "60 grams (Ultra-lightweight design)" },
-                    { key: "Dimensions", val: "125.0 mm x 63.5 mm x 40.0 mm" },
-                    { key: "Battery Life", val: "Up to 95 hours constant motion" },
-                    { key: "Connectivity", val: "LIGHTSPEED Wireless & USB-C" },
-                    { key: "Feet", val: "Zero-additive PTFE Mouse Feet" },
-                    { key: "Onboard Memory", val: "Yes (Requires G HUB software)" },
-                    { key: "Compatibility", val: "Windows 10/11, macOS 10.14 or later" }
-                ],
-                retailers: [
-                    { name: "Amazon IN", price: 12495, url: "https://www.amazon.in/Logitech-Superlight-Lightspeed-Lightweight-Programmable/dp/B0CGDZC2FK" }
-                ]
-            },
-            {
-                id: "p05", page: "Needs", icon: "🏎️", name: "Logitech G29 Racing Wheel", category: "Gaming", basePrice: 31991,
-                desc: "Engineered for the perfect driving experience with dual-motor force feedback, stainless steel paddle shifters, and a hand-stitched leather steering wheel. Includes an adjustable floor pedal unit.",
-                specs: [
-                    { key: "Force Feedback", val: "Dual-Motor with Helical Gearing" },
-                    { key: "Steering Rotation", val: "900 degrees lock-to-lock" },
-                    { key: "Wheel Material", val: "Hand-stitched Leather cover over Aluminum" },
-                    { key: "Pedal System", val: "Nonlinear brake pedal (Clutch, Brake, Gas)" },
-                    { key: "Pedal Material", val: "Cold rolled steel frames, brushed stainless steel faces" },
-                    { key: "Shifters", val: "Stainless Steel paddle shifters" },
-                    { key: "Mounting", val: "Built-in clamps and hard-point mounting" },
-                    { key: "Wheel Dimensions", val: "270 x 260 x 278 mm (H x W x D)" },
-                    { key: "Weight", val: "2.25 kg (Wheel) / 3.1 kg (Pedals)" },
-                    { key: "Compatibility", val: "PlayStation 5, PlayStation 4, PC, Mac" }
-                ],
-                retailers: [
-                    { name: "Amazon IN", price: 31991, url: "https://www.amazon.in/Logitech-Superlight-Lightspeed-Lightweight-Programmable/dp/B0CGDZC2FK" }
-                ]
-            },
-
-            // --- WANTS ---
-            {
-                id: "p02", page: "Wants", icon: "💻", name: "MacBook Air 15-inch (M5)", category: "Tech & Hardware", basePrice: 144900,
-                desc: "Apple's incredibly thin and light 15-inch laptop, supercharged by the new M5 chip. It features a fanless design for silent operation, a stunning Liquid Retina display, and an exceptionally long battery life.",
-                specs: [
-                    { key: "Silicon Chip", val: "Apple M5 (10-Core CPU, 10-Core GPU)" },
-                    { key: "Neural Engine", val: "16-core Neural Engine for advanced AI workloads" },
-                    { key: "Display", val: "15.3-inch Liquid Retina display (2880x1864 at 224 ppi)" },
-                    { key: "Brightness", val: "500 nits (True Tone technology)" },
-                    { key: "Memory", val: "16GB Unified Memory (High-bandwidth)" },
-                    { key: "Storage", val: "512GB PCIe-based SSD" },
-                    { key: "Battery Life", val: "Up to 18 hours video playback (66.5-watt-hour battery)" },
-                    { key: "Ports", val: "Two Thunderbolt / USB 4 ports, MagSafe 3, 3.5mm jack" },
-                    { key: "Audio", val: "Six-speaker sound system with Force Cancelling woofers" },
-                    { key: "Color", val: "Midnight" }
-                ],
-                retailers: [
-                    { name: "Apple Store IN", price: 144900, url: "https://www.apple.com/in/shop/buy-mac/macbook-air/15-inch-midnight-m5-chip-10-core-cpu-10-core-gpu-16gb-memory-512gb-storage" }
-                ]
-            },
-            {
-                id: "p03", page: "Wants", icon: "⌨️", name: "Microsoft Surface Pro 11th Gen", category: "Tech & Hardware", basePrice: 119716,
-                desc: "The most flexible Copilot+ PC ever built. It combines the power of a laptop with the portability of a tablet, featuring a stunning OLED display and all-day battery life powered by the Snapdragon X Elite.",
-                specs: [
-                    { key: "Processor", val: "Snapdragon X Elite (Copilot+ PC, NPU 45 TOPS)" },
-                    { key: "Display", val: "13-inch PixelSense Flow OLED touchscreen (2880 x 1920)" },
-                    { key: "Refresh Rate", val: "Dynamic up to 120Hz" },
-                    { key: "RAM", val: "16GB LPDDR5x RAM" },
-                    { key: "Storage", val: "512GB Gen 4 SSD (Removable)" },
-                    { key: "Cameras", val: "Quad HD front-facing, 10M Ultra HD rear-facing" },
-                    { key: "Battery Life", val: "Up to 14 hours of local video playback" },
-                    { key: "Ports", val: "2x USB-C with USB4, Surface Connect" },
-                    { key: "Included Accessory", val: "TECPHILE Rechargeable Bluetooth Keyboard" },
-                    { key: "Operating System", val: "Windows 11 Home" }
-                ],
-                retailers: [
-                    { name: "Amazon (Tablet)", price: 115990, url: "https://www.amazon.in/Microsoft-New-Surface-Pro-11Th/dp/B0D926JN5N" },
-                    { name: "Amazon (Keyboard)", price: 3726, url: "https://www.amazon.in/TECPHILE-Keyboard-Microsoft-Attachment-Rechargeable/dp/B0DZP34F5F" }
-                ]
-            },
-            {
-                id: "p06", page: "Wants", icon: "🎮", name: "Xbox Wireless Controller (Velocity Green)", category: "Gaming", basePrice: 6390,
-                desc: "Experience the modernized design of the Xbox Wireless Controller in striking Velocity Green, featuring sculpted surfaces and refined geometry for enhanced comfort during gameplay.",
-                specs: [
-                    { key: "Connectivity", val: "Xbox Wireless and Bluetooth" },
-                    { key: "Design Features", val: "Textured grip on triggers, bumpers, and backcase" },
-                    { key: "D-Pad", val: "Hybrid D-pad for accurate, sweeping inputs" },
-                    { key: "Buttons", val: "Dedicated Share button to capture/record" },
-                    { key: "Audio Setup", val: "3.5mm stereo headset jack" },
-                    { key: "Power", val: "AA batteries for up to 40 hours of battery life" },
-                    { key: "Customization", val: "Custom button mapping via Xbox Accessories app" },
-                    { key: "Weight", val: "Approx. 287 grams (with batteries)" },
-                    { key: "Compatibility", val: "Xbox Series X|S, Xbox One, Windows PC, Android, iOS" },
-                    { key: "Color", val: "Velocity Green" }
-                ],
-                retailers: [
-                    { name: "Amazon IN", price: 6390, url: "https://www.amazon.in/Microsoft-Xbox-Wireless-Controller-Velocity/dp/B0BYJMXHR3" }
-                ]
-            },
-            {
-                id: "p07", page: "Wants", icon: "🕹️", name: "PlayStation 5 Console", category: "Gaming", basePrice: 54990,
-                desc: "The PS5 console unleashes new gaming possibilities that you never anticipated. Experience lightning-fast loading with an ultra-high-speed SSD, deeper immersion with haptic feedback, adaptive triggers, and 3D Audio.",
-                specs: [
-                    { key: "CPU", val: "x86-64-AMD Ryzen Zen 2 (8 Cores/16 Threads, variable frequency up to 3.5 GHz)" },
-                    { key: "GPU", val: "AMD Radeon RDNA 2-based graphics engine (10.28 TFLOPs)" },
-                    { key: "Memory", val: "16GB GDDR6 (448GB/s bandwidth)" },
-                    { key: "Storage", val: "825GB Custom PCIe Gen 4 NVMe SSD (5.5GB/s Read)" },
-                    { key: "Storage Expansion", val: "NVMe SSD slot, USB HDD support for PS4 games" },
-                    { key: "Optical Drive", val: "Ultra HD Blu-ray (up to 100GB/disc)" },
-                    { key: "Video Output", val: "Support of 4K 120Hz TVs, 8K TVs, VRR (HDMI ver 2.1)" },
-                    { key: "Audio", val: "Tempest 3D AudioTech" },
-                    { key: "Controller", val: "1x DualSense Wireless Controller included" },
-                    { key: "Networking", val: "Ethernet (10BASE-T, 100BASE-TX, 1000BASE-T), Wi-Fi 6" }
-                ],
-                retailers: [
-                    { name: "Amazon IN", price: 54990, url: "#" }
-                ]
-            },
-            {
-                id: "p08", page: "Wants", icon: "🎧", name: "Sony WH-1000XM6", category: "Audio/Video", basePrice: 34990,
-                desc: "Sony's industry-leading noise canceling headphones elevate your listening experience. Boasting exceptional sound quality, AI-powered noise reduction, and a remarkably comfortable, lightweight design.",
-                specs: [
-                    { key: "Acoustic Drivers", val: "30mm Carbon Fiber composite precision drivers" },
-                    { key: "Noise Cancellation", val: "Next-Gen Dual Processor Auto NC Optimizer" },
-                    { key: "Microphone Array", val: "4 beamforming mics per earcup for pristine voice calls" },
-                    { key: "Battery Life", val: "Up to 30 hours with ANC on / 40 hours with ANC off" },
-                    { key: "Fast Charging", val: "3 minutes charge provides 3 hours of playback (USB-PD)" },
-                    { key: "Audio Codecs", val: "LDAC, AAC, SBC, High-Res Audio Wireless support" },
-                    { key: "Upscaling", val: "DSEE Extreme real-time music restoration" },
-                    { key: "Connectivity", val: "Bluetooth 5.3, Multipoint Connection (2 devices)" },
-                    { key: "Controls", val: "Touch sensor volume and playback control" },
-                    { key: "Weight", val: "Approx. 250g" }
-                ],
-                retailers: [
-                    { name: "Amazon IN", price: 34990, url: "https://www.amazon.in/Sony-WH-1000XM6-Headphones-Microphones-Studio-Quality/dp/B0GL1SQRQ2" }
-                ]
-            },
-            {
-                id: "p09", page: "Wants", icon: "🎛️", name: "Elgato Stream Deck MK.2", category: "Audio/Video", basePrice: 17112,
-                desc: "Your ultimate studio controller. 15 LCD keys poised to trigger unlimited actions. Tactile one-touch operation lets you control apps, launch social posts, adjust audio, mute your mic, and much more.",
-                specs: [
-                    { key: "Interface", val: "15 customizable tactile LCD keys" },
-                    { key: "Functionality", val: "Trigger actions, launch media, adjust audio, switch scenes" },
-                    { key: "Customization", val: "Interchangeable front faceplates" },
-                    { key: "Stand", val: "Detachable 45-degree angle desktop stand" },
-                    { key: "Connection", val: "Detachable USB-C to USB-A cable" },
-                    { key: "Plugins", val: "Native integration with OBS, Twitch, Twitter, Spotify, Zoom" },
-                    { key: "Dimensions", val: "118 x 84 x 25 mm (without stand)" },
-                    { key: "Weight", val: "145g without stand / 270g with stand" },
-                    { key: "Software", val: "Stream Deck App (Drag and drop setup)" },
-                    { key: "OS Requirements", val: "Windows 10 (64-bit) or macOS 10.15+" }
-                ],
-                retailers: [
-                    { name: "Amazon IN", price: 17112, url: "https://www.amazon.in/Elgato-Stream-Deck-MK-2-Customizable/dp/B09738CV2G" }
-                ]
-            },
-            {
-                id: "p10", page: "Wants", icon: "👕", name: "Red Bull Racing Replica Polo", category: "Lifestyle", basePrice: 8000,
-                desc: "Wear the team colors with pride. The official Oracle Red Bull Racing Replica Polo is engineered for peak performance and style, mirroring exactly what the drivers and crew wear in the paddock.",
-                specs: [
-                    { key: "Team Affiliation", val: "Oracle Red Bull Racing Formula 1 Team" },
-                    { key: "Material", val: "100% Breathable Polyester (Moisture-wicking)" },
-                    { key: "Design", val: "Classic short-sleeve polo with pointed collar" },
-                    { key: "Closure", val: "Hidden quarter-zip or button placket (varies by year)" },
-                    { key: "Branding", val: "High-quality heat-sealed sponsor and team logos" },
-                    { key: "Print Design", val: "Dynamic 'Power charge' graphic on back and sides" },
-                    { key: "Fit", val: "Men's Regular Athletic Fit" },
-                    { key: "Care Instructions", val: "Machine wash cold inside out, do not iron prints" },
-                    { key: "Authenticity", val: "Official Licensed Merchandise tag" },
-                    { key: "Origin", val: "Designed in collaboration with Castore/Puma" }
-                ],
-                retailers: [
-                    { name: "Red Bull Shop Global", price: 8000, url: "https://www.redbullshop.com/en-int/p/Men/Replica-Polo-Shirt/M-RAB26012" }
-                ]
-            },
-            {
-                id: "p11", page: "Wants", icon: "⬛", name: "Xbox Series X (1TB)", category: "Gaming", basePrice: 45990,
-                desc: "The fastest, most powerful Xbox ever. Explore rich new worlds and enjoy the action like never before with the unmatched 12 teraflops of raw graphic processing power.",
-                specs: [
-                    { key: "Processing Power", val: "12 Teraflops Custom RDNA 2 GPU @ 1.825 GHz" },
-                    { key: "CPU", val: "8X Cores @ 3.8 GHz Custom Zen 2" },
-                    { key: "Target Performance", val: "True 4K gaming, up to 120 FPS capable, 8K HDR Ready" },
-                    { key: "Memory", val: "16GB GDDR6 w/ 320 bit-wide bus" },
-                    { key: "Storage Unit", val: "1TB Custom NVMe SSD (Xbox Velocity Architecture)" },
-                    { key: "Optical Drive", val: "4K UHD Blu-ray Drive" },
-                    { key: "Features", val: "Quick Resume, Hardware Accelerated Raytracing, Auto HDR" },
-                    { key: "Audio", val: "Dolby Digital 5.1, DTS 5.1, Dolby TrueHD with Atmos" },
-                    { key: "Ports", val: "1x HDMI 2.1, 3x USB 3.1 Gen 1, Ethernet" },
-                    { key: "Dimensions", val: "15.1cm x 15.1cm x 30.1cm (Weight: 4.45kg)" }
-                ],
-                retailers: [
-                    { name: "Flipkart", price: 45990, url: "https://www.flipkart.com/microsoft-xbox-series-x-1024-gb/p/itm63ff9bd504f27" }
-                ]
-            },
-            {
-                id: "p12", page: "Wants", icon: "📷", name: "Insta360 Link 2C AI Webcam", category: "Audio/Video", basePrice: 13390,
-                desc: "An AI-powered 4K webcam designed for creators and professionals. It uses advanced algorithms to keep you perfectly framed, while the large 1/2-inch sensor delivers unmatched image quality in any light.",
-                specs: [
-                    { key: "Video Resolution", val: "Up to 4K at 30fps / 1080p at 60fps" },
-                    { key: "Sensor Size", val: "1/2-inch sensor for high dynamic range (HDR)" },
-                    { key: "AI Tracking", val: "Auto-framing keeps you in the center of the shot" },
-                    { key: "Modes", val: "DeskView mode, Whiteboard enhancement mode" },
-                    { key: "Microphone", val: "Built-in dual noise-canceling microphones" },
-                    { key: "Mounting", val: "Built-in monitor clip and 1/4-inch tripod thread" },
-                    { key: "Privacy", val: "Built-in physical privacy shutter" },
-                    { key: "Focus", val: "Phase Detection Auto Focus (PDAF)" },
-                    { key: "Connection", val: "USB-C (Plug and Play)" },
-                    { key: "Software", val: "Insta360 Link Controller software for advanced tweaks" }
-                ],
-                retailers: [
-                    { name: "Amazon IN", price: 13390, url: "https://www.amazon.in/insta360-Link-2C-AI-powerd-Webcam/dp/B0DGQW6PB1" }
-                ]
-            },
-            {
-                id: "p15", page: "Wants", icon: "📱", name: "iPad Air 11\" + Apple Pencil", category: "Mobile Tech", basePrice: 76800,
-                desc: "Supercharged by the M2 chip, the redesigned 11-inch iPad Air is incredibly fast and versatile. Paired with the Apple Pencil, it transforms into the ultimate digital canvas and note-taking device.",
-                specs: [
-                    { key: "Processor", val: "Apple M2 Chip (8-core CPU, 9-core GPU)" },
-                    { key: "Display", val: "11-inch Liquid Retina Display with True Tone, P3 wide color" },
-                    { key: "Brightness", val: "500 nits maximum brightness" },
-                    { key: "Storage", val: "128GB Base Storage" },
-                    { key: "Cameras", val: "12MP Wide back camera, Landscape 12MP Ultra Wide front camera" },
-                    { key: "Authentication", val: "Touch ID integrated into the top button" },
-                    { key: "Connectivity", val: "Wi-Fi 6E (802.11ax), Bluetooth 5.3" },
-                    { key: "Port", val: "USB-C connector with support for DisplayPort" },
-                    { key: "Audio", val: "Landscape stereo speakers" },
-                    { key: "Included Accessory", val: "Apple Pencil Pro included in bundle price" }
-                ],
-                retailers: [
-                    { name: "Apple Store IN", price: 76800, url: "https://www.apple.com/in/shop/buy-ipad/ipad-air/27.96-cm-11%E2%80%9D-display-128gb-purple-wifi" }
-                ]
-            },
-            {
-                id: "p17", page: "Wants", icon: "💎", name: "Valorant Gift Card", category: "Gaming", basePrice: 24000,
-                desc: "Instantly add Valorant Points (VP) to your Riot Games account. Use VP to unlock premium weapon skins, gun buddies, player cards, and the seasonal Battlepass.",
-                specs: [
-                    { key: "Game Platform", val: "Valorant (Riot Games PC)" },
-                    { key: "Item Type", val: "Digital Premium Currency (Valorant Points)" },
-                    { key: "Redemption Region", val: "India Server / Applicable Riot Accounts" },
-                    { key: "Delivery Method", val: "Digital Code delivered via Email instantly" },
-                    { key: "Validity", val: "No expiration date once purchased" },
-                    { key: "Usage Restrictions", val: "Cannot be exchanged for real world currency" },
-                    { key: "In-game Use", val: "Cosmetics, Radianite points, Battlepass unlocking" },
-                    { key: "Security", val: "Non-refundable digital pin" },
-                    { key: "Requirements", val: "Requires a valid Riot Games account to redeem" },
-                    { key: "Developer", val: "Riot Games" }
-                ],
-                retailers: [
-                    { name: "Amazon IN", price: 24000, url: "https://www.amazon.in/Valorant-Additional-Gift-Redeemable-availability/dp/B0G3X4JTJ5" }
-                ]
-            },
-
-            // --- RANDOM PROJECTS ---
-            {
-                id: "p13", page: "Random Projects", icon: "🟩", name: "HIFFIN Photography Backdrop", category: "Audio/Video", basePrice: 2500,
-                desc: "A professional-grade chromakey green screen backdrop designed for video production, streaming, and photography. Perfect for seamless background replacement and VFX work.",
-                specs: [
-                    { key: "Dimensions", val: "8 x 12 Feet (Approx. 2.4m x 3.6m)" },
-                    { key: "Material", val: "100% High-density cotton muslin fabric" },
-                    { key: "Color", val: "Chromakey Green (Optimized for video masking/VFX)" },
-                    { key: "Reflection", val: "Non-glossy, matte finish to absorb light and prevent reflections" },
-                    { key: "Maintenance", val: "Machine washable, ironable for wrinkle removal" },
-                    { key: "Mounting", val: "Pre-stitched rod pocket on top edge for backdrop stands" },
-                    { key: "Edges", val: "Fully hemmed edges to prevent tearing" },
-                    { key: "Weight", val: "Heavyweight drop prevents light leakage" },
-                    { key: "Foldable", val: "Easily folds down for storage or transport" },
-                    { key: "Included Items", val: "Backdrop cloth only (Stands sold separately)" }
-                ],
-                retailers: [
-                    { name: "Amazon IN", price: 2500, url: "https://www.amazon.in/HIFFIN%C2%AE-Photography-Accessories-Backdrop-Background/dp/B08WHQGB45" }
-                ]
-            },
-            {
-                id: "p14", page: "Random Projects", icon: "🎥", name: "Insta360 Action Camera", category: "Audio/Video", basePrice: 36000,
-                desc: "Capture the impossible. The ultimate 360-degree action camera allows you to shoot first and frame later. Features unbeatable image stabilization, waterproof design, and a magic invisible selfie stick effect.",
-                specs: [
-                    { key: "Lens Setup", val: "Dual-Lens 360 Degree Optical Capture (f/1.9 aperture)" },
-                    { key: "Video Resolution", val: "Up to 5.7K 360 Active HDR Video at 30fps" },
-                    { key: "Photo Resolution", val: "72 Megapixel 360 Photos" },
-                    { key: "Stabilization", val: "FlowState Stabilization with 360 Horizon Lock" },
-                    { key: "Durability", val: "Waterproof up to 10m (33ft) out of the box" },
-                    { key: "Audio", val: "4-mic array for immersive 360-degree audio" },
-                    { key: "Battery", val: "1800mAh high-capacity battery (Approx. 81 mins run time)" },
-                    { key: "Editing", val: "AI-powered mobile app reframing tools (Shoot first, point later)" },
-                    { key: "Special Features", val: "Invisible Selfie Stick effect, Me Mode, Bullet Time" },
-                    { key: "Connectivity", val: "Bluetooth 5.0, Wi-Fi (5GHz), USB-C" }
-                ],
-                retailers: [
-                    { name: "Amazon IN", price: 36000, url: "https://www.amazon.in/insta360-Action-Camera-Capture-Optical/dp/B0BCW1S7XR" }
-                ]
-            },
-            {
-                id: "p16", page: "Random Projects", icon: "📚", name: "Astrophysics for People in a Hurry", category: "Lifestyle", basePrice: 350,
-                desc: "What is the nature of space and time? How do we fit within the universe? Neil deGrasse Tyson brings the universe down to Earth succinctly and clearly in this brilliant, digestible read.",
-                specs: [
-                    { key: "Author", val: "Neil deGrasse Tyson" },
-                    { key: "Subject Matter", val: "Space, Time, Quantum Mechanics, the Universe" },
-                    { key: "Page Count", val: "224 pages" },
-                    { key: "Publisher", val: "W. W. Norton & Company" },
-                    { key: "Format", val: "Paperback" },
-                    { key: "Language", val: "English" },
-                    { key: "ISBN-10", val: "0393609391" },
-                    { key: "ISBN-13", val: "978-0393609394" },
-                    { key: "Dimensions", val: "11.9 x 1.8 x 18.8 cm" },
-                    { key: "Bestseller Status", val: "#1 New York Times Bestseller" }
-                ],
-                retailers: [
-                    { name: "Amazon IN", price: 350, url: "https://www.amazon.in/Astrophysics-deGrasse-Science-Universe-Beginners/dp/B0FK5SKMRM" }
-                ]
-            },
-            {
-                id: "p18", page: "Random Projects", icon: "💡", name: "Philips LightTheatre Multi-Color", category: "Lifestyle", basePrice: 5500,
-                desc: "Transform your entertainment setup with vibrant, smart ambient lighting. Paint your room in millions of colors and sync the lights to your movies, music, or video games for absolute immersion.",
-                specs: [
-                    { key: "Color Range", val: "16 Million colors including warm-to-cool white" },
-                    { key: "Luminous Flux", val: "1040 lumens output at 4000K" },
-                    { key: "Smart Sync", val: "Syncs with PC/TV media via Philips Hue Sync App" },
-                    { key: "Control Method", val: "Bluetooth App, Wi-Fi Bridge, or Voice Assistant" },
-                    { key: "Voice Assistants", val: "Compatible with Amazon Alexa, Google Assistant, Apple HomeKit" },
-                    { key: "Placement", val: "Versatile desk/floor standing or monitor backing" },
-                    { key: "Lifespan", val: "Up to 25,000 hours of use" },
-                    { key: "Material", val: "Synthetic casing with diffused light panel" },
-                    { key: "Wattage", val: "12 Watts (Energy Efficient LED)" },
-                    { key: "Dimensions", val: "25.3 x 4.4 x 3.6 cm" }
-                ],
-                retailers: [
-                    { name: "Amazon IN", price: 5500, url: "https://www.amazon.in/Philips-LightTheatre-Multi-Color-Versatile-Compatible/dp/B0FR9J5K1G" }
-                ]
-            },
-            {
-                id: "p19", page: "Random Projects", icon: "🏎️", name: "LEGO Speed Champions (77246)", category: "Lifestyle", basePrice: 2000,
-                desc: "Build, race, and display! This highly detailed LEGO Speed Champions replica captures the aerodynamic design and raw power of a legendary hypercar. Perfect for car enthusiasts and desktop display.",
-                specs: [
-                    { key: "Set Theme", val: "LEGO Speed Champions Vehicle Series" },
-                    { key: "Piece Count", val: "Approx. 260 precision interlocking bricks" },
-                    { key: "Included Items", val: "1x Driver Minifigure with racing helmet and wrench" },
-                    { key: "Age Rating", val: "Recommended for 9+ years" },
-                    { key: "Display", val: "Accurate 8-stud wide scale model for desktop display" },
-                    { key: "Material", val: "High-quality ABS Plastic" },
-                    { key: "Educational Value", val: "Spatial reasoning, following instructions, fine motor skills" },
-                    { key: "Dimensions (Built)", val: "Approx. 4cm high, 15cm long, 7cm wide" },
-                    { key: "Batteries", val: "No batteries required. Powered by imagination." },
-                    { key: "Origin", val: "Designed in Denmark" }
-                ],
-                retailers: [
-                    { name: "Amazon IN", price: 2000, url: "https://www.amazon.in/LEGO-Champions-Vehicle-77246-Building/dp/B0DHS9JVGJ" }
-                ]
-            }
-        ];
+        let products = [];
 
         // --- STATE & CURRENCY ---
         let currentCurrency = 'INR';
@@ -1113,7 +741,7 @@
             // Update UI
             document.getElementById('task-needs').classList.toggle('active', page === 'Needs');
             document.getElementById('task-wants').classList.toggle('active', page === 'Wants');
-            document.getElementById('task-random').classList.toggle('active', page === 'Random Projects');
+            document.getElementById('task-random').classList.toggle('active', page === 'Random Products');
             
             document.getElementById('window-title').innerText = `Wishlist.dando.in - ${page}`;
             document.getElementById('address-path').innerText = `C:\\Users\\Dando.in\\Wishlist\\${page}`;
@@ -1135,7 +763,6 @@
                 const balloon = document.getElementById('copy-balloon');
                 balloon.style.display = 'block';
                 
-                // Hide after 4 seconds
                 setTimeout(() => {
                     balloon.style.display = 'none';
                 }, 4000);
@@ -1146,7 +773,6 @@
 
         // Logic: Filter and Sort
         function getFilteredProducts() {
-            // First, filter by the active page (Wants, Needs, Random Projects)
             let filtered = products.filter(p => p.page === currentPage);
 
             // Search
@@ -1213,26 +839,52 @@
             // Bind Copy Link Button
             document.getElementById('copy-link-btn').onclick = () => copyShareLink(prod.id);
 
-            // Specs
+            // Populate Review
+            const reviewContainer = document.getElementById('detail-review-container');
+            if (prod.review && prod.review.trim() !== "") {
+                document.getElementById('detail-review').innerText = `"${prod.review}"`;
+                reviewContainer.style.display = 'block';
+            } else {
+                reviewContainer.style.display = 'none';
+            }
+
+            // Populate Specs
             let specsHTML = '';
-            prod.specs.forEach(s => {
-                specsHTML += `<tr><td>${s.key}</td><td>${s.val}</td></tr>`;
-            });
+            if (prod.specs && prod.specs.length > 0) {
+                prod.specs.forEach(s => {
+                    specsHTML += `<tr><td>${s.key}</td><td>${s.val}</td></tr>`;
+                });
+            } else {
+                specsHTML = `<tr><td colspan="2" style="color: #666; font-style: italic;">No specifications provided.</td></tr>`;
+            }
             document.getElementById('detail-specs').innerHTML = specsHTML;
 
-            // Retailers
+            // Populate Retailers with Dynamic Google Shopping Fallback
             let retailersHTML = '';
-            prod.retailers.forEach(r => {
-                retailersHTML += `
+            if (!prod.retailers || prod.retailers.length === 0) {
+                const searchQuery = encodeURIComponent(prod.name);
+                retailersHTML = `
                     <div class="retailer-item">
                         <div>
-                            <strong>${r.name}</strong><br>
-                            <span style="color: #0058e6; font-weight: bold;">${formatPrice(r.price)}</span>
+                            <strong>Google Shopping Search</strong><br>
+                            <span style="color: #0058e6; font-weight: bold;">Find best price online</span>
                         </div>
-                        <a href="${r.url}" target="_blank" class="xp-button">Buy / Open Link</a>
+                        <a href="https://www.google.com/search?tbm=shop&q=${searchQuery}" target="_blank" class="xp-button">Search Shop</a>
                     </div>
                 `;
-            });
+            } else {
+                prod.retailers.forEach(r => {
+                    retailersHTML += `
+                        <div class="retailer-item">
+                            <div>
+                                <strong>${r.name}</strong><br>
+                                <span style="color: #0058e6; font-weight: bold;">${formatPrice(r.price)}</span>
+                            </div>
+                            <a href="${r.url}" target="_blank" class="xp-button">Buy / Open Link</a>
+                        </div>
+                    `;
+                });
+            }
             document.getElementById('detail-retailers').innerHTML = retailersHTML;
 
             // Show Window
@@ -1279,17 +931,26 @@
         }, 1000);
 
         // Init App & Handle Deep Linking
-        window.onload = () => {
+        window.onload = async () => {
             fetchRates();
             
-            // Check for shared product link in URL (e.g., ?p=p04)
+            try {
+                // Fetch the JSON dataset
+                const response = await fetch('products.json');
+                if (!response.ok) throw new Error('Failed to load products');
+                products = await response.json();
+            } catch (error) {
+                console.error("Error loading products:", error);
+                grid.innerHTML = `<div style="grid-column: 1/-1; color: red; padding: 20px; font-weight: bold;">Error loading products.json. Please ensure the file is available.</div>`;
+                return;
+            }
+            
             const params = new URLSearchParams(window.location.search);
             const sharedProductId = params.get('p');
             
             if (sharedProductId) {
                 const targetProduct = products.find(p => p.id === sharedProductId);
                 if (targetProduct) {
-                    // Navigate to the correct folder and open the window
                     switchPage(targetProduct.page);
                     openDetailWindow(sharedProductId);
                 } else {
