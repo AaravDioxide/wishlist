@@ -1,5 +1,28 @@
 [
   {
+    "id": "prod_f61ln",
+    "page": "Random Products",
+    "icon": "🤣",
+    "name": "Software List (not related)",
+    "category": "Lifestyle",
+    "basePrice": 1000000000000000,
+    "desc": "",
+    "review": "",
+    "specs": [
+      {
+        "key": "Beauty",
+        "val": "100%"
+      }
+    ],
+    "retailers": [
+      {
+        "name": "Google",
+        "price": 1000000000000000,
+        "url": "https://drive.google.com/drive/folders/1D_znxCuFOfiA1tDgV6Xlde26Q-IYZIyY?"
+      }
+    ]
+  },
+  {
     "id": "p01",
     "page": "Needs",
     "icon": "📱",
@@ -1148,120 +1171,6 @@
     ]
   },
   {
-    "id": "rp02",
-    "page": "Random Products",
-    "icon": "📱",
-    "name": "Samsung Galaxy S26",
-    "category": "Mobile Tech",
-    "basePrice": 79999,
-    "desc": "The compact flagship. Delivering all of Samsung's core Galaxy AI features and premium build quality in a much smaller, pocket-friendly form factor.",
-    "review": "",
-    "specs": [
-      {
-        "key": "Processor",
-        "val": "Exynos 2600 / Snapdragon 8 Gen 5 (region dependent)"
-      },
-      {
-        "key": "Display",
-        "val": "6.2-inch Dynamic AMOLED 2x (120Hz, 2600 nits)"
-      },
-      {
-        "key": "Camera System",
-        "val": "50MP Main (f/1.8) + 12MP Ultrawide + 10MP 3x Zoom"
-      },
-      {
-        "key": "Front Camera",
-        "val": "12MP Dual Pixel AF"
-      },
-      {
-        "key": "Battery",
-        "val": "4000mAh, 25W wired fast charge, 15W wireless"
-      },
-      {
-        "key": "RAM",
-        "val": "8GB LPDDR5x"
-      },
-      {
-        "key": "Storage",
-        "val": "128GB / 256GB UFS 4.0"
-      },
-      {
-        "key": "Build",
-        "val": "Armor Aluminum frame, Gorilla Glass Victus 3"
-      },
-      {
-        "key": "Durability",
-        "val": "IP68 (6m/30min)"
-      },
-      {
-        "key": "OS",
-        "val": "One UI 8 based on Android 16"
-      }
-    ],
-    "retailers": [
-      {
-        "name": "Samsung Store IN",
-        "price": 79999,
-        "url": "https://www.samsung.com/in/smartphones/galaxy-s26/buy/"
-      }
-    ]
-  },
-  {
-    "id": "rp04",
-    "page": "Random Products",
-    "icon": "📱",
-    "name": "Apple iPhone 17 Air",
-    "category": "Mobile Tech",
-    "basePrice": 95000,
-    "desc": "Apple's radical new ultra-thin redesign. Sacrificing some battery and camera hardware to achieve the thinnest iPhone ever created — a truly pocketable powerhouse.",
-    "review": "",
-    "specs": [
-      {
-        "key": "Design",
-        "val": "Ultra-thin chassis (~5.5mm thickness — thinnest iPhone ever)"
-      },
-      {
-        "key": "Processor",
-        "val": "A19 Bionic Chip (3nm)"
-      },
-      {
-        "key": "Display",
-        "val": "6.6-inch Super Retina XDR OLED (Dynamic Island)"
-      },
-      {
-        "key": "Camera",
-        "val": "Single 48MP Rear Camera (f/1.6)"
-      },
-      {
-        "key": "Front Camera",
-        "val": "12MP TrueDepth"
-      },
-      {
-        "key": "Battery",
-        "val": "Reduced capacity vs standard (thinner chassis tradeoff)"
-      },
-      {
-        "key": "Material",
-        "val": "Titanium / Aluminum hybrid frame, glass back"
-      },
-      {
-        "key": "Connectivity",
-        "val": "5G, Wi-Fi 7, Bluetooth 5.3"
-      },
-      {
-        "key": "Biometrics",
-        "val": "Face ID"
-      }
-    ],
-    "retailers": [
-      {
-        "name": "Apple Store IN",
-        "price": 95000,
-        "url": "https://www.apple.com/in/shop/buy-iphone/iphone-17-air"
-      }
-    ]
-  },
-  {
     "id": "rp05",
     "page": "Random Products",
     "icon": "📱",
@@ -1364,134 +1273,6 @@
         "name": "Apple Store IN",
         "price": 154900,
         "url": "https://www.apple.com/in/shop/buy-iphone/iphone-17-pro-max"
-      }
-    ]
-  },
-  {
-    "id": "rp07",
-    "page": "Random Products",
-    "icon": "📱",
-    "name": "OnePlus 13",
-    "category": "Mobile Tech",
-    "basePrice": 69999,
-    "desc": "The flagship killer returns. The OnePlus 13 focuses on raw speed, Hasselblad cameras, incredibly fast charging, and buttery-smooth software.",
-    "review": "",
-    "specs": [
-      {
-        "key": "Processor",
-        "val": "Snapdragon 8 Elite (3nm, fastest Android chip)"
-      },
-      {
-        "key": "Display",
-        "val": "6.82-inch 120Hz LTPO 4.0 BOE AMOLED (4500 nits peak)"
-      },
-      {
-        "key": "Camera",
-        "val": "Hasselblad tuned: 50MP Main (f/1.6) + 50MP Periscope 3x + 50MP Ultrawide"
-      },
-      {
-        "key": "Charging",
-        "val": "100W SUPERVOOC wired (full charge in ~36 min)"
-      },
-      {
-        "key": "Wireless Charging",
-        "val": "50W AirVOOC wireless"
-      },
-      {
-        "key": "Battery",
-        "val": "6000mAh Silicon Carbon"
-      },
-      {
-        "key": "RAM",
-        "val": "12GB / 16GB LPDDR5x"
-      },
-      {
-        "key": "Storage",
-        "val": "256GB / 512GB UFS 4.0"
-      },
-      {
-        "key": "Durability",
-        "val": "IP65 dust and water resistance"
-      },
-      {
-        "key": "OS",
-        "val": "OxygenOS 15 (Android 15)"
-      }
-    ],
-    "retailers": [
-      {
-        "name": "Amazon IN",
-        "price": 69999,
-        "url": "https://www.amazon.in/OnePlus-13-Silky-Black-512GB/dp/B0DN3DZLS6"
-      },
-      {
-        "name": "Flipkart",
-        "price": 69999,
-        "url": "https://www.flipkart.com/oneplus-13-silky-black-512-gb/p/itm3b5e2f6c5fa3e"
-      }
-    ]
-  },
-  {
-    "id": "rp08",
-    "page": "Random Products",
-    "icon": "📱",
-    "name": "iQOO 13",
-    "category": "Mobile Tech",
-    "basePrice": 54999,
-    "desc": "A gaming-focused powerhouse. iQOO delivers the absolute highest tier processing hardware with a massive battery and blazing-fast charging at an incredible price point for Indian gamers.",
-    "review": "",
-    "specs": [
-      {
-        "key": "Processor",
-        "val": "Snapdragon 8 Elite (3nm, top-tier Android SoC)"
-      },
-      {
-        "key": "Display",
-        "val": "6.82-inch 144Hz LTPO4 BOE AMOLED (4500 nits peak)"
-      },
-      {
-        "key": "Gaming Chip",
-        "val": "Q2 Pro supercomputing chip (frame interpolation, game latency reduction)"
-      },
-      {
-        "key": "Camera",
-        "val": "50MP OIS Main (ZEISS) + 50MP Ultrawide + 50MP 2x Portrait"
-      },
-      {
-        "key": "Battery",
-        "val": "6000mAh Silicon Carbon"
-      },
-      {
-        "key": "Charging",
-        "val": "120W FlashCharge wired (full charge ~30 min)"
-      },
-      {
-        "key": "RAM",
-        "val": "12GB / 16GB LPDDR5x"
-      },
-      {
-        "key": "Storage",
-        "val": "256GB / 512GB UFS 4.0"
-      },
-      {
-        "key": "Cooling",
-        "val": "Ultra-large Vapor Chamber for sustained gaming"
-      },
-      {
-        "key": "OS",
-        "val": "FuntouchOS 15 (Android 15)"
-      }
-    ],
-    "retailers": [
-      {
-        "name": "Flipkart",
-        "price": 54999,
-        "url": "https://www.flipkart.com/iqoo-13-legend-512-gb/p/itmede748ef67ff8"
-      },
-      {
-        "name": "Amazon IN",
-        "price": 54999,
-        "url": "https://www.amazon.in/iQOO-13-Dimensity-Storage-Charging/dp/B0DPBJ6N3P"
       }
     ]
   },
@@ -3813,61 +3594,6 @@
         "name": "Amazon IN",
         "price": 39999,
         "url": "https://www.google.com/search?tbm=shop&q=buy+OnePlus+Pad+3+India"
-      }
-    ]
-  },
-  {
-    "id": "rp53",
-    "page": "Random Products",
-    "icon": "📱",
-    "name": "Apple iPad mini (7th Gen)",
-    "category": "Tech & Hardware",
-    "basePrice": 49900,
-    "desc": "Mega power in a mini size. The perfect 8.3-inch form factor, upgraded with the incredibly fast A17 Pro chip to support Apple Intelligence and high-end console gaming on the go.",
-    "review": "",
-    "specs": [
-      {
-        "key": "Processor",
-        "val": "A17 Pro Chip (6-core CPU, 5-core GPU, Hardware Ray Tracing)"
-      },
-      {
-        "key": "Display",
-        "val": "8.3-inch Liquid Retina display (True Tone, P3 wide color)"
-      },
-      {
-        "key": "Storage Options",
-        "val": "128GB (Base), 256GB, 512GB"
-      },
-      {
-        "key": "RAM",
-        "val": "8GB (Enabled for Apple Intelligence)"
-      },
-      {
-        "key": "Cameras",
-        "val": "12MP Wide Rear (Smart HDR 4), 12MP Ultra Wide Front (Center Stage)"
-      },
-      {
-        "key": "Connectivity",
-        "val": "Wi-Fi 6E, Bluetooth 5.3, USB-C (10Gbps)"
-      },
-      {
-        "key": "Apple Pencil",
-        "val": "Supports Apple Pencil Pro and Apple Pencil (USB-C)"
-      },
-      {
-        "key": "Biometrics",
-        "val": "Touch ID integrated into the top button"
-      },
-      {
-        "key": "OS",
-        "val": "iPadOS 18"
-      }
-    ],
-    "retailers": [
-      {
-        "name": "Apple Store IN",
-        "price": 49900,
-        "url": "https://www.apple.com/in/shop/buy-ipad/ipad-mini"
       }
     ]
   }
